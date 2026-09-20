@@ -67,6 +67,48 @@ def test_empty_inputs_produce_empty_output():
     print("  ✅ all-empty inputs produce an empty list, not a crash")
 
 
+def test_malformed_entry_missing_cve_id_does_not_crash():
+    """Real robustness gap found during a pre-push audit (not from a
+    live failure): a collector entry missing 'cve' entirely used to
+    crash the whole run via a raw dict-index KeyError, right at the
+    first place incoming data is processed. Especially plausible for
+    nvd.py/github_advisories.py/nuclei_templates.py, which weren't
+    live-verified during development. Now skipped with a warning
+    instead."""
+    good = [_entry("CVE-2026-6", "cve_org")]
+    malformed = [{"vendor": "V", "product": "P", "source": "nvd"}]  # no 'cve' key at all
+    merged = merge_sources(good, malformed)
+    assert len(merged) == 1
+    assert merged[0]["cve"] == "CVE-2026-6"
+    print("  ✅ a malformed entry with no CVE ID is skipped, not a crash, valid entries still processed")
+
+
+def test_full_pipeline_survives_malformed_entry_end_to_end():
+    """The real end-to-end proof: merge -> diff -> match -> render, with
+    one malformed entry mixed in among real ones, all the way through.
+    Not just merge_sources() in isolation."""
+    import tempfile
+    from pipeline.intelligence import state_diff, technology_matcher
+    from pipeline.reporting import hunter_queue as hq
+
+    good = [_entry("CVE-2026-7", "cve_org", vendor="nginx", product="nginx")]
+    malformed = [{"vendor": "V", "product": "P", "source": "nuclei_templates"}]  # missing 'cve'
+    merged = merge_sources(good, malformed)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        state_path = f"{tmp}/state.json"
+        previous_state = state_diff.load_state(state_path)
+        new_entries, updated_entries, _ = state_diff.diff(merged, previous_state)
+        targets = [{"target": "example.com", "technologies": [{"vendor": "nginx"}]}]
+        new_entries = technology_matcher.match_targets(new_entries, targets)
+        md = hq.render(new_entries, [], len(targets))
+        state_diff.save_state(state_path, merged)
+
+    assert "CVE-2026-7" in md
+    print("  ✅ full pipeline (merge -> diff -> match -> render -> save_state) survives a "
+          "malformed entry end-to-end, real entry still reaches the final output")
+
+
 if __name__ == "__main__":
     tests = [
         test_last_argument_wins_on_conflict,
@@ -74,6 +116,8 @@ if __name__ == "__main__":
         test_entry_seen_by_only_one_source_is_kept,
         test_no_duplicate_cves_in_output,
         test_empty_inputs_produce_empty_output,
+        test_malformed_entry_missing_cve_id_does_not_crash,
+        test_full_pipeline_survives_malformed_entry_end_to_end,
     ]
     failed = 0
     for t in tests:

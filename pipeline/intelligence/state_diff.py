@@ -28,8 +28,18 @@ def load_state(state_path: str):
 
 def save_state(state_path: str, entries: list):
     os.makedirs(os.path.dirname(state_path), exist_ok=True)
-    state = {e["cve"]: {"date_added": e["date_added"], "ransomware_use": e["ransomware_use"]}
-             for e in entries}
+    state = {}
+    skipped = 0
+    for e in entries:
+        cve = e.get("cve")
+        if not cve:
+            skipped += 1
+            continue  # can't track state for an entry with no CVE ID at all
+        state[cve] = {"date_added": e.get("date_added", ""),
+                      "ransomware_use": e.get("ransomware_use", "Unknown")}
+    if skipped:
+        print(f"⚠️ {skipped} entry/entries had no CVE ID and were skipped when saving state "
+              f"(a collector may have a schema issue — check its source)")
     with open(state_path, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2)
 
@@ -42,19 +52,35 @@ def diff(entries: list, previous_state: dict):
     field genuinely worth re-flagging — CISA marking a known CVE as now
     tied to ransomware activity is a real priority change, unlike most
     other field edits which are typically just wording/typo fixes).
-    """
+
+    Uses .get() throughout rather than direct indexing — a single
+    malformed entry from any of the 5 collectors (missing a field due
+    to an unforeseen upstream schema change, especially plausible for
+    nvd.py/github_advisories.py/nuclei_templates.py, which weren't
+    live-verified during development — see their docstrings) must
+    never crash the whole run and silently look like a KEV/cve.org
+    fetch failure instead of what it actually is."""
     new_entries = []
     updated_entries = []
     unchanged_count = 0
+    skipped = 0
 
     for e in entries:
-        cve = e["cve"]
+        cve = e.get("cve")
+        if not cve:
+            skipped += 1
+            continue
+        ransomware_use = e.get("ransomware_use", "Unknown")
         prev = previous_state.get(cve)
         if prev is None:
             new_entries.append(e)
-        elif prev.get("ransomware_use") != e["ransomware_use"]:
+        elif prev.get("ransomware_use") != ransomware_use:
             updated_entries.append({**e, "previous_ransomware_use": prev.get("ransomware_use")})
         else:
             unchanged_count += 1
+
+    if skipped:
+        print(f"⚠️ {skipped} entry/entries had no CVE ID and were skipped during diff "
+              f"(a collector may have a schema issue — check its source)")
 
     return new_entries, updated_entries, unchanged_count

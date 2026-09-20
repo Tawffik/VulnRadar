@@ -60,14 +60,22 @@ def merge_sources(*entry_lists: list) -> list:
     sighting from a lower-priority source is never silently lost even
     after a higher-priority source later confirms the same CVE."""
     by_cve = {}
+    skipped = 0
     for entries in entry_lists:
         for e in entries:
-            cve = e["cve"]
+            cve = e.get("cve")
+            if not cve:
+                skipped += 1
+                continue  # a malformed entry from any collector must not crash the whole run
+            source = e.get("source", "unknown")
             if cve in by_cve:
                 prior_sources = by_cve[cve]["sources"]
-                by_cve[cve] = {**e, "sources": prior_sources + [e["source"]]}
+                by_cve[cve] = {**e, "sources": prior_sources + [source]}
             else:
-                by_cve[cve] = {**e, "sources": [e["source"]]}
+                by_cve[cve] = {**e, "sources": [source]}
+    if skipped:
+        print(f"⚠️ {skipped} entry/entries had no CVE ID and were skipped during merge "
+              f"(a collector may have a schema issue — check its source)")
     return list(by_cve.values())
 
 

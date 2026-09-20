@@ -63,8 +63,8 @@ def load_all_targets(targets_dir: str) -> list:
 def _matches(entry: dict, tech: dict) -> bool:
     vendor = (tech.get("vendor") or "").strip().lower()
     product = (tech.get("product") or "").strip().lower()
-    entry_vendor = entry["vendor"].lower()
-    entry_product = entry["product"].lower()
+    entry_vendor = (entry.get("vendor") or "").lower()
+    entry_product = (entry.get("product") or "").lower()
 
     vendor_match = bool(vendor) and (vendor in entry_vendor or entry_vendor in vendor)
     product_match = bool(product) and (product in entry_product or entry_product in product)
