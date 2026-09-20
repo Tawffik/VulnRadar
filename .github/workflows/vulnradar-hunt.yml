@@ -1,0 +1,60 @@
+name: VulnRadar Hunt
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "targets/**"         # re-run immediately when target files change
+
+permissions:
+  contents: write   # needed to commit the updated state + hunter_queue.md back
+
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install --quiet pyyaml
+
+      - name: Run VulnRadar
+        id: hunt
+        run: |
+          set +e
+          bash scripts/run_hunt.sh
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+
+      - name: Commit updated state and hunter queue
+        if: steps.hunt.outputs.exit_code == '0'
+        run: |
+          git config user.name "vulnradar-bot"
+          git config user.email "vulnradar-bot@users.noreply.github.com"
+          git add data/state/ output/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update KEV state and hunter queue [automated]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
+
+      - name: Upload hunter_queue.md as an artifact too
+        if: steps.hunt.outputs.exit_code == '0'
+        uses: actions/upload-artifact@v4
+        with:
+          name: hunter-queue
+          path: output/hunter_queue.md
+          retention-days: 30
+
+      - name: Fail the job if the hunt itself failed
+        if: steps.hunt.outputs.exit_code != '0'
+        run: exit 1

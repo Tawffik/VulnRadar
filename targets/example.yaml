@@ -1,0 +1,16 @@
+# Example target file — one file per target/organization you're tracking.
+# Copy this, rename it, and fill in the technologies actually deployed.
+# Matching is substring + case-insensitive; be as specific as the real
+# CISA KEV vendor/product naming to avoid false positives (see
+# technology_matcher.py's docstring for the matching rules).
+
+target: example.com
+
+technologies:
+  - vendor: Apache
+    product: HTTP Server
+  - vendor: nginx
+    product: nginx
+  - vendor: nodejs
+    # product omitted on purpose: vendor-only match is broader,
+    # useful when you don't know the exact product name CISA uses
