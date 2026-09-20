@@ -2,27 +2,28 @@
 
 CVE Intelligence + Target Correlation, not a CVE scanner.
 
-VulnRadar tracks **two CVE sources together** to balance speed and
-confirmation:
+VulnRadar tracks **four CVE sources together**, merged by priority
+(highest wins on conflict, all contributing sources still recorded):
 
-- **[CVE.org](https://www.cve.org/) (`cve_org`)** — the official CVE
-  record feed, updated roughly every 7 minutes via
-  [CVEProject/cvelistV5](https://github.com/CVEProject/cvelistV5)'s
-  `delta.json`. This is the **speed source**: a new CVE can show up
-  here hours or days before it's confirmed as actively exploited.
-- **[CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
-  (`cisa_kev`)** — the **confirmation source**: every entry is already
-  known to be actively exploited in the wild, not just theoretically
-  severe. Slower by design (CISA only adds a CVE after confirming
-  exploitation), but the highest-confidence signal that exists.
+| Source | Role | Speed |
+|---|---|---|
+| **[CVE.org](https://www.cve.org/) (`cve_org`)** | Speed source | ~7min cadence — often hours/days ahead of KEV |
+| **GitHub Security Advisories (`github_advisories`)** | Dependency/library CVEs (npm, PyPI, Maven, ...) neither KEV nor cve.org's schema covers well | Fast |
+| **NVD (`nvd`)** | Structured CPE version-range data — feeds the upcoming Version Intelligence matching | Moderate |
+| **[CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) (`cisa_kev`)** | Confirmation source: every entry is already confirmed actively exploited | Slow by design, highest confidence |
 
-If the same CVE shows up in both, KEV's data wins (it carries the
-authoritative "known ransomware use" flag cve_org never has), but the
-entry is tagged with both sources so you can see it was actually caught
-early by the speed source. It diffs each run against the last one so
-you only ever see what's genuinely **new or changed**, and correlates
-new/updated entries against a list of technologies you actually run, so
-you get a short, relevant `hunter_queue.md` instead of a full feed dump.
+It diffs each run against the last one so you only ever see what's
+genuinely **new or changed**, and correlates new/updated entries
+against a list of technologies you actually run, so you get a short,
+relevant `hunter_queue.md` instead of a full feed dump.
+
+> ⚠️ **Honesty note on verification:** `cisa_kev.py` and `cve_org.py`
+> were both tested against LIVE data during development. `nvd.py` and
+> `github_advisories.py` were built against each service's officially
+> documented, stable API schema, but could not be verified against a
+> live fetch during development (sandbox network restrictions). Verify
+> their first real CI run's output before fully trusting them — see
+> each file's own docstring and `docs/ROADMAP.md`.
 
 > **Known limitation, not hidden:** `cve_org`'s `delta.json` is a
 > rolling snapshot, not a complete change log — polling less often than
@@ -49,12 +50,12 @@ rules.
 ## How it works
 
 ```
-CISA KEV feed (confirmed-exploited source)     CVE.org delta.json (speed source, ~7min cadence)
-        ↓                                              ↓
-pipeline/collectors/cisa_kev.py               pipeline/collectors/cve_org.py
-        ↓                                              ↓
-        └──────────────── merge_sources() ─────────────┘
-                    (KEV wins on conflict, both sources tagged)
+cve_org.py    github_advisories.py    nvd.py    cisa_kev.py
+(speed)        (dependency CVEs)     (CPE data)   (confirmed)
+    │                │                  │             │
+    └────────────────┴──── merge_sources() ───────────┘
+         (ascending priority: cve_org < github_advisories < nvd < kev;
+          highest-priority source wins on conflict, all sources tagged)
                               ↓
 pipeline/intelligence/state_diff.py    — diff against data/state/kev_state.json
         ↓                                (NEW entries / ransomware-flag UPDATED entries)
@@ -67,23 +68,42 @@ output/hunter_queue.md                 — prioritized, target-relevant, human-r
 
 ## Setup
 
+### Option A: permanent target (tracked every scheduled run)
+
 1. Copy `targets/example.yaml`, rename it, and fill in the
    vendor/product names for the technologies you actually run. One
    file per target/organization.
-2. That's it for local use — `.github/workflows/vulnradar-hunt.yml`
-   runs automatically every 15 minutes once this is pushed to GitHub
-   (uses the repo's own built-in `GITHUB_TOKEN`, no extra setup
-   needed), and commits the updated state + `hunter_queue.md` back to
-   the repo each run so state persists between runs (GitHub Actions
-   runners are ephemeral — without committing state back, every run
-   would think everything is new again).
+2. Push it. `.github/workflows/vulnradar-hunt.yml` runs automatically
+   every 15 minutes once this is pushed to GitHub (uses the repo's own
+   built-in `GITHUB_TOKEN`, no extra setup needed), and commits the
+   updated state + `hunter_queue.md` back to the repo each run so state
+   persists between runs (GitHub Actions runners are ephemeral —
+   without committing state back, every run would think everything is
+   new again).
 
-   **Cost note:** a 15-minute schedule means ~96 workflow runs/day. On
-   a private repo this consumes GitHub Actions minutes from your
-   account's quota (each run is fast, well under a minute of actual
-   compute, but still counts). On a public repo, Actions minutes are
-   free/unlimited. If this matters, widen the cron schedule in
-   `.github/workflows/vulnradar-hunt.yml`.
+### Option B: one-off target from the Actions UI (no YAML editing)
+
+Go to the repo's **Actions → VulnRadar Hunt → Run workflow** button and
+fill in:
+
+- **Target domain** — e.g. `example.com`
+- **Technologies** — comma-separated `vendor:product` pairs, e.g.
+  `nginx:nginx,Apache:HTTP Server`. Leave the product blank for a
+  vendor-only match: `nginx:,Apache:HTTP Server`
+- **Save as permanent target?** — check this to also write a real
+  `targets/*.yaml` file (committed automatically) so future scheduled
+  runs include it too; leave unchecked for a single throwaway check
+
+This mirrors the manual-dispatch pattern already used in the sibling
+BugBountyCI project's own workflow UI. Requires no local setup at all —
+type a domain, click Run workflow.
+
+**Cost note:** a 15-minute schedule means ~96 workflow runs/day. On
+a private repo this consumes GitHub Actions minutes from your
+account's quota (each run is fast, well under a minute of actual
+compute, but still counts). On a public repo, Actions minutes are
+free/unlimited. If this matters, widen the cron schedule in
+`.github/workflows/vulnradar-hunt.yml`.
 
 ## Running locally
 
@@ -95,25 +115,32 @@ cat output/hunter_queue.md
 
 Use `--kev-file path/to/snapshot.json` to run against a local KEV
 snapshot instead of fetching live (useful for testing, or reprocessing
-a previous day's data).
+a previous day's data). Use `--adhoc-target example.com --adhoc-tech
+"nginx:nginx"` to test the Option B flow locally without pushing
+anything.
 
 ## Testing
 
 ```bash
 python3 pipeline/tests/test_vulnradar.py
 python3 pipeline/tests/test_cve_org.py
+python3 pipeline/tests/test_github_advisories.py
+python3 pipeline/tests/test_nvd.py
 python3 pipeline/tests/test_merge_sources.py
 ```
 
-26 tests total. `test_cve_org.py` runs against a fixture captured from
-a LIVE fetch of the real MITRE feed during development — not invented
-test data.
+46 tests total. `test_cve_org.py` runs against a fixture captured from
+a LIVE fetch of the real MITRE feed during development. `test_nvd.py`
+and `test_github_advisories.py` run against fixtures built from each
+service's documented schema (not live-verified — see the honesty note
+above the source table).
 
 ## What V1 deliberately does NOT do
 
-- No version-range checking (a vendor/product name match is flagged as
-  a candidate; verifying the actual deployed version against the
-  affected range is a manual step for now — see the roadmap)
+- Version-range MATCHING isn't wired yet — `nvd.py` already captures
+  structured CPE version ranges (`cpe_version_range` on each entry),
+  but `technology_matcher.py` still only does name-based matching for
+  V1. Wiring the two together is the next real step.
 - No exploit/PoC intelligence layer (KEV entries are already
   confirmed-exploited by definition, so this matters less for V1 than
   it would for a broader NVD-based feed)

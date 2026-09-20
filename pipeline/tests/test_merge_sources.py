@@ -20,49 +20,59 @@ def _entry(cve, source, **extra):
     return base
 
 
-def test_kev_wins_on_conflict_but_both_sources_recorded():
+def test_last_argument_wins_on_conflict():
     org = [_entry("CVE-2026-1", "cve_org")]
     kev = [_entry("CVE-2026-1", "cisa_kev", ransomware_use="Known")]
-    merged = merge_sources(kev, org)
+    merged = merge_sources(org, kev)  # kev is LAST -> wins, matching ascending-priority order
     assert len(merged) == 1
-    assert merged[0]["ransomware_use"] == "Known"  # KEV's data wins
-    assert set(merged[0]["sources"]) == {"cve_org", "cisa_kev"}  # but both are recorded
-    print("  ✅ conflicting entry: KEV's data wins, both sources recorded in 'sources'")
+    assert merged[0]["ransomware_use"] == "Known"
+    assert set(merged[0]["sources"]) == {"cve_org", "cisa_kev"}
+    print("  ✅ later argument wins on conflict, both sources still recorded")
 
 
-def test_cve_org_only_entry_is_kept():
+def test_four_source_priority_order():
+    """Matches run_hunt.py's real call: merge_sources(org, gh, nvd, kev) —
+    kev (last) must win even when all four report the same CVE."""
+    org = [_entry("CVE-2026-9", "cve_org", cvss_score=None)]
+    gh = [_entry("CVE-2026-9", "github_advisories", cvss_score=5.0)]
+    nvd_e = [_entry("CVE-2026-9", "nvd", cvss_score=7.0)]
+    kev = [_entry("CVE-2026-9", "cisa_kev", cvss_score=None, ransomware_use="Known")]
+    merged = merge_sources(org, gh, nvd_e, kev)
+    assert len(merged) == 1
+    assert merged[0]["ransomware_use"] == "Known"  # kev's data (last) wins
+    assert set(merged[0]["sources"]) == {"cve_org", "github_advisories", "nvd", "cisa_kev"}
+    print("  ✅ 4-way merge: kev wins as the last/highest-priority source, all 4 sources recorded")
+
+
+def test_entry_seen_by_only_one_source_is_kept():
     org = [_entry("CVE-2026-2", "cve_org")]
-    kev = []
-    merged = merge_sources(kev, org)
+    merged = merge_sources(org, [], [], [])
     assert len(merged) == 1
     assert merged[0]["sources"] == ["cve_org"]
-    print("  ✅ a CVE seen only by cve_org (not yet in KEV) is kept, tagged cve_org-only")
-
-
-def test_kev_only_entry_is_kept():
-    org = []
-    kev = [_entry("CVE-2026-3", "cisa_kev")]
-    merged = merge_sources(kev, org)
-    assert len(merged) == 1
-    assert merged[0]["sources"] == ["cisa_kev"]
-    print("  ✅ a CVE seen only by KEV is kept, tagged cisa_kev-only")
+    print("  ✅ a CVE seen by only one source is kept, tagged with just that source")
 
 
 def test_no_duplicate_cves_in_output():
     org = [_entry("CVE-2026-4", "cve_org")]
     kev = [_entry("CVE-2026-4", "cisa_kev"), _entry("CVE-2026-5", "cisa_kev")]
-    merged = merge_sources(kev, org)
+    merged = merge_sources(org, [], [], kev)
     cves = [e["cve"] for e in merged]
     assert len(cves) == len(set(cves)) == 2
-    print("  ✅ no duplicate CVE entries in merged output even with overlap")
+    print("  ✅ no duplicate CVE entries in merged output even with overlap across sources")
+
+
+def test_empty_inputs_produce_empty_output():
+    assert merge_sources([], [], [], []) == []
+    print("  ✅ all-empty inputs produce an empty list, not a crash")
 
 
 if __name__ == "__main__":
     tests = [
-        test_kev_wins_on_conflict_but_both_sources_recorded,
-        test_cve_org_only_entry_is_kept,
-        test_kev_only_entry_is_kept,
+        test_last_argument_wins_on_conflict,
+        test_four_source_priority_order,
+        test_entry_seen_by_only_one_source_is_kept,
         test_no_duplicate_cves_in_output,
+        test_empty_inputs_produce_empty_output,
     ]
     failed = 0
     for t in tests:

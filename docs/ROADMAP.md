@@ -2,50 +2,55 @@
 
 ## What V1 delivered (this session)
 
-- CISA KEV collector, normalized to an internal schema
-- **CVE.org (`cve_org`) collector — the speed source**, polling
-  MITRE's official `cvelistV5` delta feed (~7min cadence), merged with
-  KEV via `merge_sources()` (KEV wins on conflict, both sources tagged)
+- **Four collectors merged by priority** (ascending: cve_org <
+  github_advisories < nvd < cisa_kev — see `merge_sources()`):
+  - CISA KEV — confirmed-exploitation, authoritative
+  - CVE.org (`cve_org`) — the speed source, ~7min cadence, live-tested
+  - GitHub Security Advisories — dependency/library CVEs, schema-based
+    (not live-verified in the dev sandbox — see the honesty note in
+    `github_advisories.py`)
+  - NVD — structured CPE version-range data, schema-based (also not
+    live-verified — `services.nvd.nist.gov` unreachable from the dev
+    sandbox)
 - State/diff engine: NEW entries, and UPDATED entries (ransomware-use
-  flag change specifically — the one field change actually worth
-  re-flagging)
+  flag change specifically)
 - Technology matcher: vendor/product substring matching against
   `targets/*.yaml`
-- Prioritized `hunter_queue.md` renderer (matched+ransomware > matched
-  > ransomware-only-unmatched; everything else summarized but not
-  individually listed)
-- Scheduled GitHub Actions workflow (every 15 minutes, matching
-  cve_org's own update cadence) that commits state back
-- 26 tests, including against real fixture data captured from a live
-  fetch of both CISA KEV and the actual MITRE cvelistV5 feed (real schema, not invented)
+- Prioritized `hunter_queue.md` renderer
+- Scheduled GitHub Actions workflow (every 15 minutes) that commits
+  state back, PLUS a **workflow_dispatch UI** (Actions tab → Run
+  workflow) to type in a one-off target domain + technologies without
+  editing any YAML, with an option to save it as a permanent target
+- 46 tests, including against real fixture data captured from live
+  fetches of CISA KEV and the actual MITRE cvelistV5 feed (real schema, not invented)
 
 ## Deferred, in priority order
 
 ### Priority 1 — makes existing matches trustworthy, not just present
 
-1. **Version Intelligence.** Right now a vendor/product name match is
-   the whole signal — no version-range checking at all. This is the
-   single most valuable next step: parse the affected version range
-   (CISA's KEV entries don't always include this cleanly — may need to
-   cross-reference the CVE's NVD record for CPE/version data) and
-   compare against a version the target declares in `targets/*.yaml`,
-   downgrading a match to "POSSIBLY AFFECTED" only within range, not
-   just same product.
-2. **NVD as a version-data source (not a speed source anymore — cve_org
-   already covers that).** Needed specifically for version intelligence
-   above: NVD's CPE data has structured version ranges neither KEV nor
-   cve.org's own records reliably include. Requires an NVD API key for
-   reasonable rate limits; keep it a third collector, not a replacement
-   for either existing one.
+1. **Wire NVD's already-captured version data into the matcher.** The
+   data is no longer missing — `nvd.py` already extracts
+   `versionStartIncluding`/`versionEndExcluding`/etc. into each
+   entry's `cpe_version_range` field. What's NOT done: a target
+   declaring its actual deployed version in `targets/*.yaml` (a new
+   optional `version:` field per technology), and
+   `technology_matcher.py` comparing that version against the range
+   before flagging a match — right now a name match alone is still the
+   whole signal, same as before this session's NVD collector was
+   added. This is now a smaller, more precise task than it was: parse
+   + compare, not "find a version-range data source" (that part is
+   done).
+2. **Verify `nvd.py` and `github_advisories.py` against real live
+   output.** Both were built against each service's documented schema
+   but never fetched live during development (sandbox network
+   restrictions — see each file's own docstring). Check the first real
+   CI run's logs for either printing an unexpected error before relying
+   on them the way `cisa_kev.py`/`cve_org.py` (both live-tested) are
+   trusted.
 
 ### Priority 2 — broadens coverage, straightforward given V1's architecture
 
-3. **GitHub Security Advisories collector** — useful for
-   dependency/library-level CVEs KEV/NVD often lag on, especially for
-   anything in a target's actual dependency tree (would need a
-   target's `package.json`/`requirements.txt`/etc as an additional
-   input, not just a vendor/product name).
-4. **Multiple target files at scale** — V1 already loads every
+3. **Multiple target files at scale** — V1 already loads every
    `*.yaml` in `targets/`, so this is more a matter of actually adding
    more target files than new code, once there's more than one real
    target to track.

@@ -6,7 +6,21 @@ on:
                               # ~7-minute update cadence closely enough to
                               # avoid missing entries in delta.json's
                               # rolling snapshot (see cve_org.py's docstring)
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      target_domain:
+        description: "Target domain (e.g. example.com) — optional, for a one-off check against this target's tech stack without editing targets/*.yaml"
+        required: false
+        type: string
+      technologies:
+        description: "Comma-separated vendor:product pairs for the target above (e.g. nginx:nginx,Apache:HTTP Server). Leave product blank for a vendor-only match: nginx:,Apache:HTTP Server"
+        required: false
+        type: string
+      save_as_permanent_target:
+        description: "Also save this as a permanent targets/*.yaml file so future scheduled runs include it automatically"
+        required: false
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -29,11 +43,34 @@ jobs:
       - name: Install dependencies
         run: pip install --quiet pyyaml
 
+      - name: Save ad-hoc target as a permanent file (if requested)
+        if: github.event.inputs.save_as_permanent_target == 'true' && github.event.inputs.target_domain != ''
+        run: |
+          python3 scripts/save_target.py \
+            --target "${{ github.event.inputs.target_domain }}" \
+            --technologies "${{ github.event.inputs.technologies }}"
+
       - name: Run VulnRadar
         id: hunt
+        env:
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}   # optional — set this repo secret to raise NVD's
+                                                      # rate limit from 5 req/30s to 50 req/30s.
+                                                      # Works fine without it too.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # built-in, always available — raises
+                                                      # GitHub Advisories' rate limit from 60/hr
+                                                      # to 5000/hr, no setup needed.
+          ADHOC_TARGET: ${{ github.event.inputs.target_domain }}
+          ADHOC_TECH: ${{ github.event.inputs.technologies }}
         run: |
           set +e
-          bash scripts/run_hunt.sh
+          ARGS=""
+          if [ -n "$ADHOC_TARGET" ] && [ "${{ github.event.inputs.save_as_permanent_target }}" != "true" ]; then
+            # Only pass --adhoc-target when NOT saved permanently - a saved
+            # target already lives in targets/ and load_all_targets() picks
+            # it up normally, so passing both would double-match it.
+            ARGS="--adhoc-target \"$ADHOC_TARGET\" --adhoc-tech \"$ADHOC_TECH\""
+          fi
+          eval bash scripts/run_hunt.sh $ARGS
           echo "exit_code=$?" >> "$GITHUB_OUTPUT"
           set -e
 
