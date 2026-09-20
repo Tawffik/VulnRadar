@@ -2,9 +2,10 @@
 
 ## What V1 delivered (this session)
 
-- CISA KEV collector, normalized to an internal schema so future
-  sources (NVD, GitHub Security Advisories, vendor feeds) can plug in
-  without changing anything downstream
+- CISA KEV collector, normalized to an internal schema
+- **CVE.org (`cve_org`) collector — the speed source**, polling
+  MITRE's official `cvelistV5` delta feed (~7min cadence), merged with
+  KEV via `merge_sources()` (KEV wins on conflict, both sources tagged)
 - State/diff engine: NEW entries, and UPDATED entries (ransomware-use
   flag change specifically — the one field change actually worth
   re-flagging)
@@ -13,9 +14,10 @@
 - Prioritized `hunter_queue.md` renderer (matched+ransomware > matched
   > ransomware-only-unmatched; everything else summarized but not
   individually listed)
-- Scheduled GitHub Actions workflow that commits state back (every 6
-  hours, plus on any push to `targets/`)
-- 13 tests against a realistic KEV fixture (real schema, not invented)
+- Scheduled GitHub Actions workflow (every 15 minutes, matching
+  cve_org's own update cadence) that commits state back
+- 26 tests, including against real fixture data captured from a live
+  fetch of both CISA KEV and the actual MITRE cvelistV5 feed (real schema, not invented)
 
 ## Deferred, in priority order
 
@@ -29,12 +31,12 @@
    compare against a version the target declares in `targets/*.yaml`,
    downgrading a match to "POSSIBLY AFFECTED" only within range, not
    just same product.
-2. **NVD as a second source.** Needed for version intelligence above
-   anyway (NVD's CPE data has structured version ranges KEV alone
-   lacks). Also broadens coverage beyond only-already-exploited CVEs —
-   useful for high-CVSS CVEs that aren't (yet) in KEV. Requires an NVD
-   API key for reasonable rate limits; keep it a second collector
-   alongside `cisa_kev.py`, not a replacement.
+2. **NVD as a version-data source (not a speed source anymore — cve_org
+   already covers that).** Needed specifically for version intelligence
+   above: NVD's CPE data has structured version ranges neither KEV nor
+   cve.org's own records reliably include. Requires an NVD API key for
+   reasonable rate limits; keep it a third collector, not a replacement
+   for either existing one.
 
 ### Priority 2 — broadens coverage, straightforward given V1's architecture
 

@@ -2,7 +2,10 @@ name: VulnRadar Hunt
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # every 6 hours
+    - cron: "*/15 * * * *"   # every 15 minutes — matches cve.org's own
+                              # ~7-minute update cadence closely enough to
+                              # avoid missing entries in delta.json's
+                              # rolling snapshot (see cve_org.py's docstring)
   workflow_dispatch: {}
   push:
     branches: [main]
