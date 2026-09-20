@@ -10,6 +10,7 @@ VulnRadar tracks **four CVE sources together**, merged by priority
 | **[CVE.org](https://www.cve.org/) (`cve_org`)** | Speed source | ~7min cadence — often hours/days ahead of KEV |
 | **GitHub Security Advisories (`github_advisories`)** | Dependency/library CVEs (npm, PyPI, Maven, ...) neither KEV nor cve.org's schema covers well | Fast |
 | **NVD (`nvd`)** | Structured CPE version-range data — feeds the upcoming Version Intelligence matching | Moderate |
+| **[Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates) (`nuclei_templates`)** | A new PoC/detection method already exists for this CVE | Very fast — often within hours of disclosure |
 | **[CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) (`cisa_kev`)** | Confirmation source: every entry is already confirmed actively exploited | Slow by design, highest confidence |
 
 It diffs each run against the last one so you only ever see what's
@@ -129,7 +130,7 @@ python3 pipeline/tests/test_nvd.py
 python3 pipeline/tests/test_merge_sources.py
 ```
 
-46 tests total. `test_cve_org.py` runs against a fixture captured from
+55 tests total. `test_cve_org.py` runs against a fixture captured from
 a LIVE fetch of the real MITRE feed during development. `test_nvd.py`
 and `test_github_advisories.py` run against fixtures built from each
 service's documented schema (not live-verified — see the honesty note

@@ -2,7 +2,7 @@
 """
 pipeline/run_hunt.py
 
-Orchestrates one full VulnRadar run using FOUR sources together:
+Orchestrates one full VulnRadar run using FIVE sources together:
   - cisa_kev: confirmed real-world exploitation (authoritative, but slow —
     CISA only adds a CVE after confirming active exploitation)
   - cve_org: the official CVE.org record feed, updated ~every 7 minutes —
@@ -11,15 +11,19 @@ Orchestrates one full VulnRadar run using FOUR sources together:
     etc.) neither of the above cover well
   - nvd: structured CPE version-range data, feeding the future Version
     Intelligence roadmap item (captured now, not yet used for matching)
+  - nuclei_templates: a NEW public Nuclei detection template for a CVE
+    is a strong "a working PoC/detection already exists" signal, often
+    appearing within hours of disclosure
 
-  fetch all four -> merge (ascending priority: cve_org < github_advisories
-  < nvd < cisa_kev, every source tagged even when another wins)
-  -> diff against last state -> match against targets/*.yaml
-  -> render output/hunter_queue.md -> save new state
+  fetch all five -> merge (ascending priority: nuclei_templates < cve_org
+  < github_advisories < nvd < cisa_kev, every source tagged even when
+  another wins) -> diff against last state -> match against
+  targets/*.yaml -> render output/hunter_queue.md -> save new state
 
 Usage:
   python3 pipeline/run_hunt.py [--kev-file PATH]
-                                [--skip-cve-org] [--skip-github-advisories] [--skip-nvd]
+                                [--skip-cve-org] [--skip-github-advisories]
+                                [--skip-nvd] [--skip-nuclei-templates]
                                 [--targets-dir DIR] [--state-file PATH]
                                 [--output PATH]
 
@@ -34,7 +38,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from pipeline.collectors import cisa_kev, cve_org, github_advisories, nvd
+from pipeline.collectors import cisa_kev, cve_org, github_advisories, nvd, nuclei_templates
 from pipeline.intelligence import state_diff, technology_matcher
 from pipeline.reporting import hunter_queue
 
@@ -43,14 +47,18 @@ def merge_sources(*entry_lists: list) -> list:
     """Combines any number of collectors into one list, deduped by CVE
     ID. entry_lists must be given in ASCENDING priority order — later
     lists win on conflict. Current priority (lowest to highest):
-        cve_org < github_advisories < nvd < cisa_kev
-    cisa_kev wins because it carries the authoritative ransomware_use
-    flag none of the others have; nvd is next-highest because it has
-    structured CPE version data the others lack. Every source that
-    contributed to a given CVE is recorded in 'sources' regardless of
-    which one's data ultimately wins, so a fast cve_org-only sighting
-    is never silently lost even after a slower, higher-priority source
-    later confirms the same CVE."""
+        nuclei_templates < cve_org < github_advisories < nvd < cisa_kev
+    nuclei_templates is lowest priority because its vendor/product is a
+    tag-based heuristic guess, not structured data like the other four
+    (see nuclei_templates.py's own docstring) — it should never
+    override a more reliable source's vendor/product when both report
+    the same CVE. cisa_kev wins overall because it carries the
+    authoritative ransomware_use flag none of the others have; nvd is
+    next-highest because it has structured CPE version data the others
+    lack. Every source that contributed to a given CVE is recorded in
+    'sources' regardless of which one's data ultimately wins, so a fast
+    sighting from a lower-priority source is never silently lost even
+    after a higher-priority source later confirms the same CVE."""
     by_cve = {}
     for entries in entry_lists:
         for e in entries:
@@ -93,6 +101,7 @@ def main():
     ap.add_argument("--skip-cve-org", action="store_true")
     ap.add_argument("--skip-github-advisories", action="store_true")
     ap.add_argument("--skip-nvd", action="store_true")
+    ap.add_argument("--skip-nuclei-templates", action="store_true")
     ap.add_argument("--targets-dir", default=os.path.join(repo_root, "targets"))
     ap.add_argument("--state-file", default=os.path.join(repo_root, "data", "state", "kev_state.json"))
     ap.add_argument("--cve-org-fetch-log", default=os.path.join(repo_root, "data", "state", "cve_org_last_fetch.txt"))
@@ -156,8 +165,17 @@ def main():
         else:
             print(f"ℹ️ {len(nvd_entries)} entries from NVD (structured CPE/version data)")
 
+    nuclei_entries = []
+    if not args.skip_nuclei_templates:
+        nuclei_entries, nuclei_error = nuclei_templates.fetch_normalized()
+        if nuclei_error:
+            print(f"⚠️ Nuclei Templates fetch failed (continuing without it): {nuclei_error}")
+        else:
+            print(f"ℹ️ {len(nuclei_entries)} entries from new Nuclei CVE templates "
+                  f"(PoC/detection-availability signal)")
+
     # Ascending priority order — see merge_sources()'s own docstring for why.
-    entries = merge_sources(org_entries, gh_entries, nvd_entries, kev_entries)
+    entries = merge_sources(nuclei_entries, org_entries, gh_entries, nvd_entries, kev_entries)
     print(f"ℹ️ {len(entries)} unique CVEs after merging all sources")
 
     previous_state = state_diff.load_state(args.state_file)

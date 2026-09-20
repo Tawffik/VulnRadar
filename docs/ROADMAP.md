@@ -2,8 +2,8 @@
 
 ## What V1 delivered (this session)
 
-- **Four collectors merged by priority** (ascending: cve_org <
-  github_advisories < nvd < cisa_kev — see `merge_sources()`):
+- **Five collectors merged by priority** (ascending: nuclei_templates <
+  cve_org < github_advisories < nvd < cisa_kev — see `merge_sources()`):
   - CISA KEV — confirmed-exploitation, authoritative
   - CVE.org (`cve_org`) — the speed source, ~7min cadence, live-tested
   - GitHub Security Advisories — dependency/library CVEs, schema-based
@@ -12,6 +12,13 @@
   - NVD — structured CPE version-range data, schema-based (also not
     live-verified — `services.nvd.nist.gov` unreachable from the dev
     sandbox)
+  - Nuclei Templates (`nuclei_templates`) — a new public Nuclei
+    detection template for a CVE means a working PoC/detection method
+    already exists, often within hours of disclosure. Vendor/product is
+    a tag-based heuristic guess here, weaker than the other four's
+    structured data (see the file's own docstring). Schema-based, not
+    live-verified (same GitHub API rate-limit issue as
+    github_advisories.py hit during development).
 - State/diff engine: NEW entries, and UPDATED entries (ransomware-use
   flag change specifically)
 - Technology matcher: vendor/product substring matching against
