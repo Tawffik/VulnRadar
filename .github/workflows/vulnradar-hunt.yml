@@ -64,6 +64,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # built-in, always available — raises
                                                       # GitHub Advisories' rate limit from 60/hr
                                                       # to 5000/hr, no setup needed.
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}   # optional — Discord alerts for relevant CVEs
           ADHOC_TARGET: ${{ github.event.inputs.target_domain }}
           ADHOC_TECH: ${{ github.event.inputs.technologies }}
           SAVE_PERMANENT: ${{ github.event.inputs.save_as_permanent_target }}

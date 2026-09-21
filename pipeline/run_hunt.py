@@ -41,6 +41,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from pipeline.collectors import cisa_kev, cve_org, github_advisories, nvd, nuclei_templates
 from pipeline.intelligence import state_diff, technology_matcher
 from pipeline.reporting import hunter_queue
+from pipeline.notifiers import discord
 
 
 def merge_sources(*entry_lists: list) -> list:
@@ -207,6 +208,17 @@ def main():
     with open(args.output, "w", encoding="utf-8") as f:
         f.write(md)
     print(f"✅ hunter_queue.md written -> {args.output}")
+
+    # Notify BEFORE saving state is fine: state is only committed by the
+    # workflow after a fully successful run, and diff() guarantees each CVE
+    # is "new" only once, so nothing is re-sent on the next run.
+    n_sent = discord.notify(new_entries, updated_entries)
+    if n_sent:
+        print(f"✅ {n_sent} entr(y/ies) sent to Discord")
+    elif os.environ.get("DISCORD_WEBHOOK_URL"):
+        print("ℹ️ nothing sent to Discord this run (nothing relevant, or see warning above)")
+    else:
+        print("ℹ️ DISCORD_WEBHOOK_URL not set — Discord notifications disabled")
 
     # Only advance state on a fully successful run — see the early exit
     # above for the KEV fetch-failure case.
