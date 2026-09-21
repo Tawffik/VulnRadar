@@ -1,8 +1,8 @@
 # VulnRadar Hunter Queue
 
-Generated: 2026-09-21T21:18:33+00:00
-Targets loaded: 1
-New KEV entries this run: 118
+Generated: 2026-09-21T21:33:54+00:00
+Targets loaded: 2
+New KEV entries this run: 10
 Updated KEV entries this run (ransomware flag changed): 0
 Entries below (target-matched or known-ransomware): 0
 
