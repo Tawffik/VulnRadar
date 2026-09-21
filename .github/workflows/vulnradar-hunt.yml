@@ -54,10 +54,11 @@ jobs:
           nuclei -update-templates -silent || echo "⚠️ template update failed, continuing with whatever is cached"
 
       - name: Refresh target fingerprints (httpx tech-detect)
-        # Runs on every push/dispatch, and roughly every 6h on schedule
-        # (1 in 24 scheduled runs at */15) — tech stacks change slowly,
-        # no need to re-fingerprint every 15 minutes.
-        if: github.event_name != 'schedule' || (github.run_number % 24 == 0)   # ~every 6h on a 15-min schedule; always on manual/push
+        # Always runs: httpx against a handful of targets is fast (a few
+        # seconds each) and idempotent, so there's no real cost to doing
+        # it every 15 minutes too — simpler and more correct than trying
+        # to throttle by run number (GitHub Actions expressions have no
+        # modulo operator).
         run: python3 scripts/refresh_target_fingerprints.py || echo "⚠️ fingerprint refresh failed, continuing with existing targets/*.yaml"
 
       - name: Save ad-hoc target as a permanent file (if requested)
