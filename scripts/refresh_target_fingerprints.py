@@ -37,6 +37,10 @@ def refresh_one(path: str, timeout: int) -> str:
     if error:
         return f"⚠️ {path} ({target}): fingerprint failed, keeping existing list — {error}"
 
+    if not techs:
+        return (f"⚠️ {path} ({target}): httpx detected nothing (site may block scanners), "
+                f"keeping existing list")
+
     new_techs = [{"vendor": t["vendor"], "product": t["product"],
                   **({"version": t["version"]} if t.get("version") else {})}
                  for t in techs]
