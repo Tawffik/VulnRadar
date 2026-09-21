@@ -36,7 +36,13 @@ def select_entries(new_entries: list, updated_entries: list, notify_all: bool = 
     def rank(e):
         matched = bool(e.get("matched_targets"))
         ransom = e.get("ransomware_use") == "Known"
-        return 0 if (matched and ransom) else 1 if matched else 2
+        nuclei_hit = any(v == "vulnerable" for v in (e.get("nuclei_verdicts") or {}).values())
+        confirmed = e.get("version_verdict") == "confirmed"
+        if nuclei_hit:
+            return 0
+        if matched and (ransom or confirmed):
+            return 1
+        return 2 if matched else 3
     picked.sort(key=rank)
     return picked
 
@@ -49,8 +55,10 @@ def _trunc(text, n):
 def build_embed(e: dict, is_update: bool = False) -> dict:
     matched = e.get("matched_targets") or []
     ransom = e.get("ransomware_use") == "Known"
-    color = RED if (matched and ransom) else ORANGE if matched else BLUE
-    status = "UPDATED" if is_update else "NEW"
+    nuclei_hit = any(v == "vulnerable" for v in (e.get("nuclei_verdicts") or {}).values())
+    confirmed = e.get("version_verdict") == "confirmed"
+    color = RED if (nuclei_hit or ransom) else ORANGE if (matched and confirmed) else ORANGE if matched else BLUE
+    status = "🔥 LIVE HIT" if nuclei_hit else ("UPDATED" if is_update else "NEW")
     fields = [
         {"name": "Vendor / Product", "value": _trunc(f"{e.get('vendor','?')} / {e.get('product','?')}", 200), "inline": True},
         {"name": "Matched target(s)", "value": _trunc(", ".join(matched) or "— (no target matched)", 200), "inline": True},
@@ -60,6 +68,11 @@ def build_embed(e: dict, is_update: bool = False) -> dict:
         fields.append({"name": "CVSS", "value": _trunc(f"{e['cvss_score']} {e.get('cvss_severity') or ''}".strip(), 50), "inline": True})
     if e.get("sources"):
         fields.append({"name": "Sources", "value": _trunc(", ".join(dict.fromkeys(e["sources"])), 200), "inline": True})
+    if e.get("version_verdict") and e["version_verdict"] != "unknown":
+        fields.append({"name": "Version check", "value": _trunc(e["version_verdict"], 50), "inline": True})
+    nv = e.get("nuclei_verdicts") or {}
+    if nv:
+        fields.append({"name": "Nuclei", "value": _trunc(", ".join(f"{d}: {v}" for d, v in nv.items()), 200), "inline": True})
     fields.append({"name": "Next safe action",
                    "value": "Verify the deployed version is in the affected range before treating this as a finding. Stay within authorized scope.",
                    "inline": False})

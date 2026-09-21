@@ -153,3 +153,41 @@ above the source table).
   for V1, two independent codebases for now)
 
 See `docs/ROADMAP.md` for what's next, in priority order.
+
+## Fingerprinting, version checking, live verification (V2)
+
+Three additions close the gaps from V1:
+
+- **Auto fingerprinting** (`pipeline/recon/fingerprint.py`): runs
+  ProjectDiscovery's `httpx -tech-detect` against each target and
+  rewrites `targets/*.yaml`'s technology list automatically, including
+  detected versions. Run manually:
+  `python3 scripts/refresh_target_fingerprints.py`
+  (needs `httpx` on PATH — `scripts/install_httpx.sh` installs it). The
+  workflow also runs this itself, roughly every 6 hours on schedule.
+- **Version-aware matching** (`pipeline/intelligence/version_check.py`):
+  compares a target's fingerprinted `version:` against NVD's CPE
+  version-range data (already collected by `nvd.py`, previously
+  unused) to label each hit `confirmed`, `safe`, or `unknown` instead
+  of always "needs manual verification".
+- **Live nuclei verification** (`pipeline/verify/nuclei_runner.py`):
+  for a CVE that matched a target AND that target has a nuclei
+  template, runs it and reports `vulnerable` / `not-vulnerable`
+  instead of a guess. **Opt-in only**: a target must set
+  `scan_allowed: true` in its yaml file — this is only safe when you
+  are authorized to actively test that target (in-scope bug bounty
+  program, or your own infrastructure). Never runs against anything
+  not already listed in `targets/*.yaml`.
+
+All three degrade gracefully: if `httpx`/`nuclei` aren't installed, or
+a target is unreachable, or scanning isn't opted in, the pipeline
+falls back to V1's name-match-only behavior and prints a notice — it
+never fails the run.
+
+## Discord alerts
+
+Set the `DISCORD_WEBHOOK_URL` repo secret to get alerts for CVEs that
+are target-matched or have known ransomware use (not every CVE — see
+`pipeline/notifiers/discord.py`). A live nuclei hit or a
+version-confirmed match is called out and ranked first. A Discord
+failure never breaks the hunt.

@@ -45,7 +45,20 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install --quiet pyyaml
+        run: pip install --quiet pyyaml packaging
+
+      - name: Install httpx and nuclei (recon + live verification)
+        run: |
+          bash scripts/install_httpx.sh
+          bash scripts/install_nuclei.sh
+          nuclei -update-templates -silent || echo "⚠️ template update failed, continuing with whatever is cached"
+
+      - name: Refresh target fingerprints (httpx tech-detect)
+        # Runs on every push/dispatch, and roughly every 6h on schedule
+        # (1 in 24 scheduled runs at */15) — tech stacks change slowly,
+        # no need to re-fingerprint every 15 minutes.
+        if: github.event_name != 'schedule' || (github.run_number % 24 == 0)   # ~every 6h on a 15-min schedule; always on manual/push
+        run: python3 scripts/refresh_target_fingerprints.py || echo "⚠️ fingerprint refresh failed, continuing with existing targets/*.yaml"
 
       - name: Save ad-hoc target as a permanent file (if requested)
         if: github.event.inputs.save_as_permanent_target == 'true' && github.event.inputs.target_domain != ''

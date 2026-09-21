@@ -39,7 +39,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from pipeline.collectors import cisa_kev, cve_org, github_advisories, nvd, nuclei_templates
-from pipeline.intelligence import state_diff, technology_matcher
+from pipeline.intelligence import state_diff, technology_matcher, version_check
+from pipeline.verify import nuclei_runner
 from pipeline.reporting import hunter_queue
 from pipeline.notifiers import discord
 
@@ -202,6 +203,21 @@ def main():
 
     new_entries = technology_matcher.match_targets(new_entries, targets)
     updated_entries = technology_matcher.match_targets(updated_entries, targets)
+
+    # Version check: uses NVD's cpe_version_range (already collected, never
+    # used before) against each matched target's fingerprinted version to
+    # say "confirmed"/"safe" instead of always "needs manual verification".
+    new_entries = version_check.annotate_entries(new_entries, targets)
+    updated_entries = version_check.annotate_entries(updated_entries, targets)
+
+    # Nuclei verification: only for entries that matched a target AND that
+    # target opted in (scan_allowed: true) — see nuclei_runner.py's own
+    # scope-safety notes. Skipped entirely if the binary isn't installed.
+    if nuclei_runner.is_available():
+        new_entries = nuclei_runner.verify_entries(new_entries, targets)
+        updated_entries = nuclei_runner.verify_entries(updated_entries, targets)
+    else:
+        print("ℹ️ nuclei binary not found — skipping live verification (name-match only)")
 
     md = hunter_queue.render(new_entries, updated_entries, len(targets))
     os.makedirs(os.path.dirname(args.output), exist_ok=True)

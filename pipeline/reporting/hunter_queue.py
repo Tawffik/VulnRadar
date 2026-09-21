@@ -26,7 +26,13 @@ from datetime import datetime, timezone
 def _priority(entry: dict) -> int:
     matched = bool(entry.get("matched_targets"))
     ransomware = entry.get("ransomware_use") == "Known"
+    nuclei_hit = any(v == "vulnerable" for v in (entry.get("nuclei_verdicts") or {}).values())
+    version_confirmed = entry.get("version_verdict") == "confirmed"
+    if nuclei_hit:
+        return -1  # a live nuclei hit beats everything — this is no longer a guess
     if matched and ransomware:
+        return 0
+    if matched and version_confirmed:
         return 0
     if matched:
         return 1
@@ -68,6 +74,15 @@ def render(new_entries: list, updated_entries: list, targets_loaded: int) -> str
         status = "UPDATED — now flagged for known ransomware use" if e.get("_is_update") else "NEW"
         targets_str = ", ".join(e["matched_targets"]) if e.get("matched_targets") else "(no configured target matched — reference only)"
 
+        nuclei_verdicts = e.get("nuclei_verdicts") or {}
+        nuclei_str = ", ".join(f"{d}: {v}" for d, v in nuclei_verdicts.items()) if nuclei_verdicts else "(not run — nuclei unavailable or target not opted into scanning)"
+        version_verdict = e.get("version_verdict", "unknown")
+        version_labels = {
+            "confirmed": "CONFIRMED — installed version is within the affected range",
+            "safe": "not affected — installed version is outside the affected range",
+            "unknown": "unknown — no fingerprinted version or no NVD version-range data",
+        }
+
         lines += [
             f"## {i}. {e['cve']} — {status}",
             "",
@@ -75,6 +90,8 @@ def render(new_entries: list, updated_entries: list, targets_loaded: int) -> str
             f"**Name:** {e['name']}",
             f"**Matched target(s):** {targets_str}",
             f"**Known ransomware use:** {e['ransomware_use']}",
+            f"**Version check:** {version_labels.get(version_verdict, version_verdict)}",
+            f"**Nuclei verification:** {nuclei_str}",
             f"**Date added to KEV:** {e['date_added']}",
             f"**CISA required action:** {e.get('required_action', '(none listed)')}",
             "",

@@ -1,3 +1,5 @@
 target: okx.com
+scan_allowed: false   # set true only if okx's bug bounty scope explicitly authorizes active scanning
+
 technologies:
-  []  # no technologies specified yet — edit this file to add some
+  []  # run: python3 scripts/refresh_target_fingerprints.py  (needs httpx installed)
