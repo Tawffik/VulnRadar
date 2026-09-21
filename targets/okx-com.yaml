@@ -1,5 +1,5 @@
 target: okx.com
-scan_allowed: false
-technologies:
-- vendor: HSTS
-  product: HSTS
+scan_allowed: false            # nuclei OFF until okx's bug bounty scope explicitly allows active scanning
+discover_subdomains: true      # passive (certificate-transparency etc.), then fingerprint each host
+max_subdomains: 15
+technologies: []

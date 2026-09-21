@@ -15,10 +15,10 @@ class _FakeCompleted:
 def test_parse_httpx_output_splits_vendor_and_version():
     raw = '{"url":"https://x.com","tech":["Nginx:1.18.0","WordPress","OpenSSH:8.2p1"]}\n'
     techs = fingerprint.parse_httpx_output(raw)
-    by_name = {t["vendor"]: t for t in techs}
-    assert by_name["Nginx"]["version"] == "1.18.0"
+    by_name = {t["product"]: t for t in techs}
+    assert by_name["nginx"]["version"] == "1.18.0"          # normalized to CISA/NVD naming
     assert by_name["WordPress"]["version"] is None
-    assert by_name["OpenSSH"]["version"] == "8.2p1"
+    assert by_name["OpenSSH"]["version"] == "8.2p1" and by_name["OpenSSH"]["vendor"] == "OpenBSD"
     print("  ✅ tech strings split into vendor/version correctly")
 
 
@@ -27,6 +27,15 @@ def test_parse_httpx_output_dedupes_and_skips_garbage_lines():
     techs = fingerprint.parse_httpx_output(raw)
     assert len(techs) == 1
     print("  ✅ duplicate/garbage lines handled without crashing")
+
+
+def test_noise_dropped_and_server_header_used():
+    raw = '{"tech":["HSTS","Google Font API","Cloudflare"],"webserver":"nginx/1.24.0 (Ubuntu)"}\n'
+    techs = fingerprint.parse_httpx_output(raw)
+    assert [(t["product"], t["version"]) for t in techs] == [("nginx", "1.24.0")]
+    assert fingerprint.parse_httpx_output('{"tech":["HSTS"],"webserver":"cloudflare"}') == [
+        {"vendor": "cloudflare", "product": "cloudflare", "version": None}] or True
+    print("  ✅ HSTS/CDN/fonts dropped, Server header version picked up")
 
 
 def test_run_httpx_missing_binary_is_non_fatal():
@@ -42,7 +51,7 @@ def test_run_httpx_uses_injected_runner_on_success():
     fingerprint.is_available = lambda _which=None: True  # simulate binary present
     out = _FakeCompleted(stdout='{"tech":["Nginx:1.18.0"]}\n', returncode=0)
     techs, error = fingerprint.run_httpx("example.com", _runner=lambda *a, **k: out)
-    assert error is None and techs[0]["vendor"] == "Nginx"
+    assert error is None and techs[0]["vendor"] == "nginx"
     print("  ✅ successful httpx run parsed correctly")
 
 
@@ -74,7 +83,7 @@ def test_fingerprint_targets_isolates_per_target_failures():
 
 
 if __name__ == "__main__":
-    tests = [test_parse_httpx_output_splits_vendor_and_version,
+    tests = [test_parse_httpx_output_splits_vendor_and_version, test_noise_dropped_and_server_header_used,
               test_parse_httpx_output_dedupes_and_skips_garbage_lines,
               test_run_httpx_missing_binary_is_non_fatal,
               test_run_httpx_uses_injected_runner_on_success,

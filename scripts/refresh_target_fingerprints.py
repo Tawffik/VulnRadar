@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import yaml  # noqa: E402
 
-from pipeline.recon import fingerprint  # noqa: E402
+from pipeline.recon import fingerprint, subdomains  # noqa: E402
 from pipeline.intelligence import technology_matcher  # noqa: E402
 
 
@@ -33,8 +33,30 @@ def refresh_one(path: str, timeout: int) -> str:
     if not target:
         return f"⚠️ {path}: no 'target:' field, skipped"
 
-    techs, error = fingerprint.run_httpx(target, timeout=timeout)
-    if error:
+    hosts = [target]
+    if data.get("discover_subdomains"):
+        subs, sub_err = subdomains.discover(target, max_results=int(data.get("max_subdomains", subdomains.DEFAULT_MAX)))
+        if sub_err:
+            print(f"⚠️ {target}: subdomain discovery skipped — {sub_err}")
+        else:
+            hosts = list(dict.fromkeys([target] + subs))
+            print(f"ℹ️ {target}: {len(hosts)} host(s) to fingerprint (incl. {len(hosts)-1} subdomain(s))")
+
+    techs, error = [], None
+    errors = 0
+    seen = {}
+    for host in hosts:
+        t, e = fingerprint.run_httpx(host, timeout=timeout)
+        if e:
+            errors += 1
+            error = e
+            continue
+        for x in t:   # merge across hosts, keep the entry that has a version
+            k = (x["vendor"].lower(), x["product"].lower())
+            if k not in seen or (x.get("version") and not seen[k].get("version")):
+                seen[k] = x
+    techs = list(seen.values())
+    if errors == len(hosts):   # every host failed -> genuine failure, not "found nothing"
         return f"⚠️ {path} ({target}): fingerprint failed, keeping existing list — {error}"
 
     if not techs:

@@ -51,6 +51,7 @@ jobs:
         run: |
           bash scripts/install_httpx.sh
           bash scripts/install_nuclei.sh
+          bash scripts/install_subfinder.sh
           nuclei -update-templates -silent || echo "⚠️ template update failed, continuing with whatever is cached"
 
       - name: Refresh target fingerprints (httpx tech-detect)
