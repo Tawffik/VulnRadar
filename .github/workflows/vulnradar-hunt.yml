@@ -26,6 +26,10 @@ on:
     paths:
       - "targets/**"         # re-run immediately when target files change
 
+concurrency:
+  group: vulnradar-hunt
+  cancel-in-progress: false   # never overlap runs: they all commit the same state file
+
 permissions:
   contents: write   # needed to commit the updated state + hunter_queue.md back
 
@@ -45,10 +49,11 @@ jobs:
 
       - name: Save ad-hoc target as a permanent file (if requested)
         if: github.event.inputs.save_as_permanent_target == 'true' && github.event.inputs.target_domain != ''
+        env:
+          TARGET_DOMAIN: ${{ github.event.inputs.target_domain }}
+          TARGET_TECH: ${{ github.event.inputs.technologies }}
         run: |
-          python3 scripts/save_target.py \
-            --target "${{ github.event.inputs.target_domain }}" \
-            --technologies "${{ github.event.inputs.technologies }}"
+          python3 scripts/save_target.py --target "$TARGET_DOMAIN" --technologies "$TARGET_TECH"
 
       - name: Run VulnRadar
         id: hunt
@@ -61,18 +66,17 @@ jobs:
                                                       # to 5000/hr, no setup needed.
           ADHOC_TARGET: ${{ github.event.inputs.target_domain }}
           ADHOC_TECH: ${{ github.event.inputs.technologies }}
+          SAVE_PERMANENT: ${{ github.event.inputs.save_as_permanent_target }}
         run: |
           set +e
-          ARGS=""
-          if [ -n "$ADHOC_TARGET" ] && [ "${{ github.event.inputs.save_as_permanent_target }}" != "true" ]; then
+          ARGS=()
+          if [ -n "$ADHOC_TARGET" ] && [ "$SAVE_PERMANENT" != "true" ]; then
             # Only pass --adhoc-target when NOT saved permanently - a saved
-            # target already lives in targets/ and load_all_targets() picks
-            # it up normally, so passing both would double-match it.
-            ARGS="--adhoc-target \"$ADHOC_TARGET\" --adhoc-tech \"$ADHOC_TECH\""
+            # target already lives in targets/ and is loaded normally.
+            ARGS=(--adhoc-target "$ADHOC_TARGET" --adhoc-tech "$ADHOC_TECH")
           fi
-          eval bash scripts/run_hunt.sh $ARGS
+          bash scripts/run_hunt.sh "${ARGS[@]}"
           echo "exit_code=$?" >> "$GITHUB_OUTPUT"
-          set -e
 
       - name: Commit updated state and hunter queue
         if: steps.hunt.outputs.exit_code == '0'
@@ -82,6 +86,7 @@ jobs:
           git add data/state/ output/
           if ! git diff --cached --quiet; then
             git commit -m "chore: update KEV state and hunter queue [automated]"
+            git pull --rebase --autostash origin main
             git push
           else
             echo "No changes to commit."

@@ -57,6 +57,10 @@ def _normalize_advisory(raw: dict) -> list:
         pkg = v.get("package") or {}
         ecosystem = (pkg.get("ecosystem") or "unknown").strip()
         name = (pkg.get("name") or "unknown").strip()
+        # The live REST API returns first_patched_version as a plain string
+        # ("2.1.0"); older/other shapes use {"identifier": "2.1.0"}. Accept both.
+        fpv = v.get("first_patched_version")
+        patched = fpv.get("identifier") if isinstance(fpv, dict) else fpv
         entries.append({
             "cve": cve_id,
             "vendor": ecosystem,   # e.g. "npm", "pip", "maven" — the ecosystem IS the "vendor" here
@@ -65,8 +69,8 @@ def _normalize_advisory(raw: dict) -> list:
             "date_added": raw.get("published_at", ""),
             "due_date": "",
             "description": raw.get("description", "") or raw.get("summary", ""),
-            "required_action": (f"Upgrade to {v['first_patched_version']['identifier']} or later"
-                                 if v.get("first_patched_version") else "See advisory for remediation"),
+            "required_action": (f"Upgrade to {patched} or later"
+                                 if patched else "See advisory for remediation"),
             "ransomware_use": "Unknown",
             "cwes": cwes,
             "cvss_score": cvss.get("score"),
@@ -108,8 +112,18 @@ def fetch_normalized(url: str = ADVISORIES_URL, token: str = None, timeout: int 
         return [], f"GitHub API error: {raw_list['message']}"
 
     entries = []
+    if not isinstance(raw_list, list):
+        return [], f"GitHub Advisories returned unexpected shape: {type(raw_list).__name__}"
+
+    skipped = 0
     for advisory in raw_list:
-        entries.extend(_normalize_advisory(advisory))
+        try:
+            entries.extend(_normalize_advisory(advisory))
+        except Exception as e:  # one malformed advisory must not kill the whole run
+            skipped += 1
+            print(f"⚠️ skipped one malformed GitHub advisory: {type(e).__name__}: {e}")
+    if skipped:
+        print(f"⚠️ {skipped} GitHub advisory/advisories skipped due to schema issues")
     return entries, None
 
 

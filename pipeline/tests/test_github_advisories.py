@@ -63,6 +63,28 @@ def test_same_normalized_schema_as_cisa_kev():
     assert not missing, f"github_advisories entries missing keys cisa_kev has: {missing}"
     print("  ✅ github_advisories schema is a superset of cisa_kev's — safe to reuse matcher/renderer")
 
+def test_first_patched_version_accepts_string_and_object_shapes():
+    """Regression: the live API returns first_patched_version as a plain
+    string; the original code assumed an object and crashed every run."""
+    def make(fpv):
+        return [{"cve_id": "CVE-2024-1", "summary": "s", "severity": "high",
+                 "vulnerabilities": [{"package": {"ecosystem": "npm", "name": "x"},
+                                      "first_patched_version": fpv}]}]
+    for fpv in ("2.1.0", {"identifier": "2.1.0"}):
+        entries, err = github_advisories.fetch_normalized(_loader=lambda f=fpv: make(f))
+        assert err is None and "2.1.0" in entries[0]["required_action"]
+    entries, err = github_advisories.fetch_normalized(_loader=lambda: make(None))
+    assert "See advisory" in entries[0]["required_action"]
+    print("  ✅ first_patched_version: string / object / null all handled")
+
+
+def test_one_malformed_advisory_does_not_crash():
+    good = {"cve_id": "CVE-2024-2", "vulnerabilities": [{"package": {"ecosystem": "npm", "name": "y"}}]}
+    bad = {"cve_id": "CVE-2024-3", "vulnerabilities": ["not-a-dict"]}
+    entries, err = github_advisories.fetch_normalized(_loader=lambda: [bad, good])
+    assert err is None and len(entries) == 1 and entries[0]["cve"] == "CVE-2024-2"
+    print("  ✅ malformed advisory skipped, rest kept")
+
 
 if __name__ == "__main__":
     tests = [
@@ -70,6 +92,8 @@ if __name__ == "__main__":
         test_advisory_without_cve_id_is_excluded,
         test_api_error_dict_response_surfaced,
         test_same_normalized_schema_as_cisa_kev,
+        test_first_patched_version_accepts_string_and_object_shapes,
+        test_one_malformed_advisory_does_not_crash,
     ]
     failed = 0
     for t in tests:
