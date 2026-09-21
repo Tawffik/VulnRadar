@@ -1,5 +1,5 @@
 target: okx.com
-scan_allowed: false   # set true only if okx's bug bounty scope explicitly authorizes active scanning
-
+scan_allowed: false
 technologies:
-  []  # run: python3 scripts/refresh_target_fingerprints.py  (needs httpx installed)
+- vendor: HSTS
+  product: HSTS

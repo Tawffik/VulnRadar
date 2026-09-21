@@ -1,33 +1,5 @@
-# Example target file — one file per target/organization you're tracking.
-# Copy this, rename it, and fill in the technologies actually deployed —
-# or run `python3 scripts/refresh_target_fingerprints.py` to have httpx
-# auto-detect and fill technologies (including versions) for you.
-#
-# Matching is substring + case-insensitive; be as specific as the real
-# CISA KEV vendor/product naming to avoid false positives (see
-# technology_matcher.py's docstring for the matching rules).
-#
-# `version:` (per technology) enables version_check.py to tell
-# "confirmed vulnerable" apart from "patched, safe" using NVD's CPE
-# version-range data, instead of always saying "needs manual check".
-# httpx fills this in automatically when it can detect a version.
-#
-# `scan_allowed: true` opts this target into automatic nuclei
-# verification (pipeline/verify/nuclei_runner.py) when a matched CVE
-# has a template — ONLY set this if you are authorized to actively
-# scan this target (in-scope bug bounty program, or your own
-# infrastructure). Default is false: no scanning without explicit,
-# per-target opt-in.
-
 target: example.com
-scan_allowed: false   # set true only if you're authorized to actively test this target
-
+scan_allowed: false
 technologies:
-  - vendor: Apache
-    product: HTTP Server
-    version: 2.4.52          # optional — enables confirmed/safe version verdicts
-  - vendor: nginx
-    product: nginx
-  - vendor: nodejs
-    # product omitted on purpose: vendor-only match is broader,
-    # useful when you don't know the exact product name CISA uses
+- vendor: Cloudflare
+  product: Cloudflare
