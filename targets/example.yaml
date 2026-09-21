@@ -1,5 +1,15 @@
+# Example target file — one file per target/organization you're tracking.
+# Copy this, rename it, and fill in the technologies actually deployed —
+# or run `python3 scripts/refresh_target_fingerprints.py` to have httpx
+# auto-detect and fill technologies (including versions) for you.
+
 target: example.com
-scan_allowed: false
+scan_allowed: false   # set true only if you're authorized to actively test this target
+
 technologies:
-- vendor: Cloudflare
-  product: Cloudflare
+  - vendor: Apache
+    product: HTTP Server
+    version: 2.4.52          # optional — enables confirmed/safe version verdicts
+  - vendor: nginx
+    product: nginx
+  - vendor: nodejs

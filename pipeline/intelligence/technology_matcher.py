@@ -53,8 +53,12 @@ def load_all_targets(targets_dir: str) -> list:
         path = os.path.join(targets_dir, fname)
         try:
             t = load_target(path)
-            if t.get("target") and t.get("technologies"):
-                targets.append(t)
+            if t.get("target"):
+                t.setdefault("technologies", [])
+                targets.append(t)  # loaded even with an empty tech list (e.g. not yet
+                                    # fingerprinted) - it just won't match anything until
+                                    # it has technologies; excluding it entirely meant a
+                                    # target could never pick up matches once fingerprinted
         except Exception:
             continue  # a malformed target file is skipped, not fatal
     return targets

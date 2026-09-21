@@ -134,6 +134,19 @@ def test_malformed_target_file_is_skipped():
         print("  ✅ malformed target YAML skipped, well-formed one still loaded")
 
 
+def test_target_with_empty_technologies_is_still_loaded():
+    """Regression: a target not yet fingerprinted (technologies: []) was
+    silently excluded from load_all_targets entirely, meaning it could
+    never start matching even after a successful later fingerprint scan
+    wrote real technologies into the same run's in-memory list."""
+    with tempfile.TemporaryDirectory() as tmp:
+        with open(os.path.join(tmp, "empty.yaml"), "w") as f:
+            f.write("target: okx.com\ntechnologies: []\n")
+        targets = technology_matcher.load_all_targets(tmp)
+        assert len(targets) == 1 and targets[0]["target"] == "okx.com"
+    print("  ✅ a target with an empty technology list is still loaded, not dropped")
+
+
 def test_hunter_queue_only_shows_matched_or_ransomware_entries():
     entries = cisa_kev.load_from_file(FIXTURE)
     targets = [{"target": "example.com", "technologies": [{"vendor": "Apache", "product": "HTTP Server"}]}]
