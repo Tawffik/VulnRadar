@@ -36,8 +36,9 @@ import re
 import urllib.error
 import urllib.request
 
+from pipeline.recon.user_agents import random_ua
+
 TIMEOUT = 6
-USER_AGENT = "VulnRadar-ExposureScan/1.0 (+passive recon, GET only)"
 
 GIT_PATHS = ["/.git/HEAD", "/.git/config"]
 SENSITIVE_PATHS = [
@@ -54,7 +55,7 @@ SECRET_PATTERNS = {
 
 def _get(url: str, timeout: int = TIMEOUT):
     """Returns (status_code, body_text) or (None, None) on any failure."""
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    req = urllib.request.Request(url, headers={"User-Agent": random_ua()})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.status, resp.read(200_000).decode("utf-8", "ignore")

@@ -25,6 +25,8 @@ import json
 import shutil
 import subprocess
 
+from pipeline.recon.user_agents import random_ua
+
 HTTPX_TIMEOUT_SECONDS = 25
 HTTPX_BINARY = "httpx"
 
@@ -146,7 +148,8 @@ def run_httpx(target: str, timeout: int = HTTPX_TIMEOUT_SECONDS, _runner=None) -
 
     runner = _runner or subprocess.run
     cmd = [HTTPX_BINARY, "-u", target, "-tech-detect", "-json", "-silent",
-           "-web-server", "-timeout", str(timeout), "-no-color", "-follow-host-redirects"]
+           "-web-server", "-timeout", str(timeout), "-no-color", "-follow-host-redirects",
+           "-H", f"User-Agent: {random_ua()}"]
     try:
         proc = runner(cmd, capture_output=True, text=True, timeout=timeout + 10)
     except subprocess.TimeoutExpired:
