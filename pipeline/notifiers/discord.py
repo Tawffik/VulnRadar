@@ -105,8 +105,27 @@ def _post(webhook_url: str, payload: dict, timeout: int = 15) -> None:
             raise
 
 
+def build_exposure_embed(report: dict) -> dict:
+    fields = []
+    if report["git_exposure"]:
+        fields.append({"name": "Git exposure", "value": _trunc("\n".join(report["git_exposure"]), 500), "inline": False})
+    if report["sensitive_files"]:
+        fields.append({"name": "Sensitive files", "value": _trunc("\n".join(report["sensitive_files"]), 500), "inline": False})
+    sm = report["source_maps"]
+    if sm["maps"]:
+        fields.append({"name": "Source maps", "value": _trunc(f"{len(sm['maps'])} found", 100), "inline": True})
+    if sm["secrets"]:
+        fields.append({"name": "⚠️ Possible secrets in maps", "value": _trunc(", ".join(sm["secrets"]), 200), "inline": True})
+    return {
+        "title": _trunc(f"🔍 Exposure findings — {report['target']}", 250),
+        "color": RED if (sm.get("secrets") or report["git_exposure"]) else ORANGE,
+        "fields": fields,
+        "description": "Passive GET-only recon. Verify manually before reporting.",
+    }
+
+
 def notify(new_entries: list, updated_entries: list, webhook_url: str = None,
-           notify_all: bool = None, _sender=None) -> int:
+           notify_all: bool = None, exposure_reports: list = None, _sender=None) -> int:
     """Returns the number of entries sent. Never raises."""
     webhook_url = webhook_url or os.environ.get("DISCORD_WEBHOOK_URL")
     if not webhook_url:
@@ -115,14 +134,18 @@ def notify(new_entries: list, updated_entries: list, webhook_url: str = None,
         notify_all = os.environ.get("NOTIFY_ALL") == "1"
     sender = _sender or (lambda p: _post(webhook_url, p))
 
+    from pipeline.recon.exposure_scan import has_findings
+    exposure_hits = [r for r in (exposure_reports or []) if has_findings(r)][:MAX_ENTRIES_PER_RUN]
+
     update_ids = {id(e) for e in updated_entries}
     picked = select_entries(new_entries, updated_entries, notify_all)
-    if not picked:
+    if not picked and not exposure_hits:
         return 0
 
     overflow = max(0, len(picked) - MAX_ENTRIES_PER_RUN)
     picked = picked[:MAX_ENTRIES_PER_RUN]
     embeds = [build_embed(e, id(e) in update_ids) for e in picked]
+    embeds += [build_exposure_embed(r) for r in exposure_hits]
 
     sent = 0
     try:
@@ -130,7 +153,9 @@ def notify(new_entries: list, updated_entries: list, webhook_url: str = None,
             chunk = embeds[i:i + MAX_EMBEDS_PER_MESSAGE]
             payload = {"username": "VulnRadar", "embeds": chunk}
             if i == 0:
-                payload["content"] = f"🚨 **VulnRadar**: {len(picked) + overflow} relevant CVE(s) this run"
+                cve_part = f"{len(picked) + overflow} relevant CVE(s)" if picked else ""
+                exp_part = f"{len(exposure_hits)} exposure finding(s)" if exposure_hits else ""
+                payload["content"] = "🚨 **VulnRadar**: " + " + ".join(p for p in [cve_part, exp_part] if p) + " this run"
                 if overflow:
                     payload["content"] += f" (showing top {len(picked)}, {overflow} more in hunter_queue.md)"
             sender(payload)

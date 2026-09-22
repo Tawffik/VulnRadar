@@ -191,3 +191,21 @@ are target-matched or have known ransomware use (not every CVE — see
 `pipeline/notifiers/discord.py`). A live nuclei hit or a
 version-confirmed match is called out and ranked first. A Discord
 failure never breaks the hunt.
+
+## Passive exposure scanning (from BugBountyCI, trimmed down)
+
+`pipeline/recon/exposure_scan.py` — ported and simplified from a
+separate, much larger active-scanning repo. Kept: plain-GET checks for
+git exposure (`/.git/HEAD`, `/.git/config`), exposed sensitive files
+(`.env`, `wp-config.php`, etc, with soft-404/SPA-shell filtering), and
+JS source-map discovery with API-key/JWT pattern scanning inside them.
+Dropped entirely, on purpose: Tor/proxychains IP rotation, WAF-bypass
+header spoofing, and every active injection technique (XSS/SQLi/SSTI/
+SSRF/command injection). Those are active testing, need per-target
+authorization, and don't belong in an unattended cron job — this
+scanner only ever sends read-only GET requests, so unlike nuclei
+verification it runs on every target regardless of `scan_allowed`.
+
+Findings appear in `hunter_queue.md` under "Passive Exposure Findings"
+and, if `DISCORD_WEBHOOK_URL` is set, as their own alert - independent
+of whether any CVE matched that run.

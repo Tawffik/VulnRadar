@@ -41,6 +41,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from pipeline.collectors import cisa_kev, cve_org, github_advisories, nvd, nuclei_templates
 from pipeline.intelligence import state_diff, technology_matcher, version_check
 from pipeline.verify import nuclei_runner
+from pipeline.recon import exposure_scan
 from pipeline.reporting import hunter_queue
 from pipeline.notifiers import discord
 
@@ -219,7 +220,18 @@ def main():
     else:
         print("ℹ️ nuclei binary not found — skipping live verification (name-match only)")
 
+    # Passive exposure scan: plain GET requests only (no scan_allowed gate
+    # needed, unlike nuclei - see exposure_scan.py's docstring). Runs once
+    # per unique real target domain (skips ad-hoc/no-domain entries).
+    exposure_reports = []
+    real_domains = [t["target"] for t in targets if t.get("target")]
+    if real_domains:
+        exposure_reports = exposure_scan.scan_targets(real_domains)
+        n_findings = sum(1 for r in exposure_reports if exposure_scan.has_findings(r))
+        print(f"ℹ️ exposure scan: {n_findings}/{len(exposure_reports)} target(s) with findings")
+
     md = hunter_queue.render(new_entries, updated_entries, len(targets))
+    md += hunter_queue.render_exposure(exposure_reports)
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as f:
         f.write(md)
@@ -228,7 +240,7 @@ def main():
     # Notify BEFORE saving state is fine: state is only committed by the
     # workflow after a fully successful run, and diff() guarantees each CVE
     # is "new" only once, so nothing is re-sent on the next run.
-    n_sent = discord.notify(new_entries, updated_entries)
+    n_sent = discord.notify(new_entries, updated_entries, exposure_reports=exposure_reports)
     if n_sent:
         print(f"✅ {n_sent} entr(y/ies) sent to Discord")
     elif os.environ.get("DISCORD_WEBHOOK_URL"):

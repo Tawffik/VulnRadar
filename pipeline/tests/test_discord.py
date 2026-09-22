@@ -41,8 +41,25 @@ def test_embed_limits_respected():
     assert len(em["description"]) <= 1000 and len(em["title"]) <= 256
     print("  ✅ embed field limits respected")
 
+def test_exposure_findings_sent_even_with_no_cve_entries():
+    sent = []
+    report = {"target": "a.com", "git_exposure": ["https://a.com/.git/HEAD"],
+               "sensitive_files": [], "source_maps": {"maps": [], "secrets": []}}
+    n = discord.notify([], [], webhook_url="http://x", exposure_reports=[report], _sender=sent.append)
+    assert n == 1 and "exposure" in sent[0]["content"].lower()
+    print("  ✅ exposure findings alone (no matched CVEs) still trigger a notification")
+
+
+def test_exposure_reports_without_findings_are_not_sent():
+    report = {"target": "a.com", "git_exposure": [], "sensitive_files": [], "source_maps": {"maps": [], "secrets": []}}
+    n = discord.notify([], [], webhook_url="http://x", exposure_reports=[report], _sender=lambda p: (_ for _ in ()).throw(Exception("should not be called")))
+    assert n == 0
+    print("  ✅ a clean exposure report (no findings) sends nothing")
+
+
 if __name__ == "__main__":
-    tests = [test_only_relevant_entries_sent_and_ranked, test_no_webhook_means_silent_skip,
+    tests = [test_only_relevant_entries_sent_and_ranked, test_exposure_findings_sent_even_with_no_cve_entries,
+             test_exposure_reports_without_findings_are_not_sent, test_no_webhook_means_silent_skip,
              test_failure_never_raises, test_batching_and_cap, test_embed_limits_respected]
     for t in tests: t()
     print(f"\n{len(tests)}/{len(tests)} tests passed")

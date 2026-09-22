@@ -105,3 +105,32 @@ def render(new_entries: list, updated_entries: list, targets_loaded: int) -> str
             "",
         ]
     return "\n".join(lines)
+
+
+def render_exposure(exposure_reports: list) -> str:
+    """Appends a section for passive information-disclosure findings
+    (see pipeline/recon/exposure_scan.py). Targets with nothing found
+    are omitted entirely so this section stays short."""
+    from pipeline.recon.exposure_scan import has_findings
+    hits = [r for r in exposure_reports if has_findings(r)]
+    if not hits:
+        return ""
+
+    lines = ["\n---\n", "## Passive Exposure Findings\n",
+              "Plain GET requests to well-known paths — no injection, no scan_allowed needed. "
+              "Verify manually before reporting; a 200 response is not proof of a working exploit.\n"]
+    for r in hits:
+        lines.append(f"### {r['target']}\n")
+        if r["git_exposure"]:
+            lines.append("**Git exposure:**")
+            lines += [f"- {u}" for u in r["git_exposure"]]
+        if r["sensitive_files"]:
+            lines.append("**Sensitive files:**")
+            lines += [f"- {u}" for u in r["sensitive_files"]]
+        sm = r["source_maps"]
+        if sm["maps"]:
+            lines.append(f"**Source maps found:** {len(sm['maps'])} — {', '.join(sm['maps'][:5])}")
+        if sm["secrets"]:
+            lines.append(f"**⚠️ Possible secrets in source maps:** {', '.join(sm['secrets'])} (verify and report responsibly, do not commit/share the raw key)")
+        lines.append("")
+    return "\n".join(lines) + "\n"
