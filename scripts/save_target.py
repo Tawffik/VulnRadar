@@ -35,7 +35,9 @@ def main():
     os.makedirs(targets_dir, exist_ok=True)
     path = os.path.join(targets_dir, f"{slugify(args.target)}.yaml")
 
-    lines = [f"target: {args.target.strip()}", "technologies:"]
+    lines = [f"target: {args.target.strip()}",
+             "scan_allowed: false  # nuclei OFF until you confirm this target's program allows active scanning",
+             "technologies:"]
     if technologies:
         for t in technologies:
             lines.append(f"  - vendor: {t['vendor']}")
@@ -50,13 +52,31 @@ def main():
     # Commit this new file so future scheduled runs pick it up too —
     # separate from run_hunt.py's own state/output commit, so a target
     # file addition is its own clean, reviewable commit.
-    os.system('git config user.name "vulnradar-bot"')
-    os.system('git config user.email "vulnradar-bot@users.noreply.github.com"')
-    os.system(f'git add "{path}"')
-    os.system(f'git commit -m "chore: add target {args.target.strip()} [automated]" --allow-empty-message -q')
-    os.system("git push -q")
+    import subprocess
+    import time
 
-    print(f"✅ saved and committed {path}")
+    def run(cmd):
+        return subprocess.run(cmd, shell=True).returncode
+
+    run('git config user.name "vulnradar-bot"')
+    run('git config user.email "vulnradar-bot@users.noreply.github.com"')
+    run(f'git add "{path}"')
+    if run(f'git commit -m "chore: add target {args.target.strip()} [automated]" -q') != 0:
+        print(f"ℹ️ nothing new to commit for {path}")
+        return
+
+    for attempt in range(1, 6):
+        if run("git push -q") == 0:
+            print(f"✅ saved and pushed {path}")
+            return
+        print(f"⚠️ push rejected (attempt {attempt}), rebasing onto latest main...")
+        if run("git pull --rebase --autostash -X ours -q origin main") != 0:
+            run("git rebase --abort")
+            time.sleep(attempt * 5)
+
+    print(f"❌ saved {path} locally but could not push after 5 attempts — "
+          f"this run's target-save was lost, please re-run the workflow")
+    sys.exit(1)
 
 
 if __name__ == "__main__":

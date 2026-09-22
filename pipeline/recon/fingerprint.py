@@ -35,12 +35,20 @@ HTTPX_BINARY = "httpx"
 # only create meaningless (or false) CVE matches, e.g. "HSTS" on okx.com.
 NOISE = {
     "hsts", "http/2", "http/3", "hsts preload", "cloudflare", "cloudfront",
-    "akamai", "fastly", "google font api", "google fonts", "google analytics",
+    "akamai", "akamaighost", "fastly", "incapsula", "imperva", "sucuri",
+    "google font api", "google fonts", "google analytics",
     "google tag manager", "google hosted libraries", "cdnjs", "jsdelivr", "unpkg",
     "font awesome", "open graph", "webpack", "core-js", "lodash", "gzip",
     "amazon s3", "amazon web services", "microsoft 365", "cloudflare bot management",
     "content security policy", "x-frame-options", "x-xss-protection",
 }
+
+# Substring fallback: WAF/CDN vendors ship many header/banner variants
+# (AkamaiGHost, Akamai Edge, cloudflare-nginx...) that an exact-match
+# NOISE lookup will always miss one of. If the exact key isn't in NOISE,
+# also reject it when any noise word appears as a substring.
+_NOISE_SUBSTRINGS = ("akamai", "cloudflare", "incapsula", "imperva", "sucuri",
+                     "fastly", "cloudfront")
 
 # httpx/Wappalyzer name -> (vendor, product) as CISA/NVD name them, so the
 # substring matcher hits. Anything not listed keeps its detected name.
@@ -73,7 +81,7 @@ ALIASES = {
 def _normalize(name: str, version):
     """Returns (vendor, product, version) or None if it's noise."""
     key = name.strip().lower()
-    if not key or key in NOISE:
+    if not key or key in NOISE or any(n in key for n in _NOISE_SUBSTRINGS):
         return None
     if key in ALIASES:
         vendor, product = ALIASES[key]
