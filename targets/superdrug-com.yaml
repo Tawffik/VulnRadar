@@ -1,3 +1,4 @@
 target: Superdrug.com
 technologies:
-  []  # no technologies specified yet — edit this file to add some
+- vendor: AkamaiGHost
+  product: AkamaiGHost
