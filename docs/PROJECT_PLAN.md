@@ -156,10 +156,12 @@ This is the most important thing to keep straight, because most of the
   fingerprinting regardless of source IP. User-Agent rotation was added
   as one candidate fix; **not yet confirmed whether it changed anything**
   because we haven't compared a run's actual httpx output before/after.
-  **Next step before doing anything else here: run
-  `curl -sI https://okx.com` and `httpx -u okx.com -tech-detect -json
-  -silent -debug-resp` directly (from Actions or elsewhere) to see the
-  actual HTTP status code, not guess from silence.**
+  **Diagnosed, not just guessed at, as of `pipeline/recon/diagnose.py`**:
+  every fingerprint refresh now does one plain GET per target and writes
+  the real HTTP status/Server header/body size to `output/diagnostics.md`
+  (committed to the repo, so it's readable without pulling raw Actions
+  logs). This settles "real block vs. no signal" with evidence going
+  forward instead of guessing from httpx's silence alone.
 - **Self-hosted runner** — proposed as the correct fix if okx.com's block
   turns out to be IP-based, not yet built.
 - **3 of 5 CVE sources (NVD, cve.org, Nuclei Templates) still only
