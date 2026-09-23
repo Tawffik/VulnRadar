@@ -1,3 +1,7 @@
 target: Superdrug.com
 scan_allowed: false  # nuclei OFF until you confirm this target's program allows active scanning
-technologies: []  # AkamaiGHost was noise (WAF banner) - now filtered by fingerprint.py; re-run refresh_target_fingerprints.py to detect the real stack
+technologies:
+  - vendor: SAP
+    product: Commerce Cloud
+  - vendor: Mirakl
+    product: Marketplace
