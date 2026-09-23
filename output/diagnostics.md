@@ -1,6 +1,6 @@
 # Target Reachability Diagnostics
 
-Generated: 2026-09-23T04:47:03.732946+00:00
+Generated: 2026-09-23T09:48:30.502697+00:00
 
 One plain GET request per target, to tell a real block apart from "no fingerprint signal".
 
