@@ -14,20 +14,19 @@ IMPORTANT — this is fundamentally different from cisa_kev.py, read
 before changing the polling interval:
 
   delta.json is a SNAPSHOT of the most recent batch of changes, not a
-  complete log. If this collector polls less often than delta.json's
-  own ~7-minute update cadence, a CVE that appeared in one delta and
-  was then superseded by a later delta before the next poll could be
-  MISSED entirely. This is mitigated two ways:
-    1. the workflow polls this collector every 15 minutes (see
-       .github/workflows/), close to the feed's own cadence
-    2. every fetch records its own fetchTime; if the gap since the
-       last successful fetch is suspiciously large (missed scheduled
-       runs, an outage, etc.), a warning is printed so this is visible
-       rather than silently trusting an incomplete window — see
-       check_for_gap() below
-  This is a known, accepted V1 limitation, not a hidden one: for
-  guaranteed completeness, the roadmap's git-clone-and-diff approach
-  would be needed instead of polling delta.json. See docs/ROADMAP.md.
+  complete log. The workflow now runs ONCE DAILY (changed from every 15
+  minutes - see .github/workflows/), which is far coarser than
+  delta.json's own ~7-minute update cadence. At this cadence, this
+  collector WILL structurally miss most CVEs that were both published
+  and then superseded by a later delta within the same day - this is a
+  known, accepted limitation of the once-daily cadence, not a bug.
+  check_for_gap()'s warning is tuned to only fire when a whole day was
+  missed (e.g. two scheduled runs in a row failed), not on ordinary
+  between-window gaps, which are now expected every single day.
+  If near-real-time cve.org coverage matters again later, either poll
+  more often, or switch to the full-clone-and-diff approach this
+  module's docstring originally pointed at instead of polling
+  delta.json at all - see docs/PROJECT_PLAN.md's Open Items.
 """
 import json
 import urllib.request
@@ -37,9 +36,18 @@ from datetime import datetime, timezone
 from pipeline.collectors import http_utils
 
 DELTA_URL = "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/delta.json"
-GAP_WARNING_THRESHOLD_MINUTES = 20  # delta.json updates ~every 7 min; a 20+ min
-                                     # gap since our last successful fetch means
-                                     # we likely missed at least one delta window
+GAP_WARNING_THRESHOLD_MINUTES = 1500  # ~25 hours. The workflow now runs once
+                                     # daily (see .github/workflows/), not every
+                                     # 15 minutes, so delta.json's rolling window
+                                     # WILL legitimately miss most of a day's
+                                     # individual changes between runs by design -
+                                     # that is a known, accepted limitation (see
+                                     # this module's own docstring), not something
+                                     # this warning should fire on every single
+                                     # day. The threshold is set to only catch a
+                                     # genuinely missed day (e.g. two scheduled
+                                     # runs in a row failing), which is the one
+                                     # thing actually worth flagging at this cadence.
 
 
 def _fetch_json(url: str, timeout: int = 20) -> dict:

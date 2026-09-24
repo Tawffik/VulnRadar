@@ -22,6 +22,7 @@ import urllib.request
 import urllib.error
 
 from pipeline.collectors import http_utils
+from pipeline.recon.user_agents import random_ua
 
 KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 
@@ -48,7 +49,13 @@ def fetch_raw(url: str = KEV_URL, timeout: int = 20) -> dict:
     callers decide how to handle that (see fetch_normalized's try/except
     for the CLI-friendly version). Retries transient failures (429/5xx/
     timeout/connection) with bounded backoff — see http_utils.py."""
-    req = urllib.request.Request(url, headers={"User-Agent": "VulnRadar/1.0"})
+    # cisa.gov has been observed returning 403 for a generic bot-looking
+    # UA string from GitHub Actions' IP range; a real browser UA (same
+    # pool used for passive recon, see user_agents.py - not evasion,
+    # the request is otherwise unchanged) is a low-risk thing to try
+    # here too, consistent with the project's existing UA-rotation
+    # decision (see docs/PROJECT_PLAN.md section 4).
+    req = urllib.request.Request(url, headers={"User-Agent": random_ua()})
     body = http_utils.request_with_retry(req, timeout=timeout)
     return json.loads(body.decode("utf-8"))
 

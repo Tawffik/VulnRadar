@@ -118,16 +118,18 @@ def test_one_bad_record_fetch_does_not_stop_the_others():
 
 
 def test_gap_warning_triggers_past_threshold():
-    warning = cve_org.check_for_gap("2026-01-01T00:30:00Z", "2026-01-01T00:00:00Z")
+    # Threshold is now ~25 hours (daily cadence, see cve_org.py) — a 30
+    # minute gap is expected/normal at this cadence and must NOT warn;
+    # a genuinely missed day (>25h) must.
+    warning = cve_org.check_for_gap("2026-01-02T02:00:00Z", "2026-01-01T00:00:00Z")
     assert warning is not None
-    assert "30" in warning
-    print("  ✅ a 30-minute gap correctly triggers the missed-delta warning")
+    print("  ✅ a >25h gap (a genuinely missed scheduled run) correctly triggers the warning")
 
 
 def test_no_gap_warning_within_threshold():
-    warning = cve_org.check_for_gap("2026-01-01T00:10:00Z", "2026-01-01T00:00:00Z")
+    warning = cve_org.check_for_gap("2026-01-01T00:30:00Z", "2026-01-01T00:00:00Z")
     assert warning is None
-    print("  ✅ a 10-minute gap (within the ~7min cadence) does not trigger a warning")
+    print("  ✅ a normal within-a-day gap at the new daily cadence does not trigger a false warning")
 
 
 def test_no_gap_warning_on_first_ever_run():

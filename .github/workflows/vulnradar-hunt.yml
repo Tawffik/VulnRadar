@@ -2,10 +2,16 @@ name: VulnRadar Hunt
 
 on:
   schedule:
-    - cron: "*/15 * * * *"   # every 15 minutes — matches cve.org's own
-                              # ~7-minute update cadence closely enough to
-                              # avoid missing entries in delta.json's
-                              # rolling snapshot (see cve_org.py's docstring)
+    - cron: "0 6 * * *"   # once a day, 06:00 UTC. cve.org's delta.json is a
+                          # rolling snapshot (see cve_org.py's docstring) -
+                          # a once-daily cadence means it will legitimately
+                          # miss most of a busy day's individual delta
+                          # windows; check_for_gap()'s warning is EXPECTED
+                          # and not a bug at this cadence. If near-real-time
+                          # cve.org coverage matters later, this is the
+                          # first thing to revisit (either poll more often,
+                          # or switch that collector to the full-clone/diff
+                          # approach noted in its own docstring).
   workflow_dispatch:
     inputs:
       target_domain:
