@@ -2,10 +2,10 @@
 
 # VulnRadar Hunter Queue
 
-Generated: 2026-09-24T01:47:44+00:00
+Generated: 2026-09-24T10:45:31+00:00
 Targets loaded: 3
-New KEV entries this run: 0
-Updated KEV entries this run (ransomware flag changed): 0
+New KEV entries this run: 9
+Updated KEV entries this run (ransomware flag changed): 1
 Entries below (target-matched or known-ransomware): 0
 
 > A CVE affecting a matched technology is a candidate needing manual version verification, not a confirmed vulnerability. This project does not run exploitation — see 'Next Safe Action' on each entry.
@@ -36,5 +36,5 @@ No target-relevant or high-priority KEV entries this run.
 | Superdrug.com | SUCCESS |
 
 **Counts:**
-- new_cves: 0
-- updated_cves: 0
+- new_cves: 9
+- updated_cves: 1
