@@ -6,20 +6,20 @@
       "name": "cisa_kev",
       "status": "FAILED",
       "count": 0,
-      "error": "could not load KEV snapshot file: [Errno 2] No such file or directory: '/tmp/tmpbx84evrp/missing.json'",
-      "previous_state_used": false
+      "error": "fetch failed: HTTP Error 403: Forbidden",
+      "previous_state_used": true
     },
     {
       "name": "cve_org",
-      "status": "EMPTY",
-      "count": 0,
+      "status": "SUCCESS",
+      "count": 3,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "github_advisories",
-      "status": "EMPTY",
-      "count": 0,
+      "status": "SUCCESS",
+      "count": 135,
       "error": null,
       "previous_state_used": false
     },
@@ -32,23 +32,45 @@
     },
     {
       "name": "nuclei_templates",
-      "status": "EMPTY",
-      "count": 0,
+      "status": "SUCCESS",
+      "count": 5,
       "error": null,
       "previous_state_used": false
     }
   ],
-  "targets": [],
+  "targets": [
+    {
+      "name": "example.com",
+      "status": "SUCCESS",
+      "fingerprint_error": null,
+      "exposure_error": null
+    },
+    {
+      "name": "okx.com",
+      "status": "SUCCESS",
+      "fingerprint_error": null,
+      "exposure_error": null
+    },
+    {
+      "name": "Superdrug.com",
+      "status": "SUCCESS",
+      "fingerprint_error": null,
+      "exposure_error": null
+    }
+  ],
   "stages": {
     "matching": "SUCCESS",
     "version_check": "SUCCESS",
-    "nuclei_verification": "UNAVAILABLE",
+    "nuclei_verification": "SUCCESS",
+    "exposure_scan": "SUCCESS",
     "reporting": "SUCCESS",
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 0,
+    "new_cves": 31,
     "updated_cves": 0
   },
-  "warnings": []
+  "warnings": [
+    "\u26a0\ufe0f 621 minutes since the last successful cve_org fetch (threshold: 20min) \u2014 some CVEs published in between may have been missed since delta.json is a snapshot, not a full log. See cve_org.py's module docstring."
+  ]
 }

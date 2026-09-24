@@ -1,0 +1,14 @@
+{
+  "CVE-2026-96772": {
+    "date_added": "2026-09-24T00:30:09.482Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-96773": {
+    "date_added": "2026-09-24T00:45:12.527Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-96774": {
+    "date_added": "2026-09-24T01:00:11.418Z",
+    "ransomware_use": "Unknown"
+  }
+}
