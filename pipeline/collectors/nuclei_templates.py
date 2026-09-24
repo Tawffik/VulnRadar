@@ -34,6 +34,8 @@ import re
 import urllib.request
 import urllib.error
 
+from pipeline.collectors import http_utils
+
 REPO = "projectdiscovery/nuclei-templates"
 CVE_TEMPLATE_RE = re.compile(r"http/cves/\d{4}/(CVE-\d{4}-\d+)\.ya?ml$", re.IGNORECASE)
 
@@ -49,14 +51,14 @@ def _fetch_json(url: str, token: str = None, timeout: int = 20):
     if token:
         headers["Authorization"] = f"Bearer {token}"
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    body = http_utils.request_with_retry(req, timeout=timeout)
+    return json.loads(body.decode("utf-8"))
 
 
 def _fetch_text(url: str, timeout: int = 20):
     req = urllib.request.Request(url, headers={"User-Agent": "VulnRadar/1.0"})
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return resp.read().decode("utf-8", errors="ignore")
+    body = http_utils.request_with_retry(req, timeout=timeout)
+    return body.decode("utf-8", errors="ignore")
 
 
 def _guess_vendor_from_tags(tags_line: str) -> str:

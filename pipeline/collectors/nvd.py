@@ -42,6 +42,8 @@ import os
 import urllib.parse
 import urllib.request
 import urllib.error
+
+from pipeline.collectors import http_utils
 from datetime import datetime, timedelta, timezone
 
 NVD_BASE_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
@@ -130,8 +132,8 @@ def _fetch_json(url: str, api_key: str = None, timeout: int = 30):
     if api_key:
         headers["apiKey"] = api_key
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    body = http_utils.request_with_retry(req, timeout=timeout)
+    return json.loads(body.decode("utf-8"))
 
 
 def fetch_normalized(minutes_back: int = 20, api_key: str = None, timeout: int = 30, _loader=None):

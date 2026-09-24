@@ -35,6 +35,8 @@ import os
 import urllib.request
 import urllib.error
 
+from pipeline.collectors import http_utils
+
 ADVISORIES_URL = "https://api.github.com/advisories?per_page=100&sort=published&direction=desc"
 
 
@@ -86,8 +88,8 @@ def _fetch_json(url: str, token: str = None, timeout: int = 20):
     if token:
         headers["Authorization"] = f"Bearer {token}"
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    body = http_utils.request_with_retry(req, timeout=timeout)
+    return json.loads(body.decode("utf-8"))
 
 
 def fetch_normalized(url: str = ADVISORIES_URL, token: str = None, timeout: int = 20,

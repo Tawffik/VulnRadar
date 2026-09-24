@@ -39,7 +39,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from pipeline.collectors import cisa_kev, cve_org, github_advisories, nvd, nuclei_templates
-from pipeline.intelligence import state_diff, technology_matcher, version_check
+from pipeline.intelligence import state_diff, state_store, technology_matcher, version_check
+from pipeline.intelligence.run_status import RunSummary, CollectorResult, TargetResult, RUN_FAILED
 from pipeline.verify import nuclei_runner
 from pipeline.recon import exposure_scan
 from pipeline.reporting import hunter_queue
@@ -125,23 +126,32 @@ def main():
                           "e.g. 'nginx:nginx,Apache:HTTP Server'")
     args = ap.parse_args()
 
+    summary = RunSummary()
+    state_dir = os.path.dirname(args.state_file) or "."
+    state_store.migrate_legacy_state(args.state_file, state_dir)
+
+    # ---- 5 collectors, each isolated: one failing never stops the rest,
+    # and CISA is no longer special-cased as fatal — every source is
+    # handled through the same uniform path (see docs/PROJECT_PLAN.md,
+    # "Bugs Fixed" #8 for why this changed and what it fixes). ----
     if args.kev_file:
-        kev_entries = cisa_kev.load_from_file(args.kev_file)
-        kev_error = None
+        try:
+            kev_entries, kev_error = cisa_kev.load_from_file(args.kev_file), None
+        except (OSError, ValueError) as e:
+            # a local snapshot path (used by CI/tests) can be missing or
+            # malformed too - this must classify as a normal collector
+            # failure, not crash the whole run before any other source
+            # even gets a chance to run.
+            kev_entries, kev_error = [], f"could not load KEV snapshot file: {e}"
     else:
         kev_entries, kev_error = cisa_kev.fetch_normalized()
-
+    kev_result = CollectorResult("cisa_kev", kev_entries, kev_error)
     if kev_error:
-        # KEV is the only source whose failure is fatal to the run — it's
-        # the authoritative confirmed-exploitation signal every other
-        # source's priority is defined relative to (see merge_sources()).
-        print(f"⚠️ KEV fetch failed: {kev_error}")
-        print("ℹ️ Not overwriting existing state/output on a failed fetch — "
-              "a fetch failure must never look like 'zero new CVEs today'.")
-        sys.exit(1)
-    print(f"ℹ️ {len(kev_entries)} total KEV entries loaded (confirmed-exploitation source)")
+        print(f"⚠️ CISA KEV fetch failed (continuing without it, previous KEV state preserved): {kev_error}")
+    else:
+        print(f"ℹ️ {len(kev_entries)} total KEV entries loaded (confirmed-exploitation source)")
 
-    org_entries = []
+    org_entries, org_error = [], None
     if not args.skip_cve_org:
         org_entries, org_error, org_fetch_time = cve_org.fetch_normalized()
         if org_error:
@@ -155,43 +165,72 @@ def main():
             gap_warning = cve_org.check_for_gap(org_fetch_time, last_fetch_time)
             if gap_warning:
                 print(gap_warning)
+                summary.warn(gap_warning)
             os.makedirs(os.path.dirname(args.cve_org_fetch_log), exist_ok=True)
             with open(args.cve_org_fetch_log, "w") as f:
                 f.write(org_fetch_time or "")
+    org_result = CollectorResult("cve_org", org_entries, org_error)
 
-    gh_entries = []
+    gh_entries, gh_error = [], None
     if not args.skip_github_advisories:
         gh_entries, gh_error = github_advisories.fetch_normalized()
         if gh_error:
             print(f"⚠️ GitHub Advisories fetch failed (continuing without it): {gh_error}")
         else:
-            print(f"ℹ️ {len(gh_entries)} entries from GitHub Security Advisories "
-                  f"(dependency/library CVEs)")
+            print(f"ℹ️ {len(gh_entries)} entries from GitHub Security Advisories (dependency/library CVEs)")
+    gh_result = CollectorResult("github_advisories", gh_entries, gh_error)
 
-    nvd_entries = []
+    nvd_entries, nvd_error = [], None
     if not args.skip_nvd:
         nvd_entries, nvd_error = nvd.fetch_normalized()
         if nvd_error:
             print(f"⚠️ NVD fetch failed (continuing without it): {nvd_error}")
         else:
             print(f"ℹ️ {len(nvd_entries)} entries from NVD (structured CPE/version data)")
+    nvd_result = CollectorResult("nvd", nvd_entries, nvd_error)
 
-    nuclei_entries = []
+    nuclei_entries, nuclei_error = [], None
     if not args.skip_nuclei_templates:
         nuclei_entries, nuclei_error = nuclei_templates.fetch_normalized()
         if nuclei_error:
             print(f"⚠️ Nuclei Templates fetch failed (continuing without it): {nuclei_error}")
         else:
-            print(f"ℹ️ {len(nuclei_entries)} entries from new Nuclei CVE templates "
-                  f"(PoC/detection-availability signal)")
+            print(f"ℹ️ {len(nuclei_entries)} entries from new Nuclei CVE templates (PoC/detection-availability signal)")
+    nuclei_result = CollectorResult("nuclei_templates", nuclei_entries, nuclei_error)
+
+    collector_results = [kev_result, org_result, gh_result, nvd_result, nuclei_result]
+    for r in collector_results:
+        summary.add_collector(r)
+
+    # A source that failed this run falls back to its OWN last-known-good
+    # per-source state file for diffing purposes (see state_store.py) -
+    # this is the actual fix for the state-loss bug: a CVE known only via
+    # a source that's down today is still correctly "already seen"
+    # against the merged view below, not silently forgotten.
+    for r in collector_results:
+        if not r.is_ok():
+            r.previous_state_used = bool(state_store.load_source_state(state_dir, r.name))
+
+    if all(not r.is_ok() for r in collector_results) and not any(r.previous_state_used for r in collector_results):
+        # Scenario G: nothing usable at all, and no prior history to fall
+        # back on either. Do NOT claim "no vulnerabilities found" and do
+        # NOT touch state/output - preserve whatever was there before.
+        print("❌ all 5 sources failed and no previous state exists — no usable intelligence this run")
+        summary.set_stage("matching", "SKIPPED")
+        summary.set_stage("reporting", "SKIPPED")
+        print(summary.render_markdown())
+        _write_step_summary(summary)
+        summary.write_json(os.path.join(repo_root, "output", "run_summary.json"))
+        sys.exit(summary.exit_code())
 
     # Ascending priority order — see merge_sources()'s own docstring for why.
     entries = merge_sources(nuclei_entries, org_entries, gh_entries, nvd_entries, kev_entries)
-    print(f"ℹ️ {len(entries)} unique CVEs after merging all sources")
+    print(f"ℹ️ {len(entries)} unique CVEs after merging all sources that succeeded this run")
 
-    previous_state = state_diff.load_state(args.state_file)
+    previous_state = state_store.load_merged_state(state_dir)
     new_entries, updated_entries, unchanged_count = state_diff.diff(entries, previous_state)
     print(f"ℹ️ diff: {len(new_entries)} new, {len(updated_entries)} updated, {unchanged_count} unchanged")
+    summary.counts.update({"new_cves": len(new_entries), "updated_cves": len(updated_entries)})
 
     targets = technology_matcher.load_all_targets(args.targets_dir)
     print(f"ℹ️ {len(targets)} target(s) loaded from {args.targets_dir}")
@@ -202,56 +241,117 @@ def main():
         print(f"ℹ️ + 1 ad-hoc target ({args.adhoc_target}, "
               f"{len(adhoc['technologies'])} technology/ies) — not saved to targets/")
 
-    new_entries = technology_matcher.match_targets(new_entries, targets)
-    updated_entries = technology_matcher.match_targets(updated_entries, targets)
+    try:
+        new_entries = technology_matcher.match_targets(new_entries, targets)
+        updated_entries = technology_matcher.match_targets(updated_entries, targets)
+        summary.set_stage("matching", "SUCCESS")
+    except Exception as e:
+        summary.set_stage("matching", "FAILED")
+        summary.warn(f"target matching failed unexpectedly, entries left unmatched: {type(e).__name__}: {e}")
 
-    # Version check: uses NVD's cpe_version_range (already collected, never
-    # used before) against each matched target's fingerprinted version to
-    # say "confirmed"/"safe" instead of always "needs manual verification".
-    new_entries = version_check.annotate_entries(new_entries, targets)
-    updated_entries = version_check.annotate_entries(updated_entries, targets)
+    try:
+        new_entries = version_check.annotate_entries(new_entries, targets)
+        updated_entries = version_check.annotate_entries(updated_entries, targets)
+        summary.set_stage("version_check", "SUCCESS")
+    except Exception as e:
+        summary.set_stage("version_check", "UNAVAILABLE")
+        summary.warn(f"version check failed unexpectedly, verdicts left as unknown: {type(e).__name__}: {e}")
 
-    # Nuclei verification: only for entries that matched a target AND that
-    # target opted in (scan_allowed: true) — see nuclei_runner.py's own
-    # scope-safety notes. Skipped entirely if the binary isn't installed.
     if nuclei_runner.is_available():
-        new_entries = nuclei_runner.verify_entries(new_entries, targets)
-        updated_entries = nuclei_runner.verify_entries(updated_entries, targets)
+        try:
+            new_entries = nuclei_runner.verify_entries(new_entries, targets)
+            updated_entries = nuclei_runner.verify_entries(updated_entries, targets)
+            summary.set_stage("nuclei_verification", "SUCCESS")
+        except Exception as e:
+            summary.set_stage("nuclei_verification", "UNAVAILABLE")
+            summary.warn(f"nuclei verification failed unexpectedly: {type(e).__name__}: {e}")
     else:
         print("ℹ️ nuclei binary not found — skipping live verification (name-match only)")
+        summary.set_stage("nuclei_verification", "UNAVAILABLE")
 
-    # Passive exposure scan: plain GET requests only (no scan_allowed gate
-    # needed, unlike nuclei - see exposure_scan.py's docstring). Runs once
-    # per unique real target domain (skips ad-hoc/no-domain entries).
     exposure_reports = []
     real_domains = [t["target"] for t in targets if t.get("target")]
     if real_domains:
-        exposure_reports = exposure_scan.scan_targets(real_domains)
-        n_findings = sum(1 for r in exposure_reports if exposure_scan.has_findings(r))
-        print(f"ℹ️ exposure scan: {n_findings}/{len(exposure_reports)} target(s) with findings")
+        try:
+            exposure_reports = exposure_scan.scan_targets(real_domains)
+            n_findings = sum(1 for r in exposure_reports if exposure_scan.has_findings(r))
+            print(f"ℹ️ exposure scan: {n_findings}/{len(exposure_reports)} target(s) with findings")
+            summary.set_stage("exposure_scan", "SUCCESS")
+        except Exception as e:
+            summary.set_stage("exposure_scan", "FAILED")
+            summary.warn(f"exposure scan failed unexpectedly: {type(e).__name__}: {e}")
 
-    md = hunter_queue.render(new_entries, updated_entries, len(targets))
-    md += hunter_queue.render_exposure(exposure_reports)
-    os.makedirs(os.path.dirname(args.output), exist_ok=True)
-    with open(args.output, "w", encoding="utf-8") as f:
-        f.write(md)
-    print(f"✅ hunter_queue.md written -> {args.output}")
+    for t in targets:
+        name = t.get("target")
+        if not name:
+            continue
+        exp = next((r for r in exposure_reports if r.get("target") == name), None)
+        summary.add_target(TargetResult(name, fingerprint_ok=True,   # fingerprinting runs as a
+                                                                        # separate prior workflow step
+                                                                        # (scripts/refresh_target_fingerprints.py),
+                                                                        # which already isolates per-target
+                                                                        # failures itself - not re-tracked here
+                                          exposure_ok=not (exp and exp.get("error")),
+                                          exposure_error=exp.get("error") if exp else None))
 
-    # Notify BEFORE saving state is fine: state is only committed by the
-    # workflow after a fully successful run, and diff() guarantees each CVE
-    # is "new" only once, so nothing is re-sent on the next run.
-    n_sent = discord.notify(new_entries, updated_entries, exposure_reports=exposure_reports)
-    if n_sent:
-        print(f"✅ {n_sent} entr(y/ies) sent to Discord")
-    elif os.environ.get("DISCORD_WEBHOOK_URL"):
-        print("ℹ️ nothing sent to Discord this run (nothing relevant, or see warning above)")
-    else:
-        print("ℹ️ DISCORD_WEBHOOK_URL not set — Discord notifications disabled")
+    try:
+        md = hunter_queue.render(new_entries, updated_entries, len(targets))
+        md += hunter_queue.render_exposure(exposure_reports)
+        if not all(r.is_ok() for r in collector_results):
+            failed_names = ", ".join(r.name for r in collector_results if not r.is_ok())
+            md = (f"> ⚠️ **This report is based on partial source coverage** "
+                  f"({failed_names} unavailable this run). Absence of a finding here "
+                  f"does not mean no vulnerability exists — see Pipeline Health below.\n\n") + md
+        md += "\n\n" + summary.render_markdown()
+        os.makedirs(os.path.dirname(args.output), exist_ok=True)
+        with open(args.output, "w", encoding="utf-8") as f:
+            f.write(md)
+        print(f"✅ hunter_queue.md written -> {args.output}")
+        summary.set_stage("reporting", "SUCCESS")
+    except Exception as e:
+        summary.set_stage("reporting", "FAILED")
+        summary.warn(f"report generation failed unexpectedly: {type(e).__name__}: {e}")
 
-    # Only advance state on a fully successful run — see the early exit
-    # above for the KEV fetch-failure case.
-    state_diff.save_state(args.state_file, entries)
-    print(f"✅ state saved -> {args.state_file}")
+    # Notifications are independent of everything above succeeding -
+    # discord.notify already never raises (see its own docstring); this
+    # try/except is defense-in-depth against a bug in that guarantee, not
+    # a substitute for it.
+    try:
+        n_sent = discord.notify(new_entries, updated_entries, exposure_reports=exposure_reports)
+        if n_sent:
+            print(f"✅ {n_sent} entr(y/ies) sent to Discord")
+        elif os.environ.get("DISCORD_WEBHOOK_URL"):
+            print("ℹ️ nothing sent to Discord this run (nothing relevant, or see warning above)")
+        else:
+            print("ℹ️ DISCORD_WEBHOOK_URL not set — Discord notifications disabled")
+        summary.set_stage("notifications", "SUCCESS")
+    except Exception as e:
+        summary.set_stage("notifications", "FAILED")
+        summary.warn(f"Discord notification failed unexpectedly (hunt result unaffected): {type(e).__name__}: {e}")
+
+    # Only sources that succeeded THIS run advance their state file; a
+    # failed source's file is left untouched (see state_store.py) - this
+    # is the fix for the state-loss bug described at the top of main().
+    written = state_store.update_states(state_dir, collector_results)
+    print(f"✅ state saved for: {', '.join(written) or '(no source succeeded this run)'}")
+
+    print("\n" + summary.render_markdown())
+    _write_step_summary(summary)
+    summary.write_json(os.path.join(repo_root, "output", "run_summary.json"))
+    sys.exit(summary.exit_code())
+
+
+def _write_step_summary(summary: RunSummary) -> None:
+    """Appends to $GITHUB_STEP_SUMMARY when running inside GitHub Actions
+    (see workflow section 31 of the hardening spec) - a no-op locally."""
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not path:
+        return
+    try:
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(summary.render_markdown() + "\n")
+    except OSError as e:
+        print(f"⚠️ could not write $GITHUB_STEP_SUMMARY: {e}")
 
 
 if __name__ == "__main__":

@@ -24,7 +24,16 @@ on:
   push:
     branches: [main]
     paths:
-      - "targets/**"         # re-run immediately when target files change
+      - "targets/**"              # re-run immediately when a target changes...
+      - "pipeline/**"             # ...or the hunting engine itself changes...
+      - "scripts/**"              # ...or a supporting script changes...
+      - ".github/workflows/**"    # ...or the workflow itself changes (validate it works)
+      # Deliberately NOT "data/**" or "output/**": those directories are
+      # only ever written by this workflow's own automated commit, so
+      # triggering on them would create a self-sustaining trigger loop.
+      # targets/** IS included even though fingerprinting also writes
+      # there - the job-level `if` below breaks that specific loop by
+      # skipping any push run whose commit was made by this workflow.
 
 concurrency:
   group: vulnradar-hunt
@@ -35,10 +44,26 @@ permissions:
 
 jobs:
   hunt:
+    # Skip a push-triggered run whose commit was made by this workflow's
+    # own automated commit step (see the "Commit updated state..." step) -
+    # otherwise a fingerprint refresh that updates targets/*.yaml (an
+    # expected part of every run) would itself trigger a brand-new push
+    # run, which commits again, which triggers again... The one-line
+    # guard below breaks that loop while still allowing a genuine human
+    # push to targets/**, pipeline/**, scripts/**, or the workflow itself
+    # to trigger normally.
+    if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
     runs-on: sengi-standard-2-ubuntu-2404
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+
+      - name: Fast-forward to latest main (in case this run sat queued behind others)
+        # cancel-in-progress: false means multiple triggers can queue up;
+        # a run that waited behind others should still operate on the
+        # latest committed state/targets, not whatever SHA it was
+        # originally queued against.
+        run: git pull --ff-only origin main || echo "⚠️ could not fast-forward, continuing with checked-out commit"
 
       - uses: actions/setup-python@v5
         with:
@@ -47,12 +72,20 @@ jobs:
       - name: Install dependencies
         run: pip install --quiet pyyaml packaging
 
-      - name: Install httpx and nuclei (recon + live verification)
+      - name: Install httpx, nuclei, subfinder (all optional — hunt continues without any of them)
         run: |
-          bash scripts/install_httpx.sh
-          bash scripts/install_nuclei.sh
-          bash scripts/install_subfinder.sh
-          nuclei -update-templates -silent || echo "⚠️ template update failed, continuing with whatever is cached"
+          # Each installer uses `set -euo pipefail` internally, so a failure
+          # inside one WOULD normally abort this whole step (GitHub Actions
+          # runs `run:` blocks with `bash -e`) and take the entire job down
+          # with it, even though none of these three tools are required for
+          # the core CVE intelligence pipeline to run. The `||` here is the
+          # fix: an install failure is downgraded to a warning, and the
+          # corresponding stage (fingerprinting / nuclei verification /
+          # subdomain discovery) reports itself UNAVAILABLE later instead.
+          bash scripts/install_httpx.sh      || echo "⚠️ httpx install failed — fingerprinting unavailable this run, existing target technologies will be used"
+          bash scripts/install_nuclei.sh     || echo "⚠️ nuclei install failed — live verification unavailable this run"
+          bash scripts/install_subfinder.sh  || echo "⚠️ subfinder install failed — passive subdomain discovery unavailable this run"
+          nuclei -update-templates -silent 2>/dev/null || echo "⚠️ nuclei template update failed (or nuclei itself is unavailable), continuing with whatever is cached"
 
       - name: Refresh target fingerprints (httpx tech-detect)
         # Always runs: httpx against a handful of targets is fast (a few
@@ -92,10 +125,32 @@ jobs:
             ARGS=(--adhoc-target "$ADHOC_TARGET" --adhoc-tech "$ADHOC_TECH")
           fi
           bash scripts/run_hunt.sh "${ARGS[@]}"
-          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          # Exit-code semantics (see pipeline/intelligence/run_status.py):
+          #   0  = SUCCESS  - every source/stage completed cleanly
+          #   10 = DEGRADED - some source(s) failed but usable intelligence
+          #        was still produced/preserved; this is a NORMAL, expected
+          #        outcome (a source being temporarily down is routine), not
+          #        a job failure - state/report ARE committed for this case.
+          #   20 = FAILED   - no usable intelligence at all this run; state
+          #        is intentionally left untouched by run_hunt.py itself,
+          #        so nothing is committed for this case either.
+          if [ "$code" = "0" ]; then
+            echo "status=SUCCESS" >> "$GITHUB_OUTPUT"
+          elif [ "$code" = "10" ]; then
+            echo "status=DEGRADED" >> "$GITHUB_OUTPUT"
+          else
+            echo "status=FAILED" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Commit updated state and hunter queue
-        if: steps.hunt.outputs.exit_code == '0'
+        # Commit on SUCCESS or DEGRADED - a degraded run still produced (or
+        # correctly preserved) usable intelligence and its own state
+        # bookkeeping is authoritative (see state_store.py); only a truly
+        # FAILED run (exit 20, nothing usable) skips committing, since
+        # run_hunt.py itself already left state untouched in that case.
+        if: steps.hunt.outputs.status == 'SUCCESS' || steps.hunt.outputs.status == 'DEGRADED'
         run: |
           git config user.name "vulnradar-bot"
           git config user.email "vulnradar-bot@users.noreply.github.com"
@@ -120,14 +175,27 @@ jobs:
           echo "❌ could not push after 5 attempts"
           exit 1
 
-      - name: Upload hunter_queue.md as an artifact too
-        if: steps.hunt.outputs.exit_code == '0'
+      - name: Upload run artifacts (hunter queue, diagnostics, run summary)
+        # always(): a degraded or even failed run can still have produced
+        # a partial report, diagnostics, or a run summary worth looking
+        # at - losing that evidence just because the run wasn't a clean
+        # SUCCESS would defeat the point of tracking degraded state at all.
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: hunter-queue
-          path: output/hunter_queue.md
+          name: vulnradar-run-${{ github.run_number }}
+          path: |
+            output/hunter_queue.md
+            output/diagnostics.md
+            output/run_summary.json
+          if-no-files-found: ignore
           retention-days: 30
 
-      - name: Fail the job if the hunt itself failed
-        if: steps.hunt.outputs.exit_code != '0'
+      - name: Fail the job only on a genuinely unusable run
+        # Exit code 20 (FAILED) is the only case that should show red in
+        # the Actions UI - 10 (DEGRADED) is an expected, non-alarming
+        # outcome (see the exit-code comment above) and must not be
+        # reported as a job failure, or "one source had a bad day" would
+        # generate noisy false-alarm failure notifications every time.
+        if: steps.hunt.outputs.status == 'FAILED'
         run: exit 1

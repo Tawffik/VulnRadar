@@ -1,0 +1,54 @@
+{
+  "overall": "DEGRADED",
+  "exit_code": 10,
+  "collectors": [
+    {
+      "name": "cisa_kev",
+      "status": "FAILED",
+      "count": 0,
+      "error": "could not load KEV snapshot file: [Errno 2] No such file or directory: '/tmp/tmpbx84evrp/missing.json'",
+      "previous_state_used": false
+    },
+    {
+      "name": "cve_org",
+      "status": "EMPTY",
+      "count": 0,
+      "error": null,
+      "previous_state_used": false
+    },
+    {
+      "name": "github_advisories",
+      "status": "EMPTY",
+      "count": 0,
+      "error": null,
+      "previous_state_used": false
+    },
+    {
+      "name": "nvd",
+      "status": "EMPTY",
+      "count": 0,
+      "error": null,
+      "previous_state_used": false
+    },
+    {
+      "name": "nuclei_templates",
+      "status": "EMPTY",
+      "count": 0,
+      "error": null,
+      "previous_state_used": false
+    }
+  ],
+  "targets": [],
+  "stages": {
+    "matching": "SUCCESS",
+    "version_check": "SUCCESS",
+    "nuclei_verification": "UNAVAILABLE",
+    "reporting": "SUCCESS",
+    "notifications": "SUCCESS"
+  },
+  "counts": {
+    "new_cves": 0,
+    "updated_cves": 0
+  },
+  "warnings": []
+}

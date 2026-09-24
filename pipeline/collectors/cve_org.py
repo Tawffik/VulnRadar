@@ -34,6 +34,8 @@ import urllib.request
 import urllib.error
 from datetime import datetime, timezone
 
+from pipeline.collectors import http_utils
+
 DELTA_URL = "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/delta.json"
 GAP_WARNING_THRESHOLD_MINUTES = 20  # delta.json updates ~every 7 min; a 20+ min
                                      # gap since our last successful fetch means
@@ -42,8 +44,8 @@ GAP_WARNING_THRESHOLD_MINUTES = 20  # delta.json updates ~every 7 min; a 20+ min
 
 def _fetch_json(url: str, timeout: int = 20) -> dict:
     req = urllib.request.Request(url, headers={"User-Agent": "VulnRadar/1.0"})
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    body = http_utils.request_with_retry(req, timeout=timeout)
+    return json.loads(body.decode("utf-8"))
 
 
 def _normalize_record(cve_id: str, record: dict) -> list:

@@ -21,6 +21,8 @@ import json
 import urllib.request
 import urllib.error
 
+from pipeline.collectors import http_utils
+
 KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 
 
@@ -44,10 +46,11 @@ def normalize_entry(raw: dict) -> dict:
 def fetch_raw(url: str = KEV_URL, timeout: int = 20) -> dict:
     """Fetches and parses the raw CISA KEV JSON. Raises on failure —
     callers decide how to handle that (see fetch_normalized's try/except
-    for the CLI-friendly version)."""
+    for the CLI-friendly version). Retries transient failures (429/5xx/
+    timeout/connection) with bounded backoff — see http_utils.py."""
     req = urllib.request.Request(url, headers={"User-Agent": "VulnRadar/1.0"})
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    body = http_utils.request_with_retry(req, timeout=timeout)
+    return json.loads(body.decode("utf-8"))
 
 
 def fetch_normalized(url: str = KEV_URL, timeout: int = 20):
