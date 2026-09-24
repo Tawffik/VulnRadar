@@ -1,14 +1,14 @@
 {
-  "CVE-2026-96772": {
-    "date_added": "2026-09-24T00:30:09.482Z",
+  "CVE-2026-18467": {
+    "date_added": "2026-09-24T01:27:57.343Z",
     "ransomware_use": "Unknown"
   },
-  "CVE-2026-96773": {
-    "date_added": "2026-09-24T00:45:12.527Z",
+  "CVE-2026-96777": {
+    "date_added": "2026-09-24T01:15:11.753Z",
     "ransomware_use": "Unknown"
   },
-  "CVE-2026-96774": {
-    "date_added": "2026-09-24T01:00:11.418Z",
+  "CVE-2026-96803": {
+    "date_added": "2026-09-24T01:30:19.047Z",
     "ransomware_use": "Unknown"
   }
 }

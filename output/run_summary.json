@@ -67,10 +67,8 @@
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 31,
+    "new_cves": 3,
     "updated_cves": 0
   },
-  "warnings": [
-    "\u26a0\ufe0f 621 minutes since the last successful cve_org fetch (threshold: 20min) \u2014 some CVEs published in between may have been missed since delta.json is a snapshot, not a full log. See cve_org.py's module docstring."
-  ]
+  "warnings": []
 }

@@ -2,9 +2,9 @@
 
 # VulnRadar Hunter Queue
 
-Generated: 2026-09-24T01:25:50+00:00
+Generated: 2026-09-24T01:35:58+00:00
 Targets loaded: 3
-New KEV entries this run: 31
+New KEV entries this run: 3
 Updated KEV entries this run (ransomware flag changed): 0
 Entries below (target-matched or known-ransomware): 0
 
@@ -36,8 +36,5 @@ No target-relevant or high-priority KEV entries this run.
 | Superdrug.com | SUCCESS |
 
 **Counts:**
-- new_cves: 31
+- new_cves: 3
 - updated_cves: 0
-
-**Warnings:**
-- ⚠️ 621 minutes since the last successful cve_org fetch (threshold: 20min) — some CVEs published in between may have been missed since delta.json is a snapshot, not a full log. See cve_org.py's module docstring.
