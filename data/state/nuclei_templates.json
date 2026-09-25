@@ -22,9 +22,5 @@
   "CVE-2025-34033": {
     "date_added": "2026-09-24T06:27:21Z",
     "ransomware_use": "Unknown"
-  },
-  "CVE-2026-87902": {
-    "date_added": "2026-09-23T11:09:21Z",
-    "ransomware_use": "Unknown"
   }
 }

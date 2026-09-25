@@ -12,14 +12,14 @@
     {
       "name": "cve_org",
       "status": "SUCCESS",
-      "count": 53,
+      "count": 122,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "github_advisories",
       "status": "SUCCESS",
-      "count": 135,
+      "count": 152,
       "error": null,
       "previous_state_used": false
     },
@@ -33,7 +33,7 @@
     {
       "name": "nuclei_templates",
       "status": "SUCCESS",
-      "count": 7,
+      "count": 6,
       "error": null,
       "previous_state_used": false
     }
@@ -67,8 +67,8 @@
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 9,
-    "updated_cves": 1
+    "new_cves": 102,
+    "updated_cves": 0
   },
   "warnings": []
 }
