@@ -12,14 +12,14 @@
     {
       "name": "cve_org",
       "status": "SUCCESS",
-      "count": 122,
+      "count": 1,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "github_advisories",
       "status": "SUCCESS",
-      "count": 152,
+      "count": 158,
       "error": null,
       "previous_state_used": false
     },
@@ -67,7 +67,7 @@
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 102,
+    "new_cves": 10,
     "updated_cves": 0
   },
   "warnings": []
