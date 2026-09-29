@@ -12,14 +12,14 @@
     {
       "name": "cve_org",
       "status": "SUCCESS",
-      "count": 74,
+      "count": 6,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "github_advisories",
       "status": "SUCCESS",
-      "count": 158,
+      "count": 177,
       "error": null,
       "previous_state_used": false
     },
@@ -33,7 +33,7 @@
     {
       "name": "nuclei_templates",
       "status": "SUCCESS",
-      "count": 4,
+      "count": 3,
       "error": null,
       "previous_state_used": false
     }
@@ -67,10 +67,8 @@
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 5,
+    "new_cves": 21,
     "updated_cves": 0
   },
-  "warnings": [
-    "\u26a0\ufe0f 1586 minutes since the last successful cve_org fetch (threshold: 1500min) \u2014 some CVEs published in between may have been missed since delta.json is a snapshot, not a full log. See cve_org.py's module docstring."
-  ]
+  "warnings": []
 }

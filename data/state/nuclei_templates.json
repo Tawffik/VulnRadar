@@ -10,9 +10,5 @@
   "CVE-2026-12227": {
     "date_added": "2026-09-28T05:58:28Z",
     "ransomware_use": "Unknown"
-  },
-  "CVE-2025-11452": {
-    "date_added": "2026-09-24T08:23:52Z",
-    "ransomware_use": "Unknown"
   }
 }
