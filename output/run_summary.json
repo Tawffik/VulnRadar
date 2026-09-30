@@ -12,7 +12,7 @@
     {
       "name": "cve_org",
       "status": "SUCCESS",
-      "count": 6,
+      "count": 1,
       "error": null,
       "previous_state_used": false
     },
@@ -25,15 +25,15 @@
     },
     {
       "name": "nvd",
-      "status": "EMPTY",
-      "count": 0,
+      "status": "SUCCESS",
+      "count": 47,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "nuclei_templates",
       "status": "SUCCESS",
-      "count": 3,
+      "count": 4,
       "error": null,
       "previous_state_used": false
     }
@@ -67,7 +67,7 @@
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 21,
+    "new_cves": 56,
     "updated_cves": 0
   },
   "warnings": []

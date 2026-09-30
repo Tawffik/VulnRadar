@@ -2,9 +2,9 @@
 
 # VulnRadar Hunter Queue
 
-Generated: 2026-09-29T11:48:40+00:00
+Generated: 2026-09-30T11:35:12+00:00
 Targets loaded: 3
-New KEV entries this run: 21
+New KEV entries this run: 56
 Updated KEV entries this run (ransomware flag changed): 0
 Entries below (target-matched or known-ransomware): 0
 
@@ -22,7 +22,7 @@ No target-relevant or high-priority KEV entries this run.
 | cisa_kev | FAILED (using previous state) |
 | cve_org | SUCCESS |
 | github_advisories | SUCCESS |
-| nvd | EMPTY |
+| nvd | SUCCESS |
 | nuclei_templates | SUCCESS |
 | matching | SUCCESS |
 | version_check | SUCCESS |
@@ -36,5 +36,5 @@ No target-relevant or high-priority KEV entries this run.
 | Superdrug.com | SUCCESS |
 
 **Counts:**
-- new_cves: 21
+- new_cves: 56
 - updated_cves: 0
