@@ -19,14 +19,14 @@
     {
       "name": "github_advisories",
       "status": "SUCCESS",
-      "count": 177,
+      "count": 135,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "nvd",
       "status": "SUCCESS",
-      "count": 47,
+      "count": 10,
       "error": null,
       "previous_state_used": false
     },
@@ -67,7 +67,7 @@
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 56,
+    "new_cves": 44,
     "updated_cves": 0
   },
   "warnings": []

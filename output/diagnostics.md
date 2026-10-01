@@ -1,6 +1,6 @@
 # Target Reachability Diagnostics
 
-Generated: 2026-09-30T11:34:24.102769+00:00
+Generated: 2026-10-01T12:02:49.811764+00:00
 
 One plain GET request per target, to tell a real block apart from "no fingerprint signal".
 
@@ -19,6 +19,6 @@ One plain GET request per target, to tell a real block apart from "no fingerprin
 ### Superdrug.com — 🚫 likely blocked
 - HTTP status: 403
 - Server header: `AkamaiGHost`
-- Response size: 363 bytes
+- Response size: 361 bytes
 - HTTP 403, looks like active blocking (status 403, body mentions 'access denied') — Server: 'AkamaiGHost'
 
