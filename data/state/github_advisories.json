@@ -1,4 +1,160 @@
 {
+  "CVE-2026-73606": {
+    "date_added": "2026-10-01T16:29:35Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-73609": {
+    "date_added": "2026-10-01T16:23:37Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-73605": {
+    "date_added": "2026-10-01T15:46:01Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-73607": {
+    "date_added": "2026-10-01T15:44:46Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92952": {
+    "date_added": "2026-10-01T15:42:15Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92948": {
+    "date_added": "2026-10-01T15:41:31Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92950": {
+    "date_added": "2026-10-01T15:40:45Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92940": {
+    "date_added": "2026-10-01T15:38:26Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92951": {
+    "date_added": "2026-10-01T15:37:19Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92958": {
+    "date_added": "2026-10-01T15:36:48Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92957": {
+    "date_added": "2026-10-01T15:36:01Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92949": {
+    "date_added": "2026-10-01T15:35:25Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92935": {
+    "date_added": "2026-10-01T15:34:58Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92937": {
+    "date_added": "2026-10-01T15:32:10Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92938": {
+    "date_added": "2026-10-01T15:29:04Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92939": {
+    "date_added": "2026-10-01T15:28:36Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92944": {
+    "date_added": "2026-10-01T15:28:07Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92941": {
+    "date_added": "2026-10-01T15:27:28Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92945": {
+    "date_added": "2026-10-01T15:26:45Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102830": {
+    "date_added": "2026-10-01T15:22:17Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102904": {
+    "date_added": "2026-10-01T15:21:17Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102831": {
+    "date_added": "2026-10-01T15:20:41Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-89425": {
+    "date_added": "2026-10-01T15:20:27Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-89407": {
+    "date_added": "2026-10-01T15:19:21Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-92708": {
+    "date_added": "2026-10-01T15:18:06Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102925": {
+    "date_added": "2026-10-01T15:09:17Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102937": {
+    "date_added": "2026-10-01T15:08:29Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102999": {
+    "date_added": "2026-10-01T15:07:35Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102998": {
+    "date_added": "2026-10-01T15:07:21Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-103000": {
+    "date_added": "2026-10-01T15:07:08Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102997": {
+    "date_added": "2026-10-01T15:06:33Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102996": {
+    "date_added": "2026-10-01T15:06:13Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102995": {
+    "date_added": "2026-10-01T15:06:04Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102994": {
+    "date_added": "2026-10-01T15:05:53Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102993": {
+    "date_added": "2026-10-01T15:03:45Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102992": {
+    "date_added": "2026-10-01T15:03:33Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-102990": {
+    "date_added": "2026-10-01T14:42:42Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-72788": {
+    "date_added": "2026-10-01T14:39:32Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-69085": {
+    "date_added": "2026-10-01T14:38:48Z",
+    "ransomware_use": "Unknown"
+  },
   "CVE-2026-102930": {
     "date_added": "2026-09-30T23:54:13Z",
     "ransomware_use": "Unknown"
@@ -169,154 +325,6 @@
   },
   "CVE-2026-102270": {
     "date_added": "2026-09-30T14:40:25Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102281": {
-    "date_added": "2026-09-29T23:54:44Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-86472": {
-    "date_added": "2026-09-29T23:54:25Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-86818": {
-    "date_added": "2026-09-29T23:51:16Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-101894": {
-    "date_added": "2026-09-29T23:49:42Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-101912": {
-    "date_added": "2026-09-29T23:46:52Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-101911": {
-    "date_added": "2026-09-29T23:46:39Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-17495": {
-    "date_added": "2026-09-29T23:46:02Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102277": {
-    "date_added": "2026-09-29T23:45:39Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102278": {
-    "date_added": "2026-09-29T23:45:17Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102276": {
-    "date_added": "2026-09-29T23:44:58Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102599": {
-    "date_added": "2026-09-29T23:44:33Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102266": {
-    "date_added": "2026-09-29T23:43:19Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102265": {
-    "date_added": "2026-09-29T23:43:06Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102269": {
-    "date_added": "2026-09-29T23:17:55Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102268": {
-    "date_added": "2026-09-29T23:17:33Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102273": {
-    "date_added": "2026-09-29T23:16:55Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102267": {
-    "date_added": "2026-09-29T23:15:00Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102271": {
-    "date_added": "2026-09-29T23:14:33Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102272": {
-    "date_added": "2026-09-29T23:14:00Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-101917": {
-    "date_added": "2026-09-29T23:11:51Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102342": {
-    "date_added": "2026-09-29T23:09:16Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102282": {
-    "date_added": "2026-09-29T18:24:57Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102279": {
-    "date_added": "2026-09-29T18:24:25Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102274": {
-    "date_added": "2026-09-29T18:23:01Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-18149": {
-    "date_added": "2026-09-29T18:22:34Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-18540": {
-    "date_added": "2026-09-29T18:22:07Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-19534": {
-    "date_added": "2026-09-29T18:21:33Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-84890": {
-    "date_added": "2026-09-29T18:20:37Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-84933": {
-    "date_added": "2026-09-29T18:19:58Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-84947": {
-    "date_added": "2026-09-29T18:18:51Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-84961": {
-    "date_added": "2026-09-29T18:17:15Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-85008": {
-    "date_added": "2026-09-29T18:16:28Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-85152": {
-    "date_added": "2026-09-29T18:15:13Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-85014": {
-    "date_added": "2026-09-29T18:10:32Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102601": {
-    "date_added": "2026-09-29T18:10:14Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102672": {
-    "date_added": "2026-09-29T18:06:59Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-102673": {
-    "date_added": "2026-09-29T18:05:34Z",
     "ransomware_use": "Unknown"
   }
 }

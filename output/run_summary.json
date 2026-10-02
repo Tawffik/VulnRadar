@@ -12,21 +12,21 @@
     {
       "name": "cve_org",
       "status": "SUCCESS",
-      "count": 1,
+      "count": 15,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "github_advisories",
       "status": "SUCCESS",
-      "count": 135,
+      "count": 122,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "nvd",
       "status": "SUCCESS",
-      "count": 10,
+      "count": 6,
       "error": null,
       "previous_state_used": false
     },
@@ -67,7 +67,7 @@
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 44,
+    "new_cves": 46,
     "updated_cves": 0
   },
   "warnings": []

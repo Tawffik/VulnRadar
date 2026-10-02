@@ -1,4 +1,8 @@
 {
+  "CVE-2026-49468": {
+    "date_added": "2026-10-02T01:53:41Z",
+    "ransomware_use": "Unknown"
+  },
   "CVE-2026-40281": {
     "date_added": "2026-09-29T15:11:13Z",
     "ransomware_use": "Unknown"
@@ -9,10 +13,6 @@
   },
   "CVE-2026-89013": {
     "date_added": "2026-09-28T08:13:59Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-12227": {
-    "date_added": "2026-09-28T05:58:28Z",
     "ransomware_use": "Unknown"
   }
 }
