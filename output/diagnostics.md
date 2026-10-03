@@ -1,14 +1,14 @@
 # Target Reachability Diagnostics
 
-Generated: 2026-10-02T11:34:30.889535+00:00
+Generated: 2026-10-03T10:50:48.524339+00:00
 
 One plain GET request per target, to tell a real block apart from "no fingerprint signal".
 
 ### example.com — ✅ reachable, no block signature
 - HTTP status: 200
 - Server header: `cloudflare`
-- Response size: 713 bytes
-- HTTP 200, no block signature — responded normally, 713 bytes, Server: 'cloudflare' (if httpx still finds 0 technologies, the site just isn't leaking a fingerprint, not blocking)
+- Response size: 577 bytes
+- HTTP 200, no block signature — responded normally, 577 bytes, Server: 'cloudflare' (if httpx still finds 0 technologies, the site just isn't leaking a fingerprint, not blocking)
 
 ### okx.com — ✅ reachable, no block signature
 - HTTP status: 200
@@ -19,6 +19,6 @@ One plain GET request per target, to tell a real block apart from "no fingerprin
 ### Superdrug.com — 🚫 likely blocked
 - HTTP status: 403
 - Server header: `AkamaiGHost`
-- Response size: 361 bytes
+- Response size: 363 bytes
 - HTTP 403, looks like active blocking (status 403, body mentions 'access denied') — Server: 'AkamaiGHost'
 
