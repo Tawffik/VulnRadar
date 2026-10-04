@@ -6,9 +6,5 @@
   "CVE-2026-40281": {
     "date_added": "2026-09-29T15:11:13Z",
     "ransomware_use": "Unknown"
-  },
-  "CVE-2025-68273": {
-    "date_added": "2026-09-28T10:11:36Z",
-    "ransomware_use": "Unknown"
   }
 }
