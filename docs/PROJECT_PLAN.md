@@ -186,3 +186,16 @@ When a bug is found and fixed, add it to section 6 with the *root cause*,
 not just the symptom — several bugs here looked like a different problem
 at first (okx.com "not matching" was actually two separate bugs: the
 empty-technologies load bug, and the httpx noise-filter bug).
+
+
+## Related: Subdomain Monitor migration (2026-10-09)
+
+Continuous subdomain baseline monitoring (formerly BugBountyCI `.github/workflows/01.yml`)
+and **bulk** nuclei campaigns are out of scope for BugBountyCI Zero Track.
+
+See `docs/SUBDOMAIN_MONITOR_AND_NUCLEI.md`.
+
+Implemented so far in this repo:
+- CVE-scoped `pipeline/verify/nuclei_runner.py` (existing)
+- Baseline diff `pipeline/monitor/baseline.py` (new) — pure prev/live → new/removed
+- Next: wire discovery+probe, `vulnradar-monitor.yml`, port authorized targets
