@@ -90,3 +90,25 @@ Runner: `ubuntu-latest` until Sengi quota returns; document `runs-on` like BBCI 
 - Not re-creating Zero Track inside VulnRadar.
 - Not unrestricted nuclei template packs on every live host.
 - Not importing SRA / BBCI response-intelligence engines.
+
+
+## Implementation status (2026-10-09)
+
+| Piece | Status |
+|-------|--------|
+| `pipeline/monitor/baseline.py` | done |
+| `pipeline/monitor/probe.py` | done (httpx preferred, stdlib fallback) |
+| `pipeline/monitor/run_monitor.py` | done |
+| `.github/workflows/vulnradar-monitor.yml` | done (schedule 05:00 & 17:00 UTC + dispatch) |
+| CVE-scoped `nuclei_runner` | already in hunt workflow |
+| BBCI bulk nuclei | removed (MOVED_TO_VULNRADAR) |
+| BBCI `01.yml` Submon | deprecated |
+
+### Run locally
+
+```bash
+pip install -r requirements.txt
+# optional: subfinder + httpx on PATH
+python3 pipeline/monitor/run_monitor.py --domain example.com
+cat output/monitor_summary.md
+```

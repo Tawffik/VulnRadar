@@ -1,0 +1,100 @@
+name: VulnRadar Subdomain Monitor
+
+on:
+  schedule:
+    # Twice daily — continuous baseline, not a heavy hunt
+    - cron: "0 5,17 * * *"
+  workflow_dispatch:
+    inputs:
+      domain:
+        description: "Optional single domain (empty = all targets/*.yaml)"
+        required: false
+        default: ""
+      max_subdomains:
+        description: "Cap passive discovery per target"
+        required: false
+        default: "200"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vulnradar-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python deps
+        run: pip install --quiet pyyaml packaging
+
+      - name: Install subfinder + httpx (optional tools)
+        run: |
+          bash scripts/install_subfinder.sh || echo "⚠️ subfinder install failed"
+          bash scripts/install_httpx.sh || echo "⚠️ httpx install failed — stdlib probe fallback"
+
+      - name: Run subdomain monitor
+        id: mon
+        env:
+          INPUT_DOMAIN: ${{ github.event.inputs.domain || '' }}
+          MAX_SUBS: ${{ github.event.inputs.max_subdomains || '200' }}
+        run: |
+          set -uo pipefail
+          EXTRA=()
+          if [ -n "${INPUT_DOMAIN:-}" ]; then
+            EXTRA+=(--domain "$INPUT_DOMAIN")
+          fi
+          EXTRA+=(--max-subdomains "${MAX_SUBS:-200}")
+          set +e
+          python3 pipeline/monitor/run_monitor.py \
+            --targets-dir targets \
+            --monitor-dir data/monitor \
+            --output output/monitor_summary.md \
+            "${EXTRA[@]}"
+          code=$?
+          set -e
+          if [ "$code" -eq 0 ]; then
+            echo "status=SUCCESS" >> "$GITHUB_OUTPUT"
+          elif [ "$code" -eq 10 ]; then
+            echo "status=DEGRADED" >> "$GITHUB_OUTPUT"
+          else
+            echo "status=FAILED" >> "$GITHUB_OUTPUT"
+          fi
+          exit 0
+
+      - name: Commit monitor baselines
+        if: steps.mon.outputs.status == 'SUCCESS' || steps.mon.outputs.status == 'DEGRADED'
+        run: |
+          git config user.name "vulnradar-bot"
+          git config user.email "vulnradar-bot@users.noreply.github.com"
+          git add data/monitor/ output/monitor_summary.md output/monitor_summary.json || true
+          if git diff --cached --quiet; then
+            echo "No monitor changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: subdomain monitor baselines [automated]"
+          for attempt in 1 2 3; do
+            if git push; then exit 0; fi
+            git pull --rebase --autostash -X ours origin main || { git rebase --abort 2>/dev/null; sleep $((attempt * 3)); }
+          done
+          echo "⚠️ push failed after retries (non-fatal for artifact upload)"
+
+      - name: Upload monitor artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vulnradar-monitor-${{ github.run_number }}
+          path: |
+            output/monitor_summary.md
+            output/monitor_summary.json
+            data/monitor/
+          if-no-files-found: ignore
+          retention-days: 30
