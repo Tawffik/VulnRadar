@@ -1,7 +1,7 @@
 {
   "reports": [
     {
-      "target": "superdrug.com",
+      "target": "okx.com",
       "status": "COMPLETE",
       "discovered": 1,
       "live": 1,
@@ -13,10 +13,28 @@
         "error": null,
         "input_count": 1
       },
-      "ts": "2026-10-09T01:48:03.934693+00:00",
+      "ts": "2026-10-09T11:46:46.036665+00:00",
       "new": [
-        "superdrug.com"
+        "okx.com"
       ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "superdrug.com",
+      "status": "COMPLETE",
+      "discovered": 1,
+      "live": 1,
+      "new_count": 0,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 1
+      },
+      "ts": "2026-10-09T11:46:47.260346+00:00",
+      "new": [],
       "removed": [],
       "baseline_updated": true
     }
