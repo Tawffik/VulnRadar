@@ -1,0 +1,20 @@
+{
+  "target": "superdrug.com",
+  "status": "COMPLETE",
+  "discovered": 1,
+  "live": 1,
+  "new_count": 1,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 1
+  },
+  "ts": "2026-10-09T01:48:03.934693+00:00",
+  "new": [
+    "superdrug.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}
