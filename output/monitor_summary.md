@@ -1,6 +1,6 @@
 # VulnRadar Subdomain Monitor
 
-Generated: 2026-10-14T20:32:58.564588+00:00
+Generated: 2026-10-15T09:44:49.398672+00:00
 Targets: 2
 
 | Target | Status | Discovered | Live | New | Removed |
