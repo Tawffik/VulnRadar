@@ -1,30 +1,40 @@
 {
   "target": "expressvpn.com",
   "status": "COMPLETE",
-  "discovered": 1,
-  "live": 1,
-  "new_count": 0,
-  "removed_count": 11,
-  "discover_error": "subfinder binary not found on PATH",
+  "discovered": 200,
+  "live": 22,
+  "new_count": 21,
+  "removed_count": 0,
+  "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 1
+    "input_count": 200
   },
-  "ts": "2026-11-08T11:52:03.565326+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-08T21:09:18.658408+00:00",
+  "new": [
     "auth.expressvpn.com",
+    "beta.repo.expressvpn.com",
+    "billing-portal.expressvpn.com",
     "blog.expressvpn.com",
+    "cdn.portal.expressvpn.com",
     "checkout.expressvpn.com",
     "go.expressvpn.com",
+    "integration.expressvpn.com",
+    "landing-pages.expressvpn.com",
+    "link.clicks.expressvpn.com",
+    "link.mail.expressvpn.com",
     "portal.expressvpn.com",
+    "rc.portal.expressvpn.com",
     "repo.expressvpn.com",
+    "speedtest.expressvpn.com",
+    "staging.portal.expressvpn.com",
+    "staging.teams.expressvpn.com",
     "store.expressvpn.com",
-    "support.expressvpn.com",
     "teams.expressvpn.com",
     "updates.expressvpn.com",
     "www.expressvpn.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

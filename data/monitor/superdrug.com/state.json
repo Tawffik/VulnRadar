@@ -1,23 +1,38 @@
 {
   "target": "superdrug.com",
   "status": "COMPLETE",
-  "discovered": 1,
-  "live": 1,
-  "new_count": 0,
-  "removed_count": 4,
-  "discover_error": "subfinder binary not found on PATH",
+  "discovered": 200,
+  "live": 20,
+  "new_count": 19,
+  "removed_count": 0,
+  "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 1
+    "input_count": 200
   },
-  "ts": "2026-11-08T11:52:11.156601+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-08T21:16:58.788974+00:00",
+  "new": [
+    "api-s1.superdrug.com",
     "api.superdrug.com",
+    "app.superdrug.com",
+    "appsd.superdrug.com",
+    "campaign.superdrug.com",
+    "ccs.superdrug.com",
+    "clickom.superdrug.com",
+    "consent.superdrug.com",
     "e.superdrug.com",
     "hb.superdrug.com",
-    "m.superdrug.com"
+    "m.email.superdrug.com",
+    "m.superdrug.com",
+    "media-s1.superdrug.com",
+    "media.superdrug.com",
+    "mta-sts.superdrug.com",
+    "t.email.superdrug.com",
+    "videogp.superdrug.com",
+    "www-s1.superdrug.com",
+    "www.superdrug.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

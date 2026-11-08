@@ -1,6 +1,0 @@
-bfy.intercom.com
-em.intercom.com
-go.intercom.com
-hq.intercom.com
-mcp.intercom.com
-mi.intercom.com

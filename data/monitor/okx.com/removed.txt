@@ -1,5 +1,0 @@
-hk.okx.com
-my.okx.com
-tr.okx.com
-us.okx.com
-ws.okx.com

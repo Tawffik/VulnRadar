@@ -4,34 +4,15 @@
   "discovered": 1,
   "live": 1,
   "new_count": 0,
-  "removed_count": 18,
-  "discover_error": "subfinder binary not found on PATH",
+  "removed_count": 0,
+  "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 1
   },
-  "ts": "2026-11-08T11:52:10.592730+00:00",
+  "ts": "2026-11-08T21:16:27.858363+00:00",
   "new": [],
-  "removed": [
-    "br.shopify.com",
-    "cs.shopify.com",
-    "dk.shopify.com",
-    "es.shopify.com",
-    "fr.shopify.com",
-    "hi.shopify.com",
-    "in.shopify.com",
-    "ir.shopify.com",
-    "it.shopify.com",
-    "la.shopify.com",
-    "m.shopify.com",
-    "pt.shopify.com",
-    "q2.shopify.com",
-    "qr.shopify.com",
-    "ru.shopify.com",
-    "sl.shopify.com",
-    "ux.shopify.com",
-    "v.shopify.com"
-  ],
+  "removed": [],
   "baseline_updated": true
 }

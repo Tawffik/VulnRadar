@@ -1,3 +1,0 @@
-cs.ibotta.com
-o.ibotta.com
-s.ibotta.com
