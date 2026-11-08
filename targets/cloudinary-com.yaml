@@ -1,0 +1,30 @@
+target: cloudinary.com
+scan_allowed: false
+discover_subdomains: true
+max_subdomains: 25
+technologies:
+- vendor: Adobe Fonts
+  product: Adobe Fonts
+- vendor: Algolia
+  product: Algolia
+- vendor: Bootstrap
+  product: Bootstrap
+- vendor: Lever
+  product: Lever
+- vendor: Linkedin Ads
+  product: Linkedin Ads
+- vendor: MySQL
+  product: MySQL
+- vendor: OWL Carousel
+  product: OWL Carousel
+- vendor: PHP
+  product: PHP
+- vendor: Typekit
+  product: Typekit
+- vendor: WordPress
+  product: WordPress
+- vendor: Yoast SEO
+  product: Yoast SEO
+  version: '28.3'
+- vendor: jQuery
+  product: jQuery

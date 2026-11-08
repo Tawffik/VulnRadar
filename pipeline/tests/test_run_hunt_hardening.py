@@ -28,6 +28,7 @@ def _run(kev_file, state_dir, targets_dir, extra_args=None):
              "--skip-cve-org", "--skip-github-advisories", "--skip-nvd", "--skip-nuclei-templates",
              "--state-file", os.path.join(state_dir, "kev_state.json"),
              "--output", os.path.join(state_dir, "hunter_queue.md"),
+             "--summary-json", os.path.join(state_dir, "run_summary.json"),
              "--targets-dir", targets_dir]
     if extra_args:
         args += extra_args
@@ -89,13 +90,13 @@ def test_kev_only_cve_survives_a_later_cisa_failure():
 def test_run_summary_json_written_and_shaped_correctly():
     with tempfile.TemporaryDirectory() as d:
         result = _run(os.path.join(d, "missing.json"), d, _empty_targets_dir())
-        summary_path = os.path.join(REPO_ROOT, "output", "run_summary.json")
+        summary_path = os.path.join(d, "run_summary.json")
         assert os.path.isfile(summary_path)
         with open(summary_path) as f:
             data = json.load(f)
         assert data["overall"] == "DEGRADED"
         assert any(c["name"] == "cisa_kev" and c["status"] == "FAILED" for c in data["collectors"])
-    print("  ✅ output/run_summary.json is written with the correct shape")
+    print("  ✅ run summary JSON is written with the correct shape")
 
 
 def test_hunter_queue_notes_partial_coverage():

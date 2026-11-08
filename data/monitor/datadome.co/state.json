@@ -1,0 +1,26 @@
+{
+  "target": "datadome.co",
+  "status": "COMPLETE",
+  "discovered": 20,
+  "live": 7,
+  "new_count": 7,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 20
+  },
+  "ts": "2026-11-08T10:08:56.460972+00:00",
+  "new": [
+    "api.datadome.co",
+    "app.datadome.co",
+    "bo.datadome.co",
+    "ct.datadome.co",
+    "datadome.co",
+    "go.datadome.co",
+    "js.datadome.co"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

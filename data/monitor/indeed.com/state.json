@@ -1,0 +1,35 @@
+{
+  "target": "indeed.com",
+  "status": "COMPLETE",
+  "discovered": 20,
+  "live": 16,
+  "new_count": 16,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 20
+  },
+  "ts": "2026-11-08T10:15:14.238187+00:00",
+  "new": [
+    "aq.indeed.com",
+    "at.indeed.com",
+    "au.indeed.com",
+    "be.indeed.com",
+    "ca.indeed.com",
+    "ch.indeed.com",
+    "cn.indeed.com",
+    "cz.indeed.com",
+    "de.indeed.com",
+    "fr.indeed.com",
+    "hk.indeed.com",
+    "hu.indeed.com",
+    "ie.indeed.com",
+    "indeed.com",
+    "jp.indeed.com",
+    "t.indeed.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

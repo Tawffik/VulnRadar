@@ -1,0 +1,15 @@
+target: fivetran.com
+scan_allowed: false
+discover_subdomains: true
+max_subdomains: 25
+technologies:
+- vendor: Algolia
+  product: Algolia
+- vendor: Envoy
+  product: Envoy
+- vendor: Lever
+  product: Lever
+- vendor: Linkedin Ads
+  product: Linkedin Ads
+- vendor: istio-envoy
+  product: istio-envoy

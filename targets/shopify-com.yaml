@@ -1,0 +1,5 @@
+target: shopify.com
+scan_allowed: false          # nuclei OFF until this program's scope explicitly allows active scanning
+discover_subdomains: true    # passive (certificate-transparency etc.), then fingerprint each host
+max_subdomains: 25
+technologies: []             # filled by httpx tech-detect in the fingerprint step

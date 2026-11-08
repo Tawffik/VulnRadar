@@ -1,0 +1,24 @@
+target: datadome.co
+scan_allowed: false
+discover_subdomains: true
+max_subdomains: 25
+technologies:
+- vendor: DataDome
+  product: DataDome
+- vendor: Amazon ELB
+  product: Amazon ELB
+- vendor: awselb
+  product: awselb
+  version: '2.0'
+- vendor: AmazonS3
+  product: AmazonS3
+- vendor: Envoy
+  product: Envoy
+- vendor: istio-envoy
+  product: istio-envoy
+- vendor: Auth0
+  product: Auth0
+- vendor: ReadMe
+  product: ReadMe
+- vendor: Render
+  product: Render

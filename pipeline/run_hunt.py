@@ -118,6 +118,9 @@ def main():
     ap.add_argument("--state-file", default=os.path.join(repo_root, "data", "state", "kev_state.json"))
     ap.add_argument("--cve-org-fetch-log", default=os.path.join(repo_root, "data", "state", "cve_org_last_fetch.txt"))
     ap.add_argument("--output", default=os.path.join(repo_root, "output", "hunter_queue.md"))
+    ap.add_argument("--summary-json", default=os.path.join(repo_root, "output", "run_summary.json"),
+                     help="path for the machine-readable run summary; overridable so tests never "
+                          "clobber the committed output/run_summary.json")
     ap.add_argument("--adhoc-target", default=None,
                      help="a target domain not saved to targets/*.yaml — for a one-off check "
                           "(e.g. from a workflow_dispatch input) without a permanent file")
@@ -220,7 +223,7 @@ def main():
         summary.set_stage("reporting", "SKIPPED")
         print(summary.render_markdown())
         _write_step_summary(summary)
-        summary.write_json(os.path.join(repo_root, "output", "run_summary.json"))
+        summary.write_json(args.summary_json)
         sys.exit(summary.exit_code())
 
     # Ascending priority order — see merge_sources()'s own docstring for why.
@@ -337,7 +340,7 @@ def main():
 
     print("\n" + summary.render_markdown())
     _write_step_summary(summary)
-    summary.write_json(os.path.join(repo_root, "output", "run_summary.json"))
+    summary.write_json(args.summary_json)
     sys.exit(summary.exit_code())
 
 

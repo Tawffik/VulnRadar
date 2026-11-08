@@ -1,0 +1,25 @@
+target: aiven.io
+scan_allowed: false
+discover_subdomains: true
+max_subdomains: 25
+technologies:
+- vendor: OneTrust
+  product: OneTrust
+- vendor: Google Cloud
+  product: Google Cloud
+- vendor: Google Cloud CDN
+  product: Google Cloud CDN
+- vendor: Akka HTTP
+  product: Akka HTTP
+  version: 10.2.7
+- vendor: akka-http
+  product: akka-http
+  version: 10.2.7
+- vendor: Salesforce Marketing Cloud Account Engagement
+  product: Salesforce Marketing Cloud Account Engagement
+- vendor: Java
+  product: Java
+- vendor: nginx
+  product: nginx
+- vendor: AmazonS3
+  product: AmazonS3

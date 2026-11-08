@@ -1,0 +1,6 @@
+ch.decathlon.com
+code.decathlon.com
+csr.decathlon.com
+decathlon.com
+dtb.decathlon.com
+oco.decathlon.com

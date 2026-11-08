@@ -1,0 +1,22 @@
+{
+  "target": "klaviyo.com",
+  "status": "COMPLETE",
+  "discovered": 21,
+  "live": 3,
+  "new_count": 3,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 21
+  },
+  "ts": "2026-11-08T10:16:22.814813+00:00",
+  "new": [
+    "a.klaviyo.com",
+    "api.klaviyo.com",
+    "klaviyo.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

@@ -25,7 +25,7 @@ inside program scope matter more than speed.
    against each `targets/*.yaml`'s domain, filtered for noise (CDN/WAF
    banners) and normalized to CISA/NVD naming, writes `technologies:`
    back into the yaml file. Optional passive subdomain discovery
-   (`pipeline/recon/subdomains.py`, `subfinder -passive`) when a target
+   (`pipeline/recon/subdomains.py`, `subfinder`) when a target
    sets `discover_subdomains: true`, so a protected apex domain still has
    a chance of exposing its stack via a subdomain.
 2. **Fetch CVEs** from 5 sources (`pipeline/collectors/`): CISA KEV,

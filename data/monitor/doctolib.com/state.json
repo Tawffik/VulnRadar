@@ -1,0 +1,24 @@
+{
+  "target": "doctolib.com",
+  "status": "COMPLETE",
+  "discovered": 20,
+  "live": 5,
+  "new_count": 5,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 20
+  },
+  "ts": "2026-11-08T10:10:36.196406+00:00",
+  "new": [
+    "about.doctolib.com",
+    "admin.doctolib.com",
+    "adp.doctolib.com",
+    "cms.doctolib.com",
+    "doctolib.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

@@ -1,0 +1,23 @@
+{
+  "target": "ibotta.com",
+  "status": "COMPLETE",
+  "discovered": 20,
+  "live": 4,
+  "new_count": 4,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 20
+  },
+  "ts": "2026-11-08T10:13:59.661646+00:00",
+  "new": [
+    "cs.ibotta.com",
+    "ibotta.com",
+    "o.ibotta.com",
+    "s.ibotta.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

@@ -1,0 +1,19 @@
+target: doctolib.com
+scan_allowed: false
+discover_subdomains: true
+max_subdomains: 25
+technologies:
+- vendor: Kinsta
+  product: Kinsta
+- vendor: WordPress
+  product: WordPress
+- vendor: Onfido
+  product: Onfido
+- vendor: MySQL
+  product: MySQL
+- vendor: PHP
+  product: PHP
+- vendor: jQuery
+  product: jQuery
+- vendor: Caddy
+  product: Caddy

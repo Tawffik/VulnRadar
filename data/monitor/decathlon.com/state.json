@@ -1,0 +1,25 @@
+{
+  "target": "decathlon.com",
+  "status": "COMPLETE",
+  "discovered": 21,
+  "live": 6,
+  "new_count": 6,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 21
+  },
+  "ts": "2026-11-08T10:09:55.469647+00:00",
+  "new": [
+    "ch.decathlon.com",
+    "code.decathlon.com",
+    "csr.decathlon.com",
+    "decathlon.com",
+    "dtb.decathlon.com",
+    "oco.decathlon.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

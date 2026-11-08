@@ -1,0 +1,7 @@
+target: klaviyo.com
+scan_allowed: false
+discover_subdomains: true
+max_subdomains: 25
+technologies:
+- vendor: AmazonS3
+  product: AmazonS3

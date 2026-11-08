@@ -1,0 +1,17 @@
+target: ibotta.com
+scan_allowed: false
+discover_subdomains: true
+max_subdomains: 25
+technologies:
+- vendor: Adobe Fonts
+  product: Adobe Fonts
+- vendor: Contentful
+  product: Contentful
+- vendor: Vercel
+  product: Next.js
+- vendor: Node.js
+  product: Node.js
+- vendor: React
+  product: React
+- vendor: Typekit
+  product: Typekit

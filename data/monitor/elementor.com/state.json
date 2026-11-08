@@ -1,0 +1,22 @@
+{
+  "target": "elementor.com",
+  "status": "COMPLETE",
+  "discovered": 20,
+  "live": 3,
+  "new_count": 3,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 20
+  },
+  "ts": "2026-11-08T10:11:06.657359+00:00",
+  "new": [
+    "be.elementor.com",
+    "elementor.com",
+    "go.elementor.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

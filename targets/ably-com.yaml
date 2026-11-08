@@ -1,0 +1,16 @@
+target: ably.com
+scan_allowed: false
+discover_subdomains: true
+max_subdomains: 25
+technologies:
+- vendor: Gatsby
+  product: Gatsby
+  version: 5.16.0
+- vendor: OneTrust
+  product: OneTrust
+- vendor: React
+  product: React
+- vendor: Ruby
+  product: Ruby
+- vendor: Ruby on Rails
+  product: Ruby on Rails

@@ -1,0 +1,23 @@
+{
+  "target": "gearset.com",
+  "status": "COMPLETE",
+  "discovered": 20,
+  "live": 4,
+  "new_count": 4,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 20
+  },
+  "ts": "2026-11-08T10:12:58.006748+00:00",
+  "new": [
+    "api.gearset.com",
+    "app.gearset.com",
+    "gearset.com",
+    "www.gearset.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

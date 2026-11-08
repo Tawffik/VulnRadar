@@ -1,0 +1,46 @@
+name: VulnRadar Tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "pipeline/**"
+      - "scripts/**"
+      - "requirements.txt"
+      - ".github/workflows/vulnradar-tests.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "pipeline/**"
+      - "scripts/**"
+      - "requirements.txt"
+      - ".github/workflows/vulnradar-tests.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: pip install --quiet pytest pyyaml packaging
+      - name: Run test suite
+        run: python3 -m pytest pipeline/tests -q --tb=short
+      - name: Guard — tests must not dirty tracked output
+        run: |
+          # run_hunt.py writes output/run_summary.json by default. The suite
+          # must pass --summary-json into a temp dir instead (see
+          # test_run_hunt_hardening). If this step fails, a test is clobbering
+          # committed state files.
+          if ! git diff --quiet; then
+            echo "::error::tests modified tracked files — output pollution regression"
+            git diff --stat
+            exit 1
+          fi
+          echo "✅ working tree clean after tests"

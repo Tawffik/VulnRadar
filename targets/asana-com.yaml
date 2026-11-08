@@ -1,0 +1,19 @@
+target: asana.com
+scan_allowed: false
+discover_subdomains: true
+max_subdomains: 25
+technologies:
+- vendor: Linkedin Ads
+  product: Linkedin Ads
+- vendor: Netlify
+  product: Netlify
+- vendor: Vercel
+  product: Next.js
+- vendor: Node.js
+  product: Node.js
+- vendor: OneTrust
+  product: OneTrust
+- vendor: React
+  product: React
+- vendor: reCAPTCHA
+  product: reCAPTCHA

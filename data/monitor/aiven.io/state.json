@@ -1,0 +1,27 @@
+{
+  "target": "aiven.io",
+  "status": "COMPLETE",
+  "discovered": 21,
+  "live": 8,
+  "new_count": 8,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 21
+  },
+  "ts": "2026-11-08T10:03:46.891122+00:00",
+  "new": [
+    "ai.aiven.io",
+    "aiven.io",
+    "api.aiven.io",
+    "dc.aiven.io",
+    "go.aiven.io",
+    "gss.aiven.io",
+    "iam.aiven.io",
+    "sre.aiven.io"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

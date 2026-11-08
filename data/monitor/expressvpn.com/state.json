@@ -1,0 +1,31 @@
+{
+  "target": "expressvpn.com",
+  "status": "COMPLETE",
+  "discovered": 20,
+  "live": 12,
+  "new_count": 12,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 20
+  },
+  "ts": "2026-11-08T10:11:44.959819+00:00",
+  "new": [
+    "auth.expressvpn.com",
+    "blog.expressvpn.com",
+    "checkout.expressvpn.com",
+    "expressvpn.com",
+    "go.expressvpn.com",
+    "portal.expressvpn.com",
+    "repo.expressvpn.com",
+    "store.expressvpn.com",
+    "support.expressvpn.com",
+    "teams.expressvpn.com",
+    "updates.expressvpn.com",
+    "www.expressvpn.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

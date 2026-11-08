@@ -1,38 +1,678 @@
 {
   "reports": [
     {
-      "target": "okx.com",
+      "target": "ably.com",
       "status": "COMPLETE",
-      "discovered": 1,
-      "live": 1,
-      "new_count": 0,
+      "discovered": 20,
+      "live": 16,
+      "new_count": 16,
       "removed_count": 0,
       "discover_error": null,
       "probe": {
         "method": "httpx",
         "error": null,
-        "input_count": 1
+        "input_count": 20
       },
-      "ts": "2026-11-07T20:46:03.853876+00:00",
-      "new": [],
+      "ts": "2026-11-08T10:03:15.790955+00:00",
+      "new": [
+        "ably.com",
+        "brand.ably.com",
+        "cdn.ably.com",
+        "demo.ably.com",
+        "docs.ably.com",
+        "email.ably.com",
+        "faqs.ably.com",
+        "files.ably.com",
+        "ghost.ably.com",
+        "go.ably.com",
+        "jobs.ably.com",
+        "jsbin.ably.com",
+        "pages.ably.com",
+        "quotes.ably.com",
+        "sdk.ably.com",
+        "www.ably.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "aiven.io",
+      "status": "COMPLETE",
+      "discovered": 21,
+      "live": 8,
+      "new_count": 8,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 21
+      },
+      "ts": "2026-11-08T10:03:46.891122+00:00",
+      "new": [
+        "ai.aiven.io",
+        "aiven.io",
+        "api.aiven.io",
+        "dc.aiven.io",
+        "go.aiven.io",
+        "gss.aiven.io",
+        "iam.aiven.io",
+        "sre.aiven.io"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "arlo.com",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 9,
+      "new_count": 9,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:04:52.894939+00:00",
+      "new": [
+        "api.arlo.com",
+        "arlo.com",
+        "eks.arlo.com",
+        "kb.arlo.com",
+        "mcs.arlo.com",
+        "my.arlo.com",
+        "oms.arlo.com",
+        "qa.arlo.com",
+        "tm.arlo.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "asana.com",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 20,
+      "new_count": 20,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:06:17.625612+00:00",
+      "new": [
+        "227.asana.com",
+        "api.asana.com",
+        "app.asana.com",
+        "as.asana.com",
+        "asana.com",
+        "blog.asana.com",
+        "com.asana.com",
+        "dev.asana.com",
+        "dsl.asana.com",
+        "eng.asana.com",
+        "eu.asana.com",
+        "go.asana.com",
+        "h3.asana.com",
+        "ir.asana.com",
+        "it.asana.com",
+        "mcp.asana.com",
+        "my.asana.com",
+        "uat.asana.com",
+        "uwc.asana.com",
+        "www.asana.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "atlassian.com",
+      "status": "COMPLETE",
+      "discovered": 21,
+      "live": 20,
+      "new_count": 20,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 21
+      },
+      "ts": "2026-11-08T10:07:04.735818+00:00",
+      "new": [
+        "ace.atlassian.com",
+        "acli.atlassian.com",
+        "admin.atlassian.com",
+        "api.atlassian.com",
+        "as.atlassian.com",
+        "atlassian.com",
+        "attend.atlassian.com",
+        "aug.atlassian.com",
+        "aui.atlassian.com",
+        "auth.atlassian.com",
+        "beacon.atlassian.com",
+        "blog.atlassian.com",
+        "blogs.atlassian.com",
+        "br.atlassian.com",
+        "cdn.atlassian.com",
+        "chat.atlassian.com",
+        "click.atlassian.com",
+        "cn.atlassian.com",
+        "ja.atlassian.com",
+        "ppc.atlassian.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "classdojo.com",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 7,
+      "new_count": 7,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:07:36.628052+00:00",
+      "new": [
+        "ai.classdojo.com",
+        "api.classdojo.com",
+        "app.classdojo.com",
+        "c.classdojo.com",
+        "classdojo.com",
+        "m.classdojo.com",
+        "mw.classdojo.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "cloudinary.com",
+      "status": "COMPLETE",
+      "discovered": 21,
+      "live": 21,
+      "new_count": 21,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 21
+      },
+      "ts": "2026-11-08T10:08:07.852366+00:00",
+      "new": [
+        "ai.cloudinary.com",
+        "api.cloudinary.com",
+        "apis.cloudinary.com",
+        "bi.cloudinary.com",
+        "cert.cloudinary.com",
+        "cloudinary.com",
+        "dam9.cloudinary.com",
+        "devk.cloudinary.com",
+        "fr.cloudinary.com",
+        "ftp.cloudinary.com",
+        "ga.cloudinary.com",
+        "imgq.cloudinary.com",
+        "k4.cloudinary.com",
+        "k8sk.cloudinary.com",
+        "ns2o.cloudinary.com",
+        "oldg.cloudinary.com",
+        "shop.cloudinary.com",
+        "sync.cloudinary.com",
+        "tcp.cloudinary.com",
+        "wap.cloudinary.com",
+        "wp.cloudinary.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "datadome.co",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 7,
+      "new_count": 7,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:08:56.460972+00:00",
+      "new": [
+        "api.datadome.co",
+        "app.datadome.co",
+        "bo.datadome.co",
+        "ct.datadome.co",
+        "datadome.co",
+        "go.datadome.co",
+        "js.datadome.co"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "decathlon.com",
+      "status": "COMPLETE",
+      "discovered": 21,
+      "live": 6,
+      "new_count": 6,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 21
+      },
+      "ts": "2026-11-08T10:09:55.469647+00:00",
+      "new": [
+        "ch.decathlon.com",
+        "code.decathlon.com",
+        "csr.decathlon.com",
+        "decathlon.com",
+        "dtb.decathlon.com",
+        "oco.decathlon.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "doctolib.com",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 5,
+      "new_count": 5,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:10:36.196406+00:00",
+      "new": [
+        "about.doctolib.com",
+        "admin.doctolib.com",
+        "adp.doctolib.com",
+        "cms.doctolib.com",
+        "doctolib.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "elementor.com",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 3,
+      "new_count": 3,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:11:06.657359+00:00",
+      "new": [
+        "be.elementor.com",
+        "elementor.com",
+        "go.elementor.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "expressvpn.com",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 12,
+      "new_count": 12,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:11:44.959819+00:00",
+      "new": [
+        "auth.expressvpn.com",
+        "blog.expressvpn.com",
+        "checkout.expressvpn.com",
+        "expressvpn.com",
+        "go.expressvpn.com",
+        "portal.expressvpn.com",
+        "repo.expressvpn.com",
+        "store.expressvpn.com",
+        "support.expressvpn.com",
+        "teams.expressvpn.com",
+        "updates.expressvpn.com",
+        "www.expressvpn.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "fivetran.com",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 9,
+      "new_count": 9,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:12:25.232398+00:00",
+      "new": [
+        "api.fivetran.com",
+        "beta.fivetran.com",
+        "blog.fivetran.com",
+        "fivetran.com",
+        "get.fivetran.com",
+        "go.fivetran.com",
+        "hvr.fivetran.com",
+        "shop.fivetran.com",
+        "www.fivetran.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "gearset.com",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 4,
+      "new_count": 4,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:12:58.006748+00:00",
+      "new": [
+        "api.gearset.com",
+        "app.gearset.com",
+        "gearset.com",
+        "www.gearset.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "glean.com",
+      "status": "COMPLETE",
+      "discovered": 21,
+      "live": 15,
+      "new_count": 15,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 21
+      },
+      "ts": "2026-11-08T10:13:28.731693+00:00",
+      "new": [
+        "app.glean.com",
+        "canva.glean.com",
+        "chat.glean.com",
+        "dev.glean.com",
+        "em.glean.com",
+        "get.glean.com",
+        "glean.com",
+        "go.glean.com",
+        "grab.glean.com",
+        "help.glean.com",
+        "kp.glean.com",
+        "lsvp.glean.com",
+        "miro.glean.com",
+        "scio.glean.com",
+        "www.glean.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "ibotta.com",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 4,
+      "new_count": 4,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:13:59.661646+00:00",
+      "new": [
+        "cs.ibotta.com",
+        "ibotta.com",
+        "o.ibotta.com",
+        "s.ibotta.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "ifood.com.br",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 19,
+      "new_count": 19,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:14:36.965545+00:00",
+      "new": [
+        "1.ifood.com.br",
+        "2.ifood.com.br",
+        "a.ifood.com.br",
+        "acp.ifood.com.br",
+        "api.ifood.com.br",
+        "bd.ifood.com.br",
+        "be.ifood.com.br",
+        "cdn.ifood.com.br",
+        "e.ifood.com.br",
+        "es.ifood.com.br",
+        "fr.ifood.com.br",
+        "h2.ifood.com.br",
+        "ifood.com.br",
+        "js.ifood.com.br",
+        "k2.ifood.com.br",
+        "k5.ifood.com.br",
+        "ns2.ifood.com.br",
+        "qg.ifood.com.br",
+        "r.ifood.com.br"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "indeed.com",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 16,
+      "new_count": 16,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:15:14.238187+00:00",
+      "new": [
+        "aq.indeed.com",
+        "at.indeed.com",
+        "au.indeed.com",
+        "be.indeed.com",
+        "ca.indeed.com",
+        "ch.indeed.com",
+        "cn.indeed.com",
+        "cz.indeed.com",
+        "de.indeed.com",
+        "fr.indeed.com",
+        "hk.indeed.com",
+        "hu.indeed.com",
+        "ie.indeed.com",
+        "indeed.com",
+        "jp.indeed.com",
+        "t.indeed.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "intercom.com",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 7,
+      "new_count": 7,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:15:44.648571+00:00",
+      "new": [
+        "bfy.intercom.com",
+        "em.intercom.com",
+        "go.intercom.com",
+        "hq.intercom.com",
+        "intercom.com",
+        "mcp.intercom.com",
+        "mi.intercom.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "klaviyo.com",
+      "status": "COMPLETE",
+      "discovered": 21,
+      "live": 3,
+      "new_count": 3,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 21
+      },
+      "ts": "2026-11-08T10:16:22.814813+00:00",
+      "new": [
+        "a.klaviyo.com",
+        "api.klaviyo.com",
+        "klaviyo.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "okx.com",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 6,
+      "new_count": 5,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:17:36.273036+00:00",
+      "new": [
+        "hk.okx.com",
+        "my.okx.com",
+        "tr.okx.com",
+        "us.okx.com",
+        "ws.okx.com"
+      ],
+      "removed": [],
+      "baseline_updated": true
+    },
+    {
+      "target": "shopify.com",
+      "status": "COMPLETE",
+      "discovered": 20,
+      "live": 19,
+      "new_count": 19,
+      "removed_count": 0,
+      "discover_error": null,
+      "probe": {
+        "method": "httpx",
+        "error": null,
+        "input_count": 20
+      },
+      "ts": "2026-11-08T10:18:07.755436+00:00",
+      "new": [
+        "br.shopify.com",
+        "cs.shopify.com",
+        "dk.shopify.com",
+        "es.shopify.com",
+        "fr.shopify.com",
+        "hi.shopify.com",
+        "in.shopify.com",
+        "ir.shopify.com",
+        "it.shopify.com",
+        "la.shopify.com",
+        "m.shopify.com",
+        "pt.shopify.com",
+        "q2.shopify.com",
+        "qr.shopify.com",
+        "ru.shopify.com",
+        "shopify.com",
+        "sl.shopify.com",
+        "ux.shopify.com",
+        "v.shopify.com"
+      ],
       "removed": [],
       "baseline_updated": true
     },
     {
       "target": "superdrug.com",
       "status": "COMPLETE",
-      "discovered": 1,
-      "live": 1,
-      "new_count": 0,
+      "discovered": 20,
+      "live": 5,
+      "new_count": 4,
       "removed_count": 0,
       "discover_error": null,
       "probe": {
         "method": "httpx",
         "error": null,
-        "input_count": 1
+        "input_count": 20
       },
-      "ts": "2026-11-07T20:46:05.057081+00:00",
-      "new": [],
+      "ts": "2026-11-08T10:18:42.650526+00:00",
+      "new": [
+        "api.superdrug.com",
+        "e.superdrug.com",
+        "hb.superdrug.com",
+        "m.superdrug.com"
+      ],
       "removed": [],
       "baseline_updated": true
     }

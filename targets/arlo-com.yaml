@@ -1,0 +1,38 @@
+target: arlo.com
+scan_allowed: false
+discover_subdomains: true
+max_subdomains: 25
+technologies:
+- vendor: Klaviyo
+  product: Klaviyo
+- vendor: PriceSpider
+  product: PriceSpider
+- vendor: Shopify
+  product: Shopify
+- vendor: Swiper
+  product: Swiper
+- vendor: sfdcedge
+  product: sfdcedge
+- vendor: Amazon ELB
+  product: Amazon ELB
+- vendor: awselb
+  product: awselb
+  version: '2.0'
+- vendor: Google Cloud
+  product: Google Cloud
+- vendor: Google Cloud CDN
+  product: Google Cloud CDN
+- vendor: Google Cloud Trace
+  product: Google Cloud Trace
+- vendor: Google
+  product: Google
+- vendor: Adobe Experience Manager
+  product: Adobe Experience Manager
+- vendor: Java
+  product: Java
+- vendor: OneTrust
+  product: OneTrust
+- vendor: React
+  product: React
+- vendor: jQuery
+  product: jQuery

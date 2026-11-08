@@ -1,0 +1,31 @@
+target: elementor.com
+scan_allowed: false
+discover_subdomains: true
+max_subdomains: 25
+technologies:
+- vendor: Elementor Cloud
+  product: Elementor Cloud
+- vendor: Elementor
+  product: Elementor
+  version: 4.3.5
+- vendor: MySQL
+  product: MySQL
+- vendor: PHP
+  product: PHP
+- vendor: Swiper
+  product: Swiper
+- vendor: Weglot
+  product: Weglot
+- vendor: WordPress
+  product: WordPress
+  version: 7.1.4
+- vendor: Yoast SEO
+  product: Yoast SEO
+  version: '28.8'
+- vendor: jQuery
+  product: jQuery
+- vendor: Bootstrap
+  product: Bootstrap
+  version: 2.1.1
+- vendor: jQuery CDN
+  product: jQuery CDN

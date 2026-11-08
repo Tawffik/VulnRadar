@@ -84,11 +84,16 @@ def check_sensitive_files(base_url: str) -> list:
         status, body = _get(base_url + path)
         if status != 200 or not body:
             continue
-        if re.search(r"<html|<!doctype", body, re.I) and base_is_html:
-            # SPA/soft-404 that serves HTML for every path - only trust this
-            # hit if it's meaningfully different in size from the baseline.
-            if abs(len(body) - base_len) < 200:
-                continue
+        # None of these paths ever legitimately serves HTML. A 200 + HTML is
+        # always a soft-404 / SPA shell / WAF interstitial (e.g. an e-commerce
+        # platform rendering its homepage for /.env). Reject regardless of the
+        # baseline, which may itself be a 404 (so the SPA compare below never
+        # fires) - the body being HTML is disqualifying on its own.
+        if re.search(r"<html|<!doctype", body, re.I):
+            continue
+        if base_is_html and abs(len(body) - base_len) < 200:
+            # SPA/soft-404 that serves the same shell for every path.
+            continue
         hits.append(base_url + path)
     return hits
 

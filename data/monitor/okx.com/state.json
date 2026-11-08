@@ -1,18 +1,24 @@
 {
   "target": "okx.com",
   "status": "COMPLETE",
-  "discovered": 1,
-  "live": 1,
-  "new_count": 0,
+  "discovered": 20,
+  "live": 6,
+  "new_count": 5,
   "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 1
+    "input_count": 20
   },
-  "ts": "2026-11-07T20:46:03.853876+00:00",
-  "new": [],
+  "ts": "2026-11-08T10:17:36.273036+00:00",
+  "new": [
+    "hk.okx.com",
+    "my.okx.com",
+    "tr.okx.com",
+    "us.okx.com",
+    "ws.okx.com"
+  ],
   "removed": [],
   "baseline_updated": true
 }

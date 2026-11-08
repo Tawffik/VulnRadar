@@ -3,7 +3,7 @@
 pipeline/recon/subdomains.py
 
 Optional passive subdomain discovery with ProjectDiscovery's `subfinder`
-(-passive: queries public sources like certificate transparency; it does
+(querying public sources like certificate transparency; it does
 NOT touch the target). Protected apex domains often hide their stack
 (e.g. okx.com only shows "HSTS"), while subdomains frequently expose it.
 
@@ -31,7 +31,11 @@ def discover(domain: str, max_results: int = DEFAULT_MAX, timeout: int = 60, _ru
         return [], "subfinder binary not found on PATH"
     runner = _runner or subprocess.run
     try:
-        proc = runner([SUBFINDER_BINARY, "-d", domain, "-passive", "-silent", "-timeout", "30"],
+        # NOTE: subfinder v2 removed the `-passive` flag — passive online
+        # sources are the default (an explicit `-passive` is now a fatal
+        # "flag provided but not defined" error, which silently produced
+        # 0 subdomains on every run). `-silent` keeps stdout to bare hosts.
+        proc = runner([SUBFINDER_BINARY, "-d", domain, "-silent", "-timeout", "30"],
                       capture_output=True, text=True, timeout=timeout)
     except subprocess.TimeoutExpired:
         return [], f"subfinder timed out on {domain}"

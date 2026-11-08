@@ -1,0 +1,39 @@
+{
+  "target": "asana.com",
+  "status": "COMPLETE",
+  "discovered": 20,
+  "live": 20,
+  "new_count": 20,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 20
+  },
+  "ts": "2026-11-08T10:06:17.625612+00:00",
+  "new": [
+    "227.asana.com",
+    "api.asana.com",
+    "app.asana.com",
+    "as.asana.com",
+    "asana.com",
+    "blog.asana.com",
+    "com.asana.com",
+    "dev.asana.com",
+    "dsl.asana.com",
+    "eng.asana.com",
+    "eu.asana.com",
+    "go.asana.com",
+    "h3.asana.com",
+    "ir.asana.com",
+    "it.asana.com",
+    "mcp.asana.com",
+    "my.asana.com",
+    "uat.asana.com",
+    "uwc.asana.com",
+    "www.asana.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

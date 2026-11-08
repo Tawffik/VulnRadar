@@ -26,7 +26,19 @@ def test_timeout_and_failure_are_non_fatal():
     assert hosts == [] and "timed out" in err
     print("  ✅ subfinder timeout reported as error, never raised")
 
+def test_command_does_not_use_removed_passive_flag():
+    """Regression: subfinder v2 removed `-passive`; an explicit flag makes
+    subfinder exit immediately with 'flag provided but not defined', so
+    discovery silently returned 0 subdomains on every run."""
+    captured = {}
+    def fake(cmd, **k):
+        captured["cmd"] = cmd
+        return _FakeCompleted(stdout="api.okx.com\n")
+    subdomains.discover("okx.com", _runner=fake)
+    assert "-passive" not in captured["cmd"], "subfinder v2 rejects -passive"
+    print("  ✅ command omits the removed -passive flag")
+
 if __name__ == "__main__":
-    for t in [test_filters_to_domain_and_subdomains_only, test_capped_at_max_results, test_timeout_and_failure_are_non_fatal]:
+    for t in [test_filters_to_domain_and_subdomains_only, test_capped_at_max_results, test_timeout_and_failure_are_non_fatal, test_command_does_not_use_removed_passive_flag]:
         t()
-    print("\n3/3 tests passed")
+    print("\n4/4 tests passed")

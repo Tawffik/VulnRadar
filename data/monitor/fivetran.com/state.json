@@ -1,0 +1,28 @@
+{
+  "target": "fivetran.com",
+  "status": "COMPLETE",
+  "discovered": 20,
+  "live": 9,
+  "new_count": 9,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 20
+  },
+  "ts": "2026-11-08T10:12:25.232398+00:00",
+  "new": [
+    "api.fivetran.com",
+    "beta.fivetran.com",
+    "blog.fivetran.com",
+    "fivetran.com",
+    "get.fivetran.com",
+    "go.fivetran.com",
+    "hvr.fivetran.com",
+    "shop.fivetran.com",
+    "www.fivetran.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

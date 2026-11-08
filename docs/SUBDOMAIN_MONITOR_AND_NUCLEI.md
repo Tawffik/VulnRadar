@@ -20,7 +20,7 @@ targets/*.yaml  (or inventory list)
         ▼
 ┌─────────────────────── VulnRadar Monitor Workflow ───────────────────────┐
 │ 1. Subdomain Monitor (passive)                                           │
-│    subfinder -passive → dnsx → httpx live                                │
+│    subfinder → dnsx → httpx live                                         │
 │    baseline state per target: prev live set                              │
 │    emit: new / removed / still-live                                      │
 │    optional: subzy-style takeover check on NEW only                      │
@@ -49,7 +49,7 @@ Per target domain `D`:
 | `data/monitor/<D>/state.json` | counts, timestamps, status COMPLETE/INCOMPLETE |
 
 Rules:
-- Passive discovery only (subfinder `-passive`) unless future opt-in says otherwise.
+- Passive discovery only (subfinder default sources) unless future opt-in says otherwise.
 - Scope: only `D` and hosts ending in `.<D>`.
 - Incomplete (dnsx=0, tool missing) must never look like "clean / no assets".
 - Nuclei is **never** run on every new subdomain automatically.

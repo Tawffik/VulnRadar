@@ -37,6 +37,21 @@ def test_sensitive_files_rejects_spa_soft_404():
     print("  ✅ SPA that 200s everything produces zero false positives")
 
 
+def test_sensitive_files_rejects_html_even_when_baseline_is_404():
+    """Regression: decathlon.com/.env returned 200 + an e-commerce HTML
+    interstitial while the baseline path 404'd, so the size-compare never
+    fired and a fake '.env exposure' was reported. An HTML body is
+    disqualifying for these paths on its own."""
+    html = "<!doctype html><html><head><title>Shop</title></head></html>"
+    with patch.object(e, "_get", _fake_get({
+        "__vulnradar_not_a_real_path_xyz": (404, ""),   # baseline is NOT html
+        "/.env": (200, html),                            # but /.env returns HTML
+    })):
+        hits = e.check_sensitive_files("https://shop.com")
+    assert hits == []
+    print("  ✅ HTML 200 on /.env rejected even when baseline path 404s")
+
+
 def test_sensitive_files_accepts_genuinely_different_response():
     with patch.object(e, "_get", _fake_get({
         "__vulnradar_not_a_real_path_xyz": (404, ""),

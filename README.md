@@ -2,7 +2,7 @@
 
 CVE Intelligence + Target Correlation, not a CVE scanner.
 
-VulnRadar tracks **four CVE sources together**, merged by priority
+VulnRadar tracks **five CVE sources together**, merged by priority
 (highest wins on conflict, all contributing sources still recorded):
 
 | Source | Role | Speed |
@@ -29,12 +29,12 @@ relevant `hunter_queue.md` instead of a full feed dump.
 > **Known limitation, not hidden:** `cve_org`'s `delta.json` is a
 > rolling snapshot, not a complete change log — polling less often than
 > its own ~7-minute update cadence risks missing an entry that got
-> superseded between polls. The workflow runs every 15 minutes to stay
-> close to that cadence, and a gap-detection warning fires if a poll is
-> ever skipped/delayed. See `pipeline/collectors/cve_org.py`'s
-> docstring for the full explanation and the roadmap for the more
-> robust (git-clone-and-diff) approach if this ever needs to be
-> airtight.
+> superseded between polls. The hunt workflow currently runs **once a
+> day** (06:00 UTC), so a `check_for_gap()` warning is EXPECTED at this
+> cadence — it is not a bug. If near-real-time cve.org coverage matters,
+> poll more often, or switch that collector to the full-clone/diff
+> approach noted in the roadmap. See `pipeline/collectors/cve_org.py`'s
+> docstring for the full explanation.
 
 ## Design principle
 
@@ -75,12 +75,12 @@ output/hunter_queue.md                 — prioritized, target-relevant, human-r
    vendor/product names for the technologies you actually run. One
    file per target/organization.
 2. Push it. `.github/workflows/vulnradar-hunt.yml` runs automatically
-   every 15 minutes once this is pushed to GitHub (uses the repo's own
-   built-in `GITHUB_TOKEN`, no extra setup needed), and commits the
-   updated state + `hunter_queue.md` back to the repo each run so state
-   persists between runs (GitHub Actions runners are ephemeral —
-   without committing state back, every run would think everything is
-   new again).
+   on a daily schedule (06:00 UTC) once this is pushed to GitHub (uses
+   the repo's own built-in `GITHUB_TOKEN`, no extra setup needed), and
+   commits the updated state + `hunter_queue.md` back to the repo each
+   run so state persists between runs (GitHub Actions runners are
+   ephemeral — without committing state back, every run would think
+   everything is new again).
 
 ### Option B: one-off target from the Actions UI (no YAML editing)
 
@@ -99,12 +99,13 @@ This mirrors the manual-dispatch pattern already used in the sibling
 BugBountyCI project's own workflow UI. Requires no local setup at all —
 type a domain, click Run workflow.
 
-**Cost note:** a 15-minute schedule means ~96 workflow runs/day. On
-a private repo this consumes GitHub Actions minutes from your
-account's quota (each run is fast, well under a minute of actual
-compute, but still counts). On a public repo, Actions minutes are
-free/unlimited. If this matters, widen the cron schedule in
-`.github/workflows/vulnradar-hunt.yml`.
+**Cost note:** the daily schedule means ~1 workflow run/day per target
+set. On a private repo this consumes GitHub Actions minutes from your
+account's quota (each run is fast, but still counts). On a public repo,
+Actions minutes are free/unlimited. If you want near-real-time CVE
+coverage, tighten the cron schedule in `.github/workflows/vulnradar-hunt.yml`
+back to a 15-minute cadence (the code supports it — only the gap-detection
+warning's expectation changes).
 
 ## Running locally
 
@@ -123,18 +124,17 @@ anything.
 ## Testing
 
 ```bash
-python3 pipeline/tests/test_vulnradar.py
-python3 pipeline/tests/test_cve_org.py
-python3 pipeline/tests/test_github_advisories.py
-python3 pipeline/tests/test_nvd.py
-python3 pipeline/tests/test_merge_sources.py
+python3 -m pytest pipeline/tests -q        # full suite (CI runs this)
+python3 pipeline/tests/test_vulnradar.py   # or any single file standalone
 ```
 
-55 tests total. `test_cve_org.py` runs against a fixture captured from
+**140 tests.** `test_cve_org.py` runs against a fixture captured from
 a LIVE fetch of the real MITRE feed during development. `test_nvd.py`
 and `test_github_advisories.py` run against fixtures built from each
 service's documented schema (not live-verified — see the honesty note
-above the source table).
+above the source table). CI (`.github/workflows/vulnradar-tests.yml`)
+runs the suite on every push/PR and fails if any test dirties a tracked
+output file.
 
 ## What V1 deliberately does NOT do
 
@@ -164,7 +164,7 @@ Three additions close the gaps from V1:
   detected versions. Run manually:
   `python3 scripts/refresh_target_fingerprints.py`
   (needs `httpx` on PATH — `scripts/install_httpx.sh` installs it). The
-  workflow also runs this itself, roughly every 6 hours on schedule.
+  workflow also runs this itself on every hunt run (daily).
 - **Version-aware matching** (`pipeline/intelligence/version_check.py`):
   compares a target's fingerprinted `version:` against NVD's CPE
   version-range data (already collected by `nvd.py`, previously

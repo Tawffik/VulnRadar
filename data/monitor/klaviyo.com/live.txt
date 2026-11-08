@@ -1,0 +1,3 @@
+a.klaviyo.com
+api.klaviyo.com
+klaviyo.com

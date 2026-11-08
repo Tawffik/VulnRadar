@@ -1,1 +1,6 @@
+hk.okx.com
+my.okx.com
 okx.com
+tr.okx.com
+us.okx.com
+ws.okx.com

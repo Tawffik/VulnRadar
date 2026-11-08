@@ -1,0 +1,38 @@
+{
+  "target": "shopify.com",
+  "status": "COMPLETE",
+  "discovered": 20,
+  "live": 19,
+  "new_count": 19,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 20
+  },
+  "ts": "2026-11-08T10:18:07.755436+00:00",
+  "new": [
+    "br.shopify.com",
+    "cs.shopify.com",
+    "dk.shopify.com",
+    "es.shopify.com",
+    "fr.shopify.com",
+    "hi.shopify.com",
+    "in.shopify.com",
+    "ir.shopify.com",
+    "it.shopify.com",
+    "la.shopify.com",
+    "m.shopify.com",
+    "pt.shopify.com",
+    "q2.shopify.com",
+    "qr.shopify.com",
+    "ru.shopify.com",
+    "shopify.com",
+    "sl.shopify.com",
+    "ux.shopify.com",
+    "v.shopify.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

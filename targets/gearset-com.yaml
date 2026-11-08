@@ -1,0 +1,17 @@
+target: gearset.com
+scan_allowed: false
+discover_subdomains: true
+max_subdomains: 25
+technologies:
+- vendor: Algolia
+  product: Algolia
+- vendor: Calendly
+  product: Calendly
+- vendor: Linkedin Ads
+  product: Linkedin Ads
+- vendor: Osano
+  product: Osano
+- vendor: Wistia
+  product: Wistia
+- vendor: reCAPTCHA
+  product: reCAPTCHA

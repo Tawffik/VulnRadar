@@ -1,0 +1,40 @@
+{
+  "target": "cloudinary.com",
+  "status": "COMPLETE",
+  "discovered": 21,
+  "live": 21,
+  "new_count": 21,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 21
+  },
+  "ts": "2026-11-08T10:08:07.852366+00:00",
+  "new": [
+    "ai.cloudinary.com",
+    "api.cloudinary.com",
+    "apis.cloudinary.com",
+    "bi.cloudinary.com",
+    "cert.cloudinary.com",
+    "cloudinary.com",
+    "dam9.cloudinary.com",
+    "devk.cloudinary.com",
+    "fr.cloudinary.com",
+    "ftp.cloudinary.com",
+    "ga.cloudinary.com",
+    "imgq.cloudinary.com",
+    "k4.cloudinary.com",
+    "k8sk.cloudinary.com",
+    "ns2o.cloudinary.com",
+    "oldg.cloudinary.com",
+    "shop.cloudinary.com",
+    "sync.cloudinary.com",
+    "tcp.cloudinary.com",
+    "wap.cloudinary.com",
+    "wp.cloudinary.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}

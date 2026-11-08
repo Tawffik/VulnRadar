@@ -1,0 +1,29 @@
+target: atlassian.com
+scan_allowed: false
+discover_subdomains: true
+max_subdomains: 25
+technologies:
+- vendor: AtlassianEdge
+  product: AtlassianEdge
+- vendor: Google Cloud
+  product: Google Cloud
+- vendor: Google Cloud CDN
+  product: Google Cloud CDN
+- vendor: Google Maps
+  product: Google Maps
+- vendor: nginx
+  product: nginx
+- vendor: jQuery
+  product: jQuery
+- vendor: AmazonS3
+  product: AmazonS3
+- vendor: PayPal
+  product: PayPal
+- vendor: DataDome
+  product: DataDome
+- vendor: Varnish
+  product: Varnish
+- vendor: WP Engine
+  product: WP Engine
+- vendor: WordPress
+  product: WordPress

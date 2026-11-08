@@ -1,0 +1,39 @@
+{
+  "target": "atlassian.com",
+  "status": "COMPLETE",
+  "discovered": 21,
+  "live": 20,
+  "new_count": 20,
+  "removed_count": 0,
+  "discover_error": null,
+  "probe": {
+    "method": "httpx",
+    "error": null,
+    "input_count": 21
+  },
+  "ts": "2026-11-08T10:07:04.735818+00:00",
+  "new": [
+    "ace.atlassian.com",
+    "acli.atlassian.com",
+    "admin.atlassian.com",
+    "api.atlassian.com",
+    "as.atlassian.com",
+    "atlassian.com",
+    "attend.atlassian.com",
+    "aug.atlassian.com",
+    "aui.atlassian.com",
+    "auth.atlassian.com",
+    "beacon.atlassian.com",
+    "blog.atlassian.com",
+    "blogs.atlassian.com",
+    "br.atlassian.com",
+    "cdn.atlassian.com",
+    "chat.atlassian.com",
+    "click.atlassian.com",
+    "cn.atlassian.com",
+    "ja.atlassian.com",
+    "ppc.atlassian.com"
+  ],
+  "removed": [],
+  "baseline_updated": true
+}
