@@ -1,24 +1,24 @@
 {
   "target": "atlassian.com",
   "status": "COMPLETE",
-  "discovered": 21,
-  "live": 20,
-  "new_count": 20,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 19,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 21
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:07:04.735818+00:00",
-  "new": [
+  "ts": "2026-11-08T11:51:58.834766+00:00",
+  "new": [],
+  "removed": [
     "ace.atlassian.com",
     "acli.atlassian.com",
     "admin.atlassian.com",
     "api.atlassian.com",
     "as.atlassian.com",
-    "atlassian.com",
     "attend.atlassian.com",
     "aug.atlassian.com",
     "aui.atlassian.com",
@@ -34,6 +34,5 @@
     "ja.atlassian.com",
     "ppc.atlassian.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

@@ -1,23 +1,23 @@
 {
   "target": "asana.com",
   "status": "COMPLETE",
-  "discovered": 20,
-  "live": 20,
-  "new_count": 20,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 19,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 20
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:06:17.625612+00:00",
-  "new": [
+  "ts": "2026-11-08T11:51:58.092956+00:00",
+  "new": [],
+  "removed": [
     "227.asana.com",
     "api.asana.com",
     "app.asana.com",
     "as.asana.com",
-    "asana.com",
     "blog.asana.com",
     "com.asana.com",
     "dev.asana.com",
@@ -34,6 +34,5 @@
     "uwc.asana.com",
     "www.asana.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

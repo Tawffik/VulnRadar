@@ -1,12 +1,1 @@
-auth.expressvpn.com
-blog.expressvpn.com
-checkout.expressvpn.com
 expressvpn.com
-go.expressvpn.com
-portal.expressvpn.com
-repo.expressvpn.com
-store.expressvpn.com
-support.expressvpn.com
-teams.expressvpn.com
-updates.expressvpn.com
-www.expressvpn.com

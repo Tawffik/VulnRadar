@@ -1,5 +1,0 @@
-about.doctolib.com
-admin.doctolib.com
-adp.doctolib.com
-cms.doctolib.com
-doctolib.com

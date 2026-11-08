@@ -1,18 +1,19 @@
 {
   "target": "shopify.com",
   "status": "COMPLETE",
-  "discovered": 20,
-  "live": 19,
-  "new_count": 19,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 18,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 20
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:18:07.755436+00:00",
-  "new": [
+  "ts": "2026-11-08T11:52:10.592730+00:00",
+  "new": [],
+  "removed": [
     "br.shopify.com",
     "cs.shopify.com",
     "dk.shopify.com",
@@ -28,11 +29,9 @@
     "q2.shopify.com",
     "qr.shopify.com",
     "ru.shopify.com",
-    "shopify.com",
     "sl.shopify.com",
     "ux.shopify.com",
     "v.shopify.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

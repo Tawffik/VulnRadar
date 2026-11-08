@@ -1,22 +1,21 @@
 {
   "target": "elementor.com",
   "status": "COMPLETE",
-  "discovered": 20,
-  "live": 3,
-  "new_count": 3,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 2,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 20
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:11:06.657359+00:00",
-  "new": [
+  "ts": "2026-11-08T11:52:02.943626+00:00",
+  "new": [],
+  "removed": [
     "be.elementor.com",
-    "elementor.com",
     "go.elementor.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

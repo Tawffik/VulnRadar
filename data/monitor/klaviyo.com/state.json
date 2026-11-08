@@ -1,22 +1,21 @@
 {
   "target": "klaviyo.com",
   "status": "COMPLETE",
-  "discovered": 21,
-  "live": 3,
-  "new_count": 3,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 2,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 21
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:16:22.814813+00:00",
-  "new": [
+  "ts": "2026-11-08T11:52:08.988757+00:00",
+  "new": [],
+  "removed": [
     "a.klaviyo.com",
-    "api.klaviyo.com",
-    "klaviyo.com"
+    "api.klaviyo.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

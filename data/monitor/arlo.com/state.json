@@ -1,20 +1,20 @@
 {
   "target": "arlo.com",
   "status": "COMPLETE",
-  "discovered": 20,
-  "live": 9,
-  "new_count": 9,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 8,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 20
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:04:52.894939+00:00",
-  "new": [
+  "ts": "2026-11-08T11:51:57.411184+00:00",
+  "new": [],
+  "removed": [
     "api.arlo.com",
-    "arlo.com",
     "eks.arlo.com",
     "kb.arlo.com",
     "mcs.arlo.com",
@@ -23,6 +23,5 @@
     "qa.arlo.com",
     "tm.arlo.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

@@ -1,24 +1,23 @@
 {
   "target": "doctolib.com",
   "status": "COMPLETE",
-  "discovered": 20,
-  "live": 5,
-  "new_count": 5,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 4,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 20
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:10:36.196406+00:00",
-  "new": [
+  "ts": "2026-11-08T11:52:02.029687+00:00",
+  "new": [],
+  "removed": [
     "about.doctolib.com",
     "admin.doctolib.com",
     "adp.doctolib.com",
-    "cms.doctolib.com",
-    "doctolib.com"
+    "cms.doctolib.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

@@ -1,26 +1,25 @@
 {
   "target": "classdojo.com",
   "status": "COMPLETE",
-  "discovered": 20,
-  "live": 7,
-  "new_count": 7,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 6,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 20
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:07:36.628052+00:00",
-  "new": [
+  "ts": "2026-11-08T11:51:59.403383+00:00",
+  "new": [],
+  "removed": [
     "ai.classdojo.com",
     "api.classdojo.com",
     "app.classdojo.com",
     "c.classdojo.com",
-    "classdojo.com",
     "m.classdojo.com",
     "mw.classdojo.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

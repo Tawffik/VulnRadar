@@ -1,20 +1,20 @@
 {
   "target": "aiven.io",
   "status": "COMPLETE",
-  "discovered": 21,
-  "live": 8,
-  "new_count": 8,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 7,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 21
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:03:46.891122+00:00",
-  "new": [
+  "ts": "2026-11-08T11:51:56.518351+00:00",
+  "new": [],
+  "removed": [
     "ai.aiven.io",
-    "aiven.io",
     "api.aiven.io",
     "dc.aiven.io",
     "go.aiven.io",
@@ -22,6 +22,5 @@
     "iam.aiven.io",
     "sre.aiven.io"
   ],
-  "removed": [],
   "baseline_updated": true
 }

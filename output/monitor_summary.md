@@ -1,36 +1,35 @@
 # VulnRadar Subdomain Monitor
 
-Generated: 2026-11-08T10:19:13.286153+00:00
+Generated: 2026-11-08T11:52:11.795303+00:00
 Targets: 23
 
 | Target | Status | Discovered | Live | New | Removed |
 |--------|--------|----------:|-----:|----:|--------:|
-| ably.com | COMPLETE | 20 | 16 | 16 | 0 |
-| aiven.io | COMPLETE | 21 | 8 | 8 | 0 |
-| arlo.com | COMPLETE | 20 | 9 | 9 | 0 |
-| asana.com | COMPLETE | 20 | 20 | 20 | 0 |
-| atlassian.com | COMPLETE | 21 | 20 | 20 | 0 |
-| classdojo.com | COMPLETE | 20 | 7 | 7 | 0 |
-| cloudinary.com | COMPLETE | 21 | 21 | 21 | 0 |
-| datadome.co | COMPLETE | 20 | 7 | 7 | 0 |
-| decathlon.com | COMPLETE | 21 | 6 | 6 | 0 |
-| doctolib.com | COMPLETE | 20 | 5 | 5 | 0 |
-| elementor.com | COMPLETE | 20 | 3 | 3 | 0 |
-| expressvpn.com | COMPLETE | 20 | 12 | 12 | 0 |
-| fivetran.com | COMPLETE | 20 | 9 | 9 | 0 |
-| gearset.com | COMPLETE | 20 | 4 | 4 | 0 |
-| glean.com | COMPLETE | 21 | 15 | 15 | 0 |
-| ibotta.com | COMPLETE | 20 | 4 | 4 | 0 |
-| ifood.com.br | COMPLETE | 20 | 19 | 19 | 0 |
-| indeed.com | COMPLETE | 20 | 16 | 16 | 0 |
-| intercom.com | COMPLETE | 20 | 7 | 7 | 0 |
-| klaviyo.com | COMPLETE | 21 | 3 | 3 | 0 |
-| okx.com | COMPLETE | 20 | 6 | 5 | 0 |
-| shopify.com | COMPLETE | 20 | 19 | 19 | 0 |
-| superdrug.com | COMPLETE | 20 | 5 | 4 | 0 |
+| ably.com | COMPLETE | 1 | 1 | 0 | 15 |
+| aiven.io | COMPLETE | 1 | 1 | 0 | 7 |
+| arlo.com | COMPLETE | 1 | 1 | 0 | 8 |
+| asana.com | COMPLETE | 1 | 1 | 0 | 19 |
+| atlassian.com | COMPLETE | 1 | 1 | 0 | 19 |
+| classdojo.com | COMPLETE | 1 | 1 | 0 | 6 |
+| cloudinary.com | COMPLETE | 1 | 1 | 0 | 20 |
+| datadome.co | COMPLETE | 1 | 1 | 0 | 6 |
+| decathlon.com | COMPLETE | 1 | 1 | 0 | 5 |
+| doctolib.com | COMPLETE | 1 | 1 | 0 | 4 |
+| elementor.com | COMPLETE | 1 | 1 | 0 | 2 |
+| expressvpn.com | COMPLETE | 1 | 1 | 0 | 11 |
+| fivetran.com | COMPLETE | 1 | 1 | 0 | 8 |
+| gearset.com | COMPLETE | 1 | 1 | 0 | 3 |
+| glean.com | COMPLETE | 1 | 1 | 0 | 14 |
+| ibotta.com | COMPLETE | 1 | 1 | 0 | 3 |
+| ifood.com.br | COMPLETE | 1 | 1 | 0 | 18 |
+| indeed.com | COMPLETE | 1 | 1 | 0 | 15 |
+| intercom.com | COMPLETE | 1 | 1 | 0 | 6 |
+| klaviyo.com | COMPLETE | 1 | 1 | 0 | 2 |
+| okx.com | COMPLETE | 1 | 1 | 0 | 5 |
+| shopify.com | COMPLETE | 1 | 1 | 0 | 18 |
+| superdrug.com | COMPLETE | 1 | 1 | 0 | 4 |
 
-### New on ably.com
-- `ably.com`
+### Removed on ably.com
 - `brand.ably.com`
 - `cdn.ably.com`
 - `demo.ably.com`
@@ -47,9 +46,9 @@ Targets: 23
 - `sdk.ably.com`
 - `www.ably.com`
 
-### New on aiven.io
+- _ably.com discovery: subfinder binary not found on PATH_
+### Removed on aiven.io
 - `ai.aiven.io`
-- `aiven.io`
 - `api.aiven.io`
 - `dc.aiven.io`
 - `go.aiven.io`
@@ -57,9 +56,9 @@ Targets: 23
 - `iam.aiven.io`
 - `sre.aiven.io`
 
-### New on arlo.com
+- _aiven.io discovery: subfinder binary not found on PATH_
+### Removed on arlo.com
 - `api.arlo.com`
-- `arlo.com`
 - `eks.arlo.com`
 - `kb.arlo.com`
 - `mcs.arlo.com`
@@ -68,12 +67,12 @@ Targets: 23
 - `qa.arlo.com`
 - `tm.arlo.com`
 
-### New on asana.com
+- _arlo.com discovery: subfinder binary not found on PATH_
+### Removed on asana.com
 - `227.asana.com`
 - `api.asana.com`
 - `app.asana.com`
 - `as.asana.com`
-- `asana.com`
 - `blog.asana.com`
 - `com.asana.com`
 - `dev.asana.com`
@@ -90,13 +89,13 @@ Targets: 23
 - `uwc.asana.com`
 - `www.asana.com`
 
-### New on atlassian.com
+- _asana.com discovery: subfinder binary not found on PATH_
+### Removed on atlassian.com
 - `ace.atlassian.com`
 - `acli.atlassian.com`
 - `admin.atlassian.com`
 - `api.atlassian.com`
 - `as.atlassian.com`
-- `atlassian.com`
 - `attend.atlassian.com`
 - `aug.atlassian.com`
 - `aui.atlassian.com`
@@ -112,22 +111,22 @@ Targets: 23
 - `ja.atlassian.com`
 - `ppc.atlassian.com`
 
-### New on classdojo.com
+- _atlassian.com discovery: subfinder binary not found on PATH_
+### Removed on classdojo.com
 - `ai.classdojo.com`
 - `api.classdojo.com`
 - `app.classdojo.com`
 - `c.classdojo.com`
-- `classdojo.com`
 - `m.classdojo.com`
 - `mw.classdojo.com`
 
-### New on cloudinary.com
+- _classdojo.com discovery: subfinder binary not found on PATH_
+### Removed on cloudinary.com
 - `ai.cloudinary.com`
 - `api.cloudinary.com`
 - `apis.cloudinary.com`
 - `bi.cloudinary.com`
 - `cert.cloudinary.com`
-- `cloudinary.com`
 - `dam9.cloudinary.com`
 - `devk.cloudinary.com`
 - `fr.cloudinary.com`
@@ -144,40 +143,40 @@ Targets: 23
 - `wap.cloudinary.com`
 - `wp.cloudinary.com`
 
-### New on datadome.co
+- _cloudinary.com discovery: subfinder binary not found on PATH_
+### Removed on datadome.co
 - `api.datadome.co`
 - `app.datadome.co`
 - `bo.datadome.co`
 - `ct.datadome.co`
-- `datadome.co`
 - `go.datadome.co`
 - `js.datadome.co`
 
-### New on decathlon.com
+- _datadome.co discovery: subfinder binary not found on PATH_
+### Removed on decathlon.com
 - `ch.decathlon.com`
 - `code.decathlon.com`
 - `csr.decathlon.com`
-- `decathlon.com`
 - `dtb.decathlon.com`
 - `oco.decathlon.com`
 
-### New on doctolib.com
+- _decathlon.com discovery: subfinder binary not found on PATH_
+### Removed on doctolib.com
 - `about.doctolib.com`
 - `admin.doctolib.com`
 - `adp.doctolib.com`
 - `cms.doctolib.com`
-- `doctolib.com`
 
-### New on elementor.com
+- _doctolib.com discovery: subfinder binary not found on PATH_
+### Removed on elementor.com
 - `be.elementor.com`
-- `elementor.com`
 - `go.elementor.com`
 
-### New on expressvpn.com
+- _elementor.com discovery: subfinder binary not found on PATH_
+### Removed on expressvpn.com
 - `auth.expressvpn.com`
 - `blog.expressvpn.com`
 - `checkout.expressvpn.com`
-- `expressvpn.com`
 - `go.expressvpn.com`
 - `portal.expressvpn.com`
 - `repo.expressvpn.com`
@@ -187,31 +186,31 @@ Targets: 23
 - `updates.expressvpn.com`
 - `www.expressvpn.com`
 
-### New on fivetran.com
+- _expressvpn.com discovery: subfinder binary not found on PATH_
+### Removed on fivetran.com
 - `api.fivetran.com`
 - `beta.fivetran.com`
 - `blog.fivetran.com`
-- `fivetran.com`
 - `get.fivetran.com`
 - `go.fivetran.com`
 - `hvr.fivetran.com`
 - `shop.fivetran.com`
 - `www.fivetran.com`
 
-### New on gearset.com
+- _fivetran.com discovery: subfinder binary not found on PATH_
+### Removed on gearset.com
 - `api.gearset.com`
 - `app.gearset.com`
-- `gearset.com`
 - `www.gearset.com`
 
-### New on glean.com
+- _gearset.com discovery: subfinder binary not found on PATH_
+### Removed on glean.com
 - `app.glean.com`
 - `canva.glean.com`
 - `chat.glean.com`
 - `dev.glean.com`
 - `em.glean.com`
 - `get.glean.com`
-- `glean.com`
 - `go.glean.com`
 - `grab.glean.com`
 - `help.glean.com`
@@ -221,13 +220,14 @@ Targets: 23
 - `scio.glean.com`
 - `www.glean.com`
 
-### New on ibotta.com
+- _glean.com discovery: subfinder binary not found on PATH_
+### Removed on ibotta.com
 - `cs.ibotta.com`
-- `ibotta.com`
 - `o.ibotta.com`
 - `s.ibotta.com`
 
-### New on ifood.com.br
+- _ibotta.com discovery: subfinder binary not found on PATH_
+### Removed on ifood.com.br
 - `1.ifood.com.br`
 - `2.ifood.com.br`
 - `a.ifood.com.br`
@@ -240,7 +240,6 @@ Targets: 23
 - `es.ifood.com.br`
 - `fr.ifood.com.br`
 - `h2.ifood.com.br`
-- `ifood.com.br`
 - `js.ifood.com.br`
 - `k2.ifood.com.br`
 - `k5.ifood.com.br`
@@ -248,7 +247,8 @@ Targets: 23
 - `qg.ifood.com.br`
 - `r.ifood.com.br`
 
-### New on indeed.com
+- _ifood.com.br discovery: subfinder binary not found on PATH_
+### Removed on indeed.com
 - `aq.indeed.com`
 - `at.indeed.com`
 - `au.indeed.com`
@@ -262,32 +262,33 @@ Targets: 23
 - `hk.indeed.com`
 - `hu.indeed.com`
 - `ie.indeed.com`
-- `indeed.com`
 - `jp.indeed.com`
 - `t.indeed.com`
 
-### New on intercom.com
+- _indeed.com discovery: subfinder binary not found on PATH_
+### Removed on intercom.com
 - `bfy.intercom.com`
 - `em.intercom.com`
 - `go.intercom.com`
 - `hq.intercom.com`
-- `intercom.com`
 - `mcp.intercom.com`
 - `mi.intercom.com`
 
-### New on klaviyo.com
+- _intercom.com discovery: subfinder binary not found on PATH_
+### Removed on klaviyo.com
 - `a.klaviyo.com`
 - `api.klaviyo.com`
-- `klaviyo.com`
 
-### New on okx.com
+- _klaviyo.com discovery: subfinder binary not found on PATH_
+### Removed on okx.com
 - `hk.okx.com`
 - `my.okx.com`
 - `tr.okx.com`
 - `us.okx.com`
 - `ws.okx.com`
 
-### New on shopify.com
+- _okx.com discovery: subfinder binary not found on PATH_
+### Removed on shopify.com
 - `br.shopify.com`
 - `cs.shopify.com`
 - `dk.shopify.com`
@@ -303,14 +304,15 @@ Targets: 23
 - `q2.shopify.com`
 - `qr.shopify.com`
 - `ru.shopify.com`
-- `shopify.com`
 - `sl.shopify.com`
 - `ux.shopify.com`
 - `v.shopify.com`
 
-### New on superdrug.com
+- _shopify.com discovery: subfinder binary not found on PATH_
+### Removed on superdrug.com
 - `api.superdrug.com`
 - `e.superdrug.com`
 - `hb.superdrug.com`
 - `m.superdrug.com`
 
+- _superdrug.com discovery: subfinder binary not found on PATH_

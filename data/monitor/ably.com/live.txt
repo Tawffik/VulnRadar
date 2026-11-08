@@ -1,16 +1,1 @@
 ably.com
-brand.ably.com
-cdn.ably.com
-demo.ably.com
-docs.ably.com
-email.ably.com
-faqs.ably.com
-files.ably.com
-ghost.ably.com
-go.ably.com
-jobs.ably.com
-jsbin.ably.com
-pages.ably.com
-quotes.ably.com
-sdk.ably.com
-www.ably.com

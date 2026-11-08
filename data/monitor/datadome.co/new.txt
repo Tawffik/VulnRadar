@@ -1,7 +1,0 @@
-api.datadome.co
-app.datadome.co
-bo.datadome.co
-ct.datadome.co
-datadome.co
-go.datadome.co
-js.datadome.co

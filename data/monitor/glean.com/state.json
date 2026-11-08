@@ -1,25 +1,25 @@
 {
   "target": "glean.com",
   "status": "COMPLETE",
-  "discovered": 21,
-  "live": 15,
-  "new_count": 15,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 14,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 21
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:13:28.731693+00:00",
-  "new": [
+  "ts": "2026-11-08T11:52:05.499059+00:00",
+  "new": [],
+  "removed": [
     "app.glean.com",
     "canva.glean.com",
     "chat.glean.com",
     "dev.glean.com",
     "em.glean.com",
     "get.glean.com",
-    "glean.com",
     "go.glean.com",
     "grab.glean.com",
     "help.glean.com",
@@ -29,6 +29,5 @@
     "scio.glean.com",
     "www.glean.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

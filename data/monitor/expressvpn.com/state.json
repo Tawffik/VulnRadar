@@ -1,22 +1,22 @@
 {
   "target": "expressvpn.com",
   "status": "COMPLETE",
-  "discovered": 20,
-  "live": 12,
-  "new_count": 12,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 11,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 20
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:11:44.959819+00:00",
-  "new": [
+  "ts": "2026-11-08T11:52:03.565326+00:00",
+  "new": [],
+  "removed": [
     "auth.expressvpn.com",
     "blog.expressvpn.com",
     "checkout.expressvpn.com",
-    "expressvpn.com",
     "go.expressvpn.com",
     "portal.expressvpn.com",
     "repo.expressvpn.com",
@@ -26,6 +26,5 @@
     "updates.expressvpn.com",
     "www.expressvpn.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

@@ -1,19 +1,19 @@
 {
   "target": "ably.com",
   "status": "COMPLETE",
-  "discovered": 20,
-  "live": 16,
-  "new_count": 16,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 15,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 20
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:03:15.790955+00:00",
-  "new": [
-    "ably.com",
+  "ts": "2026-11-08T11:51:55.588671+00:00",
+  "new": [],
+  "removed": [
     "brand.ably.com",
     "cdn.ably.com",
     "demo.ably.com",
@@ -30,6 +30,5 @@
     "sdk.ably.com",
     "www.ably.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

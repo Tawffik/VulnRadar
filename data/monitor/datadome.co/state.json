@@ -1,26 +1,25 @@
 {
   "target": "datadome.co",
   "status": "COMPLETE",
-  "discovered": 20,
-  "live": 7,
-  "new_count": 7,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 6,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 20
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:08:56.460972+00:00",
-  "new": [
+  "ts": "2026-11-08T11:52:00.691172+00:00",
+  "new": [],
+  "removed": [
     "api.datadome.co",
     "app.datadome.co",
     "bo.datadome.co",
     "ct.datadome.co",
-    "datadome.co",
     "go.datadome.co",
     "js.datadome.co"
   ],
-  "removed": [],
   "baseline_updated": true
 }

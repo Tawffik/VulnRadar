@@ -1,4 +1,0 @@
-api.gearset.com
-app.gearset.com
-gearset.com
-www.gearset.com

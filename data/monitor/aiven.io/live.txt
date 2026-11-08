@@ -1,8 +1,1 @@
-ai.aiven.io
 aiven.io
-api.aiven.io
-dc.aiven.io
-go.aiven.io
-gss.aiven.io
-iam.aiven.io
-sre.aiven.io

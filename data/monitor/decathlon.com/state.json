@@ -1,25 +1,24 @@
 {
   "target": "decathlon.com",
   "status": "COMPLETE",
-  "discovered": 21,
-  "live": 6,
-  "new_count": 6,
-  "removed_count": 0,
-  "discover_error": null,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 5,
+  "discover_error": "subfinder binary not found on PATH",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 21
+    "input_count": 1
   },
-  "ts": "2026-11-08T10:09:55.469647+00:00",
-  "new": [
+  "ts": "2026-11-08T11:52:01.357453+00:00",
+  "new": [],
+  "removed": [
     "ch.decathlon.com",
     "code.decathlon.com",
     "csr.decathlon.com",
-    "decathlon.com",
     "dtb.decathlon.com",
     "oco.decathlon.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

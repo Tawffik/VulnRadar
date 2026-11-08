@@ -1,9 +1,1 @@
-api.fivetran.com
-beta.fivetran.com
-blog.fivetran.com
 fivetran.com
-get.fivetran.com
-go.fivetran.com
-hvr.fivetran.com
-shop.fivetran.com
-www.fivetran.com
