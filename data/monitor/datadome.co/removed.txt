@@ -1,0 +1,3 @@
+js.datadome.co
+staff.datadome.co
+static.datadome.co

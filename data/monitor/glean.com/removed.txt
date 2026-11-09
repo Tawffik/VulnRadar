@@ -1,0 +1,9 @@
+airbnb-be.glean.com
+aurora-be.glean.com
+bayada-be.glean.com
+chuden-be.glean.com
+circle-be.glean.com
+glean-dev.glean.com
+indeed-be.glean.com
+moloco-be.glean.com
+nvidia-be.glean.com

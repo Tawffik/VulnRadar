@@ -1,9 +1,7 @@
-02.recruiting.atlassian.com
 access.status.atlassian.com
 ace.atlassian.com
 acli.atlassian.com
 admin.atlassian.com
-amkt-frontend.atlassian.com
 api-private.atlassian.com
 api.atlassian.com
 as.atlassian.com
@@ -78,6 +76,7 @@ nl.atlassian.com
 opsgenie.status.atlassian.com
 otbt.blogs.atlassian.com
 packages.atlassian.com
+packages.stg.atlassian.com
 pages.atlassian.com
 pages.eml.atlassian.com
 partnerevents.atlassian.com
@@ -86,13 +85,13 @@ partners.status.atlassian.com
 pl.atlassian.com
 ro.atlassian.com
 ru.atlassian.com
-sdkrepo.atlassian.com
 shop.atlassian.com
 status.atlassian.com
 support.atlassian.com
 support.status.atlassian.com
 surveys.atlassian.com
 swag.atlassian.com
+team.atlassian.com
 training.atlassian.com
 trello.status.atlassian.com
 university.atlassian.com

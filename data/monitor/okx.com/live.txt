@@ -17,7 +17,6 @@ okx.com
 pay.okx.com
 payauth.okx.com
 static.okx.com
-staticaws.okx.com
 tr.okx.com
 tvpap.okx.com
 us.okx.com
@@ -38,9 +37,7 @@ wssfppap.okx.com
 wsus.okx.com
 wsuspap.okx.com
 wsweb.okx.com
-wsweb3eea.okx.com
 wsweb3us.okx.com
 wswebpap.okx.com
 www.okx.com
-xlayerrpc.okx.com
 xlayerws.okx.com

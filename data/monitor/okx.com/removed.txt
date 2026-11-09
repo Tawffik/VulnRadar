@@ -1,0 +1,3 @@
+staticaws.okx.com
+wsweb3eea.okx.com
+xlayerrpc.okx.com

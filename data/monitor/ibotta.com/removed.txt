@@ -1,0 +1,4 @@
+partners.ibotta.com
+register.ibotta.com
+solstice.ibotta.com
+sst.data.ibotta.com

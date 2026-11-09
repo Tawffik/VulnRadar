@@ -1,0 +1,3 @@
+02.recruiting.atlassian.com
+amkt-frontend.atlassian.com
+sdkrepo.atlassian.com

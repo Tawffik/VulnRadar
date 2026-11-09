@@ -1,46 +1,23 @@
 {
   "target": "elementor.com",
   "status": "COMPLETE",
-  "discovered": 200,
-  "live": 28,
-  "new_count": 27,
-  "removed_count": 0,
+  "discovered": 201,
+  "live": 27,
+  "new_count": 1,
+  "removed_count": 2,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 200
+    "input_count": 201
   },
-  "ts": "2026-11-08T21:08:10.060628+00:00",
+  "ts": "2026-11-09T13:52:45.004864+00:00",
   "new": [
-    "angie.elementor.com",
-    "ask-ai.elementor.com",
-    "assets.elementor.com",
-    "auth.elementor.com",
-    "be.elementor.com",
-    "careers.elementor.com",
-    "code.elementor.com",
-    "console.elementor.com",
-    "demo.elementor.com",
-    "docs.elementor.com",
-    "edu.elementor.com",
-    "events.elementor.com",
-    "experts.elementor.com",
-    "flexbox.elementor.com",
-    "go.elementor.com",
-    "gtm.elementor.com",
-    "he.elementor.com",
-    "mail.elementor.com",
-    "my.elementor.com",
-    "pix.elementor.com",
-    "status.elementor.com",
-    "survey.elementor.com",
-    "thumbs.elementor.com",
-    "tuts.elementor.com",
-    "ux.elementor.com",
-    "wceu.elementor.com",
-    "www.elementor.com"
+    "library.elementor.com"
   ],
-  "removed": [],
+  "removed": [
+    "survey.elementor.com",
+    "wceu.elementor.com"
+  ],
   "baseline_updated": true
 }
