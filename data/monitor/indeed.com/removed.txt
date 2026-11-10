@@ -1,7 +1,4 @@
-all.indeed.com
-cbs.indeed.com
-in.indeed.com
-jm.indeed.com
-pdl.indeed.com
-pl.indeed.com
-resume.indeed.com
+c46.s3.indeed.com
+c76.s3.indeed.com
+e-jm.indeed.com
+uae.indeed.com

@@ -34,7 +34,6 @@ partners.klaviyo.com
 privacy.klaviyo.com
 resources.klaviyo.com
 reviews-app.klaviyo.com
-reviews-new.klaviyo.com
 reviews.klaviyo.com
 shop.klaviyo.com
 sms.klaviyo.com

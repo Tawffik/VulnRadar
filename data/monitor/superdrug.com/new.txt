@@ -1,7 +1,0 @@
-campaign.superdrug.com
-ccs.superdrug.com
-clickom.superdrug.com
-consent.superdrug.com
-e.superdrug.com
-media-s1.superdrug.com
-pharmacy.superdrug.com

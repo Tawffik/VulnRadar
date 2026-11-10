@@ -1,6 +1,9 @@
-br.conv.indeed.com
-c46.s3.indeed.com
-e-jm.indeed.com
-ec.indeed.com
-ph.indeed.com
-uae.indeed.com
+botbase.indeed.com
+c67.s3.indeed.com
+ca.conv.indeed.com
+ca.jm.indeed.com
+central.indeed.com
+dk.indeed.com
+id.indeed.com
+tw.indeed.com
+za.indeed.com

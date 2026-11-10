@@ -1,18 +1,28 @@
 {
   "target": "atlassian.com",
   "status": "COMPLETE",
-  "discovered": 200,
-  "live": 112,
-  "new_count": 67,
-  "removed_count": 8,
+  "discovered": 201,
+  "live": 51,
+  "new_count": 8,
+  "removed_count": 69,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 200
+    "input_count": 201
   },
-  "ts": "2026-11-10T13:25:20.525173+00:00",
+  "ts": "2026-11-10T22:17:31.396622+00:00",
   "new": [
+    "analytics-service.dev.services.atlassian.com",
+    "atl-onetrust-wrapper.atlassian.com",
+    "cloudtoken-update.atlassian.com",
+    "cnstatew.packages.atlassian.com",
+    "dev5-og-apps-alrt-svc.dev.services.atlassian.com",
+    "docker-blobs.artifacts.atlassian.com",
+    "radiowalker.blogs.atlassian.com",
+    "rebelutionary.blogs.atlassian.com"
+  ],
+  "removed": [
     "access.status.atlassian.com",
     "analytics.status.atlassian.com",
     "atlas.status.atlassian.com",
@@ -63,16 +73,6 @@
     "ru.atlassian.com",
     "shop.atlassian.com",
     "status.atlassian.com"
-  ],
-  "removed": [
-    "atl-onetrust-wrapper.atlassian.com",
-    "boardingpass.stg.services.atlassian.com",
-    "cloudtoken-update.atlassian.com",
-    "docker-blobs.artifacts.atlassian.com",
-    "experiment-api.stg.services.atlassian.com",
-    "jira-corew.status.atlassian.com",
-    "radiowalker.blogs.atlassian.com",
-    "rebelutionary.blogs.atlassian.com"
   ],
   "baseline_updated": true
 }

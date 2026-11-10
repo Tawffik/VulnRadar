@@ -1,3 +1,0 @@
-api-fastly.datadome.co
-js.staging.datadome.co
-mdu.sdbx-sre.datadome.co

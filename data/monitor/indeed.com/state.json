@@ -2,32 +2,32 @@
   "target": "indeed.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 67,
-  "new_count": 6,
-  "removed_count": 7,
+  "live": 72,
+  "new_count": 9,
+  "removed_count": 4,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-10T13:35:47.638243+00:00",
+  "ts": "2026-11-10T22:27:37.850618+00:00",
   "new": [
-    "br.conv.indeed.com",
-    "c46.s3.indeed.com",
-    "e-jm.indeed.com",
-    "ec.indeed.com",
-    "ph.indeed.com",
-    "uae.indeed.com"
+    "botbase.indeed.com",
+    "c67.s3.indeed.com",
+    "ca.conv.indeed.com",
+    "ca.jm.indeed.com",
+    "central.indeed.com",
+    "dk.indeed.com",
+    "id.indeed.com",
+    "tw.indeed.com",
+    "za.indeed.com"
   ],
   "removed": [
-    "all.indeed.com",
-    "cbs.indeed.com",
-    "in.indeed.com",
-    "jm.indeed.com",
-    "pdl.indeed.com",
-    "pl.indeed.com",
-    "resume.indeed.com"
+    "c46.s3.indeed.com",
+    "c76.s3.indeed.com",
+    "e-jm.indeed.com",
+    "uae.indeed.com"
   ],
   "baseline_updated": true
 }

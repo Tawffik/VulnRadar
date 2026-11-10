@@ -8,6 +8,7 @@ api-k8s.dev.ibotta.com
 api-origin.ibotta.com
 api-stg-origin.dev.ibotta.com
 api.dev.ibotta.com
+api.gary.ibotta.com
 api.ibotta.com
 app.dev.ibotta.com
 app.ibotta.com
@@ -44,6 +45,7 @@ dataprivacy.ibotta.com
 dyn-seg.ibotta.com
 email-test.ibotta.com
 email.ibotta.com
+go.ibotta.com
 help.ibotta.com
 home.dev.ibotta.com
 home.ibotta.com

@@ -2,17 +2,22 @@
   "target": "classdojo.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 71,
-  "new_count": 35,
-  "removed_count": 4,
+  "live": 41,
+  "new_count": 3,
+  "removed_count": 33,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-10T13:26:12.553133+00:00",
+  "ts": "2026-11-10T22:18:49.057704+00:00",
   "new": [
+    "external3.classdojo.com",
+    "parent.classdojo.com",
+    "status.classdojo.com"
+  ],
+  "removed": [
     "android-web-static.classdojo.com",
     "artifacts-blobs.classdojo.com",
     "artifacts-render.classdojo.com",
@@ -30,9 +35,7 @@
     "dojovideos-7.classdojo.com",
     "dojovideos.classdojo.com",
     "engineering.classdojo.com",
-    "essential.classdojo.com",
     "experiences.classdojo.com",
-    "external2.classdojo.com",
     "home-static.classdojo.com",
     "marketplace.classdojo.com",
     "monster-glb.classdojo.com",
@@ -48,12 +51,6 @@
     "ws.multiplayer.classdojo.com",
     "www.marketplace.classdojo.com",
     "www.tutoring.classdojo.com"
-  ],
-  "removed": [
-    "toolkit.classdojo.com",
-    "tutor3.classdojo.com",
-    "www2.classdojo.com",
-    "www3.classdojo.com"
   ],
   "baseline_updated": true
 }
