@@ -6,6 +6,8 @@ billing.classdojo.com
 blog.classdojo.com
 c.classdojo.com
 classdojo.com
+community.classdojo.com
+dojoicons.classdojo.com
 external.classdojo.com
 help.classdojo.com
 home.classdojo.com
@@ -30,6 +32,9 @@ store.classdojo.com
 student.classdojo.com
 teach.classdojo.com
 teach3.classdojo.com
-toolkit3.classdojo.com
+toolkit.classdojo.com
+tutor3.classdojo.com
 tutoring.classdojo.com
 www.classdojo.com
+www2.classdojo.com
+www3.classdojo.com

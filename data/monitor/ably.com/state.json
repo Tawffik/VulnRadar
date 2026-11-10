@@ -4,29 +4,15 @@
   "discovered": 200,
   "live": 20,
   "new_count": 0,
-  "removed_count": 13,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-09T13:44:54.148626+00:00",
+  "ts": "2026-11-10T00:38:30.390329+00:00",
   "new": [],
-  "removed": [
-    "ai-assistant.ably.com",
-    "articles.ably.com",
-    "changelog.ably.com",
-    "dashboards-external.ably.com",
-    "dashboards.ably.com",
-    "insights.ably.com",
-    "knowledge.ably.com",
-    "metabase.ably.com",
-    "nonprod-cdn.ably.com",
-    "security.ably.com",
-    "voltaire.ably.com",
-    "web-cli-terminal.ably.com",
-    "www-stats.ably.com"
-  ],
+  "removed": [],
   "baseline_updated": true
 }

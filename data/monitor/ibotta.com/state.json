@@ -2,26 +2,37 @@
   "target": "ibotta.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 43,
-  "new_count": 3,
-  "removed_count": 4,
+  "live": 24,
+  "new_count": 0,
+  "removed_count": 19,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-09T13:56:39.076775+00:00",
-  "new": [
-    "300661.ibotta.com",
-    "api.gary.ibotta.com",
-    "ipn-auth.ibotta.com"
-  ],
+  "ts": "2026-11-10T00:52:50.807156+00:00",
+  "new": [],
   "removed": [
-    "partners.ibotta.com",
-    "register.ibotta.com",
-    "solstice.ibotta.com",
-    "sst.data.ibotta.com"
+    "300661.ibotta.com",
+    "admin.ibotta.com",
+    "api.gary.ibotta.com",
+    "api.ibotta.com",
+    "auth.dev.ibotta.com",
+    "auth.ibotta.com",
+    "blog.dev.ibotta.com",
+    "cpg.ibotta.com",
+    "dyn-seg.ibotta.com",
+    "go.ibotta.com",
+    "home.dev.ibotta.com",
+    "home.ibotta.com",
+    "legal.ibotta.com",
+    "looker.ibotta.com",
+    "media.ibotta.com",
+    "o.ibotta.com",
+    "static.ibotta.com",
+    "support.ibotta.com",
+    "www.ibotta.com"
   ],
   "baseline_updated": true
 }

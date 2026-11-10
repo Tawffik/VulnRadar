@@ -1,1 +1,6 @@
-toolkit3.classdojo.com
+community.classdojo.com
+dojoicons.classdojo.com
+toolkit.classdojo.com
+tutor3.classdojo.com
+www2.classdojo.com
+www3.classdojo.com

@@ -1,1 +1,5 @@
-library.elementor.com
+clicks-mail.elementor.com
+developers.elementor.com
+editor-static-bucket.elementor.com
+traefik.prod.cloud.elementor.com
+traefik.prod.domains.elementor.com

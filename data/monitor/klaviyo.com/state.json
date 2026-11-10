@@ -2,17 +2,30 @@
   "target": "klaviyo.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 48,
+  "live": 36,
   "new_count": 0,
-  "removed_count": 0,
+  "removed_count": 12,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-09T13:59:44.376099+00:00",
+  "ts": "2026-11-10T00:57:08.753293+00:00",
   "new": [],
-  "removed": [],
+  "removed": [
+    "get.klaviyo.com",
+    "khub.klaviyo.com",
+    "klaviyo.com",
+    "learn.klaviyo.com",
+    "marketplace.klaviyo.com",
+    "shop.klaviyo.com",
+    "static-app.klaviyo.com",
+    "twotruths.klaviyo.com",
+    "vcf.eu.klaviyo.com",
+    "vcf.klaviyo.com",
+    "verticals.klaviyo.com",
+    "www.klaviyo.com"
+  ],
   "baseline_updated": true
 }

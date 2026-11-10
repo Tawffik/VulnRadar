@@ -2,28 +2,26 @@
   "target": "classdojo.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 35,
-  "new_count": 1,
-  "removed_count": 8,
+  "live": 40,
+  "new_count": 6,
+  "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-09T13:48:11.096850+00:00",
+  "ts": "2026-11-10T00:42:34.619794+00:00",
   "new": [
-    "toolkit3.classdojo.com"
-  ],
-  "removed": [
     "community.classdojo.com",
     "dojoicons.classdojo.com",
-    "dojotutor.classdojo.com",
-    "essential.classdojo.com",
-    "external2.classdojo.com",
-    "external3.classdojo.com",
-    "translate.classdojo.com",
-    "tutor3.classdojo.com"
+    "toolkit.classdojo.com",
+    "tutor3.classdojo.com",
+    "www2.classdojo.com",
+    "www3.classdojo.com"
+  ],
+  "removed": [
+    "toolkit3.classdojo.com"
   ],
   "baseline_updated": true
 }

@@ -1,2 +1,9 @@
-packages.stg.atlassian.com
-team.atlassian.com
+advocate-central.atlassian.com
+atl-onetrust-wrapper.atlassian.com
+boardingpass.stg.services.atlassian.com
+cloudtoken-update.atlassian.com
+docker-blobs.artifacts.atlassian.com
+experiment-api.stg.services.atlassian.com
+jira-corew.status.atlassian.com
+radiowalker.blogs.atlassian.com
+rebelutionary.blogs.atlassian.com

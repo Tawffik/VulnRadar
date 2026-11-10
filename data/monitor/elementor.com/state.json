@@ -1,23 +1,48 @@
 {
   "target": "elementor.com",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 27,
-  "new_count": 1,
-  "removed_count": 2,
+  "discovered": 51,
+  "live": 9,
+  "new_count": 5,
+  "removed_count": 23,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 51
   },
-  "ts": "2026-11-09T13:52:45.004864+00:00",
+  "ts": "2026-11-10T00:47:05.484844+00:00",
   "new": [
-    "library.elementor.com"
+    "clicks-mail.elementor.com",
+    "developers.elementor.com",
+    "editor-static-bucket.elementor.com",
+    "traefik.prod.cloud.elementor.com",
+    "traefik.prod.domains.elementor.com"
   ],
   "removed": [
-    "survey.elementor.com",
-    "wceu.elementor.com"
+    "angie.elementor.com",
+    "ask-ai.elementor.com",
+    "assets.elementor.com",
+    "auth.elementor.com",
+    "code.elementor.com",
+    "docs.elementor.com",
+    "edu.elementor.com",
+    "elementor.com",
+    "events.elementor.com",
+    "experts.elementor.com",
+    "flexbox.elementor.com",
+    "go.elementor.com",
+    "gtm.elementor.com",
+    "he.elementor.com",
+    "library.elementor.com",
+    "mail.elementor.com",
+    "my.elementor.com",
+    "pix.elementor.com",
+    "status.elementor.com",
+    "thumbs.elementor.com",
+    "tuts.elementor.com",
+    "ux.elementor.com",
+    "www.elementor.com"
   ],
   "baseline_updated": true
 }

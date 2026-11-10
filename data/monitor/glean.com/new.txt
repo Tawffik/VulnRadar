@@ -1,8 +1,7 @@
-aida-be.glean.com
-aidoc-be.glean.com
-kayak-be.glean.com
-login.glean.com
-nca-be.glean.com
-paxos-be.glean.com
-social.glean.com
-swoop-be.glean.com
+clari-be.glean.com
+depop-be.glean.com
+edc-be.glean.com
+jff-be.glean.com
+onbe-be.glean.com
+spare-be.glean.com
+vapi-be.glean.com

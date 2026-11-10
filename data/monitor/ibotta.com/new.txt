@@ -1,3 +1,0 @@
-300661.ibotta.com
-api.gary.ibotta.com
-ipn-auth.ibotta.com
