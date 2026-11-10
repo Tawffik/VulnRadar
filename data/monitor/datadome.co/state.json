@@ -2,22 +2,17 @@
   "target": "datadome.co",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 35,
-  "new_count": 3,
-  "removed_count": 29,
+  "live": 61,
+  "new_count": 29,
+  "removed_count": 3,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-10T00:44:11.930192+00:00",
+  "ts": "2026-11-10T13:27:27.406958+00:00",
   "new": [
-    "api-fastly.datadome.co",
-    "js.staging.datadome.co",
-    "mdu.sdbx-sre.datadome.co"
-  ],
-  "removed": [
     "api-alb-ap-east-1.datadome.co",
     "api-alb-ap-southeast-1.datadome.co",
     "api-alb-ca-central-1.datadome.co",
@@ -47,6 +42,11 @@
     "package.staging.datadome.co",
     "preprod-customer-api.datadome.co",
     "subscriptions.datadome.co"
+  ],
+  "removed": [
+    "api-fastly.datadome.co",
+    "js.staging.datadome.co",
+    "mdu.sdbx-sre.datadome.co"
   ],
   "baseline_updated": true
 }

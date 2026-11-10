@@ -1,32 +1,23 @@
 {
   "target": "atlassian.com",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 53,
-  "new_count": 9,
-  "removed_count": 65,
+  "discovered": 200,
+  "live": 112,
+  "new_count": 67,
+  "removed_count": 8,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-10T00:41:55.262985+00:00",
+  "ts": "2026-11-10T13:25:20.525173+00:00",
   "new": [
-    "advocate-central.atlassian.com",
-    "atl-onetrust-wrapper.atlassian.com",
-    "boardingpass.stg.services.atlassian.com",
-    "cloudtoken-update.atlassian.com",
-    "docker-blobs.artifacts.atlassian.com",
-    "experiment-api.stg.services.atlassian.com",
-    "jira-corew.status.atlassian.com",
-    "radiowalker.blogs.atlassian.com",
-    "rebelutionary.blogs.atlassian.com"
-  ],
-  "removed": [
     "access.status.atlassian.com",
+    "analytics.status.atlassian.com",
     "atlas.status.atlassian.com",
     "automation.stg.atlassian.com",
+    "bitbucket.status.atlassian.com",
     "blog.developer.atlassian.com",
     "click.e.atlassian.com",
     "cloud.e.atlassian.com",
@@ -35,8 +26,10 @@
     "cs.atlassian.com",
     "de.atlassian.com",
     "developer.atlassian.com",
+    "developer.status.atlassian.com",
     "download.atlassian.com",
     "downloads-cdn.atlassian.com",
+    "downloads-origin.atlassian.com",
     "downloads.atlassian.com",
     "enable.atlassian.com",
     "es.atlassian.com",
@@ -60,7 +53,6 @@
     "nl.atlassian.com",
     "opsgenie.status.atlassian.com",
     "packages.atlassian.com",
-    "packages.stg.atlassian.com",
     "pages.atlassian.com",
     "pages.eml.atlassian.com",
     "partnerevents.atlassian.com",
@@ -70,10 +62,17 @@
     "ro.atlassian.com",
     "ru.atlassian.com",
     "shop.atlassian.com",
-    "status.atlassian.com",
-    "support.atlassian.com",
-    "support.status.atlassian.com",
-    "swag.atlassian.com"
+    "status.atlassian.com"
+  ],
+  "removed": [
+    "atl-onetrust-wrapper.atlassian.com",
+    "boardingpass.stg.services.atlassian.com",
+    "cloudtoken-update.atlassian.com",
+    "docker-blobs.artifacts.atlassian.com",
+    "experiment-api.stg.services.atlassian.com",
+    "jira-corew.status.atlassian.com",
+    "radiowalker.blogs.atlassian.com",
+    "rebelutionary.blogs.atlassian.com"
   ],
   "baseline_updated": true
 }
