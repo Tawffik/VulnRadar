@@ -1,5 +1,11 @@
-api-fastly.datadome.co
-api-staff.datadome.co
-geoprox.datadome.co
-haproxy1.datadome.co
-index-holder.datadome.co
+api-akamai.datadome.co
+api-ap-east-1.datadome.co
+api-canary.datadome.co
+api-us-east-2.datadome.co
+api-us-utah-1.datadome.co
+api-us-west-1.datadome.co
+api-us-west-2.datadome.co
+auth0.tooling.datadome.co
+js.datadome.co
+static.datadome.co
+upflow-email.datadome.co

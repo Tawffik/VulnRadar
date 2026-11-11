@@ -1,5 +1,6 @@
 academy.guests.intercom.com
 academy.intercom.com
+api-visitor-analytics.intercom.com
 api.mcp.intercom.com
 app.au.intercom.com
 app.eu.intercom.com
@@ -16,6 +17,7 @@ developerblog.intercom.com
 developers.intercom.com
 directory.intercom.com
 docs.intercom.com
+earlystageacademy.intercom.com
 em.intercom.com
 email.careers.intercom.com
 engineering.intercom.com
@@ -26,10 +28,13 @@ frame.eu.intercom.com
 frame.intercom.com
 gmail.mcp.intercom.com
 go.intercom.com
+google-workspace.mcp.intercom.com
 hackathon.corp.intercom.com
 help.legal.corp.intercom.com
 hq.intercom.com
 intercom.com
+intercomrades.au.intercom.com
+intercomrades.eu.intercom.com
 intercomrades.intercom.com
 legal.corp.intercom.com
 link.hq.intercom.com
@@ -47,14 +52,17 @@ partneracademy.intercom.com
 pioneer.intercom.com
 preferences.intercom.com
 privacy.intercom.com
+register.events.intercom.com
 rsvp.pioneer.intercom.com
 sales.intercom.com
 services.api.intercom.com
 services.intercom.com
+staging.google-workspace.mcp.intercom.com
 staging.mcp.intercom.com
 status.intercom.com
 surge.intercom.com
 transformation.intercom.com
+transformation2025.intercom.com
 trust.intercom.com
 vercel.intercom.com
 vsaq.intercom.com

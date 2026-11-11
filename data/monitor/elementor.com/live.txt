@@ -16,13 +16,12 @@ flexbox.elementor.com
 go.elementor.com
 gtm.elementor.com
 he.elementor.com
+library.elementor.com
 mail.elementor.com
 my.elementor.com
 pix.elementor.com
 status.elementor.com
-survey.elementor.com
 thumbs.elementor.com
 tuts.elementor.com
 ux.elementor.com
-wceu.elementor.com
 www.elementor.com

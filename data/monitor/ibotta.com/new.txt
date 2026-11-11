@@ -1,1 +1,3 @@
-300661.ibotta.com
+partners.ibotta.com
+register.ibotta.com
+solstice.ibotta.com

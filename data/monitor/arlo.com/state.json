@@ -3,7 +3,7 @@
   "status": "COMPLETE",
   "discovered": 200,
   "live": 57,
-  "new_count": 2,
+  "new_count": 0,
   "removed_count": 0,
   "discover_error": null,
   "probe": {
@@ -11,11 +11,8 @@
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-11T12:36:55.702002+00:00",
-  "new": [
-    "arlocommon.arlo.com",
-    "b2bproxy02.arlo.com"
-  ],
+  "ts": "2026-11-11T23:25:32.491505+00:00",
+  "new": [],
   "removed": [],
   "baseline_updated": true
 }

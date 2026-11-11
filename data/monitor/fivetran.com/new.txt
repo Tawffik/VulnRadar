@@ -1,4 +1,1 @@
-aws.polaris.fivetran.com
-ldp.orchestrator.fivetran.com
-learn.fivetran.com
-webhooks.qe.fivetran.com
+orchestrator.qe.fivetran.com

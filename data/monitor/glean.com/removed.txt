@@ -1,8 +1,0 @@
-cox-be.glean.com
-edc-be.glean.com
-id-be.glean.com
-lhm-be.glean.com
-seeq.glean.com
-som-be.glean.com
-trust.glean.com
-uogg-be.glean.com

@@ -3,37 +3,16 @@
   "status": "COMPLETE",
   "discovered": 201,
   "live": 66,
-  "new_count": 11,
-  "removed_count": 8,
+  "new_count": 0,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 201
   },
-  "ts": "2026-11-11T12:47:27.127389+00:00",
-  "new": [
-    "1011vc-be.glean.com",
-    "airbnb-be.glean.com",
-    "aurora-be.glean.com",
-    "bayada-be.glean.com",
-    "chuden-be.glean.com",
-    "circle-be.glean.com",
-    "glean-dev.glean.com",
-    "indeed-be.glean.com",
-    "moloco-be.glean.com",
-    "nvidia-be.glean.com",
-    "yahoo-be.glean.com"
-  ],
-  "removed": [
-    "cox-be.glean.com",
-    "edc-be.glean.com",
-    "id-be.glean.com",
-    "lhm-be.glean.com",
-    "seeq.glean.com",
-    "som-be.glean.com",
-    "trust.glean.com",
-    "uogg-be.glean.com"
-  ],
+  "ts": "2026-11-11T23:33:37.175835+00:00",
+  "new": [],
+  "removed": [],
   "baseline_updated": true
 }

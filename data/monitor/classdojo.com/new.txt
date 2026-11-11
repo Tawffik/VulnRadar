@@ -1,4 +1,8 @@
-ideas.classdojo.com
-toolkit3.classdojo.com
-tutor3.classdojo.com
-www2.classdojo.com
+community.classdojo.com
+dojoicons.classdojo.com
+essential.classdojo.com
+external2.classdojo.com
+parent.classdojo.com
+static.classdojo.com
+translate.classdojo.com
+www3.classdojo.com

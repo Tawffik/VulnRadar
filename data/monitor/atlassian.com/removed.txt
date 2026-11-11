@@ -1,3 +1,10 @@
-analytics-service.dev.services.atlassian.com
-cnstatew.packages.atlassian.com
-dev5-og-apps-alrt-svc.dev.services.atlassian.com
+atl-onetrust-wrapper.atlassian.com
+cloud-order-fulfillment-service.stg.services.atlassian.com
+cloudtoken-update.atlassian.com
+docker-blobs.artifacts.atlassian.com
+focus.status.atlassian.com
+promo.atlassian.com
+radiowalker.blogs.atlassian.com
+rebelutionary.blogs.atlassian.com
+wac-cdn-bfldr.atlassian.com
+wac-cdn.atlassian.com

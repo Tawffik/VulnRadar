@@ -1,23 +1,20 @@
 {
   "target": "klaviyo.com",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 49,
-  "new_count": 2,
+  "discovered": 200,
+  "live": 48,
+  "new_count": 0,
   "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-11T12:51:08.377595+00:00",
-  "new": [
-    "craft.klaviyo.com",
-    "reviews-new.klaviyo.com"
-  ],
+  "ts": "2026-11-11T23:36:46.353210+00:00",
+  "new": [],
   "removed": [
-    "vcf.eu.klaviyo.com"
+    "reviews-new.klaviyo.com"
   ],
   "baseline_updated": true
 }

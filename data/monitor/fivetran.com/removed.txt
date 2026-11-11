@@ -1,2 +1,3 @@
-partners.fivetran.com
-qe.fivetran.com
+ldp.orchestrator.fivetran.com
+learn.fivetran.com
+webhooks.qe.fivetran.com
