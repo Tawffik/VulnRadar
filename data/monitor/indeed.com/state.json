@@ -2,32 +2,37 @@
   "target": "indeed.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 72,
-  "new_count": 9,
-  "removed_count": 4,
+  "live": 76,
+  "new_count": 11,
+  "removed_count": 7,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-10T22:27:37.850618+00:00",
+  "ts": "2026-11-11T12:49:48.621450+00:00",
   "new": [
-    "botbase.indeed.com",
-    "c67.s3.indeed.com",
-    "ca.conv.indeed.com",
-    "ca.jm.indeed.com",
-    "central.indeed.com",
-    "dk.indeed.com",
-    "id.indeed.com",
-    "tw.indeed.com",
-    "za.indeed.com"
+    "ar.indeed.com",
+    "bh.conv.indeed.com",
+    "c08.s3.indeed.com",
+    "co.conv.indeed.com",
+    "cr.indeed.com",
+    "es.indeed.com",
+    "kimoyo.indeed.com",
+    "promo.indeed.com",
+    "sdk.indeed.com",
+    "sms.indeed.com",
+    "survey.indeed.com"
   ],
   "removed": [
-    "c46.s3.indeed.com",
-    "c76.s3.indeed.com",
-    "e-jm.indeed.com",
-    "uae.indeed.com"
+    "botbase.indeed.com",
+    "c67.s3.indeed.com",
+    "ec.indeed.com",
+    "id.indeed.com",
+    "ph.indeed.com",
+    "tw.indeed.com",
+    "za.indeed.com"
   ],
   "baseline_updated": true
 }

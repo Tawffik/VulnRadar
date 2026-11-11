@@ -1,0 +1,5 @@
+api-fastly.datadome.co
+api-staff.datadome.co
+geoprox.datadome.co
+haproxy1.datadome.co
+index-holder.datadome.co

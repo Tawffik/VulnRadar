@@ -55,6 +55,7 @@ aw9.a.klaviyo.com
 blogq.klaviyo.com
 brand.klaviyo.com
 core3.klaviyo.com
+craft.klaviyo.com
 derby.klaviyo.com
 docs5.klaviyo.com
 fasto.klaviyo.com
@@ -80,7 +81,6 @@ onsite.klaviyo.com
 static.klaviyo.com
 status.klaviyo.com
 stores.klaviyo.com
-vcf.eu.klaviyo.com
 waf-cf.klaviyo.com
 www.js.klaviyo.com
 www.mx.klaviyo.com
@@ -151,7 +151,6 @@ pantheona.klaviyo.com
 resources.klaviyo.com
 servicese.klaviyo.com
 shortener.klaviyo.com
-static-cf.klaviyo.com
 twotruths.klaviyo.com
 verticals.klaviyo.com
 www.learn.klaviyo.com
@@ -198,3 +197,5 @@ marketplace.klaviyo.com
 mobile-vcfa.klaviyo.com
 reviews-api.klaviyo.com
 reviews-app.klaviyo.com
+reviews-new.klaviyo.com
+static-appa.klaviyo.com

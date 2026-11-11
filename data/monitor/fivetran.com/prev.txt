@@ -6,6 +6,7 @@ api.lake-compute.fivetran.com
 arl-events.fivetran.com
 assets.cms.fivetran.com
 assets.fivetran.com
+aws.polaris.fivetran.com
 backstage.fivetran.com
 benchmark.gateway.fivetran.com
 beta-api.fivetran.com
@@ -35,13 +36,13 @@ hvr.fivetran.com
 images.cms.fivetran.com
 istio.api.fivetran.com
 istio.gateway.fivetran.com
+ldp.orchestrator.fivetran.com
+learn.fivetran.com
 legal.fivetran.com
 mdscon.fivetran.com
 mpages.fivetran.com
-partners.fivetran.com
 pbf-demo.fivetran.com
 pbf-demo.staging.fivetran.com
-qe.fivetran.com
 resources.fivetran.com
 services.api.fivetran.com
 shop.fivetran.com
@@ -59,4 +60,5 @@ ultimateguide.fivetran.com
 url5660.fivetran.com
 videos.cms.fivetran.com
 webhooks.fivetran.com
+webhooks.qe.fivetran.com
 www.fivetran.com

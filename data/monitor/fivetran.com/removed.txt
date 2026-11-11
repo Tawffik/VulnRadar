@@ -1,14 +1,2 @@
-aws.polaris.staging.fivetran.com
-azure.polaris.staging.fivetran.com
-benchmark-ldp.gateway.fivetran.com
-eastus2.azure.polaris.fivetran.com
-eng-planning-staging.fivetran.com
-eu-west-1.aws.polaris.fivetran.com
-eu-west-2.aws.polaris.fivetran.com
-events.qe.fivetran.com
-gcp.polaris.fivetran.com
-japaneast.azure.polaris.fivetran.com
-ldp.orchestrator.fivetran.com
-learn.fivetran.com
-staging.events.agent.fivetran.com
-us-east4.gcp.polaris.fivetran.com
+partners.fivetran.com
+qe.fivetran.com

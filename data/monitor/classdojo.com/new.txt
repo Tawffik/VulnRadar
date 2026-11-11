@@ -1,3 +1,4 @@
-external3.classdojo.com
-parent.classdojo.com
-status.classdojo.com
+ideas.classdojo.com
+toolkit3.classdojo.com
+tutor3.classdojo.com
+www2.classdojo.com

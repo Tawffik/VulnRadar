@@ -2,27 +2,17 @@
   "target": "glean.com",
   "status": "COMPLETE",
   "discovered": 201,
-  "live": 63,
-  "new_count": 8,
-  "removed_count": 11,
+  "live": 66,
+  "new_count": 11,
+  "removed_count": 8,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 201
   },
-  "ts": "2026-11-10T22:24:53.201568+00:00",
+  "ts": "2026-11-11T12:47:27.127389+00:00",
   "new": [
-    "cox-be.glean.com",
-    "edc-be.glean.com",
-    "id-be.glean.com",
-    "lhm-be.glean.com",
-    "seeq.glean.com",
-    "som-be.glean.com",
-    "trust.glean.com",
-    "uogg-be.glean.com"
-  ],
-  "removed": [
     "1011vc-be.glean.com",
     "airbnb-be.glean.com",
     "aurora-be.glean.com",
@@ -34,6 +24,16 @@
     "moloco-be.glean.com",
     "nvidia-be.glean.com",
     "yahoo-be.glean.com"
+  ],
+  "removed": [
+    "cox-be.glean.com",
+    "edc-be.glean.com",
+    "id-be.glean.com",
+    "lhm-be.glean.com",
+    "seeq.glean.com",
+    "som-be.glean.com",
+    "trust.glean.com",
+    "uogg-be.glean.com"
   ],
   "baseline_updated": true
 }

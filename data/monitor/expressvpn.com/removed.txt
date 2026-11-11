@@ -1,4 +1,0 @@
-connectivitycheck.expressvpn.com
-desktop.updates.expressvpn.com
-prod-rewrite.portal.expressvpn.com
-staging.checkout.expressvpn.com

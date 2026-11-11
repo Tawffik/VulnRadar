@@ -2,48 +2,25 @@
   "target": "fivetran.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 62,
-  "new_count": 15,
-  "removed_count": 14,
+  "live": 64,
+  "new_count": 4,
+  "removed_count": 2,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-10T22:23:48.314102+00:00",
+  "ts": "2026-11-11T12:46:12.099582+00:00",
   "new": [
-    "gcp.eu.webhooks.fivetran.com",
-    "gcp.us.webhooks.fivetran.com",
-    "mdscon.fivetran.com",
-    "mpages.fivetran.com",
-    "qe.fivetran.com",
-    "resources.fivetran.com",
-    "shop.fivetran.com",
-    "staging.fivetran.com",
-    "staging.webhooks.fivetran.com",
-    "status.fivetran.com",
-    "storybook.fivetran.com",
-    "ultimateguide.fivetran.com",
-    "url5660.fivetran.com",
-    "webhooks.fivetran.com",
-    "www.fivetran.com"
-  ],
-  "removed": [
-    "aws.polaris.staging.fivetran.com",
-    "azure.polaris.staging.fivetran.com",
-    "benchmark-ldp.gateway.fivetran.com",
-    "eastus2.azure.polaris.fivetran.com",
-    "eng-planning-staging.fivetran.com",
-    "eu-west-1.aws.polaris.fivetran.com",
-    "eu-west-2.aws.polaris.fivetran.com",
-    "events.qe.fivetran.com",
-    "gcp.polaris.fivetran.com",
-    "japaneast.azure.polaris.fivetran.com",
+    "aws.polaris.fivetran.com",
     "ldp.orchestrator.fivetran.com",
     "learn.fivetran.com",
-    "staging.events.agent.fivetran.com",
-    "us-east4.gcp.polaris.fivetran.com"
+    "webhooks.qe.fivetran.com"
+  ],
+  "removed": [
+    "partners.fivetran.com",
+    "qe.fivetran.com"
   ],
   "baseline_updated": true
 }
