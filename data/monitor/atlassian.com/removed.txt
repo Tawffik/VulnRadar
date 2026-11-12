@@ -1,10 +1,5 @@
-atl-onetrust-wrapper.atlassian.com
-cloud-order-fulfillment-service.stg.services.atlassian.com
-cloudtoken-update.atlassian.com
-docker-blobs.artifacts.atlassian.com
-focus.status.atlassian.com
-promo.atlassian.com
-radiowalker.blogs.atlassian.com
-rebelutionary.blogs.atlassian.com
-wac-cdn-bfldr.atlassian.com
-wac-cdn.atlassian.com
+advocate-central.atlassian.com
+analytics.status.atlassian.com
+bitbucket.status.atlassian.com
+developer.status.atlassian.com
+downloads-origin.atlassian.com

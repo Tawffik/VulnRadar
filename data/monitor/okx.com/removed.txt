@@ -1,1 +1,2 @@
-staticaws.okx.com
+mysignicat.okx.com
+xlayerrpc.okx.com

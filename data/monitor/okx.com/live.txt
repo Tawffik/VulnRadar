@@ -9,7 +9,6 @@ jpushws.okx.com
 link.okx.com
 money.okx.com
 my.okx.com
-mysignicat.okx.com
 mywspri.okx.com
 okbws.okx.com
 okctools.okx.com
@@ -19,6 +18,7 @@ pay.okx.com
 payauth.okx.com
 static.okx.com
 tr.okx.com
+tvpap.okx.com
 us.okx.com
 wallet.okx.com
 web3.okx.com
@@ -41,5 +41,4 @@ wsweb3eea.okx.com
 wsweb3us.okx.com
 wswebpap.okx.com
 www.okx.com
-xlayerrpc.okx.com
 xlayerws.okx.com

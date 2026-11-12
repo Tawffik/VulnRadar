@@ -2,21 +2,22 @@
   "target": "okx.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 45,
+  "live": 44,
   "new_count": 1,
-  "removed_count": 1,
+  "removed_count": 2,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-11T23:37:25.881855+00:00",
+  "ts": "2026-11-12T13:57:39.647157+00:00",
   "new": [
-    "mysignicat.okx.com"
+    "tvpap.okx.com"
   ],
   "removed": [
-    "staticaws.okx.com"
+    "mysignicat.okx.com",
+    "xlayerrpc.okx.com"
   ],
   "baseline_updated": true
 }

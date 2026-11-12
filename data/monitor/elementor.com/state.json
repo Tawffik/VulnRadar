@@ -2,22 +2,34 @@
   "target": "elementor.com",
   "status": "COMPLETE",
   "discovered": 201,
-  "live": 27,
-  "new_count": 1,
-  "removed_count": 2,
+  "live": 11,
+  "new_count": 0,
+  "removed_count": 16,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 201
   },
-  "ts": "2026-11-11T23:30:36.888586+00:00",
-  "new": [
-    "library.elementor.com"
-  ],
+  "ts": "2026-11-12T13:48:41.395489+00:00",
+  "new": [],
   "removed": [
-    "survey.elementor.com",
-    "wceu.elementor.com"
+    "auth.elementor.com",
+    "code.elementor.com",
+    "demo.elementor.com",
+    "docs.elementor.com",
+    "edu.elementor.com",
+    "elementor.com",
+    "events.elementor.com",
+    "experts.elementor.com",
+    "go.elementor.com",
+    "gtm.elementor.com",
+    "he.elementor.com",
+    "mail.elementor.com",
+    "my.elementor.com",
+    "pix.elementor.com",
+    "status.elementor.com",
+    "thumbs.elementor.com"
   ],
   "baseline_updated": true
 }

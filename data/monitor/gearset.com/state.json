@@ -2,19 +2,37 @@
   "target": "gearset.com",
   "status": "COMPLETE",
   "discovered": 136,
-  "live": 39,
+  "live": 20,
   "new_count": 0,
-  "removed_count": 1,
+  "removed_count": 19,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 136
   },
-  "ts": "2026-11-11T23:33:04.611279+00:00",
+  "ts": "2026-11-12T13:52:07.431122+00:00",
   "new": [],
   "removed": [
-    "socclicks.gearset.com"
+    "academy.gearset.com",
+    "api.gearset.com",
+    "au.staging.gearset.com",
+    "docs.gearset.com",
+    "email.gearset.com",
+    "eu.staging.gearset.com",
+    "fastspring.gearset.com",
+    "gearset.com",
+    "hipaa.staging.gearset.com",
+    "onboarding.gearset.com",
+    "salesloft.gearset.com",
+    "staging-fastspring.gearset.com",
+    "staging-subscriptions.gearset.com",
+    "staging-trust.gearset.com",
+    "staging.gearset.com",
+    "subscriptions.gearset.com",
+    "us.app.gearset.com",
+    "website-api.gearset.com",
+    "www.gearset.com"
   ],
   "baseline_updated": true
 }

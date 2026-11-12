@@ -1,2 +1,2 @@
-media-s1.superdrug.com
-pharmacy.superdrug.com
+clickom.superdrug.com
+www.superdrug.com

@@ -1,0 +1,10 @@
+beta.repo.expressvpn.com
+checkout.expressvpn.com
+expressvpn.com
+integration.expressvpn.com
+landing-pages.expressvpn.com
+link.mail.expressvpn.com
+rc.portal.expressvpn.com
+staging.portal.expressvpn.com
+store.expressvpn.com
+teams.expressvpn.com

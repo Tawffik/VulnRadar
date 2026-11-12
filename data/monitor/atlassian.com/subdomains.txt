@@ -32,6 +32,7 @@ wpt.atlassian.com
 www.atlassian.com
 xid.atlassian.com
 acli.atlassian.com
+adao.atlassian.com
 auth.atlassian.com
 blog.atlassian.com
 chat.atlassian.com
@@ -53,6 +54,8 @@ events.atlassian.com
 gotest.atlassian.com
 itplat.atlassian.com
 office.atlassian.com
+soakb0.atlassian.com
+sprynt.atlassian.com
 status.atlassian.com
 update.atlassian.com
 view.e.atlassian.com
@@ -65,6 +68,7 @@ checkup.atlassian.com
 click.e.atlassian.com
 cloud.e.atlassian.com
 image.e.atlassian.com
+pke-stg.atlassian.com
 prd.cst.atlassian.com
 support.atlassian.com
 surveys.atlassian.com
@@ -72,13 +76,17 @@ www.ace.atlassian.com
 www.aug.atlassian.com
 www.get.atlassian.com
 atlaskit.atlassian.com
+blog-fru.atlassian.com
 buildeng.atlassian.com
 cpfs-cdn.atlassian.com
 download.atlassian.com
 gitprime.atlassian.com
+id-stg1e.atlassian.com
 internal.atlassian.com
+locrates.atlassian.com
 packages.atlassian.com
 peng3439.atlassian.com
+pillar98.atlassian.com
 prod.inf.atlassian.com
 services.atlassian.com
 training.atlassian.com
@@ -88,8 +96,10 @@ vpn-eu-1.atlassian.com
 webinars.atlassian.com
 www.shop.atlassian.com
 www.swag.atlassian.com
+23229212s.atlassian.com
 cmp-forms.atlassian.com
 community.atlassian.com
+demo.saas.atlassian.com
 developer.atlassian.com
 directory.atlassian.com
 downloads.atlassian.com
@@ -105,6 +115,7 @@ auth.media.atlassian.com
 automation.atlassian.com
 compliance.atlassian.com
 confluence.atlassian.com
+customerdb.atlassian.com
 dev.intsys.atlassian.com
 eventlinks.atlassian.com
 office-dev.atlassian.com
@@ -167,6 +178,7 @@ compass.status.atlassian.com
 misc.artifacts.atlassian.com
 studio.plugins.atlassian.com
 support.status.atlassian.com
+www.getsupport.atlassian.com
 www.university.atlassian.com
 bamboo.extranet.atlassian.com
 blr-ad01.office.atlassian.com
@@ -186,15 +198,3 @@ sc1-ad02.office.atlassian.com
 sp.hipchat-intl.atlassian.com
 ssam.dev.office.atlassian.com
 ssam.office-stg.atlassian.com
-ssam.stg.office.atlassian.com
-tecton.internal.atlassian.com
-advocate-central.atlassian.com
-analytics.status.atlassian.com
-bitbucket.status.atlassian.com
-common-admin-cdn.atlassian.com
-dev.cst.internal.atlassian.com
-dev.sec.internal.atlassian.com
-developer.status.atlassian.com
-downloads-origin.atlassian.com
-global-ad.office.atlassian.com
-instenv.internal.atlassian.com

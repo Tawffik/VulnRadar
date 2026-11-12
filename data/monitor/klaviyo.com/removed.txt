@@ -1,1 +1,8 @@
-reviews-new.klaviyo.com
+resources.klaviyo.com
+reviews-app.klaviyo.com
+reviews.klaviyo.com
+shop.klaviyo.com
+status.klaviyo.com
+trust.klaviyo.com
+vcf.klaviyo.com
+www.klaviyo.com
