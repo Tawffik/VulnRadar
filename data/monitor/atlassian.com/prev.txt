@@ -42,6 +42,7 @@ compliance.atlassian.com
 confluence.atlassian.com
 cs.atlassian.com
 de.atlassian.com
+design.atlassian.com
 developer.atlassian.com
 download.atlassian.com
 downloads-cdn.atlassian.com
@@ -69,6 +70,7 @@ ko.atlassian.com
 korea.blogs.atlassian.com
 links.em.aug.atlassian.com
 links.eml.atlassian.com
+loma.blogs.atlassian.com
 maven.artifacts.atlassian.com
 maven.atlassian.com
 misc.artifacts.atlassian.com
@@ -81,7 +83,6 @@ pages.eml.atlassian.com
 partnerevents.atlassian.com
 partnerportal.atlassian.com
 partners.status.atlassian.com
-pke-stg.atlassian.com
 pl.atlassian.com
 ro.atlassian.com
 ru.atlassian.com
@@ -91,6 +92,7 @@ support.atlassian.com
 support.status.atlassian.com
 surveys.atlassian.com
 swag.atlassian.com
+tools.atlassian.com
 training.atlassian.com
 trello.status.atlassian.com
 university.atlassian.com

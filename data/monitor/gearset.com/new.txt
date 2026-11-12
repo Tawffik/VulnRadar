@@ -1,0 +1,12 @@
+academy.gearset.com
+api.gearset.com
+email.gearset.com
+fastspring.gearset.com
+gearset.com
+hipaa.staging.gearset.com
+onboarding.gearset.com
+salesloft.gearset.com
+socclicks.gearset.com
+staging-subscriptions.gearset.com
+staging-trust.gearset.com
+subscriptions.gearset.com

@@ -1,0 +1,3 @@
+rc.portal.expressvpn.com
+store.expressvpn.com
+teams.expressvpn.com

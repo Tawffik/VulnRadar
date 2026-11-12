@@ -3,10 +3,9 @@ billing-portal.expressvpn.com
 cdn.portal.expressvpn.com
 go.expressvpn.com
 link.clicks.expressvpn.com
-portal.expressvpn.com
+rc.portal.expressvpn.com
 repo.expressvpn.com
-speedtest.expressvpn.com
 staging.teams.expressvpn.com
-support.expressvpn.com
-updates.expressvpn.com
+store.expressvpn.com
+teams.expressvpn.com
 www.expressvpn.com

@@ -1,18 +1,33 @@
 {
   "target": "datadome.co",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 46,
-  "new_count": 18,
-  "removed_count": 13,
+  "discovered": 200,
+  "live": 36,
+  "new_count": 13,
+  "removed_count": 23,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-12T13:45:31.955478+00:00",
+  "ts": "2026-11-12T22:46:00.182589+00:00",
   "new": [
+    "api-eu-west-1.datadome.co",
+    "api-me-west-1.datadome.co",
+    "flink-gcp.datadome.co",
+    "flink.datadome.co",
+    "go.datadome.co",
+    "offsite26.datadome.co",
+    "preprod-js.datadome.co",
+    "prometheus.datadome.co",
+    "status.datadome.co",
+    "support.datadome.co",
+    "test-fpjs.datadome.co",
+    "trust.datadome.co",
+    "upflow-email.datadome.co"
+  ],
+  "removed": [
     "api-af-south-1.datadome.co",
     "api-alb-ap-east-1.datadome.co",
     "api-alb-eu-west-1.datadome.co",
@@ -24,28 +39,18 @@
     "api-alb-us-west-1.datadome.co",
     "api-alb-us-west-2.datadome.co",
     "api-ap-south-1.datadome.co",
+    "api-canary.datadome.co",
     "api-eu-france-1.datadome.co",
     "api-sa-chile-1.datadome.co",
     "api-us-carolina-1.datadome.co",
     "api-us-east-1.datadome.co",
+    "api-us-east-2.datadome.co",
     "api-us-texas-1.datadome.co",
+    "api-us-west-1.datadome.co",
+    "api-us-west-2.datadome.co",
+    "js.datadome.co",
     "preprod-api-app.datadome.co",
     "test.datadome.co"
-  ],
-  "removed": [
-    "api-akamai.datadome.co",
-    "api-us-utah-1.datadome.co",
-    "auth0.tooling.datadome.co",
-    "flink-gcp.datadome.co",
-    "flink.datadome.co",
-    "go.datadome.co",
-    "offsite26.datadome.co",
-    "prometheus.datadome.co",
-    "status.datadome.co",
-    "support.datadome.co",
-    "test-fpjs.datadome.co",
-    "trust.datadome.co",
-    "upflow-email.datadome.co"
   ],
   "baseline_updated": true
 }

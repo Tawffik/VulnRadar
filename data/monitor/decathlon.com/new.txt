@@ -1,8 +1,5 @@
-cx.event.decathlon.com
-feedback.decathlon.com
-img.otp2.decathlon.com
-onefront.decathlon.com
-pro.decathlon.com
-share-cor.decathlon.com
-t.design.decathlon.com
-url7551.decathlon.com
+login-doc.decathlon.com
+r.otp2.decathlon.com
+vision.decathlon.com
+wts.decathlon.com
+www.blog.decathlon.com

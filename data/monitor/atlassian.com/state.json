@@ -2,25 +2,23 @@
   "target": "atlassian.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 108,
-  "new_count": 1,
-  "removed_count": 5,
+  "live": 110,
+  "new_count": 3,
+  "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-12T13:43:04.326496+00:00",
+  "ts": "2026-11-12T22:43:30.014962+00:00",
   "new": [
-    "pke-stg.atlassian.com"
+    "design.atlassian.com",
+    "loma.blogs.atlassian.com",
+    "tools.atlassian.com"
   ],
   "removed": [
-    "advocate-central.atlassian.com",
-    "analytics.status.atlassian.com",
-    "bitbucket.status.atlassian.com",
-    "developer.status.atlassian.com",
-    "downloads-origin.atlassian.com"
+    "pke-stg.atlassian.com"
   ],
   "baseline_updated": true
 }

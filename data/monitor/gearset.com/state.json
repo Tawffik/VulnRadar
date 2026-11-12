@@ -2,37 +2,40 @@
   "target": "gearset.com",
   "status": "COMPLETE",
   "discovered": 136,
-  "live": 20,
-  "new_count": 0,
-  "removed_count": 19,
+  "live": 23,
+  "new_count": 12,
+  "removed_count": 9,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 136
   },
-  "ts": "2026-11-12T13:52:07.431122+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-12T22:52:40.038893+00:00",
+  "new": [
     "academy.gearset.com",
     "api.gearset.com",
-    "au.staging.gearset.com",
-    "docs.gearset.com",
     "email.gearset.com",
-    "eu.staging.gearset.com",
     "fastspring.gearset.com",
     "gearset.com",
     "hipaa.staging.gearset.com",
     "onboarding.gearset.com",
     "salesloft.gearset.com",
-    "staging-fastspring.gearset.com",
+    "socclicks.gearset.com",
     "staging-subscriptions.gearset.com",
     "staging-trust.gearset.com",
-    "staging.gearset.com",
-    "subscriptions.gearset.com",
-    "us.app.gearset.com",
-    "website-api.gearset.com",
-    "www.gearset.com"
+    "subscriptions.gearset.com"
+  ],
+  "removed": [
+    "amplitude.gearset.com",
+    "assets.gearset.com",
+    "ca.app.gearset.com",
+    "staging-api.gearset.com",
+    "staging-integration-testing-subscriptions.gearset.com",
+    "staging-website-api.gearset.com",
+    "status.gearset.com",
+    "us.staging.gearset.com",
+    "webhooks.gearset.com"
   ],
   "baseline_updated": true
 }

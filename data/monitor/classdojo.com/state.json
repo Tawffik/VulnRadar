@@ -2,17 +2,23 @@
   "target": "classdojo.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 71,
-  "new_count": 32,
-  "removed_count": 3,
+  "live": 43,
+  "new_count": 4,
+  "removed_count": 32,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-12T13:44:08.601611+00:00",
+  "ts": "2026-11-12T22:44:31.429905+00:00",
   "new": [
+    "lite.classdojo.com",
+    "student3.classdojo.com",
+    "toolkit.classdojo.com",
+    "www2.classdojo.com"
+  ],
+  "removed": [
     "android-web-static.classdojo.com",
     "artifacts-blobs.classdojo.com",
     "artifacts-render.classdojo.com",
@@ -45,11 +51,6 @@
     "ws.multiplayer.classdojo.com",
     "www.marketplace.classdojo.com",
     "www.tutoring.classdojo.com"
-  ],
-  "removed": [
-    "parent.classdojo.com",
-    "static.classdojo.com",
-    "www3.classdojo.com"
   ],
   "baseline_updated": true
 }
