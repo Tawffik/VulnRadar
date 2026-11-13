@@ -1,2 +1,8 @@
-lite.classdojo.com
-www2.classdojo.com
+dojotutor.classdojo.com
+external3.classdojo.com
+globalapi.classdojo.com
+ideas.classdojo.com
+student3.classdojo.com
+toolkit.classdojo.com
+translate.classdojo.com
+tutor.classdojo.com

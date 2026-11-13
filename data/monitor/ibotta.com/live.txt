@@ -34,9 +34,7 @@ looker.ibotta.com
 media.ibotta.com
 o.ibotta.com
 oss-pkg.ibotta.com
-partners.ibotta.com
 pay.ibotta.com
-register.ibotta.com
 retail.ibotta.com
 s.ibotta.com
 static.ibotta.com

@@ -1,6 +1,0 @@
-dojotutor.classdojo.com
-external3.classdojo.com
-globalapi.classdojo.com
-ideas.classdojo.com
-images.classdojo.com
-tutor.classdojo.com

@@ -1,13 +1,2 @@
-admin-origin.ibotta.com
-auth-origin.ibotta.com
-auth-stg-origin.dev.ibotta.com
-auth.dashboard.ibotta.com
-authenticate.dev.ibotta.com
-authenticate.ibotta.com
-bulk-offer-creation.ibotta.com
-connected-content.ibotta.com
-cs-external.ibotta.com
-cs-k8sweb.ibotta.com
-ipn-campaign-gateway.plt.cx.ibotta.com
-sst.data.ibotta.com
-www.sst.data.ibotta.com
+partners.ibotta.com
+register.ibotta.com

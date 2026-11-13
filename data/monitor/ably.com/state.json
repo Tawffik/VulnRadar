@@ -1,7 +1,7 @@
 {
   "target": "ably.com",
   "status": "COMPLETE",
-  "discovered": 201,
+  "discovered": 200,
   "live": 20,
   "new_count": 0,
   "removed_count": 0,
@@ -9,9 +9,9 @@
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-13T12:57:32.933505+00:00",
+  "ts": "2026-11-13T22:28:12.794270+00:00",
   "new": [],
   "removed": [],
   "baseline_updated": true

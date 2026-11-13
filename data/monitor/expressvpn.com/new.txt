@@ -1,11 +1,4 @@
-beta.repo.expressvpn.com
-checkout.expressvpn.com
-expressvpn.com
-integration.expressvpn.com
-landing-pages.expressvpn.com
-link.mail.expressvpn.com
-portal.expressvpn.com
-speedtest.expressvpn.com
-staging.portal.expressvpn.com
-support.expressvpn.com
-updates.expressvpn.com
+connectivitycheck.expressvpn.com
+desktop.updates.expressvpn.com
+prod-rewrite.portal.expressvpn.com
+staging.checkout.expressvpn.com

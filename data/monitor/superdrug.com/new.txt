@@ -1,10 +1,1 @@
-ccs.superdrug.com
-consent.superdrug.com
-hb.superdrug.com
-m.email.superdrug.com
-m.superdrug.com
-superdrug.com
-t.email.superdrug.com
-videogp.superdrug.com
-www-s1.superdrug.com
-www.superdrug.com
+clickom.superdrug.com

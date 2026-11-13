@@ -96,6 +96,7 @@ test.elementor.com
 tuts.elementor.com
 univ.elementor.com
 user.elementor.com
+wceu.elementor.com
 wiki.elementor.com
 01dev.elementor.com
 1www7.elementor.com
@@ -164,6 +165,7 @@ server.elementor.com
 sitesa.elementor.com
 statsi.elementor.com
 status.elementor.com
+survey.elementor.com
 testsq.elementor.com
 thumbs.elementor.com
 top100.elementor.com
@@ -196,6 +198,3 @@ flexbox.elementor.com
 grc2go7.elementor.com
 iimahd9.elementor.com
 infolab.elementor.com
-library.elementor.com
-manager.elementor.com
-peoplea.elementor.com

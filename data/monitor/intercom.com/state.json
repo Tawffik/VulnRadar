@@ -2,33 +2,24 @@
   "target": "intercom.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 60,
-  "new_count": 13,
-  "removed_count": 1,
+  "live": 59,
+  "new_count": 2,
+  "removed_count": 3,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-13T13:10:19.943445+00:00",
+  "ts": "2026-11-13T22:42:21.690666+00:00",
   "new": [
-    "cf.intercom.com",
-    "em.intercom.com",
-    "email.careers.intercom.com",
-    "forum.intercom.com",
-    "frame.au.intercom.com",
-    "gmail.mcp.intercom.com",
-    "go.intercom.com",
-    "hq.intercom.com",
-    "link.hq.intercom.com",
-    "logs.corp.eu.intercom.com",
-    "logs.corp.intercom.com",
-    "mcp.eu.intercom.com",
-    "meet.intercom.com"
+    "academy.guests.intercom.com",
+    "women.intercom.com"
   ],
   "removed": [
-    "academy.guests.intercom.com"
+    "cf.intercom.com",
+    "cx.intercom.com",
+    "meet.intercom.com"
   ],
   "baseline_updated": true
 }

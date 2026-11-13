@@ -2,7 +2,8 @@ access.status.atlassian.com
 ace.atlassian.com
 acli.atlassian.com
 admin.atlassian.com
-amkt-frontend.atlassian.com
+advocate-central.atlassian.com
+analytics.status.atlassian.com
 api-private.atlassian.com
 api.atlassian.com
 as.atlassian.com
@@ -19,6 +20,7 @@ automation.atlassian.com
 automation.stg.atlassian.com
 beacon.atlassian.com
 beta-developer.atlassian.com
+bitbucket.status.atlassian.com
 blog-de.atlassian.com
 blog-fr.atlassian.com
 blog.atlassian.com
@@ -44,13 +46,14 @@ confluence.atlassian.com
 cs.atlassian.com
 de.atlassian.com
 developer.atlassian.com
+developer.status.atlassian.com
 download.atlassian.com
 downloads-cdn.atlassian.com
+downloads-origin.atlassian.com
 downloads.atlassian.com
 email.attend.atlassian.com
 enable.atlassian.com
 es.atlassian.com
-eventlinks.atlassian.com
 events.atlassian.com
 fi.atlassian.com
 fr.atlassian.com
@@ -65,11 +68,9 @@ it.atlassian.com
 ja.atlassian.com
 ja.confluence.atlassian.com
 japan.blogs.atlassian.com
-jcs-chat-widget.atlassian.com
 jira-ops.status.atlassian.com
 ko.atlassian.com
 korea.blogs.atlassian.com
-leaderhub.atlassian.com
 links.em.aug.atlassian.com
 links.eml.atlassian.com
 maven.artifacts.atlassian.com
@@ -83,7 +84,6 @@ pages.atlassian.com
 pages.eml.atlassian.com
 partnerevents.atlassian.com
 partnerportal.atlassian.com
-partners-jira.atlassian.com
 partners.status.atlassian.com
 pl.atlassian.com
 ro.atlassian.com
@@ -96,7 +96,6 @@ surveys.atlassian.com
 swag.atlassian.com
 training.atlassian.com
 trello.status.atlassian.com
-trust.atlassian.com
 university.atlassian.com
 update.atlassian.com
 view.e.atlassian.com

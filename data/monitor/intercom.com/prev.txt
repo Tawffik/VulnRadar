@@ -1,3 +1,4 @@
+academy.guests.intercom.com
 academy.intercom.com
 api.mcp.intercom.com
 app.au.intercom.com
@@ -6,11 +7,9 @@ app.intercom.com
 attend.events.intercom.com
 bfy.intercom.com
 blog.intercom.com
-cf.intercom.com
 community.intercom.com
 composer.intercom.com
 credentials.intercom.com
-cx.intercom.com
 demo.intercom.com
 demos.intercom.com
 developerblog.intercom.com
@@ -39,7 +38,6 @@ mcp.eu.intercom.com
 mcp.intercom.com
 meet.au.intercom.com
 meet.eu.intercom.com
-meet.intercom.com
 mi.intercom.com
 news.eu.intercom.com
 out.intercom.com
@@ -57,4 +55,5 @@ trust.intercom.com
 vercel.intercom.com
 vsaq.intercom.com
 watch.intercom.com
+women.intercom.com
 www.intercom.com

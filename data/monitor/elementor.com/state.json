@@ -1,31 +1,23 @@
 {
   "target": "elementor.com",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 27,
-  "new_count": 12,
-  "removed_count": 0,
+  "discovered": 200,
+  "live": 28,
+  "new_count": 2,
+  "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-13T13:04:49.350876+00:00",
+  "ts": "2026-11-13T22:35:20.128397+00:00",
   "new": [
-    "assets.elementor.com",
-    "auth.elementor.com",
-    "be.elementor.com",
-    "console.elementor.com",
-    "events.elementor.com",
-    "go.elementor.com",
-    "library.elementor.com",
-    "pix.elementor.com",
-    "status.elementor.com",
-    "tuts.elementor.com",
-    "ux.elementor.com",
-    "www.elementor.com"
+    "survey.elementor.com",
+    "wceu.elementor.com"
   ],
-  "removed": [],
+  "removed": [
+    "library.elementor.com"
+  ],
   "baseline_updated": true
 }

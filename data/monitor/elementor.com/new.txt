@@ -1,12 +1,2 @@
-assets.elementor.com
-auth.elementor.com
-be.elementor.com
-console.elementor.com
-events.elementor.com
-go.elementor.com
-library.elementor.com
-pix.elementor.com
-status.elementor.com
-tuts.elementor.com
-ux.elementor.com
-www.elementor.com
+survey.elementor.com
+wceu.elementor.com

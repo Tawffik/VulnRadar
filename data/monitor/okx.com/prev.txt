@@ -9,9 +9,7 @@ jpushws.okx.com
 link.okx.com
 money.okx.com
 my.okx.com
-mysignicat.okx.com
 mywspri.okx.com
-mywspripap.okx.com
 okbws.okx.com
 okctools.okx.com
 oktcsafe.okx.com
@@ -39,7 +37,6 @@ wssfppap.okx.com
 wsus.okx.com
 wsuspap.okx.com
 wsweb.okx.com
-wsweb3eea.okx.com
 wsweb3us.okx.com
 wswebpap.okx.com
 www.okx.com

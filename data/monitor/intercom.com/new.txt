@@ -1,13 +1,2 @@
-cf.intercom.com
-em.intercom.com
-email.careers.intercom.com
-forum.intercom.com
-frame.au.intercom.com
-gmail.mcp.intercom.com
-go.intercom.com
-hq.intercom.com
-link.hq.intercom.com
-logs.corp.eu.intercom.com
-logs.corp.intercom.com
-mcp.eu.intercom.com
-meet.intercom.com
+academy.guests.intercom.com
+women.intercom.com
