@@ -2,23 +2,27 @@
   "target": "atlassian.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 110,
-  "new_count": 3,
-  "removed_count": 1,
+  "live": 112,
+  "new_count": 5,
+  "removed_count": 3,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-12T22:43:30.014962+00:00",
+  "ts": "2026-11-13T13:00:30.760184+00:00",
   "new": [
+    "amkt-frontend.atlassian.com",
+    "jcs-chat-widget.atlassian.com",
+    "leaderhub.atlassian.com",
+    "partners-jira.atlassian.com",
+    "trust.atlassian.com"
+  ],
+  "removed": [
     "design.atlassian.com",
     "loma.blogs.atlassian.com",
     "tools.atlassian.com"
-  ],
-  "removed": [
-    "pke-stg.atlassian.com"
   ],
   "baseline_updated": true
 }

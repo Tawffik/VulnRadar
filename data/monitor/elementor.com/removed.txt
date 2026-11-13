@@ -1,7 +1,0 @@
-assets.elementor.com
-be.elementor.com
-console.elementor.com
-library.elementor.com
-tuts.elementor.com
-ux.elementor.com
-www.elementor.com

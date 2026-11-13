@@ -2,26 +2,29 @@
   "target": "expressvpn.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 11,
-  "new_count": 3,
-  "removed_count": 4,
+  "live": 22,
+  "new_count": 11,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-12T22:50:28.550214+00:00",
+  "ts": "2026-11-13T13:05:52.434383+00:00",
   "new": [
-    "rc.portal.expressvpn.com",
-    "store.expressvpn.com",
-    "teams.expressvpn.com"
-  ],
-  "removed": [
+    "beta.repo.expressvpn.com",
+    "checkout.expressvpn.com",
+    "expressvpn.com",
+    "integration.expressvpn.com",
+    "landing-pages.expressvpn.com",
+    "link.mail.expressvpn.com",
     "portal.expressvpn.com",
     "speedtest.expressvpn.com",
+    "staging.portal.expressvpn.com",
     "support.expressvpn.com",
     "updates.expressvpn.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

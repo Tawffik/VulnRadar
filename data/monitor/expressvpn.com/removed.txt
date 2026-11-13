@@ -1,4 +1,0 @@
-portal.expressvpn.com
-speedtest.expressvpn.com
-support.expressvpn.com
-updates.expressvpn.com

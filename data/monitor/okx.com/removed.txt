@@ -1,1 +1,8 @@
-tvpap.okx.com
+appwspripap.okx.com
+appwsweb3pri.okx.com
+eeatravelrule.okx.com
+mywsweb3pri.okx.com
+ustravelrule.okx.com
+xlayerrpc.okx.com
+xlayertestrpc.okx.com
+xlayertestws.okx.com

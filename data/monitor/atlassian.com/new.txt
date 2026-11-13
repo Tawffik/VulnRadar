@@ -1,3 +1,5 @@
-design.atlassian.com
-loma.blogs.atlassian.com
-tools.atlassian.com
+amkt-frontend.atlassian.com
+jcs-chat-widget.atlassian.com
+leaderhub.atlassian.com
+partners-jira.atlassian.com
+trust.atlassian.com

@@ -1,10 +1,7 @@
 app.okx.com
 appwspri.okx.com
-appwspripap.okx.com
-appwsweb3pri.okx.com
 chainrpc.okx.com
 eea.okx.com
-eeatravelrule.okx.com
 file.okx.com
 hk.okx.com
 jpush.okx.com
@@ -15,7 +12,6 @@ my.okx.com
 mysignicat.okx.com
 mywspri.okx.com
 mywspripap.okx.com
-mywsweb3pri.okx.com
 okbws.okx.com
 okctools.okx.com
 oktcsafe.okx.com
@@ -24,8 +20,8 @@ pay.okx.com
 payauth.okx.com
 static.okx.com
 tr.okx.com
+tvpap.okx.com
 us.okx.com
-ustravelrule.okx.com
 wallet.okx.com
 web3.okx.com
 web3link.okx.com
@@ -47,7 +43,4 @@ wsweb3eea.okx.com
 wsweb3us.okx.com
 wswebpap.okx.com
 www.okx.com
-xlayerrpc.okx.com
-xlayertestrpc.okx.com
-xlayertestws.okx.com
 xlayerws.okx.com

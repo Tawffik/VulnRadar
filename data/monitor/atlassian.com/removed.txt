@@ -1,1 +1,3 @@
-pke-stg.atlassian.com
+design.atlassian.com
+loma.blogs.atlassian.com
+tools.atlassian.com

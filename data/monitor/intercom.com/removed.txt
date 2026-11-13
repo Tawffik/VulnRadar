@@ -1,15 +1,1 @@
-api-visitor-analytics.intercom.com
-em.intercom.com
-email.careers.intercom.com
-go.intercom.com
-google-workspace.mcp.intercom.com
-hackathon.corp.intercom.com
-hq.intercom.com
-intercomrades.au.intercom.com
-link.hq.intercom.com
-logs.corp.eu.intercom.com
-mcp.eu.intercom.com
-meet.intercom.com
-register.events.intercom.com
-transformation.intercom.com
-transformation2025.intercom.com
+academy.guests.intercom.com

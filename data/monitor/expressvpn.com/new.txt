@@ -1,3 +1,11 @@
-rc.portal.expressvpn.com
-store.expressvpn.com
-teams.expressvpn.com
+beta.repo.expressvpn.com
+checkout.expressvpn.com
+expressvpn.com
+integration.expressvpn.com
+landing-pages.expressvpn.com
+link.mail.expressvpn.com
+portal.expressvpn.com
+speedtest.expressvpn.com
+staging.portal.expressvpn.com
+support.expressvpn.com
+updates.expressvpn.com

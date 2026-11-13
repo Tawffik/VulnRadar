@@ -1,32 +1,18 @@
 {
   "target": "ably.com",
   "status": "COMPLETE",
-  "discovered": 200,
+  "discovered": 201,
   "live": 20,
   "new_count": 0,
-  "removed_count": 13,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 200
+    "input_count": 201
   },
-  "ts": "2026-11-12T22:39:54.367036+00:00",
+  "ts": "2026-11-13T12:57:32.933505+00:00",
   "new": [],
-  "removed": [
-    "ai-assistant.ably.com",
-    "articles.ably.com",
-    "changelog.ably.com",
-    "dashboards-external.ably.com",
-    "dashboards.ably.com",
-    "insights.ably.com",
-    "knowledge.ably.com",
-    "metabase.ably.com",
-    "nonprod-cdn.ably.com",
-    "security.ably.com",
-    "voltaire.ably.com",
-    "web-cli-terminal.ably.com",
-    "www-stats.ably.com"
-  ],
+  "removed": [],
   "baseline_updated": true
 }

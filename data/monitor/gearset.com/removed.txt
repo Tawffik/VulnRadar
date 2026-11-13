@@ -1,9 +1,0 @@
-amplitude.gearset.com
-assets.gearset.com
-ca.app.gearset.com
-staging-api.gearset.com
-staging-integration-testing-subscriptions.gearset.com
-staging-website-api.gearset.com
-status.gearset.com
-us.staging.gearset.com
-webhooks.gearset.com
