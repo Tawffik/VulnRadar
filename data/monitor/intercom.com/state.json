@@ -1,25 +1,38 @@
 {
   "target": "intercom.com",
   "status": "COMPLETE",
-  "discovered": 200,
-  "live": 59,
-  "new_count": 2,
-  "removed_count": 3,
+  "discovered": 201,
+  "live": 51,
+  "new_count": 5,
+  "removed_count": 13,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 200
+    "input_count": 201
   },
-  "ts": "2026-11-13T22:42:21.690666+00:00",
+  "ts": "2026-11-14T12:16:29.236810+00:00",
   "new": [
-    "academy.guests.intercom.com",
-    "women.intercom.com"
+    "cx.intercom.com",
+    "hackathon.corp.intercom.com",
+    "meet.intercom.com",
+    "partneracademy.intercom.com",
+    "staging.intercom.com"
   ],
   "removed": [
-    "cf.intercom.com",
-    "cx.intercom.com",
-    "meet.intercom.com"
+    "demo.intercom.com",
+    "mi.intercom.com",
+    "out.intercom.com",
+    "preferences.intercom.com",
+    "privacy.intercom.com",
+    "rsvp.pioneer.intercom.com",
+    "status.intercom.com",
+    "surge.intercom.com",
+    "trust.intercom.com",
+    "vercel.intercom.com",
+    "vsaq.intercom.com",
+    "watch.intercom.com",
+    "www.intercom.com"
   ],
   "baseline_updated": true
 }

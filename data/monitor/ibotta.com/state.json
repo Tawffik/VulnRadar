@@ -3,7 +3,7 @@
   "status": "COMPLETE",
   "discovered": 200,
   "live": 43,
-  "new_count": 0,
+  "new_count": 2,
   "removed_count": 2,
   "discover_error": null,
   "probe": {
@@ -11,11 +11,14 @@
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-13T22:39:23.980995+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-14T12:13:27.583549+00:00",
+  "new": [
     "partners.ibotta.com",
     "register.ibotta.com"
+  ],
+  "removed": [
+    "api.gary.ibotta.com",
+    "ipn-auth.ibotta.com"
   ],
   "baseline_updated": true
 }

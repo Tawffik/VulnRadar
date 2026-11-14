@@ -1,3 +1,13 @@
-cf.intercom.com
-cx.intercom.com
-meet.intercom.com
+demo.intercom.com
+mi.intercom.com
+out.intercom.com
+preferences.intercom.com
+privacy.intercom.com
+rsvp.pioneer.intercom.com
+status.intercom.com
+surge.intercom.com
+trust.intercom.com
+vercel.intercom.com
+vsaq.intercom.com
+watch.intercom.com
+www.intercom.com

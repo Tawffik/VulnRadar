@@ -4,7 +4,6 @@ admin-cf.ibotta.com
 admin.ibotta.com
 api-cf.ibotta.com
 api.dev.ibotta.com
-api.gary.ibotta.com
 api.ibotta.com
 app.dev.ibotta.com
 app.ibotta.com
@@ -24,7 +23,6 @@ help.ibotta.com
 home.dev.ibotta.com
 home.ibotta.com
 ibotta.com
-ipn-auth.ibotta.com
 ipn.ibotta.com
 ir.ibotta.com
 legal.ibotta.com
@@ -34,7 +32,9 @@ looker.ibotta.com
 media.ibotta.com
 o.ibotta.com
 oss-pkg.ibotta.com
+partners.ibotta.com
 pay.ibotta.com
+register.ibotta.com
 retail.ibotta.com
 s.ibotta.com
 static.ibotta.com

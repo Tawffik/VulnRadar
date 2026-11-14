@@ -3,21 +3,16 @@
   "status": "COMPLETE",
   "discovered": 200,
   "live": 28,
-  "new_count": 2,
-  "removed_count": 1,
+  "new_count": 0,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-13T22:35:20.128397+00:00",
-  "new": [
-    "survey.elementor.com",
-    "wceu.elementor.com"
-  ],
-  "removed": [
-    "library.elementor.com"
-  ],
+  "ts": "2026-11-14T12:09:35.417352+00:00",
+  "new": [],
+  "removed": [],
   "baseline_updated": true
 }

@@ -1,6 +1,0 @@
-amkt-frontend.atlassian.com
-eventlinks.atlassian.com
-jcs-chat-widget.atlassian.com
-leaderhub.atlassian.com
-partners-jira.atlassian.com
-trust.atlassian.com

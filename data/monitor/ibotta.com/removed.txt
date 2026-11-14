@@ -1,2 +1,2 @@
-partners.ibotta.com
-register.ibotta.com
+api.gary.ibotta.com
+ipn-auth.ibotta.com

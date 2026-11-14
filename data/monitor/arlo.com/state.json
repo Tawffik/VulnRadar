@@ -4,22 +4,21 @@
   "discovered": 200,
   "live": 57,
   "new_count": 2,
-  "removed_count": 3,
+  "removed_count": 2,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-13T22:28:43.022960+00:00",
+  "ts": "2026-11-14T12:02:38.268643+00:00",
   "new": [
-    "arlocommon.arlo.com",
-    "b2bproxy02.arlo.com"
+    "ca.arlo.com",
+    "hk.arlo.com"
   ],
   "removed": [
-    "ca.arlo.com",
-    "myapi-z2.arlo.com",
-    "shop-us.arlo.com"
+    "arlocommon.arlo.com",
+    "b2bproxy02.arlo.com"
   ],
   "baseline_updated": true
 }

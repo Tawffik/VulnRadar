@@ -2,22 +2,22 @@
   "target": "expressvpn.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 26,
-  "new_count": 4,
-  "removed_count": 0,
+  "live": 22,
+  "new_count": 0,
+  "removed_count": 4,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-13T22:36:23.288265+00:00",
-  "new": [
+  "ts": "2026-11-14T12:10:38.491902+00:00",
+  "new": [],
+  "removed": [
     "connectivitycheck.expressvpn.com",
     "desktop.updates.expressvpn.com",
     "prod-rewrite.portal.expressvpn.com",
     "staging.checkout.expressvpn.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

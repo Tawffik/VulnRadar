@@ -17,6 +17,7 @@ home3.classdojo.com
 images.classdojo.com
 learn.classdojo.com
 link.classdojo.com
+lite.classdojo.com
 logs.classdojo.com
 m.classdojo.com
 mentor.classdojo.com
@@ -27,6 +28,7 @@ pstudent.classdojo.com
 pubnub.classdojo.com
 security.classdojo.com
 sentry.classdojo.com
+sfiles.classdojo.com
 shaders.classdojo.com
 share.classdojo.com
 shop.classdojo.com
@@ -35,5 +37,8 @@ store.classdojo.com
 student.classdojo.com
 teach.classdojo.com
 teach3.classdojo.com
+translate.classdojo.com
+tutor3.classdojo.com
 tutoring.classdojo.com
 www.classdojo.com
+www3.classdojo.com

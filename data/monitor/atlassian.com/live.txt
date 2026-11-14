@@ -54,6 +54,7 @@ downloads.atlassian.com
 email.attend.atlassian.com
 enable.atlassian.com
 es.atlassian.com
+eventlinks.atlassian.com
 events.atlassian.com
 fi.atlassian.com
 fr.atlassian.com
