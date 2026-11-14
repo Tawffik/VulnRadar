@@ -2,19 +2,26 @@
   "target": "atlassian.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 112,
-  "new_count": 1,
-  "removed_count": 0,
+  "live": 109,
+  "new_count": 2,
+  "removed_count": 5,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-14T12:04:35.832179+00:00",
+  "ts": "2026-11-14T21:21:12.461638+00:00",
   "new": [
-    "eventlinks.atlassian.com"
+    "hamlet.atlassian.com",
+    "promo.atlassian.com"
   ],
-  "removed": [],
+  "removed": [
+    "advocate-central.atlassian.com",
+    "analytics.status.atlassian.com",
+    "bitbucket.status.atlassian.com",
+    "developer.status.atlassian.com",
+    "downloads-origin.atlassian.com"
+  ],
   "baseline_updated": true
 }

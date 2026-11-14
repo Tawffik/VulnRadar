@@ -9,7 +9,7 @@ arlocs.ar.arlo.com
 arlocs.arlo.com
 beta.arlo.com
 blog.arlo.com
-ca.arlo.com
+care.arlo.com
 click.e.arlo.com
 community.arlo.com
 devtest.arlo.com
@@ -46,6 +46,8 @@ qa.arlo.com
 remote.arlo.com
 revoke-qa.arlo.com
 revoke.arlo.com
+share.arlo.com
+shop-us.arlo.com
 status.arlo.com
 support.arlo.com
 survey.arlo.com

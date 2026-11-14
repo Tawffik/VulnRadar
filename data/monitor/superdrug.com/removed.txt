@@ -1,1 +1,2 @@
-clickom.superdrug.com
+pharmacy.superdrug.com
+videogp.superdrug.com

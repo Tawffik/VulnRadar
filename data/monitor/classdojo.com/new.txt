@@ -1,5 +1,2 @@
-lite.classdojo.com
-sfiles.classdojo.com
-translate.classdojo.com
-tutor3.classdojo.com
-www3.classdojo.com
+mobile.classdojo.com
+tutor2.classdojo.com

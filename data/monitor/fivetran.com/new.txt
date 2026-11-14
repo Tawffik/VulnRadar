@@ -1,5 +1,7 @@
-benchmark-ldp.gateway.fivetran.com
-eng-planning-staging.fivetran.com
-prod.aws.us-east-1.proxy.fivetran.com
-staging.events.agent.fivetran.com
-staging.orchestrator.fivetran.com
+events.qe.fivetran.com
+learn.fivetran.com
+partners.fivetran.com
+prototypes.fivetran.com
+qe.fivetran.com
+services.fivetran.com
+webhooks.qe.fivetran.com

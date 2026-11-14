@@ -1,2 +1,3 @@
-ca.arlo.com
-hk.arlo.com
+care.arlo.com
+share.arlo.com
+shop-us.arlo.com

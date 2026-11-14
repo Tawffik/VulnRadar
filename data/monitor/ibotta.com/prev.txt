@@ -11,9 +11,7 @@ auth-cf.ibotta.com
 auth.dev.ibotta.com
 auth.ibotta.com
 backend.ibotta.com
-blog.dev.ibotta.com
 blog.ibotta.com
-brand.ibotta.com
 cpg.ibotta.com
 cs.ibotta.com
 dyn-seg.ibotta.com
@@ -29,12 +27,9 @@ legal.ibotta.com
 link.dev.ibotta.com
 link.ibotta.com
 looker.ibotta.com
-media.ibotta.com
 o.ibotta.com
 oss-pkg.ibotta.com
-partners.ibotta.com
 pay.ibotta.com
-register.ibotta.com
 retail.ibotta.com
 s.ibotta.com
 static.ibotta.com

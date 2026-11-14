@@ -1,1 +1,2 @@
-eventlinks.atlassian.com
+hamlet.atlassian.com
+promo.atlassian.com
