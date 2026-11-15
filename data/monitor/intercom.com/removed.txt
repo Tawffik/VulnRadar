@@ -1,4 +1,2 @@
-cx.intercom.com
-hackathon.corp.intercom.com
-partneracademy.intercom.com
-women.intercom.com
+cf.intercom.com
+staging.intercom.com

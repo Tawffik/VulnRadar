@@ -2,24 +2,22 @@
   "target": "gearset.com",
   "status": "COMPLETE",
   "discovered": 136,
-  "live": 36,
-  "new_count": 1,
-  "removed_count": 4,
+  "live": 40,
+  "new_count": 4,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 136
   },
-  "ts": "2026-11-14T21:31:16.478479+00:00",
+  "ts": "2026-11-15T12:48:35.901247+00:00",
   "new": [
-    "socclicks.gearset.com"
-  ],
-  "removed": [
     "ca.staging.gearset.com",
     "eu.app.gearset.com",
     "hipaa.app.gearset.com",
     "staging-integration-testing-subscriptions.gearset.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

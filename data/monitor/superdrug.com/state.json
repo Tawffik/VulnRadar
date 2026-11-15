@@ -4,20 +4,19 @@
   "discovered": 200,
   "live": 19,
   "new_count": 1,
-  "removed_count": 2,
+  "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-14T21:42:57.753571+00:00",
+  "ts": "2026-11-15T12:55:12.040262+00:00",
   "new": [
-    "clickom.superdrug.com"
+    "videogp.superdrug.com"
   ],
   "removed": [
-    "pharmacy.superdrug.com",
-    "videogp.superdrug.com"
+    "media-s1.superdrug.com"
   ],
   "baseline_updated": true
 }

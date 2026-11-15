@@ -1,1 +1,2 @@
-ca.arlo.com
+care.arlo.com
+share.arlo.com

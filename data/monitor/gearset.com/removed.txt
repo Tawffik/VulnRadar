@@ -1,4 +1,0 @@
-ca.staging.gearset.com
-eu.app.gearset.com
-hipaa.app.gearset.com
-staging-integration-testing-subscriptions.gearset.com

@@ -41,6 +41,7 @@ compass.status.atlassian.com
 compliance.atlassian.com
 confluence.atlassian.com
 cs.atlassian.com
+dac.services.atlassian.com
 de.atlassian.com
 developer.atlassian.com
 download.atlassian.com
@@ -51,11 +52,11 @@ enable.atlassian.com
 es.atlassian.com
 eventlinks.atlassian.com
 events.atlassian.com
+experts.atlassian.com
 fi.atlassian.com
 fr.atlassian.com
 france.blogs.atlassian.com
 gotest.atlassian.com
-hamlet.atlassian.com
 hello.atlassian.com
 hu.atlassian.com
 image.e.atlassian.com
@@ -83,7 +84,6 @@ partnerevents.atlassian.com
 partnerportal.atlassian.com
 partners.status.atlassian.com
 pl.atlassian.com
-promo.atlassian.com
 ro.atlassian.com
 ru.atlassian.com
 shop.atlassian.com

@@ -2,22 +2,22 @@
   "target": "expressvpn.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 18,
-  "new_count": 0,
-  "removed_count": 4,
+  "live": 22,
+  "new_count": 4,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-14T21:28:51.451822+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-15T12:47:07.631515+00:00",
+  "new": [
     "integration.expressvpn.com",
     "portal.expressvpn.com",
     "staging.teams.expressvpn.com",
     "support.expressvpn.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

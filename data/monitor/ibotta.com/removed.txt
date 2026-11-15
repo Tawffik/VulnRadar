@@ -1,5 +1,1 @@
-blog.dev.ibotta.com
-brand.ibotta.com
-media.ibotta.com
-partners.ibotta.com
-register.ibotta.com
+300661.ibotta.com

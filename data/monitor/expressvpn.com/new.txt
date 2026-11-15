@@ -1,0 +1,4 @@
+integration.expressvpn.com
+portal.expressvpn.com
+staging.teams.expressvpn.com
+support.expressvpn.com

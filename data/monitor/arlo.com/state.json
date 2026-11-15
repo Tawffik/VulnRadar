@@ -3,22 +3,22 @@
   "status": "COMPLETE",
   "discovered": 200,
   "live": 59,
-  "new_count": 3,
-  "removed_count": 1,
+  "new_count": 2,
+  "removed_count": 2,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-14T21:19:18.155651+00:00",
+  "ts": "2026-11-15T12:38:54.806781+00:00",
   "new": [
-    "care.arlo.com",
-    "share.arlo.com",
-    "shop-us.arlo.com"
+    "aria.arlo.com",
+    "engihub.arlo.com"
   ],
   "removed": [
-    "ca.arlo.com"
+    "care.arlo.com",
+    "share.arlo.com"
   ],
   "baseline_updated": true
 }

@@ -1,2 +1,1 @@
-pharmacy.superdrug.com
-videogp.superdrug.com
+media-s1.superdrug.com

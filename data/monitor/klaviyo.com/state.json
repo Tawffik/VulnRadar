@@ -2,18 +2,17 @@
   "target": "klaviyo.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 42,
-  "new_count": 0,
-  "removed_count": 6,
+  "live": 48,
+  "new_count": 6,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-14T21:39:07.851536+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-15T12:53:01.443242+00:00",
+  "new": [
     "gslink.klaviyo.com",
     "help.klaviyo.com",
     "marketing.klaviyo.com",
@@ -21,5 +20,6 @@
     "trust.klaviyo.com",
     "www.klaviyo.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }
