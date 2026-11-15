@@ -2,23 +2,23 @@
   "target": "atlassian.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 109,
-  "new_count": 2,
-  "removed_count": 2,
+  "live": 107,
+  "new_count": 1,
+  "removed_count": 3,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-15T12:40:47.784232+00:00",
+  "ts": "2026-11-15T21:41:41.510071+00:00",
   "new": [
-    "dac.services.atlassian.com",
-    "experts.atlassian.com"
+    "automate.stg.atlassian.com"
   ],
   "removed": [
-    "hamlet.atlassian.com",
-    "promo.atlassian.com"
+    "dac.services.atlassian.com",
+    "eventlinks.atlassian.com",
+    "experts.atlassian.com"
   ],
   "baseline_updated": true
 }

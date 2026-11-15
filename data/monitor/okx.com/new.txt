@@ -1,5 +1,1 @@
-mysignicat.okx.com
-mywspripap.okx.com
-securemail.okx.com
-staticaws.okx.com
-wallet.okx.com
+tvpap.okx.com

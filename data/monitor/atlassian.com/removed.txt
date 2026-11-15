@@ -1,2 +1,3 @@
-hamlet.atlassian.com
-promo.atlassian.com
+dac.services.atlassian.com
+eventlinks.atlassian.com
+experts.atlassian.com

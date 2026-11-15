@@ -14,6 +14,7 @@ aug.atlassian.com
 aui-cdn.atlassian.com
 aui.atlassian.com
 auth.atlassian.com
+automate.stg.atlassian.com
 automation.atlassian.com
 automation.stg.atlassian.com
 beacon.atlassian.com
@@ -41,7 +42,6 @@ compass.status.atlassian.com
 compliance.atlassian.com
 confluence.atlassian.com
 cs.atlassian.com
-dac.services.atlassian.com
 de.atlassian.com
 developer.atlassian.com
 download.atlassian.com
@@ -50,9 +50,7 @@ downloads.atlassian.com
 email.attend.atlassian.com
 enable.atlassian.com
 es.atlassian.com
-eventlinks.atlassian.com
 events.atlassian.com
-experts.atlassian.com
 fi.atlassian.com
 fr.atlassian.com
 france.blogs.atlassian.com

@@ -3,38 +3,16 @@
   "status": "COMPLETE",
   "discovered": 200,
   "live": 65,
-  "new_count": 13,
-  "removed_count": 7,
+  "new_count": 0,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-15T12:47:47.456327+00:00",
-  "new": [
-    "api.lake-compute.fivetran.com",
-    "arl-events.fivetran.com",
-    "benchmark-ldp.gateway.fivetran.com",
-    "eng-planning-staging.fivetran.com",
-    "events.agent.fivetran.com",
-    "gateway.fivetran.com",
-    "gcp.us.webhooks.fivetran.com",
-    "get.fivetran.com",
-    "prod.aws.us-east-1.proxy.fivetran.com",
-    "staging.api.agent.fivetran.com",
-    "staging.events.agent.fivetran.com",
-    "staging.orchestrator.fivetran.com",
-    "staging.webhooks.fivetran.com"
-  ],
-  "removed": [
-    "events.qe.fivetran.com",
-    "learn.fivetran.com",
-    "partners.fivetran.com",
-    "prototypes.fivetran.com",
-    "qe.fivetran.com",
-    "services.fivetran.com",
-    "webhooks.qe.fivetran.com"
-  ],
+  "ts": "2026-11-15T21:49:10.158036+00:00",
+  "new": [],
+  "removed": [],
   "baseline_updated": true
 }

@@ -1,6 +1,0 @@
-gslink.klaviyo.com
-help.klaviyo.com
-marketing.klaviyo.com
-reviews-app.klaviyo.com
-trust.klaviyo.com
-www.klaviyo.com

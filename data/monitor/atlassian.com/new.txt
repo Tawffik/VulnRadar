@@ -1,2 +1,1 @@
-dac.services.atlassian.com
-experts.atlassian.com
+automate.stg.atlassian.com

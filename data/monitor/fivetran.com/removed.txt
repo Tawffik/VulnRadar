@@ -1,7 +1,0 @@
-events.qe.fivetran.com
-learn.fivetran.com
-partners.fivetran.com
-prototypes.fivetran.com
-qe.fivetran.com
-services.fivetran.com
-webhooks.qe.fivetran.com

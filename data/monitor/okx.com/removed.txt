@@ -1,0 +1,5 @@
+mysignicat.okx.com
+mywspripap.okx.com
+securemail.okx.com
+staticaws.okx.com
+xlayerrpc.okx.com

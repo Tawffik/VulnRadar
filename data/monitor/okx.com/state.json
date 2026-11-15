@@ -2,23 +2,25 @@
   "target": "okx.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 48,
-  "new_count": 5,
-  "removed_count": 0,
+  "live": 44,
+  "new_count": 1,
+  "removed_count": 5,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-15T12:53:51.319941+00:00",
+  "ts": "2026-11-15T21:55:00.847595+00:00",
   "new": [
+    "tvpap.okx.com"
+  ],
+  "removed": [
     "mysignicat.okx.com",
     "mywspripap.okx.com",
     "securemail.okx.com",
     "staticaws.okx.com",
-    "wallet.okx.com"
+    "xlayerrpc.okx.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

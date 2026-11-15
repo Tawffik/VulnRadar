@@ -1,5 +1,0 @@
-community.classdojo.com
-dojoicons.classdojo.com
-lite.classdojo.com
-mobile.classdojo.com
-tutor2.classdojo.com

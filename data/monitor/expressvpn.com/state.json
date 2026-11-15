@@ -3,7 +3,7 @@
   "status": "COMPLETE",
   "discovered": 200,
   "live": 22,
-  "new_count": 4,
+  "new_count": 0,
   "removed_count": 0,
   "discover_error": null,
   "probe": {
@@ -11,13 +11,8 @@
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-15T12:47:07.631515+00:00",
-  "new": [
-    "integration.expressvpn.com",
-    "portal.expressvpn.com",
-    "staging.teams.expressvpn.com",
-    "support.expressvpn.com"
-  ],
+  "ts": "2026-11-15T21:48:02.985964+00:00",
+  "new": [],
   "removed": [],
   "baseline_updated": true
 }
