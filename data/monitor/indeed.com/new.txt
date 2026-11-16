@@ -1,8 +1,7 @@
-c22.s3.indeed.com
-campus.indeed.com
-es.indeed.com
-hired.indeed.com
-india.indeed.com
-myjobs.indeed.com
-th.indeed.com
-ww.indeed.com
+media.indeed.com
+nda.indeed.com
+no.indeed.com
+pres.indeed.com
+swipes.indeed.com
+tr.indeed.com
+uae.indeed.com

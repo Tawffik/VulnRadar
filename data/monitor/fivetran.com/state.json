@@ -1,18 +1,45 @@
 {
   "target": "fivetran.com",
   "status": "COMPLETE",
-  "discovered": 200,
-  "live": 65,
-  "new_count": 0,
-  "removed_count": 0,
+  "discovered": 51,
+  "live": 48,
+  "new_count": 4,
+  "removed_count": 21,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 200
+    "input_count": 51
   },
-  "ts": "2026-11-15T21:49:10.158036+00:00",
-  "new": [],
-  "removed": [],
+  "ts": "2026-11-16T13:37:10.041878+00:00",
+  "new": [
+    "gcp.us-central1.api-mcp-staging.fivetran.com",
+    "prod.gcp.global.build-tracker.fivetran.com",
+    "qe.gcp.global.build-tracker.fivetran.com",
+    "staging.gcp.global.build-tracker.fivetran.com"
+  ],
+  "removed": [
+    "gcp.eu.webhooks.fivetran.com",
+    "gcp.us.webhooks.fivetran.com",
+    "legal.fivetran.com",
+    "mdscon.fivetran.com",
+    "mpages.fivetran.com",
+    "pbf-demo.fivetran.com",
+    "pbf-demo.staging.fivetran.com",
+    "prod.aws.us-east-1.proxy.fivetran.com",
+    "resources.fivetran.com",
+    "shop.fivetran.com",
+    "staging.fivetran.com",
+    "staging.orchestrator.fivetran.com",
+    "staging.webhooks.fivetran.com",
+    "status.fivetran.com",
+    "storybook.fivetran.com",
+    "support.fivetran.com",
+    "trust.fivetran.com",
+    "ultimateguide.fivetran.com",
+    "url5660.fivetran.com",
+    "webhooks.fivetran.com",
+    "www.fivetran.com"
+  ],
   "baseline_updated": true
 }

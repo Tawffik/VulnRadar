@@ -1,10 +1,8 @@
-300661.ibotta.com
 3p-auth.ibotta.com
 admin-cf.ibotta.com
 admin.ibotta.com
 api-cf.ibotta.com
 api.dev.ibotta.com
-api.gary.ibotta.com
 api.ibotta.com
 app.dev.ibotta.com
 app.ibotta.com
@@ -40,7 +38,6 @@ register.ibotta.com
 retail.ibotta.com
 s.ibotta.com
 solstice.ibotta.com
-sst.data.ibotta.com
 static.ibotta.com
 support.ibotta.com
 trust.ibotta.com

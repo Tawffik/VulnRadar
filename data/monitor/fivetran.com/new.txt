@@ -1,0 +1,4 @@
+gcp.us-central1.api-mcp-staging.fivetran.com
+prod.gcp.global.build-tracker.fivetran.com
+qe.gcp.global.build-tracker.fivetran.com
+staging.gcp.global.build-tracker.fivetran.com

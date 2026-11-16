@@ -14,9 +14,9 @@ aug.atlassian.com
 aui-cdn.atlassian.com
 aui.atlassian.com
 auth.atlassian.com
-automate.stg.atlassian.com
 automation.atlassian.com
 automation.stg.atlassian.com
+bdj-cdn.atlassian.com
 beacon.atlassian.com
 beta-developer.atlassian.com
 blog-de.atlassian.com
@@ -50,6 +50,7 @@ downloads.atlassian.com
 email.attend.atlassian.com
 enable.atlassian.com
 es.atlassian.com
+eventlinks.atlassian.com
 events.atlassian.com
 fi.atlassian.com
 fr.atlassian.com
@@ -90,6 +91,7 @@ support.atlassian.com
 support.status.atlassian.com
 surveys.atlassian.com
 swag.atlassian.com
+team.atlassian.com
 training.atlassian.com
 trello.status.atlassian.com
 university.atlassian.com
@@ -102,6 +104,7 @@ vpn-eucent1.atlassian.com
 vpn-useast1.atlassian.com
 vpn-uswest1.atlassian.com
 vpn.atlassian.com
+watermelon.atlassian.com
 webinars.atlassian.com
 wiki.mailman.atlassian.com
 www.atlassian.com

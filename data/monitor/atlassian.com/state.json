@@ -2,23 +2,24 @@
   "target": "atlassian.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 107,
-  "new_count": 1,
-  "removed_count": 3,
+  "live": 110,
+  "new_count": 4,
+  "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-15T21:41:41.510071+00:00",
+  "ts": "2026-11-16T13:31:23.245513+00:00",
   "new": [
-    "automate.stg.atlassian.com"
+    "bdj-cdn.atlassian.com",
+    "eventlinks.atlassian.com",
+    "team.atlassian.com",
+    "watermelon.atlassian.com"
   ],
   "removed": [
-    "dac.services.atlassian.com",
-    "eventlinks.atlassian.com",
-    "experts.atlassian.com"
+    "automate.stg.atlassian.com"
   ],
   "baseline_updated": true
 }

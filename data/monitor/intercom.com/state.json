@@ -1,19 +1,18 @@
 {
   "target": "intercom.com",
   "status": "COMPLETE",
-  "discovered": 200,
-  "live": 56,
-  "new_count": 0,
-  "removed_count": 15,
+  "discovered": 99,
+  "live": 71,
+  "new_count": 15,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 200
+    "input_count": 99
   },
-  "ts": "2026-11-15T21:53:33.957350+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-16T13:41:30.066007+00:00",
+  "new": [
     "academy.guests.intercom.com",
     "api-visitor-analytics.intercom.com",
     "earlystageacademy.intercom.com",
@@ -30,5 +29,6 @@
     "transformation.intercom.com",
     "transformation2025.intercom.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

@@ -2,45 +2,40 @@
   "target": "glean.com",
   "status": "COMPLETE",
   "discovered": 201,
-  "live": 67,
-  "new_count": 13,
-  "removed_count": 13,
+  "live": 66,
+  "new_count": 10,
+  "removed_count": 11,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 201
   },
-  "ts": "2026-11-15T21:50:22.242469+00:00",
+  "ts": "2026-11-16T13:38:37.932232+00:00",
   "new": [
+    "1011vc-be.glean.com",
+    "bain-be.glean.com",
+    "demo.glean.com",
+    "metis-be.glean.com",
+    "seeq.glean.com",
+    "t-mobile.glean.com",
+    "uogg-be.glean.com",
+    "vanta-be.glean.com",
+    "vapi-be.glean.com",
+    "yahoo-be.glean.com"
+  ],
+  "removed": [
     "agoda-be.glean.com",
-    "agoda.glean.com",
     "airbnb.glean.com",
-    "clari-be.glean.com",
     "demo2.glean.com",
     "ebay-be.glean.com",
     "gcash-be.glean.com",
+    "gusto-be.glean.com",
     "mlp.glean.com",
     "nile-be.glean.com",
     "ouryahoo.glean.com",
     "rdc-be.glean.com",
-    "teya-be.glean.com",
-    "trust.glean.com"
-  ],
-  "removed": [
-    "1011vc-be.glean.com",
-    "aidoc-be.glean.com",
-    "clr-be.glean.com",
-    "ggb-be.glean.com",
-    "ivp-be.glean.com",
-    "mews-be.glean.com",
-    "qolo-be.glean.com",
-    "seviora.glean.com",
-    "swoop-be.glean.com",
-    "t-mobile.glean.com",
-    "vanta-be.glean.com",
-    "yahoo-be.glean.com",
-    "zuora-be.glean.com"
+    "teya-be.glean.com"
   ],
   "baseline_updated": true
 }
