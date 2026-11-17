@@ -2,6 +2,8 @@ access.status.atlassian.com
 ace.atlassian.com
 acli.atlassian.com
 admin.atlassian.com
+advocate-central.atlassian.com
+analytics.status.atlassian.com
 api-private.atlassian.com
 api.atlassian.com
 as.atlassian.com
@@ -16,9 +18,9 @@ aui.atlassian.com
 auth.atlassian.com
 automation.atlassian.com
 automation.stg.atlassian.com
-bdj-cdn.atlassian.com
 beacon.atlassian.com
 beta-developer.atlassian.com
+bitbucket.status.atlassian.com
 blog-de.atlassian.com
 blog-fr.atlassian.com
 blog.atlassian.com
@@ -44,8 +46,10 @@ confluence.atlassian.com
 cs.atlassian.com
 de.atlassian.com
 developer.atlassian.com
+developer.status.atlassian.com
 download.atlassian.com
 downloads-cdn.atlassian.com
+downloads-origin.atlassian.com
 downloads.atlassian.com
 email.attend.atlassian.com
 enable.atlassian.com
@@ -91,7 +95,6 @@ support.atlassian.com
 support.status.atlassian.com
 surveys.atlassian.com
 swag.atlassian.com
-team.atlassian.com
 training.atlassian.com
 trello.status.atlassian.com
 university.atlassian.com
@@ -104,7 +107,6 @@ vpn-eucent1.atlassian.com
 vpn-useast1.atlassian.com
 vpn-uswest1.atlassian.com
 vpn.atlassian.com
-watermelon.atlassian.com
 webinars.atlassian.com
 wiki.mailman.atlassian.com
 www.atlassian.com

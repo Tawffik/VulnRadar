@@ -1,3 +1,0 @@
-300661.ibotta.com
-api.gary.ibotta.com
-sst.data.ibotta.com

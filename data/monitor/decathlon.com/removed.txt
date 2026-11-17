@@ -1,11 +1,5 @@
-cx.event.decathlon.com
-elearning.decathlon.com
-event.decathlon.com
-feedback.decathlon.com
-myfcs.decathlon.com
-r.otp2.decathlon.com
-roomf.decathlon.com
-share-cor.decathlon.com
-share.decathlon.com
-support.decathlon.com
-t.design.decathlon.com
+dnet.decathlon.com
+free.decathlon.com
+img.otp2.decathlon.com
+openvoice.decathlon.com
+partner.decathlon.com

@@ -1,10 +1,5 @@
-1011vc-be.glean.com
-bain-be.glean.com
-demo.glean.com
-metis-be.glean.com
-seeq.glean.com
-t-mobile.glean.com
-uogg-be.glean.com
-vanta-be.glean.com
-vapi-be.glean.com
-yahoo-be.glean.com
+cta-be.glean.com
+esp.glean.com
+king-be.glean.com
+ltk-be.glean.com
+vtex-be.glean.com

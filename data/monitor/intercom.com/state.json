@@ -1,34 +1,35 @@
 {
   "target": "intercom.com",
   "status": "COMPLETE",
-  "discovered": 99,
-  "live": 71,
-  "new_count": 15,
-  "removed_count": 0,
+  "discovered": 200,
+  "live": 60,
+  "new_count": 2,
+  "removed_count": 13,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 99
+    "input_count": 200
   },
-  "ts": "2026-11-16T13:41:30.066007+00:00",
+  "ts": "2026-11-17T00:56:27.397364+00:00",
   "new": [
-    "academy.guests.intercom.com",
+    "news.intercom.com",
+    "women.intercom.com"
+  ],
+  "removed": [
     "api-visitor-analytics.intercom.com",
     "earlystageacademy.intercom.com",
-    "email.careers.intercom.com",
     "google-workspace.mcp.intercom.com",
     "hackathon.corp.intercom.com",
     "help.legal.corp.intercom.com",
     "intercomrades.au.intercom.com",
     "intercomrades.eu.intercom.com",
-    "intercomrades.intercom.com",
     "partneracademy.intercom.com",
     "register.events.intercom.com",
+    "rsvp.pioneer.intercom.com",
     "staging.google-workspace.mcp.intercom.com",
     "transformation.intercom.com",
     "transformation2025.intercom.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

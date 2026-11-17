@@ -1,6 +1,1 @@
-components.classdojo.com
-dojotutor2.classdojo.com
-dojovideos.classdojo.com
-lite.classdojo.com
-sfiles.classdojo.com
-tutor2.classdojo.com
+images.classdojo.com

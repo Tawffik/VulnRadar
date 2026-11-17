@@ -2,17 +2,25 @@
   "target": "datadome.co",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 62,
-  "new_count": 27,
-  "removed_count": 3,
+  "live": 44,
+  "new_count": 6,
+  "removed_count": 24,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-16T13:33:54.242308+00:00",
+  "ts": "2026-11-17T00:48:22.851503+00:00",
   "new": [
+    "api-lambda.datadome.co",
+    "api-sa-east-1.datadome.co",
+    "api-us-east-1.datadome.co",
+    "api-us-iowa-1.datadome.co",
+    "flink.tooling.datadome.co",
+    "js.staging.datadome.co"
+  ],
+  "removed": [
     "api-alb-ap-east-1.datadome.co",
     "api-alb-ap-southeast-1.datadome.co",
     "api-alb-ca-central-1.datadome.co",
@@ -31,20 +39,12 @@
     "api-ap-southeast-1.datadome.co",
     "api-eu-france-1.datadome.co",
     "api-us-texas-1.datadome.co",
-    "api-us-west-2.datadome.co",
     "auth0-dev.tooling.datadome.co",
-    "auth0.tooling.datadome.co",
     "dd.basic-nginx.sdbx-sre.datadome.co",
     "flink-test-online.datadome.co",
     "img.newsletter.datadome.co",
     "package.staging.datadome.co",
-    "preprod-customer-api.datadome.co",
-    "subscriptions.datadome.co"
-  ],
-  "removed": [
-    "api-canary.datadome.co",
-    "api-sfcc.datadome.co",
-    "package.datadome.co"
+    "preprod-customer-api.datadome.co"
   ],
   "baseline_updated": true
 }

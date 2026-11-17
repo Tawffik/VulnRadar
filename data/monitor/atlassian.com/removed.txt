@@ -1,1 +1,3 @@
-automate.stg.atlassian.com
+bdj-cdn.atlassian.com
+team.atlassian.com
+watermelon.atlassian.com

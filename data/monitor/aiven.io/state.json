@@ -3,7 +3,7 @@
   "status": "COMPLETE",
   "discovered": 144,
   "live": 43,
-  "new_count": 1,
+  "new_count": 0,
   "removed_count": 0,
   "discover_error": null,
   "probe": {
@@ -11,10 +11,8 @@
     "error": null,
     "input_count": 144
   },
-  "ts": "2026-11-16T13:29:56.742183+00:00",
-  "new": [
-    "aquarium.aiven.io"
-  ],
+  "ts": "2026-11-17T00:44:00.470378+00:00",
+  "new": [],
   "removed": [],
   "baseline_updated": true
 }

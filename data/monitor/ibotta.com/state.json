@@ -2,21 +2,20 @@
   "target": "ibotta.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 44,
-  "new_count": 0,
-  "removed_count": 3,
+  "live": 46,
+  "new_count": 2,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-16T13:39:13.539970+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-17T00:54:13.581955+00:00",
+  "new": [
     "300661.ibotta.com",
-    "api.gary.ibotta.com",
-    "sst.data.ibotta.com"
+    "api.gary.ibotta.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

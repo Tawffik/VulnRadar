@@ -1,2 +1,7 @@
-status.classdojo.com
-tutor3.classdojo.com
+components.classdojo.com
+dojotutor2.classdojo.com
+dojovideos.classdojo.com
+lite.classdojo.com
+sfiles.classdojo.com
+translate.classdojo.com
+tutor2.classdojo.com

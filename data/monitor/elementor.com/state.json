@@ -1,30 +1,18 @@
 {
   "target": "elementor.com",
   "status": "COMPLETE",
-  "discovered": 51,
-  "live": 24,
-  "new_count": 10,
-  "removed_count": 14,
+  "discovered": 200,
+  "live": 28,
+  "new_count": 14,
+  "removed_count": 10,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 51
+    "input_count": 200
   },
-  "ts": "2026-11-16T13:35:52.258219+00:00",
+  "ts": "2026-11-17T00:50:34.111953+00:00",
   "new": [
-    "ai-assets.elementor.com",
-    "clicks-mail.elementor.com",
-    "composer.elementor.com",
-    "dev-experts.elementor.com",
-    "developers.elementor.com",
-    "editor-static-bucket.elementor.com",
-    "traefik.prod.ai.elementor.com",
-    "traefik.prod.apps.elementor.com",
-    "traefik.prod.cloud.elementor.com",
-    "traefik.prod.domains.elementor.com"
-  ],
-  "removed": [
     "flexbox.elementor.com",
     "go.elementor.com",
     "gtm.elementor.com",
@@ -39,6 +27,18 @@
     "ux.elementor.com",
     "wceu.elementor.com",
     "www.elementor.com"
+  ],
+  "removed": [
+    "ai-assets.elementor.com",
+    "clicks-mail.elementor.com",
+    "composer.elementor.com",
+    "dev-experts.elementor.com",
+    "developers.elementor.com",
+    "editor-static-bucket.elementor.com",
+    "traefik.prod.ai.elementor.com",
+    "traefik.prod.apps.elementor.com",
+    "traefik.prod.cloud.elementor.com",
+    "traefik.prod.domains.elementor.com"
   ],
   "baseline_updated": true
 }
