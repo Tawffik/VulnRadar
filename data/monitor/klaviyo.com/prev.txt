@@ -1,19 +1,13 @@
-a.eu.klaviyo.com
 a.klaviyo.com
 academy.klaviyo.com
 api.klaviyo.com
 apidocs.klaviyo.com
-ascent.klaviyo.com
 atlas-app.klaviyo.com
-auntcarol.klaviyo.com
-basecamp.klaviyo.com
-brand.klaviyo.com
 businesses.klaviyo.com
 careers.klaviyo.com
 cms.academy.klaviyo.com
 community.klaviyo.com
 connect.klaviyo.com
-craft.klaviyo.com
 credential.klaviyo.com
 csat.klaviyo.com
 developers.klaviyo.com
@@ -34,6 +28,8 @@ marketplace.klaviyo.com
 partners.klaviyo.com
 privacy.klaviyo.com
 resources.klaviyo.com
+reviews-app.klaviyo.com
+reviews-new.klaviyo.com
 reviews.klaviyo.com
 shop.klaviyo.com
 sms.klaviyo.com
@@ -42,7 +38,7 @@ static.klaviyo.com
 status.klaviyo.com
 trust.klaviyo.com
 twotruths.klaviyo.com
-vcf.eu.klaviyo.com
 vcf.klaviyo.com
 verticals.klaviyo.com
+workato-api.klaviyo.com
 www.klaviyo.com

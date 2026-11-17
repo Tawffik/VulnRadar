@@ -12,7 +12,6 @@ jobs.ably.com
 jsbin.ably.com
 pages.ably.com
 quotes.ably.com
-render.ably.com
 schemas.ably.com
 sdk.ably.com
 status.ably.com

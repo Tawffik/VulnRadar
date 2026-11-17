@@ -1,18 +1,32 @@
 {
   "target": "aiven.io",
   "status": "COMPLETE",
-  "discovered": 144,
-  "live": 43,
+  "discovered": 128,
+  "live": 30,
   "new_count": 0,
-  "removed_count": 0,
+  "removed_count": 13,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 144
+    "input_count": 128
   },
-  "ts": "2026-11-17T00:44:00.470378+00:00",
+  "ts": "2026-11-17T14:15:35.087968+00:00",
   "new": [],
-  "removed": [],
+  "removed": [
+    "ai.aiven.io",
+    "aiven-management-api.ai.aiven.io",
+    "atlas-staging.internal.aiven.io",
+    "atlas.internal.aiven.io",
+    "careers-staging.aiven.io",
+    "careers.aiven.io",
+    "identity.aiven.io",
+    "internal.aiven.io",
+    "nevia.aiven.io",
+    "pitch.internal.aiven.io",
+    "pulse.aiven.io",
+    "sre.aiven.io",
+    "templates.aiven.io"
+  ],
   "baseline_updated": true
 }

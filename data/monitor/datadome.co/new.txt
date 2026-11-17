@@ -1,6 +1,6 @@
-api-lambda.datadome.co
-api-sa-east-1.datadome.co
-api-us-east-1.datadome.co
-api-us-iowa-1.datadome.co
-flink.tooling.datadome.co
-js.staging.datadome.co
+api-eu-north-1.datadome.co
+api-eu-west-1.datadome.co
+api-staff.datadome.co
+haproxy1.datadome.co
+origin.datadome.co
+staff.datadome.co

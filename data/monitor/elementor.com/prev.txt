@@ -1,4 +1,3 @@
-angie.elementor.com
 ask-ai.elementor.com
 assets.elementor.com
 auth.elementor.com
@@ -16,6 +15,7 @@ flexbox.elementor.com
 go.elementor.com
 gtm.elementor.com
 he.elementor.com
+library.elementor.com
 mail.elementor.com
 my.elementor.com
 pix.elementor.com

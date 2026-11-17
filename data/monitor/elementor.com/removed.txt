@@ -1,10 +1,1 @@
-ai-assets.elementor.com
-clicks-mail.elementor.com
-composer.elementor.com
-dev-experts.elementor.com
-developers.elementor.com
-editor-static-bucket.elementor.com
-traefik.prod.ai.elementor.com
-traefik.prod.apps.elementor.com
-traefik.prod.cloud.elementor.com
-traefik.prod.domains.elementor.com
+angie.elementor.com

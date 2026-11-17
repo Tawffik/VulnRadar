@@ -1,5 +1,7 @@
-cta-be.glean.com
-esp.glean.com
-king-be.glean.com
-ltk-be.glean.com
-vtex-be.glean.com
+adobe-be.glean.com
+agoda-be.glean.com
+askmark.glean.com
+cox-be.glean.com
+ddn-be.glean.com
+mlp.glean.com
+status.glean.com

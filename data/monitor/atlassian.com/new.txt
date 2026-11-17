@@ -1,5 +1,7 @@
-advocate-central.atlassian.com
-analytics.status.atlassian.com
-bitbucket.status.atlassian.com
-developer.status.atlassian.com
-downloads-origin.atlassian.com
+cloudtoken-update.atlassian.com
+confluence.status.atlassian.com
+edgediag.services.atlassian.com
+jira-core.status.atlassian.com
+partnerdirectory.atlassian.com
+pke.atlassian.com
+status.developer.atlassian.com

@@ -2,35 +2,30 @@
   "target": "glean.com",
   "status": "COMPLETE",
   "discovered": 201,
-  "live": 60,
-  "new_count": 5,
-  "removed_count": 11,
+  "live": 63,
+  "new_count": 7,
+  "removed_count": 4,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 201
   },
-  "ts": "2026-11-17T00:53:31.572681+00:00",
+  "ts": "2026-11-17T14:25:57.438088+00:00",
   "new": [
+    "adobe-be.glean.com",
+    "agoda-be.glean.com",
+    "askmark.glean.com",
+    "cox-be.glean.com",
+    "ddn-be.glean.com",
+    "mlp.glean.com",
+    "status.glean.com"
+  ],
+  "removed": [
     "cta-be.glean.com",
-    "esp.glean.com",
     "king-be.glean.com",
     "ltk-be.glean.com",
     "vtex-be.glean.com"
-  ],
-  "removed": [
-    "1011vc-be.glean.com",
-    "agoda.glean.com",
-    "bain-be.glean.com",
-    "clari-be.glean.com",
-    "demo.glean.com",
-    "metis-be.glean.com",
-    "seeq.glean.com",
-    "trust.glean.com",
-    "uogg-be.glean.com",
-    "vapi-be.glean.com",
-    "yahoo-be.glean.com"
   ],
   "baseline_updated": true
 }

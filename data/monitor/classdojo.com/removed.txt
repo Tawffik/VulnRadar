@@ -1,7 +1,8 @@
-components.classdojo.com
-dojotutor2.classdojo.com
-dojovideos.classdojo.com
-lite.classdojo.com
-sfiles.classdojo.com
-translate.classdojo.com
-tutor2.classdojo.com
+blog.classdojo.com
+c.classdojo.com
+community.classdojo.com
+dojoicons.classdojo.com
+external.classdojo.com
+external2.classdojo.com
+external3.classdojo.com
+ideas.classdojo.com

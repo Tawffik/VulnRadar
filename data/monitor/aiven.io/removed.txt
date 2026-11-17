@@ -1,0 +1,13 @@
+ai.aiven.io
+aiven-management-api.ai.aiven.io
+atlas-staging.internal.aiven.io
+atlas.internal.aiven.io
+careers-staging.aiven.io
+careers.aiven.io
+identity.aiven.io
+internal.aiven.io
+nevia.aiven.io
+pitch.internal.aiven.io
+pulse.aiven.io
+sre.aiven.io
+templates.aiven.io

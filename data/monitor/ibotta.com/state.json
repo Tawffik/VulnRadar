@@ -3,19 +3,20 @@
   "status": "COMPLETE",
   "discovered": 200,
   "live": 46,
-  "new_count": 2,
-  "removed_count": 0,
+  "new_count": 1,
+  "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-17T00:54:13.581955+00:00",
+  "ts": "2026-11-17T14:26:30.577938+00:00",
   "new": [
-    "300661.ibotta.com",
-    "api.gary.ibotta.com"
+    "sst.data.ibotta.com"
   ],
-  "removed": [],
+  "removed": [
+    "300661.ibotta.com"
+  ],
   "baseline_updated": true
 }

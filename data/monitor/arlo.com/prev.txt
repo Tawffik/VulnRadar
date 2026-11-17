@@ -1,6 +1,5 @@
 abbott.arlo.com
 activate.arlo.com
-apac.arlo.com
 api.arlo.com
 apidev.arlo.com
 apiqa.arlo.com

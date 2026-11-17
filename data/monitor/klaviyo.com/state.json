@@ -2,21 +2,29 @@
   "target": "klaviyo.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 48,
-  "new_count": 1,
-  "removed_count": 1,
+  "live": 44,
+  "new_count": 3,
+  "removed_count": 7,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-17T00:57:23.064003+00:00",
+  "ts": "2026-11-17T14:30:03.259764+00:00",
   "new": [
-    "vcf.eu.klaviyo.com"
+    "reviews-app.klaviyo.com",
+    "reviews-new.klaviyo.com",
+    "workato-api.klaviyo.com"
   ],
   "removed": [
-    "reviews-app.klaviyo.com"
+    "a.eu.klaviyo.com",
+    "ascent.klaviyo.com",
+    "auntcarol.klaviyo.com",
+    "basecamp.klaviyo.com",
+    "brand.klaviyo.com",
+    "craft.klaviyo.com",
+    "vcf.eu.klaviyo.com"
   ],
   "baseline_updated": true
 }

@@ -1,41 +1,20 @@
 {
   "target": "expressvpn.com",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 23,
-  "new_count": 10,
-  "removed_count": 11,
+  "discovered": 200,
+  "live": 22,
+  "new_count": 0,
+  "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-17T00:51:37.064596+00:00",
-  "new": [
-    "beta.repo.expressvpn.com",
-    "desktop.updates.expressvpn.com",
-    "repo.expressvpn.com",
-    "speedtest.expressvpn.com",
-    "staging.teams.expressvpn.com",
-    "store.expressvpn.com",
-    "support.expressvpn.com",
-    "teams.expressvpn.com",
-    "updates.expressvpn.com",
-    "www.expressvpn.com"
-  ],
+  "ts": "2026-11-17T14:23:27.277508+00:00",
+  "new": [],
   "removed": [
-    "api-v2-jwks.integration.expressvpn.com",
-    "connectivitycheck.expressvpn.com",
-    "prod-rewrite.portal.expressvpn.com",
-    "renue-integration.checkout.expressvpn.com",
-    "staging-pr-1038.portal.expressvpn.com",
-    "staging-pr-1047.portal.expressvpn.com",
-    "staging-pr-1053.portal.expressvpn.com",
-    "staging-pr-1068.portal.expressvpn.com",
-    "staging-pr-1121.portal.expressvpn.com",
-    "staging.checkout.expressvpn.com",
-    "staging.landing-pages.expressvpn.com"
+    "desktop.updates.expressvpn.com"
   ],
   "baseline_updated": true
 }

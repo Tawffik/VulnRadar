@@ -1,1 +1,3 @@
-images.classdojo.com
+dojotutor3.classdojo.com
+translate.classdojo.com
+tutor3.classdojo.com
