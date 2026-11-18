@@ -2,21 +2,24 @@
   "target": "ibotta.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 46,
-  "new_count": 1,
-  "removed_count": 1,
+  "live": 40,
+  "new_count": 0,
+  "removed_count": 6,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-17T14:26:30.577938+00:00",
-  "new": [
-    "sst.data.ibotta.com"
-  ],
+  "ts": "2026-11-18T00:02:36.989819+00:00",
+  "new": [],
   "removed": [
-    "300661.ibotta.com"
+    "api.gary.ibotta.com",
+    "ipn-auth.ibotta.com",
+    "partners.ibotta.com",
+    "register.ibotta.com",
+    "solstice.ibotta.com",
+    "sst.data.ibotta.com"
   ],
   "baseline_updated": true
 }

@@ -1,31 +1,53 @@
 {
   "target": "classdojo.com",
   "status": "COMPLETE",
-  "discovered": 200,
-  "live": 36,
-  "new_count": 3,
-  "removed_count": 8,
+  "discovered": 201,
+  "live": 39,
+  "new_count": 18,
+  "removed_count": 15,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 200
+    "input_count": 201
   },
-  "ts": "2026-11-17T14:18:28.619783+00:00",
+  "ts": "2026-11-17T23:53:29.814231+00:00",
   "new": [
-    "dojotutor3.classdojo.com",
-    "translate.classdojo.com",
-    "tutor3.classdojo.com"
-  ],
-  "removed": [
     "blog.classdojo.com",
     "c.classdojo.com",
     "community.classdojo.com",
+    "components.classdojo.com",
     "dojoicons.classdojo.com",
+    "dojotutor.classdojo.com",
+    "dojotutor2.classdojo.com",
+    "dojovideos.classdojo.com",
+    "engineering.classdojo.com",
+    "experiences.classdojo.com",
+    "exports.classdojo.com",
     "external.classdojo.com",
     "external2.classdojo.com",
-    "external3.classdojo.com",
-    "ideas.classdojo.com"
+    "home-static.classdojo.com",
+    "ideas-video.classdojo.com",
+    "ideas.classdojo.com",
+    "mobile.classdojo.com",
+    "status.classdojo.com"
+  ],
+  "removed": [
+    "dojotutor3.classdojo.com",
+    "m.classdojo.com",
+    "mentor.classdojo.com",
+    "mvsecret.classdojo.com",
+    "mw.classdojo.com",
+    "pstudent.classdojo.com",
+    "pubnub.classdojo.com",
+    "sentry.classdojo.com",
+    "share.classdojo.com",
+    "shop.classdojo.com",
+    "store.classdojo.com",
+    "teach3.classdojo.com",
+    "translate.classdojo.com",
+    "tutor3.classdojo.com",
+    "tutoring.classdojo.com"
   ],
   "baseline_updated": true
 }

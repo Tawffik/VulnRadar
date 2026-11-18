@@ -1,6 +1,11 @@
-api-eu-north-1.datadome.co
-api-eu-west-1.datadome.co
-api-staff.datadome.co
-haproxy1.datadome.co
-origin.datadome.co
-staff.datadome.co
+account-api.datadome.co
+api-edgio.datadome.co
+api-eu-west-2.datadome.co
+api-js.datadome.co
+api-sdk.datadome.co
+api-us-east-2.datadome.co
+api-us-iowa-1.datadome.co
+apivarnish.datadome.co
+app.datadome.co
+bot-tester.datadome.co
+customer-api.datadome.co

@@ -1,7 +1,1 @@
-a.eu.klaviyo.com
-ascent.klaviyo.com
-auntcarol.klaviyo.com
-basecamp.klaviyo.com
-brand.klaviyo.com
-craft.klaviyo.com
-vcf.eu.klaviyo.com
+workato-api.klaviyo.com

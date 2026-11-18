@@ -5,6 +5,7 @@ e.elementor.com
 u.elementor.com
 ac.elementor.com
 ad.elementor.com
+ai.elementor.com
 be.elementor.com
 cn.elementor.com
 cp.elementor.com
@@ -100,6 +101,7 @@ wiki.elementor.com
 01dev.elementor.com
 1www7.elementor.com
 admin.elementor.com
+angie.elementor.com
 auth1.elementor.com
 blogi.elementor.com
 blogs.elementor.com
@@ -196,5 +198,3 @@ flexbox.elementor.com
 grc2go7.elementor.com
 iimahd9.elementor.com
 infolab.elementor.com
-library.elementor.com
-manager.elementor.com

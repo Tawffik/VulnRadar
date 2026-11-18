@@ -2,39 +2,39 @@
   "target": "datadome.co",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 36,
-  "new_count": 6,
-  "removed_count": 14,
+  "live": 38,
+  "new_count": 11,
+  "removed_count": 9,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-17T14:20:01.907200+00:00",
+  "ts": "2026-11-17T23:54:42.600666+00:00",
   "new": [
-    "api-eu-north-1.datadome.co",
-    "api-eu-west-1.datadome.co",
-    "api-staff.datadome.co",
-    "haproxy1.datadome.co",
-    "origin.datadome.co",
-    "staff.datadome.co"
-  ],
-  "removed": [
     "account-api.datadome.co",
+    "api-edgio.datadome.co",
+    "api-eu-west-2.datadome.co",
     "api-js.datadome.co",
-    "api-sa-east-1.datadome.co",
     "api-sdk.datadome.co",
-    "api-us-east-1.datadome.co",
     "api-us-east-2.datadome.co",
     "api-us-iowa-1.datadome.co",
-    "api-us-west-1.datadome.co",
-    "api-us-west-2.datadome.co",
+    "apivarnish.datadome.co",
     "app.datadome.co",
     "bot-tester.datadome.co",
-    "customer-api.datadome.co",
-    "flink.tooling.datadome.co",
-    "js.staging.datadome.co"
+    "customer-api.datadome.co"
+  ],
+  "removed": [
+    "api-eu-north-1.datadome.co",
+    "api-eu-west-1.datadome.co",
+    "api-lambda.datadome.co",
+    "api-staff.datadome.co",
+    "auth0.tooling.datadome.co",
+    "haproxy1.datadome.co",
+    "origin.datadome.co",
+    "staff.datadome.co",
+    "subscriptions.datadome.co"
   ],
   "baseline_updated": true
 }

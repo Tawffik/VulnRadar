@@ -2,29 +2,19 @@
   "target": "atlassian.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 92,
-  "new_count": 7,
-  "removed_count": 27,
+  "live": 107,
+  "new_count": 26,
+  "removed_count": 11,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-17T14:17:38.781518+00:00",
+  "ts": "2026-11-17T23:52:50.575228+00:00",
   "new": [
-    "cloudtoken-update.atlassian.com",
-    "confluence.status.atlassian.com",
-    "edgediag.services.atlassian.com",
-    "jira-core.status.atlassian.com",
-    "partnerdirectory.atlassian.com",
-    "pke.atlassian.com",
-    "status.developer.atlassian.com"
-  ],
-  "removed": [
     "acli.atlassian.com",
     "admin.atlassian.com",
-    "advocate-central.atlassian.com",
     "api-private.atlassian.com",
     "api.atlassian.com",
     "atl-global.atlassian.com",
@@ -49,6 +39,19 @@
     "maven.artifacts.atlassian.com",
     "misc.artifacts.atlassian.com",
     "otbt.blogs.atlassian.com"
+  ],
+  "removed": [
+    "analytics.status.atlassian.com",
+    "bitbucket.status.atlassian.com",
+    "cloudtoken-update.atlassian.com",
+    "confluence.status.atlassian.com",
+    "developer.status.atlassian.com",
+    "downloads-origin.atlassian.com",
+    "edgediag.services.atlassian.com",
+    "jira-core.status.atlassian.com",
+    "partnerdirectory.atlassian.com",
+    "pke.atlassian.com",
+    "status.developer.atlassian.com"
   ],
   "baseline_updated": true
 }

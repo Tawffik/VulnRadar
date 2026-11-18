@@ -35,6 +35,7 @@ sms.klaviyo.com
 try.klaviyo.com
 vcf.klaviyo.com
 www.klaviyo.com
+a.eu.klaviyo.com
 aw.a.klaviyo.com
 blog.klaviyo.com
 core.klaviyo.com
@@ -52,7 +53,9 @@ stor.klaviyo.com
 trxn.klaviyo.com
 aw9.a.klaviyo.com
 blogq.klaviyo.com
+brand.klaviyo.com
 core3.klaviyo.com
+craft.klaviyo.com
 derby.klaviyo.com
 docs5.klaviyo.com
 fasto.klaviyo.com
@@ -66,6 +69,7 @@ sales.klaviyo.com
 shopg.klaviyo.com
 trust.klaviyo.com
 www.a.klaviyo.com
+ascent.klaviyo.com
 engage.klaviyo.com
 events.klaviyo.com
 fast.a.klaviyo.com
@@ -77,6 +81,7 @@ onsite.klaviyo.com
 static.klaviyo.com
 status.klaviyo.com
 stores.klaviyo.com
+vcf.eu.klaviyo.com
 waf-cf.klaviyo.com
 www.js.klaviyo.com
 www.mx.klaviyo.com
@@ -110,6 +115,7 @@ a-static.klaviyo.com
 a.waf-cf.klaviyo.com
 academy9.klaviyo.com
 apidocsu.klaviyo.com
+basecamp.klaviyo.com
 controle.klaviyo.com
 dashdata.klaviyo.com
 gh-mail5.klaviyo.com
@@ -129,6 +135,7 @@ www.shop.klaviyo.com
 0k.stores.klaviyo.com
 a-staticg.klaviyo.com
 atlas-app.klaviyo.com
+auntcarol.klaviyo.com
 billing.a.klaviyo.com
 cdn3.aw.a.klaviyo.com
 chat9.api.klaviyo.com
@@ -139,12 +146,12 @@ marketing.klaviyo.com
 o417.trxn.klaviyo.com
 o431.send.klaviyo.com
 o432.send.klaviyo.com
+onsite.eu.klaviyo.com
 pantheon2.klaviyo.com
 pantheona.klaviyo.com
 resources.klaviyo.com
 servicese.klaviyo.com
 shortener.klaviyo.com
-static-cf.klaviyo.com
 twotruths.klaviyo.com
 verticals.klaviyo.com
 www.learn.klaviyo.com
@@ -192,9 +199,3 @@ mobile-vcfa.klaviyo.com
 reviews-api.klaviyo.com
 reviews-app.klaviyo.com
 reviews-new.klaviyo.com
-static-appa.klaviyo.com
-telemetrics.klaviyo.com
-workato-api.klaviyo.com
-www.academy.klaviyo.com
-www.apidocs.klaviyo.com
-www.careers.klaviyo.com

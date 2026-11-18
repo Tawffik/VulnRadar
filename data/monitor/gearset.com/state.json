@@ -3,7 +3,7 @@
   "status": "COMPLETE",
   "discovered": 136,
   "live": 40,
-  "new_count": 1,
+  "new_count": 0,
   "removed_count": 0,
   "discover_error": null,
   "probe": {
@@ -11,10 +11,8 @@
     "error": null,
     "input_count": 136
   },
-  "ts": "2026-11-17T14:25:04.578371+00:00",
-  "new": [
-    "socclicks.gearset.com"
-  ],
+  "ts": "2026-11-18T00:01:18.694119+00:00",
+  "new": [],
   "removed": [],
   "baseline_updated": true
 }

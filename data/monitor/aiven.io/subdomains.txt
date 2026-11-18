@@ -1,6 +1,7 @@
 aiven.io
 n.aiven.io
 ad.aiven.io
+ai.aiven.io
 am.aiven.io
 cp.aiven.io
 cs.aiven.io
@@ -17,6 +18,7 @@ gcp.aiven.io
 gss.aiven.io
 iam.aiven.io
 k12.aiven.io
+sre.aiven.io
 www.aiven.io
 blog.aiven.io
 corp.aiven.io
@@ -28,9 +30,12 @@ play.aiven.io
 rest.aiven.io
 sync.aiven.io
 azure.aiven.io
+cloud.aiven.io
 files.aiven.io
 helps.aiven.io
 ideas.aiven.io
+nevia.aiven.io
+pulse.aiven.io
 video.aiven.io
 vmail.aiven.io
 events.aiven.io
@@ -38,6 +43,7 @@ status.aiven.io
 uptime.aiven.io
 www.dc.aiven.io
 www.go.aiven.io
+careers.aiven.io
 conprev.aiven.io
 console.aiven.io
 gh-mail.aiven.io
@@ -53,6 +59,8 @@ aquarium.aiven.io
 conprev7.aiven.io
 feedback.aiven.io
 handbook.aiven.io
+identity.aiven.io
+internal.aiven.io
 landing7.aiven.io
 regattaa.aiven.io
 support7.aiven.io
@@ -66,6 +74,7 @@ www7.api.aiven.io
 admin-api.aiven.io
 developer.aiven.io
 robjecter.aiven.io
+templates.aiven.io
 www.azure.aiven.io
 www.ideas.aiven.io
 www.video.aiven.io
@@ -102,8 +111,13 @@ ts-admin1.api.aiven.io
 www.admin-api.aiven.io
 www.developer.aiven.io
 www.robjecter.aiven.io
+atlas.internal.aiven.io
 consolek.azure.aiven.io
+pitch.internal.aiven.io
 www.developers.aiven.io
+careers-staging.aiven.io
+n-lrutay76v1.ai.aiven.io
+n-n4idnip21b.ai.aiven.io
 partner-support.aiven.io
 www.console.aws.aiven.io
 www.console.gcp.aiven.io
@@ -119,6 +133,8 @@ www.partner-support.aiven.io
 www.aquarium-library.aiven.io
 managed.timescale.com.aiven.io
 www.api-http2-preview.aiven.io
+atlas-staging.internal.aiven.io
+aiven-management-api.ai.aiven.io
 portal.managed.timescale.com.aiven.io
 portalc.managed.timescale.com.aiven.io
 digitalocean-org4249cc60304.api.aiven.io

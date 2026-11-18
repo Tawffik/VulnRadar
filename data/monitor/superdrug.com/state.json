@@ -3,22 +3,16 @@
   "status": "COMPLETE",
   "discovered": 200,
   "live": 20,
-  "new_count": 2,
-  "removed_count": 2,
+  "new_count": 0,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-17T14:33:29.393516+00:00",
-  "new": [
-    "clickom.superdrug.com",
-    "img.superdrug.com"
-  ],
-  "removed": [
-    "media-s1.superdrug.com",
-    "pharmacy.superdrug.com"
-  ],
+  "ts": "2026-11-18T00:06:58.686378+00:00",
+  "new": [],
+  "removed": [],
   "baseline_updated": true
 }
