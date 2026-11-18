@@ -1,11 +1,5 @@
-account-api.datadome.co
-api-edgio.datadome.co
-api-eu-west-2.datadome.co
-api-js.datadome.co
-api-sdk.datadome.co
-api-us-east-2.datadome.co
-api-us-iowa-1.datadome.co
-apivarnish.datadome.co
-app.datadome.co
-bot-tester.datadome.co
-customer-api.datadome.co
+api-app.prod.datadome.co
+api-canary.datadome.co
+api-staff.datadome.co
+js.datadome.co
+staff.datadome.co

@@ -1,10 +1,2 @@
-app.au.intercom.com
-frame.au.intercom.com
-frame.eu.intercom.com
-frame.intercom.com
-intercomrades.intercom.com
-meet.au.intercom.com
-meet.eu.intercom.com
-news.eu.intercom.com
-pages.intercom.com
-staging.intercom.com
+cx.intercom.com
+hackathon.corp.intercom.com

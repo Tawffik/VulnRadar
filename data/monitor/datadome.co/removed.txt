@@ -1,9 +1,7 @@
-api-eu-north-1.datadome.co
-api-eu-west-1.datadome.co
-api-lambda.datadome.co
-api-staff.datadome.co
-auth0.tooling.datadome.co
-haproxy1.datadome.co
-origin.datadome.co
-staff.datadome.co
-subscriptions.datadome.co
+api-ap-east-1.datadome.co
+api-edgio.datadome.co
+api-eu-west-2.datadome.co
+api-us-east-2.datadome.co
+api-us-iowa-1.datadome.co
+r.newsletter.datadome.co
+upflow-email.datadome.co

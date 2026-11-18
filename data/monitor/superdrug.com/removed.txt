@@ -1,0 +1,6 @@
+clickom.superdrug.com
+hb.superdrug.com
+img.superdrug.com
+m.superdrug.com
+mta-sts.superdrug.com
+www.superdrug.com

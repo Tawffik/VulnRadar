@@ -1,1 +1,14 @@
-library.elementor.com
+ask-ai.elementor.com
+assets.elementor.com
+be.elementor.com
+careers.elementor.com
+code.elementor.com
+demo.elementor.com
+edu.elementor.com
+he.elementor.com
+mail.elementor.com
+my.elementor.com
+status.elementor.com
+survey.elementor.com
+thumbs.elementor.com
+ux.elementor.com

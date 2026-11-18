@@ -2,27 +2,41 @@
   "target": "klaviyo.com",
   "status": "COMPLETE",
   "discovered": 201,
-  "live": 50,
-  "new_count": 7,
-  "removed_count": 1,
+  "live": 27,
+  "new_count": 0,
+  "removed_count": 23,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 201
   },
-  "ts": "2026-11-18T00:05:12.782968+00:00",
-  "new": [
-    "a.eu.klaviyo.com",
+  "ts": "2026-11-18T14:05:01.128272+00:00",
+  "new": [],
+  "removed": [
+    "a.klaviyo.com",
     "ascent.klaviyo.com",
-    "auntcarol.klaviyo.com",
+    "atlas-app.klaviyo.com",
     "basecamp.klaviyo.com",
     "brand.klaviyo.com",
-    "craft.klaviyo.com",
-    "vcf.eu.klaviyo.com"
-  ],
-  "removed": [
-    "workato-api.klaviyo.com"
+    "businesses.klaviyo.com",
+    "cms.academy.klaviyo.com",
+    "csat.klaviyo.com",
+    "docs.klaviyo.com",
+    "emailpages.klaviyo.com",
+    "experiences.klaviyo.com",
+    "get.klaviyo.com",
+    "help.klaviyo.com",
+    "klaviyo.com",
+    "partners.klaviyo.com",
+    "reviews-app.klaviyo.com",
+    "reviews-new.klaviyo.com",
+    "reviews.klaviyo.com",
+    "static-app.klaviyo.com",
+    "status.klaviyo.com",
+    "twotruths.klaviyo.com",
+    "verticals.klaviyo.com",
+    "www.klaviyo.com"
   ],
   "baseline_updated": true
 }
