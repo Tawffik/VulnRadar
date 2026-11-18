@@ -1,19 +1,18 @@
 {
   "target": "gearset.com",
   "status": "COMPLETE",
-  "discovered": 136,
-  "live": 14,
-  "new_count": 0,
-  "removed_count": 26,
+  "discovered": 133,
+  "live": 40,
+  "new_count": 26,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 136
+    "input_count": 133
   },
-  "ts": "2026-11-18T13:58:00.020132+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-18T23:31:50.750982+00:00",
+  "new": [
     "amplitude.gearset.com",
     "assets.gearset.com",
     "au.staging.gearset.com",
@@ -41,5 +40,6 @@
     "webhooks.gearset.com",
     "www.gearset.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

@@ -1,19 +1,18 @@
 {
   "target": "klaviyo.com",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 27,
-  "new_count": 0,
-  "removed_count": 23,
+  "discovered": 200,
+  "live": 48,
+  "new_count": 21,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-18T14:05:01.128272+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-18T23:37:39.457312+00:00",
+  "new": [
     "a.klaviyo.com",
     "ascent.klaviyo.com",
     "atlas-app.klaviyo.com",
@@ -29,8 +28,6 @@
     "help.klaviyo.com",
     "klaviyo.com",
     "partners.klaviyo.com",
-    "reviews-app.klaviyo.com",
-    "reviews-new.klaviyo.com",
     "reviews.klaviyo.com",
     "static-app.klaviyo.com",
     "status.klaviyo.com",
@@ -38,5 +35,6 @@
     "verticals.klaviyo.com",
     "www.klaviyo.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

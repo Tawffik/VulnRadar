@@ -1,7 +1,3 @@
-api-ap-east-1.datadome.co
-api-edgio.datadome.co
-api-eu-west-2.datadome.co
-api-us-east-2.datadome.co
-api-us-iowa-1.datadome.co
-r.newsletter.datadome.co
-upflow-email.datadome.co
+api-canary.datadome.co
+apivarnish.datadome.co
+js.datadome.co

@@ -1,32 +1,18 @@
 {
   "target": "atlassian.com",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 55,
-  "new_count": 12,
-  "removed_count": 64,
+  "discovered": 200,
+  "live": 109,
+  "new_count": 66,
+  "removed_count": 12,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-18T13:49:31.922060+00:00",
+  "ts": "2026-11-18T23:24:16.481147+00:00",
   "new": [
-    "advocate-central.atlassian.com",
-    "atl-onetrust-wrapper.atlassian.com",
-    "cloud-labs-admin.stg.services.atlassian.com",
-    "cloudtoken-update.atlassian.com",
-    "cofs-fly-cofs-88-ge.dev.services.atlassian.com",
-    "connect-install-keys.atlassian.com",
-    "docker-blobs.artifacts.atlassian.com",
-    "getsupport.atlassian.com",
-    "iq-in.atlassian.com",
-    "radiowalker.blogs.atlassian.com",
-    "rebelutionary.blogs.atlassian.com",
-    "teamcentral-slack-integration.atlassian.com"
-  ],
-  "removed": [
     "access.status.atlassian.com",
     "atlas.status.atlassian.com",
     "automation.stg.atlassian.com",
@@ -77,6 +63,20 @@
     "surveys.atlassian.com",
     "swag.atlassian.com",
     "training.atlassian.com"
+  ],
+  "removed": [
+    "advocate-central.atlassian.com",
+    "atl-onetrust-wrapper.atlassian.com",
+    "cloud-labs-admin.stg.services.atlassian.com",
+    "cloudtoken-update.atlassian.com",
+    "cofs-fly-cofs-88-ge.dev.services.atlassian.com",
+    "connect-install-keys.atlassian.com",
+    "docker-blobs.artifacts.atlassian.com",
+    "getsupport.atlassian.com",
+    "iq-in.atlassian.com",
+    "radiowalker.blogs.atlassian.com",
+    "rebelutionary.blogs.atlassian.com",
+    "teamcentral-slack-integration.atlassian.com"
   ],
   "baseline_updated": true
 }

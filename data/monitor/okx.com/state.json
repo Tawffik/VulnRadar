@@ -1,21 +1,18 @@
 {
   "target": "okx.com",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 19,
-  "new_count": 1,
-  "removed_count": 26,
+  "discovered": 200,
+  "live": 46,
+  "new_count": 27,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-18T14:06:04.182825+00:00",
+  "ts": "2026-11-18T23:38:32.523573+00:00",
   "new": [
-    "tvpap.okx.com"
-  ],
-  "removed": [
     "app.okx.com",
     "eea.okx.com",
     "file.okx.com",
@@ -29,6 +26,7 @@
     "okx.com",
     "pay.okx.com",
     "payauth.okx.com",
+    "staticaws.okx.com",
     "tr.okx.com",
     "wallet.okx.com",
     "wsdexpre.okx.com",
@@ -43,5 +41,6 @@
     "www.okx.com",
     "xlayerrpc.okx.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

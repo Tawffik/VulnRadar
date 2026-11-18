@@ -1,0 +1,15 @@
+auth.expressvpn.com
+beta.repo.expressvpn.com
+billing-portal.expressvpn.com
+checkout.expressvpn.com
+desktop.updates.expressvpn.com
+go.expressvpn.com
+landing-pages.expressvpn.com
+link.mail.expressvpn.com
+repo.expressvpn.com
+speedtest.expressvpn.com
+staging.portal.expressvpn.com
+store.expressvpn.com
+support.expressvpn.com
+teams.expressvpn.com
+updates.expressvpn.com

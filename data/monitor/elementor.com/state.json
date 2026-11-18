@@ -2,18 +2,17 @@
   "target": "elementor.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 14,
-  "new_count": 0,
-  "removed_count": 14,
+  "live": 28,
+  "new_count": 14,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-18T13:54:50.521939+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-18T23:28:56.360098+00:00",
+  "new": [
     "ask-ai.elementor.com",
     "assets.elementor.com",
     "be.elementor.com",
@@ -29,5 +28,6 @@
     "thumbs.elementor.com",
     "ux.elementor.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

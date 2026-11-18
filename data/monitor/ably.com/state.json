@@ -1,19 +1,18 @@
 {
   "target": "ably.com",
   "status": "COMPLETE",
-  "discovered": 1,
-  "live": 1,
-  "new_count": 0,
-  "removed_count": 19,
-  "discover_error": "subfinder timed out on ably.com",
+  "discovered": 200,
+  "live": 20,
+  "new_count": 19,
+  "removed_count": 0,
+  "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 1
+    "input_count": 200
   },
-  "ts": "2026-11-18T13:46:33.861778+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-18T23:20:38.325669+00:00",
+  "new": [
     "brand.ably.com",
     "cdn.ably.com",
     "demo.ably.com",
@@ -34,5 +33,6 @@
     "support.ably.com",
     "www.ably.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }
