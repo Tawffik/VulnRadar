@@ -2,20 +2,19 @@
   "target": "okx.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 44,
-  "new_count": 0,
-  "removed_count": 2,
+  "live": 45,
+  "new_count": 1,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-19T14:29:59.680366+00:00",
-  "new": [],
-  "removed": [
-    "staticaws.okx.com",
-    "xlayerrpc.okx.com"
+  "ts": "2026-11-19T23:44:14.089924+00:00",
+  "new": [
+    "staticaws.okx.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

@@ -1,2 +1,2 @@
-wac-cdn-bfldr.atlassian.com
-xp.atlassian.com
+jiahao.dev.atlassian.com
+rovodev.status.atlassian.com

@@ -7,7 +7,6 @@ ccs.superdrug.com
 consent.superdrug.com
 e.superdrug.com
 hb.superdrug.com
-img.superdrug.com
 m.email.superdrug.com
 m.superdrug.com
 media.superdrug.com

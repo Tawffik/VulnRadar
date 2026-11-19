@@ -1,6 +1,6 @@
-api-canary.datadome.co
-api-me-west-1.datadome.co
-apivarnish.datadome.co
-auth0.tooling.datadome.co
-origin.datadome.co
-static.datadome.co
+api-edgio.datadome.co
+api-lambda.datadome.co
+api-sa-east-1.datadome.co
+api.prod.datadome.co
+js.datadome.co
+js.staging.datadome.co

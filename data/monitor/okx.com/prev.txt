@@ -17,6 +17,7 @@ okx.com
 pay.okx.com
 payauth.okx.com
 static.okx.com
+staticaws.okx.com
 tr.okx.com
 tvpap.okx.com
 us.okx.com

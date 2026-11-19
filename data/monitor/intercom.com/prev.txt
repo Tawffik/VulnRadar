@@ -7,6 +7,7 @@ app.intercom.com
 attend.events.intercom.com
 bfy.intercom.com
 blog.intercom.com
+cf.intercom.com
 community.intercom.com
 composer.intercom.com
 credentials.intercom.com
@@ -26,6 +27,7 @@ frame.eu.intercom.com
 frame.intercom.com
 gmail.mcp.intercom.com
 go.intercom.com
+hackathon.corp.intercom.com
 hq.intercom.com
 intercom.com
 intercomrades.intercom.com
@@ -43,7 +45,7 @@ mi.intercom.com
 news.eu.intercom.com
 news.intercom.com
 out.intercom.com
-pages.intercom.com
+partneracademy.intercom.com
 pioneer.intercom.com
 preferences.intercom.com
 privacy.intercom.com
@@ -51,13 +53,12 @@ rsvp.pioneer.intercom.com
 sales.intercom.com
 services.api.intercom.com
 services.intercom.com
-staging.intercom.com
 staging.mcp.intercom.com
 status.intercom.com
 surge.intercom.com
+transformation.intercom.com
 trust.intercom.com
 vercel.intercom.com
 vsaq.intercom.com
 watch.intercom.com
-women.intercom.com
 www.intercom.com

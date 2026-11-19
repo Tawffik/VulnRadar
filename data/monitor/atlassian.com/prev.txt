@@ -19,6 +19,7 @@ automation.stg.atlassian.com
 beacon.atlassian.com
 beta-developer.atlassian.com
 blog-de.atlassian.com
+blog-de.stg.atlassian.com
 blog-fr.atlassian.com
 blog.atlassian.com
 blog.developer.atlassian.com
@@ -41,6 +42,7 @@ compass.status.atlassian.com
 compliance.atlassian.com
 confluence.atlassian.com
 cs.atlassian.com
+dac-static.stg.atlassian.com
 de.atlassian.com
 developer.atlassian.com
 download.atlassian.com
@@ -51,9 +53,11 @@ enable.atlassian.com
 es.atlassian.com
 eventlinks.atlassian.com
 events.atlassian.com
+ezmake.atlassian.com
 fi.atlassian.com
 fr.atlassian.com
 france.blogs.atlassian.com
+github.atlassian.com
 gotest.atlassian.com
 hello.atlassian.com
 hu.atlassian.com
@@ -64,7 +68,6 @@ it.atlassian.com
 ja.atlassian.com
 ja.confluence.atlassian.com
 japan.blogs.atlassian.com
-jiahao.dev.atlassian.com
 jira-ops.status.atlassian.com
 ko.atlassian.com
 korea.blogs.atlassian.com
@@ -84,7 +87,6 @@ partnerportal.atlassian.com
 partners.status.atlassian.com
 pl.atlassian.com
 ro.atlassian.com
-rovodev.status.atlassian.com
 ru.atlassian.com
 shop.atlassian.com
 status.atlassian.com

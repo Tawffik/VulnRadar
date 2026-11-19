@@ -1,1 +1,3 @@
-hackathon.corp.intercom.com
+pages.intercom.com
+staging.intercom.com
+women.intercom.com

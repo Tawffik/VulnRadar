@@ -2,17 +2,29 @@
   "target": "glean.com",
   "status": "COMPLETE",
   "discovered": 201,
-  "live": 66,
+  "live": 67,
   "new_count": 10,
-  "removed_count": 8,
+  "removed_count": 9,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 201
   },
-  "ts": "2026-11-19T14:25:53.133780+00:00",
+  "ts": "2026-11-19T23:39:37.848122+00:00",
   "new": [
+    "adobe-be.glean.com",
+    "agoda-be.glean.com",
+    "atomico.glean.com",
+    "cox-be.glean.com",
+    "edc-be.glean.com",
+    "iqor-be.glean.com",
+    "metis-be.glean.com",
+    "optus-be.glean.com",
+    "oura-be.glean.com",
+    "wave-be.glean.com"
+  ],
+  "removed": [
     "aidoc-be.glean.com",
     "airbnb.glean.com",
     "alloy-be.glean.com",
@@ -20,19 +32,8 @@
     "gusto-be.glean.com",
     "gxs-be.glean.com",
     "partners.glean.com",
-    "rdc-be.glean.com",
     "vtex-be.glean.com",
     "xero-be.glean.com"
-  ],
-  "removed": [
-    "cta-be.glean.com",
-    "esusu-be.glean.com",
-    "iqt-be.glean.com",
-    "kayak-be.glean.com",
-    "p66-be.glean.com",
-    "qolo-be.glean.com",
-    "social.glean.com",
-    "wwt-be.glean.com"
   ],
   "baseline_updated": true
 }

@@ -1,8 +1,3 @@
-dojotutor.classdojo.com
-external3.classdojo.com
-lite.classdojo.com
-mobile.classdojo.com
-sfiles.classdojo.com
-static.classdojo.com
-toolkit.classdojo.com
-toolkit3.classdojo.com
+parent.classdojo.com
+student3.classdojo.com
+www2.classdojo.com

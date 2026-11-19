@@ -2,23 +2,26 @@
   "target": "intercom.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 63,
-  "new_count": 3,
-  "removed_count": 1,
+  "live": 64,
+  "new_count": 4,
+  "removed_count": 3,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-19T14:28:34.226480+00:00",
+  "ts": "2026-11-19T23:43:02.418039+00:00",
   "new": [
-    "meet.intercom.com",
-    "pages.intercom.com",
-    "women.intercom.com"
+    "cf.intercom.com",
+    "hackathon.corp.intercom.com",
+    "partneracademy.intercom.com",
+    "transformation.intercom.com"
   ],
   "removed": [
-    "hackathon.corp.intercom.com"
+    "pages.intercom.com",
+    "staging.intercom.com",
+    "women.intercom.com"
   ],
   "baseline_updated": true
 }

@@ -1,3 +1,4 @@
-meet.intercom.com
-pages.intercom.com
-women.intercom.com
+cf.intercom.com
+hackathon.corp.intercom.com
+partneracademy.intercom.com
+transformation.intercom.com

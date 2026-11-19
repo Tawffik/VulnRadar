@@ -2,8 +2,8 @@
   "target": "indeed.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 71,
-  "new_count": 9,
+  "live": 76,
+  "new_count": 16,
   "removed_count": 11,
   "discover_error": null,
   "probe": {
@@ -11,8 +11,26 @@
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-19T14:27:56.193766+00:00",
+  "ts": "2026-11-19T23:42:23.725051+00:00",
   "new": [
+    "bh.conv.indeed.com",
+    "blog.au.indeed.com",
+    "br.conv.indeed.com",
+    "c.indeed.com",
+    "cl.indeed.com",
+    "cmsapi.indeed.com",
+    "edge.indeed.com",
+    "es.indeed.com",
+    "hired.indeed.com",
+    "hu.indeed.com",
+    "media.indeed.com",
+    "mgs.indeed.com",
+    "oss.indeed.com",
+    "promo.indeed.com",
+    "qa.indeed.com",
+    "se.indeed.com"
+  ],
+  "removed": [
     "c08.s3.indeed.com",
     "eg.indeed.com",
     "lu.indeed.com",
@@ -20,21 +38,10 @@
     "pr.indeed.com",
     "resume.indeed.com",
     "rss.indeed.com",
+    "sg.indeed.com",
     "tr.indeed.com",
-    "tw.indeed.com"
-  ],
-  "removed": [
-    "blog.au.indeed.com",
-    "br.conv.indeed.com",
-    "ca.conv.indeed.com",
-    "central.indeed.com",
-    "cn.conv.indeed.com",
-    "co.conv.indeed.com",
-    "compare.indeed.com",
-    "cr.indeed.com",
-    "kr.indeed.com",
-    "pe.indeed.com",
-    "places.indeed.com"
+    "tw.indeed.com",
+    "ve.indeed.com"
   ],
   "baseline_updated": true
 }

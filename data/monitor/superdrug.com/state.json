@@ -2,22 +2,19 @@
   "target": "superdrug.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 19,
-  "new_count": 1,
-  "removed_count": 2,
+  "live": 18,
+  "new_count": 0,
+  "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-19T14:31:35.927521+00:00",
-  "new": [
-    "img.superdrug.com"
-  ],
+  "ts": "2026-11-19T23:45:51.840602+00:00",
+  "new": [],
   "removed": [
-    "media-s1.superdrug.com",
-    "pharmacy.superdrug.com"
+    "img.superdrug.com"
   ],
   "baseline_updated": true
 }

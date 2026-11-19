@@ -1,8 +1,9 @@
-cta-be.glean.com
-esusu-be.glean.com
-iqt-be.glean.com
-kayak-be.glean.com
-p66-be.glean.com
-qolo-be.glean.com
-social.glean.com
-wwt-be.glean.com
+aidoc-be.glean.com
+airbnb.glean.com
+alloy-be.glean.com
+depop-be.glean.com
+gusto-be.glean.com
+gxs-be.glean.com
+partners.glean.com
+vtex-be.glean.com
+xero-be.glean.com
