@@ -2,36 +2,35 @@
   "target": "datadome.co",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 47,
-  "new_count": 14,
-  "removed_count": 3,
+  "live": 43,
+  "new_count": 6,
+  "removed_count": 10,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-18T23:26:27.117091+00:00",
+  "ts": "2026-11-19T14:20:16.186947+00:00",
   "new": [
+    "api-canary.datadome.co",
+    "api-me-west-1.datadome.co",
+    "apivarnish.datadome.co",
+    "auth0.tooling.datadome.co",
+    "origin.datadome.co",
+    "static.datadome.co"
+  ],
+  "removed": [
     "api-akamai.datadome.co",
-    "api-ap-east-1.datadome.co",
     "api-cdn.datadome.co",
     "api-edgio.datadome.co",
     "api-eu-west-1.datadome.co",
     "api-sa-east-1.datadome.co",
-    "api-us-east-2.datadome.co",
-    "api-us-west-1.datadome.co",
-    "api-us-west-2.datadome.co",
+    "api-staff.datadome.co",
     "api.prod.datadome.co",
     "index-holder.datadome.co",
     "package.datadome.co",
-    "r.newsletter.datadome.co",
-    "upflow-email.datadome.co"
-  ],
-  "removed": [
-    "api-canary.datadome.co",
-    "apivarnish.datadome.co",
-    "js.datadome.co"
+    "staff.datadome.co"
   ],
   "baseline_updated": true
 }

@@ -1,5 +1,8 @@
-atomico.glean.com
-drips-be.glean.com
-esp.glean.com
-rdc-be.glean.com
-sigma-be.glean.com
+cta-be.glean.com
+esusu-be.glean.com
+iqt-be.glean.com
+kayak-be.glean.com
+p66-be.glean.com
+qolo-be.glean.com
+social.glean.com
+wwt-be.glean.com

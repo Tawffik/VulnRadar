@@ -3,7 +3,7 @@
   "status": "COMPLETE",
   "discovered": 200,
   "live": 48,
-  "new_count": 21,
+  "new_count": 0,
   "removed_count": 0,
   "discover_error": null,
   "probe": {
@@ -11,30 +11,8 @@
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-18T23:37:39.457312+00:00",
-  "new": [
-    "a.klaviyo.com",
-    "ascent.klaviyo.com",
-    "atlas-app.klaviyo.com",
-    "basecamp.klaviyo.com",
-    "brand.klaviyo.com",
-    "businesses.klaviyo.com",
-    "cms.academy.klaviyo.com",
-    "csat.klaviyo.com",
-    "docs.klaviyo.com",
-    "emailpages.klaviyo.com",
-    "experiences.klaviyo.com",
-    "get.klaviyo.com",
-    "help.klaviyo.com",
-    "klaviyo.com",
-    "partners.klaviyo.com",
-    "reviews.klaviyo.com",
-    "static-app.klaviyo.com",
-    "status.klaviyo.com",
-    "twotruths.klaviyo.com",
-    "verticals.klaviyo.com",
-    "www.klaviyo.com"
-  ],
+  "ts": "2026-11-19T14:29:06.242995+00:00",
+  "new": [],
   "removed": [],
   "baseline_updated": true
 }

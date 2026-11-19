@@ -64,6 +64,7 @@ it.atlassian.com
 ja.atlassian.com
 ja.confluence.atlassian.com
 japan.blogs.atlassian.com
+jiahao.dev.atlassian.com
 jira-ops.status.atlassian.com
 ko.atlassian.com
 korea.blogs.atlassian.com
@@ -83,6 +84,7 @@ partnerportal.atlassian.com
 partners.status.atlassian.com
 pl.atlassian.com
 ro.atlassian.com
+rovodev.status.atlassian.com
 ru.atlassian.com
 shop.atlassian.com
 status.atlassian.com
@@ -102,8 +104,6 @@ vpn-eucent1.atlassian.com
 vpn-useast1.atlassian.com
 vpn-uswest1.atlassian.com
 vpn.atlassian.com
-wac-cdn-bfldr.atlassian.com
 webinars.atlassian.com
 wiki.mailman.atlassian.com
 www.atlassian.com
-xp.atlassian.com

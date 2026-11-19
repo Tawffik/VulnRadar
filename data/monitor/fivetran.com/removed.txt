@@ -1,3 +1,2 @@
-api.qe.fivetran.com
-events.qe.fivetran.com
-gcp.polaris.fivetran.com
+aws.polaris.fivetran.com
+ldp.orchestrator.fivetran.com

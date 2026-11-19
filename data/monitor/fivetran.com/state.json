@@ -3,51 +3,22 @@
   "status": "COMPLETE",
   "discovered": 200,
   "live": 66,
-  "new_count": 30,
-  "removed_count": 3,
+  "new_count": 2,
+  "removed_count": 2,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-18T23:30:57.249764+00:00",
+  "ts": "2026-11-19T14:24:27.498649+00:00",
   "new": [
-    "api.fivetran.com",
-    "aws.polaris.fivetran.com",
-    "backstage.fivetran.com",
-    "benchmark.gateway.fivetran.com",
-    "beta-api.fivetran.com",
-    "beta.fivetran.com",
-    "blog.fivetran.com",
-    "cdn.cms.fivetran.com",
-    "eng-planning.fivetran.com",
-    "events.fivetran.com",
-    "fivetran.com",
-    "gcp.us.webhooks.fivetran.com",
-    "get-sb.fivetran.com",
-    "go.fivetran.com",
-    "hdt.gateway.fivetran.com",
-    "hitl.fivetran.com",
-    "hvr-staging.fivetran.com",
-    "learn.fivetran.com",
-    "pbf-demo.fivetran.com",
-    "prototypes.fivetran.com",
-    "services.api.fivetran.com",
-    "services.fivetran.com",
-    "shop.fivetran.com",
-    "staging.api.agent.fivetran.com",
-    "staging.events.fivetran.com",
-    "staging.fivetran.com",
-    "staging.webhooks.fivetran.com",
-    "support.fivetran.com",
-    "ultimateguide.fivetran.com",
-    "webhooks.qe.fivetran.com"
+    "orchestrator.qe.fivetran.com",
+    "temporal-codec.fivetran.com"
   ],
   "removed": [
-    "api.qe.fivetran.com",
-    "events.qe.fivetran.com",
-    "gcp.polaris.fivetran.com"
+    "aws.polaris.fivetran.com",
+    "ldp.orchestrator.fivetran.com"
   ],
   "baseline_updated": true
 }

@@ -1,0 +1,2 @@
+api.gary.ibotta.com
+ipn-auth.ibotta.com
