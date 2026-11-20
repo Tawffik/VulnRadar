@@ -25,6 +25,7 @@ dct.klaviyo.com
 eks.klaviyo.com
 fls.klaviyo.com
 get.klaviyo.com
+mcp.klaviyo.com
 ns1.klaviyo.com
 ns2.klaviyo.com
 ns3.klaviyo.com
@@ -32,6 +33,7 @@ ns4.klaviyo.com
 ns5.klaviyo.com
 raw.klaviyo.com
 sms.klaviyo.com
+spf.klaviyo.com
 try.klaviyo.com
 vcf.klaviyo.com
 www.klaviyo.com
@@ -49,6 +51,7 @@ push.klaviyo.com
 send.klaviyo.com
 sftp.klaviyo.com
 shop.klaviyo.com
+stag.klaviyo.com
 stor.klaviyo.com
 trxn.klaviyo.com
 aw9.a.klaviyo.com
@@ -155,6 +158,7 @@ shortener.klaviyo.com
 static-cf.klaviyo.com
 twotruths.klaviyo.com
 verticals.klaviyo.com
+wikibobby.klaviyo.com
 www.learn.klaviyo.com
 www.sales.klaviyo.com
 www.trust.klaviyo.com
@@ -183,6 +187,7 @@ www.nagios.klaviyo.com
 www.onsite.klaviyo.com
 www.static.klaviyo.com
 www.status.klaviyo.com
+0x6as.r.a.d.klaviyo.com
 2l051.r.a.d.klaviyo.com
 academyauth.klaviyo.com
 atlas-local.klaviyo.com
@@ -193,8 +198,3 @@ cms.academy.klaviyo.com
 confluencea.klaviyo.com
 developers5.klaviyo.com
 emailpagesg.klaviyo.com
-enablementm.klaviyo.com
-experiences.klaviyo.com
-marketplace.klaviyo.com
-mobile-vcfa.klaviyo.com
-reviews-api.klaviyo.com

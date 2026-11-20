@@ -3,16 +3,22 @@
   "status": "COMPLETE",
   "discovered": 200,
   "live": 48,
-  "new_count": 0,
-  "removed_count": 0,
+  "new_count": 2,
+  "removed_count": 2,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-19T23:43:34.882153+00:00",
-  "new": [],
-  "removed": [],
+  "ts": "2026-11-20T14:12:22.823073+00:00",
+  "new": [
+    "mcp.klaviyo.com",
+    "stag.klaviyo.com"
+  ],
+  "removed": [
+    "experiences.klaviyo.com",
+    "marketplace.klaviyo.com"
+  ],
   "baseline_updated": true
 }

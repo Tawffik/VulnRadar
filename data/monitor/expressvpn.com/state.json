@@ -4,21 +4,15 @@
   "discovered": 200,
   "live": 22,
   "new_count": 0,
-  "removed_count": 5,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-19T23:36:54.989649+00:00",
+  "ts": "2026-11-20T14:05:49.183271+00:00",
   "new": [],
-  "removed": [
-    "connectivitycheck.expressvpn.com",
-    "desktop.updates.expressvpn.com",
-    "prod-rewrite.portal.expressvpn.com",
-    "staging-pr-405.teams.expressvpn.com",
-    "staging.checkout.expressvpn.com"
-  ],
+  "removed": [],
   "baseline_updated": true
 }

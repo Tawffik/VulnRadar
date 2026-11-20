@@ -1,2 +1,4 @@
-jiahao.dev.atlassian.com
-rovodev.status.atlassian.com
+blog-de.stg.atlassian.com
+dac-static.stg.atlassian.com
+ezmake.atlassian.com
+github.atlassian.com

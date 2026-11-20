@@ -4,6 +4,7 @@ app.superdrug.com
 appsd.superdrug.com
 campaign.superdrug.com
 ccs.superdrug.com
+clickom.superdrug.com
 consent.superdrug.com
 e.superdrug.com
 hb.superdrug.com

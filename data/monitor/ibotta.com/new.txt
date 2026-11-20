@@ -1,1 +1,6 @@
-ipn-auth.ibotta.com
+community.ibotta.com
+cs-k8sweb.ibotta.com
+dashboard.ibotta.com
+partners.ibotta.com
+register.ibotta.com
+sst.data.ibotta.com

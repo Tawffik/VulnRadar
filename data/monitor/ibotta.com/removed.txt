@@ -1,4 +1,12 @@
-partners.ibotta.com
-register.ibotta.com
-solstice.ibotta.com
-sst.data.ibotta.com
+email.ibotta.com
+go.ibotta.com
+help.ibotta.com
+home.dev.ibotta.com
+link.dev.ibotta.com
+link.ibotta.com
+looker.ibotta.com
+media.ibotta.com
+s.ibotta.com
+static.ibotta.com
+support.ibotta.com
+www.ibotta.com

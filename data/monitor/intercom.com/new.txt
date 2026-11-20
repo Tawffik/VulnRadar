@@ -1,4 +1,1 @@
-cf.intercom.com
-hackathon.corp.intercom.com
-partneracademy.intercom.com
-transformation.intercom.com
+help.legal.corp.intercom.com

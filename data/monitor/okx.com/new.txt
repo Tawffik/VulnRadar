@@ -1,1 +1,3 @@
-staticaws.okx.com
+mysignicat.okx.com
+mywspripap.okx.com
+xlayerrpc.okx.com

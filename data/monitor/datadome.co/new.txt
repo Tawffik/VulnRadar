@@ -1,6 +1,3 @@
-api-edgio.datadome.co
-api-lambda.datadome.co
-api-sa-east-1.datadome.co
-api.prod.datadome.co
-js.datadome.co
-js.staging.datadome.co
+api-akamai.datadome.co
+api-sfcc.datadome.co
+api-staff.datadome.co

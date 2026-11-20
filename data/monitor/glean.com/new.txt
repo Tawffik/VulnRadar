@@ -1,10 +1,3 @@
-adobe-be.glean.com
-agoda-be.glean.com
-atomico.glean.com
-cox-be.glean.com
-edc-be.glean.com
-iqor-be.glean.com
-metis-be.glean.com
-optus-be.glean.com
-oura-be.glean.com
-wave-be.glean.com
+airbnb.glean.com
+lg2-be.glean.com
+wyze-be.glean.com

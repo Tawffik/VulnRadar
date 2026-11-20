@@ -1,3 +1,5 @@
-parent.classdojo.com
-student3.classdojo.com
-www2.classdojo.com
+globalapi.classdojo.com
+lite.classdojo.com
+mobile.classdojo.com
+toolkit.classdojo.com
+tutor2.classdojo.com

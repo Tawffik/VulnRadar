@@ -1,10 +1,7 @@
-1011vc-be.glean.com
-adobe-be.glean.com
-agoda-be.glean.com
+airbnb.glean.com
 app.glean.com
 apps-be.glean.com
 apps-gke.glean.com
-atomico.glean.com
 axon-be.glean.com
 bill-be.glean.com
 bilt-be.glean.com
@@ -14,11 +11,9 @@ calm-be.glean.com
 canary.glean.com
 canva.glean.com
 chat.glean.com
-cox-be.glean.com
 ctc-be.glean.com
 dev.glean.com
 doit-be.glean.com
-edc-be.glean.com
 effectv.glean.com
 em.glean.com
 etsy-be.glean.com
@@ -31,11 +26,10 @@ guild-be.glean.com
 help.glean.com
 hrt-be.glean.com
 imply-be.glean.com
-iqor-be.glean.com
 koho-be.glean.com
 kp.glean.com
+lg2-be.glean.com
 lsvp.glean.com
-metis-be.glean.com
 miro-be.glean.com
 miro.glean.com
 myob-be.glean.com
@@ -44,9 +38,7 @@ nuro-be.glean.com
 nvidia.glean.com
 optus-be.glean.com
 orum-be.glean.com
-oura-be.glean.com
 plaid-be.glean.com
-rdc-be.glean.com
 redis-be.glean.com
 roku-be.glean.com
 scio.glean.com
@@ -61,7 +53,6 @@ url8531.glean.com
 url8770.glean.com
 usearch.glean.com
 vanta-be.glean.com
-wave-be.glean.com
 whatnot.glean.com
 www.glean.com
-yahoo-be.glean.com
+wyze-be.glean.com

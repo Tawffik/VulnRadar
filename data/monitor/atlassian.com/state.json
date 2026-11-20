@@ -2,25 +2,24 @@
   "target": "atlassian.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 111,
-  "new_count": 4,
-  "removed_count": 2,
+  "live": 108,
+  "new_count": 1,
+  "removed_count": 4,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-19T23:30:40.810502+00:00",
+  "ts": "2026-11-20T13:59:28.160835+00:00",
   "new": [
+    "www.blogs.atlassian.com"
+  ],
+  "removed": [
     "blog-de.stg.atlassian.com",
     "dac-static.stg.atlassian.com",
     "ezmake.atlassian.com",
     "github.atlassian.com"
-  ],
-  "removed": [
-    "jiahao.dev.atlassian.com",
-    "rovodev.status.atlassian.com"
   ],
   "baseline_updated": true
 }
