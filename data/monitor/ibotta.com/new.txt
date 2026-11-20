@@ -1,6 +1,8 @@
-community.ibotta.com
-cs-k8sweb.ibotta.com
-dashboard.ibotta.com
-partners.ibotta.com
-register.ibotta.com
-sst.data.ibotta.com
+api.gary.ibotta.com
+email.ibotta.com
+go.ibotta.com
+home.dev.ibotta.com
+s.ibotta.com
+solstice.ibotta.com
+support.ibotta.com
+www.ibotta.com

@@ -1,3 +1,3 @@
-redirect.arlo.com
-shop-us.arlo.com
-www.us.arlo.com
+asia.arlo.com
+hk.arlo.com
+us.arlo.com

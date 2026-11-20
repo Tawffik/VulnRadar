@@ -1,7 +1,7 @@
 {
   "target": "gearset.com",
   "status": "COMPLETE",
-  "discovered": 133,
+  "discovered": 136,
   "live": 40,
   "new_count": 0,
   "removed_count": 0,
@@ -9,9 +9,9 @@
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 133
+    "input_count": 136
   },
-  "ts": "2026-11-20T14:07:41.932254+00:00",
+  "ts": "2026-11-20T23:13:58.504404+00:00",
   "new": [],
   "removed": [],
   "baseline_updated": true

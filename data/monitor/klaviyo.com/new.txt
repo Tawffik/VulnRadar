@@ -1,2 +1,4 @@
-mcp.klaviyo.com
-stag.klaviyo.com
+experiences.klaviyo.com
+marketplace.klaviyo.com
+reviews-app.klaviyo.com
+reviews-new.klaviyo.com

@@ -12,6 +12,7 @@ dev.gearset.com
 fls.gearset.com
 fna.gearset.com
 int.gearset.com
+vpn.gearset.com
 www.gearset.com
 blog.gearset.com
 core.gearset.com
@@ -97,9 +98,11 @@ www.onboarding.gearset.com
 www.us.staging.gearset.com
 www.staging-api.gearset.com
 www.website-api.gearset.com
+hipaa-us.staging.gearset.com
 jbnstagingtestwo.gearset.com
 staging-webhooks.gearset.com
 hipaa-usc.staging.gearset.com
+jbnstagingtesttwo.gearset.com
 staging-amplitude.gearset.com
 www.hipaa.staging.gearset.com
 www.staging-admin.gearset.com

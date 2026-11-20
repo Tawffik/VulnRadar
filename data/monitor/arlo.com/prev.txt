@@ -7,7 +7,6 @@ apiqa.arlo.com
 arlo.com
 arlocs.ar.arlo.com
 arlocs.arlo.com
-asia.arlo.com
 beta.arlo.com
 blog.arlo.com
 click.e.arlo.com
@@ -16,7 +15,6 @@ devtest.arlo.com
 downloads.arlo.com
 eks.arlo.com
 feedback.arlo.com
-hk.arlo.com
 image.e.arlo.com
 investor.arlo.com
 kb.arlo.com
@@ -52,7 +50,7 @@ survey.arlo.com
 tableau.arlo.com
 tm.arlo.com
 updates.arlo.com
-us.arlo.com
 view.e.arlo.com
 webrds.arlo.com
 www.arlo.com
+www.us.arlo.com

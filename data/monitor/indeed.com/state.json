@@ -2,21 +2,27 @@
   "target": "indeed.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 82,
-  "new_count": 19,
-  "removed_count": 13,
+  "live": 72,
+  "new_count": 6,
+  "removed_count": 16,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-20T14:10:51.854476+00:00",
+  "ts": "2026-11-20T23:16:59.019712+00:00",
   "new": [
-    "b.indeed.com",
-    "ca.conv.indeed.com",
+    "ampxy.indeed.com",
+    "c76.s3.indeed.com",
+    "co.indeed.com",
+    "india.indeed.com",
+    "points.indeed.com",
+    "resume.indeed.com"
+  ],
+  "removed": [
     "campus.indeed.com",
-    "central.indeed.com",
+    "cmsapi.indeed.com",
     "co.conv.indeed.com",
     "compare.indeed.com",
     "content.indeed.com",
@@ -27,26 +33,10 @@
     "it.conv.indeed.com",
     "jobfair.indeed.com",
     "legal.indeed.com",
-    "link.indeed.com",
     "match.indeed.com",
     "om.indeed.com",
     "rooms.indeed.com",
     "sms.indeed.com"
-  ],
-  "removed": [
-    "bh.conv.indeed.com",
-    "c.indeed.com",
-    "cl.indeed.com",
-    "edge.indeed.com",
-    "es.indeed.com",
-    "hired.indeed.com",
-    "hu.indeed.com",
-    "media.indeed.com",
-    "mgs.indeed.com",
-    "oss.indeed.com",
-    "promo.indeed.com",
-    "qa.indeed.com",
-    "se.indeed.com"
   ],
   "baseline_updated": true
 }

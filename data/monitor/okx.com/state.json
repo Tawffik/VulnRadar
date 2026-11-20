@@ -2,24 +2,23 @@
   "target": "okx.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 46,
-  "new_count": 3,
-  "removed_count": 2,
+  "live": 44,
+  "new_count": 1,
+  "removed_count": 3,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-20T14:13:02.898122+00:00",
+  "ts": "2026-11-20T23:19:12.582390+00:00",
   "new": [
+    "staticaws.okx.com"
+  ],
+  "removed": [
     "mysignicat.okx.com",
     "mywspripap.okx.com",
     "xlayerrpc.okx.com"
-  ],
-  "removed": [
-    "oktcsafe.okx.com",
-    "staticaws.okx.com"
   ],
   "baseline_updated": true
 }

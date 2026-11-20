@@ -2,8 +2,8 @@
   "target": "arlo.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 58,
-  "new_count": 3,
+  "live": 56,
+  "new_count": 1,
   "removed_count": 3,
   "discover_error": null,
   "probe": {
@@ -11,16 +11,14 @@
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-20T13:57:20.348850+00:00",
+  "ts": "2026-11-20T23:03:26.918260+00:00",
   "new": [
+    "www.us.arlo.com"
+  ],
+  "removed": [
     "asia.arlo.com",
     "hk.arlo.com",
     "us.arlo.com"
-  ],
-  "removed": [
-    "redirect.arlo.com",
-    "shop-us.arlo.com",
-    "www.us.arlo.com"
   ],
   "baseline_updated": true
 }

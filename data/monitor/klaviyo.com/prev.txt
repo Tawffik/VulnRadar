@@ -20,6 +20,7 @@ developers.klaviyo.com
 docs.klaviyo.com
 emailpages.klaviyo.com
 events.klaviyo.com
+experiences.klaviyo.com
 fast.a.klaviyo.com
 get.klaviyo.com
 gslink.klaviyo.com
@@ -29,14 +30,15 @@ khub.klaviyo.com
 klaviyo.com
 learn.klaviyo.com
 marketing.klaviyo.com
-mcp.klaviyo.com
+marketplace.klaviyo.com
 partners.klaviyo.com
 privacy.klaviyo.com
 resources.klaviyo.com
+reviews-app.klaviyo.com
+reviews-new.klaviyo.com
 reviews.klaviyo.com
 shop.klaviyo.com
 sms.klaviyo.com
-stag.klaviyo.com
 static-app.klaviyo.com
 static.klaviyo.com
 status.klaviyo.com

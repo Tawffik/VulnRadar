@@ -2,34 +2,35 @@
   "target": "glean.com",
   "status": "COMPLETE",
   "discovered": 201,
-  "live": 58,
-  "new_count": 3,
-  "removed_count": 12,
+  "live": 66,
+  "new_count": 12,
+  "removed_count": 4,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 201
   },
-  "ts": "2026-11-20T14:08:15.584286+00:00",
+  "ts": "2026-11-20T23:14:30.727773+00:00",
   "new": [
-    "airbnb.glean.com",
-    "lg2-be.glean.com",
-    "wyze-be.glean.com"
+    "alloy-be.glean.com",
+    "clari-be.glean.com",
+    "clear-be.glean.com",
+    "cta-be.glean.com",
+    "ddn-be.glean.com",
+    "depop-be.glean.com",
+    "ggb-be.glean.com",
+    "klsip-be.glean.com",
+    "ltk.glean.com",
+    "mlp.glean.com",
+    "revio-be.glean.com",
+    "status.glean.com"
   ],
   "removed": [
-    "1011vc-be.glean.com",
-    "adobe-be.glean.com",
-    "agoda-be.glean.com",
-    "atomico.glean.com",
-    "cox-be.glean.com",
-    "edc-be.glean.com",
-    "iqor-be.glean.com",
-    "metis-be.glean.com",
-    "oura-be.glean.com",
-    "rdc-be.glean.com",
-    "wave-be.glean.com",
-    "yahoo-be.glean.com"
+    "airbnb.glean.com",
+    "lg2-be.glean.com",
+    "optus-be.glean.com",
+    "wyze-be.glean.com"
   ],
   "baseline_updated": true
 }

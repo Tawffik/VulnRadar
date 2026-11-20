@@ -1,1 +1,10 @@
-www.blogs.atlassian.com
+advocate-central.atlassian.com
+atl-onetrust-wrapper.atlassian.com
+auth0-proxy.services.atlassian.com
+bitbucket.status.atlassian.com
+cloudtoken-update.atlassian.com
+community-dev1.dev.atlassian.com
+docker-blobs.artifacts.atlassian.com
+radiowalker.blogs.atlassian.com
+rebelutionary.blogs.atlassian.com
+sdkrepo.atlassian.com

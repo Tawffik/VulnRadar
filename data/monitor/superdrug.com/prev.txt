@@ -10,6 +10,7 @@ e.superdrug.com
 hb.superdrug.com
 m.email.superdrug.com
 m.superdrug.com
+media-s1.superdrug.com
 media.superdrug.com
 mta-sts.superdrug.com
 superdrug.com

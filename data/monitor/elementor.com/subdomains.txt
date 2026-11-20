@@ -64,6 +64,7 @@ ns1.elementor.com
 ns2.elementor.com
 pix.elementor.com
 ppc.elementor.com
+pro.elementor.com
 pub.elementor.com
 pup.elementor.com
 red.elementor.com
@@ -197,4 +198,3 @@ exprets.elementor.com
 flexbox.elementor.com
 grc2go7.elementor.com
 iimahd9.elementor.com
-infolab.elementor.com
