@@ -1,48 +1,98 @@
 # VulnRadar Subdomain Monitor
 
-Generated: 2026-11-20T23:21:42.810786+00:00
+Generated: 2026-11-21T13:37:12.598088+00:00
 Targets: 23
 
 | Target | Status | Discovered | Live | New | Removed |
 |--------|--------|----------:|-----:|----:|--------:|
 | ably.com | COMPLETE | 200 | 20 | 0 | 0 |
-| aiven.io | COMPLETE | 143 | 43 | 0 | 0 |
-| arlo.com | COMPLETE | 200 | 56 | 1 | 3 |
-| asana.com | COMPLETE | 200 | 192 | 66 | 72 |
-| atlassian.com | COMPLETE | 201 | 53 | 10 | 65 |
-| classdojo.com | COMPLETE | 200 | 74 | 34 | 6 |
-| cloudinary.com | COMPLETE | 200 | 198 | 174 | 175 |
-| datadome.co | COMPLETE | 1 | 1 | 0 | 31 |
-| decathlon.com | COMPLETE | 200 | 53 | 15 | 9 |
-| doctolib.com | COMPLETE | 200 | 105 | 49 | 52 |
+| aiven.io | COMPLETE | 144 | 43 | 0 | 0 |
+| arlo.com | COMPLETE | 200 | 57 | 2 | 1 |
+| asana.com | COMPLETE | 200 | 197 | 66 | 61 |
+| atlassian.com | COMPLETE | 200 | 111 | 68 | 10 |
+| classdojo.com | COMPLETE | 200 | 42 | 6 | 38 |
+| cloudinary.com | COMPLETE | 200 | 198 | 96 | 96 |
+| datadome.co | COMPLETE | 201 | 47 | 46 | 0 |
+| decathlon.com | COMPLETE | 200 | 51 | 11 | 13 |
+| doctolib.com | COMPLETE | 200 | 106 | 56 | 55 |
 | elementor.com | COMPLETE | 200 | 28 | 0 | 0 |
 | expressvpn.com | COMPLETE | 200 | 22 | 0 | 0 |
-| fivetran.com | COMPLETE | 200 | 65 | 4 | 3 |
+| fivetran.com | COMPLETE | 200 | 66 | 3 | 2 |
 | gearset.com | COMPLETE | 136 | 40 | 0 | 0 |
-| glean.com | COMPLETE | 201 | 66 | 12 | 4 |
-| ibotta.com | COMPLETE | 201 | 34 | 8 | 10 |
-| ifood.com.br | COMPLETE | 201 | 110 | 56 | 58 |
-| indeed.com | COMPLETE | 200 | 72 | 6 | 16 |
-| intercom.com | COMPLETE | 200 | 62 | 15 | 2 |
-| klaviyo.com | COMPLETE | 201 | 50 | 4 | 2 |
-| okx.com | COMPLETE | 200 | 44 | 1 | 3 |
-| shopify.com | COMPLETE | 201 | 195 | 191 | 191 |
-| superdrug.com | COMPLETE | 200 | 20 | 1 | 0 |
+| glean.com | COMPLETE | 201 | 64 | 10 | 12 |
+| ibotta.com | COMPLETE | 200 | 45 | 14 | 3 |
+| ifood.com.br | COMPLETE | 200 | 107 | 58 | 61 |
+| indeed.com | COMPLETE | 201 | 34 | 21 | 59 |
+| intercom.com | COMPLETE | 200 | 61 | 0 | 1 |
+| klaviyo.com | COMPLETE | 200 | 48 | 0 | 2 |
+| okx.com | COMPLETE | 200 | 44 | 1 | 1 |
+| shopify.com | COMPLETE | 200 | 178 | 177 | 194 |
+| superdrug.com | COMPLETE | 200 | 18 | 0 | 2 |
 
 ### New on arlo.com
-- `www.us.arlo.com`
+- `au.arlo.com`
+- `shop-us.arlo.com`
 
 ### Removed on arlo.com
-- `asia.arlo.com`
-- `hk.arlo.com`
-- `us.arlo.com`
+- `www.us.arlo.com`
 
 ### New on asana.com
+- `0--makepipeline.asana.com`
+- `0.asana.com`
+- `029.asana.com`
+- `226.app.asana.com`
+- `227.app.asana.com`
+- `31859095c.app.asana.com`
+- `62818201q.app.asana.com`
+- `aap.asana.com`
+- `academy-7.asana.com`
+- `ad.asana.com`
+- `ads.asana.com`
+- `advisors-2.asana.com`
+- `aiq-ing.asana.com`
+- `argocd.asana.com`
+- `argocd7.asana.com`
+- `as.asana.com`
+- `askdevildarling.asana.com`
+- `asondemall.asana.com`
+- `asondemall5.asana.com`
+- `at.asana.com`
+- `baidu.asana.com`
+- `blog7.app.asana.com`
+- `brform.asana.com`
+- `chem7.app.asana.com`
+- `ci1.asana.com`
+- `cms.asana.com`
+- `cocinaaloboricua.asana.com`
+- `comc.ar.ci1.asana.com`
+- `content-preview.asana.com`
+- `cpp.asana.com`
+- `custom.argocd.app.asana.com`
+- `demo.app.asana.com`
+- `dial7.app.asana.com`
+- `dmz.asana.com`
+- `dsc.app.asana.com`
+- `form-betae.asana.com`
+- `gokhankimyaci.asana.com`
+- `health.asana.com`
+- `hh.asana.com`
+- `host.asana.com`
+- `internala.sync.app.asana.com`
+- `itcdev.ganda.asana.com`
+- `itcdevi.ganda.asana.com`
+- `oia.app.asana.com`
+- `plus.asana.com`
+- `pp.asana.com`
+- `preview.asana.com`
+- `r12664093.sync.app.asana.com`
+- `r12721195.sync.app.asana.com`
+- `r24616634.sync.app.asana.com`
+
+### Removed on asana.com
 - `010pp.asana.com`
 - `2.asana.com`
 - `2016.asana.com`
 - `33q.app.asana.com`
-- `3com.asana.bizbiz.asana.com`
 - `94617712s.app.asana.com`
 - `ablkr0ja6hoytn4.asana.com`
 - `advisors3.asana.com`
@@ -50,21 +100,19 @@ Targets: 23
 - `api-prod-au1q.asana.com`
 - `asana.argocd.app.asana.com`
 - `au.asana.com`
-- `augo.asana.com`
 - `belianki.vh85.app.asana.com`
+- `beliankis.vh85.app.asana.com`
 - `bridge10.asana.com`
 - `cahideninsofrasiu.asana.com`
 - `campusg.asana.com`
-- `cci-server.asana.com`
 - `ciotest.asana.com`
 - `co3.app.asana.com`
-- `colegio.asana.com`
 - `cse.asana.com`
-- `de.asana.com`
 - `desktop-downloadso.asana.com`
 - `dev.asana.com`
 - `dewww.asana.com`
 - `dmwfpwvxivcxrkhc.asana.com`
+- `edp5.beta-cdn.app.asana.com`
 - `ee.asana.com`
 - `elb.app.asana.com`
 - `email1g.asana.com`
@@ -72,15 +120,13 @@ Targets: 23
 - `events9.asana.com`
 - `external.asana.com`
 - `feeds.asana.com`
-- `fumu2.asana.com`
 - `invites.asana.com`
 - `ip.asana.com`
 - `isp.asana.com`
 - `kubeville000m.asana.com`
-- `mail1.invites.asana.com`
 - `o2.mail.asana.com`
 - `pil.asana.com`
-- `prod-jp1.asana.com`
+- `prodeu1.app.asana.com`
 - `r13481141.sync.app.asana.com`
 - `r24869164.sync.app.asana.com`
 - `r24878253.sync.app.asana.com`
@@ -88,72 +134,13 @@ Targets: 23
 - `resource.asana.com`
 - `sdcombat.app.asana.com`
 - `servicespartnerso.asana.com`
-
-### Removed on asana.com
-- `0-101000o.asana.com`
-- `0.0.asana.com`
-- `00.asana.com`
-- `16.app.asana.com`
-- `3481852.sync.app.asana.com`
-- `87.asana.com`
-- `95g.227.app.asana.com`
-- `99578060c.app.asana.com`
-- `a1310pp.asana.com`
-- `aap.asana.com`
-- `academy-1.asana.com`
-- `adb4.asana.com`
-- `alumniweekend.asana.com`
-- `api-prod-au1.asana.com`
-- `beta-us1-cell01.app.asana.com`
-- `brform.asana.com`
-- `busteni.asana.com`
-- `cbuang.asana.com`
-- `cc.asana.com`
-- `chem.asana.com`
-- `ci.asana.com`
-- `clouddrive.asana.com`
-- `clust01ny-web.app.asana.com`
-- `co.ukform.asana.com`
-- `code.asana.com`
-- `comc.ar.ci1.asana.com`
-- `content-preview.asana.com`
-- `cps.asana.com`
-- `csgo.form.asana.com`
-- `danielykpanu.asana.com`
-- `elearning.cdn.app.asana.com`
-- `eu13.app.app.asana.com`
-- `feedback.asana.com`
-- `forums.asana.com`
-- `gdriveu.asana.com`
-- `hk.asana.com`
-- `host-229-121s.app.asana.com`
-- `itcdevi.ganda.asana.com`
-- `lists.asana.com`
-- `local.asana.com`
-- `localhostc.asana.com`
-- `mxiaoyuan.asana.com`
-- `new-eu1g.app.asana.com`
-- `prod-us1-cell01.app.asana.com`
-- `prod-us1-cell02.app.asana.com`
-- `r12651155o.sync.app.asana.com`
-- `r12679751o.sync.app.asana.com`
-- `r12680462o.sync.app.asana.com`
-- `r13084010.sync.app.asana.com`
-- `r24878188.sync.app.asana.com`
+- `sjc.app.asana.com`
+- `smtp.asana.com`
+- `sp.asana.com`
+- `staging.asana.com`
+- `statystyka.asana.com`
 
 ### New on atlassian.com
-- `advocate-central.atlassian.com`
-- `atl-onetrust-wrapper.atlassian.com`
-- `auth0-proxy.services.atlassian.com`
-- `bitbucket.status.atlassian.com`
-- `cloudtoken-update.atlassian.com`
-- `community-dev1.dev.atlassian.com`
-- `docker-blobs.artifacts.atlassian.com`
-- `radiowalker.blogs.atlassian.com`
-- `rebelutionary.blogs.atlassian.com`
-- `sdkrepo.atlassian.com`
-
-### Removed on atlassian.com
 - `access.status.atlassian.com`
 - `atlas.status.atlassian.com`
 - `automation.stg.atlassian.com`
@@ -174,17 +161,21 @@ Targets: 23
 - `events.atlassian.com`
 - `fi.atlassian.com`
 - `fr.atlassian.com`
+- `go.atlassian.com`
 - `gotest.atlassian.com`
 - `hello.atlassian.com`
 - `hu.atlassian.com`
 - `image.e.atlassian.com`
 - `image.mailer.atlassian.com`
+- `integrations.atlassian.com`
 - `investors.atlassian.com`
 - `it.atlassian.com`
 - `ja.atlassian.com`
 - `jira-ops.status.atlassian.com`
 - `ko.atlassian.com`
 - `links.eml.atlassian.com`
+- `loom.status.atlassian.com`
+- `marketplace-cdn.atlassian.com`
 - `maven.atlassian.com`
 - `nl.atlassian.com`
 - `opsgenie.status.atlassian.com`
@@ -200,18 +191,36 @@ Targets: 23
 - `shop.atlassian.com`
 - `status.atlassian.com`
 - `support.atlassian.com`
-- `support.status.atlassian.com`
-- `surveys.atlassian.com`
-- `swag.atlassian.com`
-- `training.atlassian.com`
+
+### Removed on atlassian.com
+- `advocate-central.atlassian.com`
+- `atl-onetrust-wrapper.atlassian.com`
+- `auth0-proxy.services.atlassian.com`
+- `bitbucket.status.atlassian.com`
+- `cloudtoken-update.atlassian.com`
+- `community-dev1.dev.atlassian.com`
+- `docker-blobs.artifacts.atlassian.com`
+- `radiowalker.blogs.atlassian.com`
+- `rebelutionary.blogs.atlassian.com`
+- `sdkrepo.atlassian.com`
 
 ### New on classdojo.com
+- `mobile.classdojo.com`
+- `parent.classdojo.com`
+- `sfiles.classdojo.com`
+- `static.classdojo.com`
+- `status.classdojo.com`
+- `tutor3.classdojo.com`
+
+### Removed on classdojo.com
 - `android-web-static.classdojo.com`
 - `artifacts-blobs.classdojo.com`
 - `artifacts-render.classdojo.com`
 - `clients.multiplayer.classdojo.com`
 - `code-push-server.classdojo.com`
+- `community.classdojo.com`
 - `components.classdojo.com`
+- `dojoicons.classdojo.com`
 - `dojostickers.classdojo.com`
 - `dojovideos-0.classdojo.com`
 - `dojovideos-1.classdojo.com`
@@ -223,7 +232,9 @@ Targets: 23
 - `dojovideos-7.classdojo.com`
 - `dojovideos.classdojo.com`
 - `engineering.classdojo.com`
+- `essential.classdojo.com`
 - `experiences.classdojo.com`
+- `external2.classdojo.com`
 - `home-static.classdojo.com`
 - `ideas-video.classdojo.com`
 - `marketplace.classdojo.com`
@@ -241,295 +252,312 @@ Targets: 23
 - `www.marketplace.classdojo.com`
 - `www.tutoring.classdojo.com`
 
-### Removed on classdojo.com
-- `globalapi.classdojo.com`
-- `lite.classdojo.com`
-- `mobile.classdojo.com`
-- `parent.classdojo.com`
-- `toolkit.classdojo.com`
-- `tutor2.classdojo.com`
-
 ### New on cloudinary.com
+- `10sk.cloudinary.com`
+- `2fklook-resk.cloudinary.com`
+- `2fnordot-res.cloudinary.com`
+- `a4.res.cloudinary.com`
+- `acapi.api.cloudinary.com`
+- `ace-tate-res.cloudinary.com`
+- `ad5.san.cloudinary.com`
+- `ai-exp-pages.cloudinary.com`
+- `athenam.cloudinary.com`
+- `avihay-test.cloudinary.com`
+- `bulgari.san.cloudinary.com`
+- `ca.cdn.cloudinary.com`
+- `catalog.san.cloudinary.com`
+- `code.cloudinary.com`
+- `collab.cloudinary.com`
+- `com.cloudinary.com`
+- `comress.cloudinary.com`
+- `coopcdn.san.cloudinary.com`
+- `cr-res-2.cloudinary.com`
+- `cveapi.cloudinary.com`
+- `dam.cloudinary.com`
+- `dbw.api.cloudinary.com`
+- `degreed.san.cloudinary.com`
+- `demo.cloudinary.com`
+- `desenio-res.cloudinary.com`
+- `es.multicdn.cloudinary.com`
+- `fcm.ca.san.cloudinary.com`
+- `fiverr-res.cloudinary.com`
+- `fls.com.san.cloudinary.com`
+- `flyrweb-res.cloudinary.com`
+- `ftp.cloudinary.com`
+- `gitlab.cloudinary.com`
+- `gits.san.cloudinary.com`
+- `grieg.san.cloudinary.com`
+- `h3.cloudinary.com`
+- `hoelzle.san.cloudinary.com`
+- `home.api.cloudinary.com`
+- `home.cloudinary.com`
+- `homepage1.cloudinary.com`
+- `imagea.cloudinary.com`
+- `in.cdn.cloudinary.com`
+- `italist.san.cloudinary.com`
+- `jp.multicdn.cloudinary.com`
+- `jupyterw.cloudinary.com`
+- `limango-res.cloudinary.com`
+- `linke.cloudinary.com`
+- `liveupdate.cloudinary.com`
+- `loginu.cloudinary.com`
+- `logsu.cloudinary.com`
+- `lomaxdk.san.cloudinary.com`
+
+### Removed on cloudinary.com
 - `253aapio.cloudinary.com`
 - `3ares.cloudinary.com`
-- `a1.cd-res.cloudinary.com`
-- `api-jp.cloudinary.com`
-- `api-staging.cloudinary.com`
 - `apiu.res.cloudinary.com`
-- `app.cloudinary.com`
 - `asset-share.cloudinary.com`
-- `avpn.cloudinary.com`
-- `blog.cloudinary.com`
 - `bookmarks.cloudinary.com`
 - `breslev.san.cloudinary.com`
-- `calendar.cloudinary.com`
-- `capi.cloudinary.com`
 - `cdn.com.san.cloudinary.com`
 - `check.cloudinary.com`
 - `checkq.cloudinary.com`
-- `cim-api-uat.cloudinary.com`
-- `cld-cdn-qa.cloudinary.com`
-- `cloudfront.cloudinary.com`
 - `co.il.cdn.cloudinary.com`
 - `co.nz.san.cloudinary.com`
 - `co.uk.cdn.cloudinary.com`
 - `code.san.cloudinary.com`
 - `com.san.cloudinary.com`
-- `community.cloudinary.com`
 - `comune.cloudinary.com`
-- `console.cloudinary.com`
 - `consul.api.cloudinary.com`
 - `cp.cloudinary.com`
-- `dbc.res.cloudinary.com`
-- `delivery.cloudinary.com`
-- `demo-res.cloudinary.com`
+- `crm.cloudinary.com`
 - `dev.san.cloudinary.com`
 - `dl-res.cloudinary.com`
 - `dlg.dk.san.cloudinary.com`
-- `dnmg.res.cloudinary.com`
 - `dnsc.res.cloudinary.com`
-- `email.cloudinary.com`
-- `eod-apps.cloudinary.com`
-- `eod-console.cloudinary.com`
-- `eod-dam.cloudinary.com`
 - `eod-dame.cloudinary.com`
-- `eod-res.cloudinary.com`
-- `eod-widgets.cloudinary.com`
-- `events.cloudinary.com`
-- `fapi.cloudinary.com`
-- `fastly.cloudinary.com`
 - `fifacom-res.cloudinary.com`
 - `fse.san.cloudinary.com`
+- `gitu.api.cloudinary.com`
+- `global.cloudinary.com`
+- `gum.cloudinary.com`
+- `gwm.api.cloudinary.com`
+- `gws-qaq.cloudinary.com`
+- `iamo.api.cloudinary.com`
+- `igp-res.cloudinary.com`
+- `io.multicdn.cloudinary.com`
+- `ion.cloudinary.com`
+- `ipv6.cloudinary.com`
+- `ipv6a.cloudinary.com`
+- `lashoe.san.cloudinary.com`
+- `linearba.cloudinary.com`
+- `lomaxdk-res.cloudinary.com`
+- `m9.res.cloudinary.com`
+- `maskaw.cloudinary.com`
+- `mdm.san.cloudinary.com`
+- `media3-cdn.cloudinary.com`
+- `ml.cloudinary.com`
+- `mle.res.cloudinary.com`
+- `mli.api.cloudinary.com`
+- `mo-api-eu.cloudinary.com`
+- `moderation.cloudinary.com`
+- `mx01.cloudinary.com`
+- `mysql.cloudinary.com`
 
-### Removed on cloudinary.com
-- `2fbigoven-res.cloudinary.com`
-- `2fnordot-res.cloudinary.com`
-- `4g.cloudinary.com`
-- `a4g.res.cloudinary.com`
-- `acapiu.cloudinary.com`
-- `ace-tate-res.cloudinary.com`
-- `actiondam-res.cloudinary.com`
-- `adacpresse-res.cloudinary.com`
-- `admin-nightly.cloudinary.com`
-- `admin-staging.cloudinary.com`
-- `ai-exp-pages.cloudinary.com`
-- `akamaia.cloudinary.com`
-- `alchemyapi-res.cloudinary.com`
-- `allseated-res.cloudinary.com`
-- `altaria.san.cloudinary.com`
-- `amaroecp-res.cloudinary.com`
-- `amarotech-res.cloudinary.com`
-- `amitlonen-res.cloudinary.com`
-- `analytics-api.cloudinary.com`
-- `answ-cld-res.cloudinary.com`
-- `antonclub-res.cloudinary.com`
-- `api-eum.cloudinary.com`
-- `apii.san.cloudinary.com`
-- `app-gallery7.cloudinary.com`
-- `appcloud-res.cloudinary.com`
-- `authy.widget.cloudinary.com`
-- `bbsa.res.cloudinary.com`
-- `be.multicdn.cloudinary.com`
-- `bizhint.san.cloudinary.com`
-- `blogk.com.san.cloudinary.com`
-- `cazoo-res.cloudinary.com`
-- `ch.cdn.cloudinary.com`
-- `ch.san.cloudinary.com`
-- `chinapock.san.cloudinary.com`
-- `cloud.cdn.cloudinary.com`
-- `cnbc-ressh.cloudinary.com`
-- `co.uk.san.cloudinary.com`
-- `collab-edgeu.cloudinary.com`
-- `companyu.cloudinary.com`
-- `coopcdn-res.cloudinary.com`
-- `cpanela.cloudinary.com`
-- `crme.api.cloudinary.com`
-- `cuplogin.tcp.cloudinary.com`
-- `cveapiy.cloudinary.com`
-- `degreedw.san.cloudinary.com`
-- `dev.cdn.cloudinary.com`
-- `developer.cloudinary.com`
-- `devproxya.san.cloudinary.com`
-- `dmarc.api.cloudinary.com`
-- `dnma.san.cloudinary.com`
-
-### Removed on datadome.co
+### New on datadome.co
 - `account-api.datadome.co`
 - `api-akamai.datadome.co`
+- `api-alb-ap-east-1.datadome.co`
+- `api-alb-eu-west-1.datadome.co`
+- `api-alb-eu-west-2.datadome.co`
+- `api-alb-us-east-1.datadome.co`
+- `api-alb-us-east-2.datadome.co`
+- `api-alb-us-iowa-1.datadome.co`
+- `api-alb-us-utah-1.datadome.co`
+- `api-alb-us-west-1.datadome.co`
+- `api-ap-east-1.datadome.co`
+- `api-ap-south-1.datadome.co`
 - `api-app.datadome.co`
+- `api-cdn.datadome.co`
+- `api-edgio.datadome.co`
+- `api-eu-france-1.datadome.co`
+- `api-eu-south-1.datadome.co`
+- `api-fastly.datadome.co`
 - `api-js.datadome.co`
 - `api-sdk.datadome.co`
-- `api-sfcc.datadome.co`
-- `api-staff.datadome.co`
+- `api-us-carolina-1.datadome.co`
+- `api-us-east-2.datadome.co`
+- `api-us-iowa-1.datadome.co`
+- `api-us-texas-1.datadome.co`
+- `api-us-west-1.datadome.co`
+- `api-us-west-2.datadome.co`
 - `api.datadome.co`
-- `api.prod.datadome.co`
 - `app.datadome.co`
+- `auth-staging.datadome.co`
 - `auth.datadome.co`
-- `bo.datadome.co`
+- `auth0-dev.tooling.datadome.co`
 - `bot-tester.datadome.co`
 - `careers.datadome.co`
 - `ct.datadome.co`
-- `dd.staging.datadome.co`
+- `customer-api-app.datadome.co`
+- `customer-api.datadome.co`
 - `docs.datadome.co`
 - `email.datadome.co`
-- `flink-gcp.datadome.co`
-- `flink.datadome.co`
-- `go.datadome.co`
-- `img.mailing.datadome.co`
-- `offsite26.datadome.co`
-- `preprod-js.datadome.co`
-- `prometheus.datadome.co`
-- `r.mailing.datadome.co`
-- `status.datadome.co`
-- `support.datadome.co`
-- `test-fpjs.datadome.co`
-- `trust.datadome.co`
+- `es-datalake-eu2.datadome.co`
+- `haproxy1.datadome.co`
+- `img.newsletter.datadome.co`
+- `mdu.sdbx-sre.datadome.co`
+- `package.datadome.co`
+- `staff.datadome.co`
+- `static.datadome.co`
 - `www.datadome.co`
 
-- _datadome.co discovery: subfinder timed out on datadome.co_
 ### New on decathlon.com
-- `assessment.decathlon.com`
-- `bienvenido.decathlon.com`
+- `csr.decathlon.com`
+- `cx.event.decathlon.com`
+- `elearning.decathlon.com`
+- `newspro.decathlon.com`
+- `onefront.decathlon.com`
+- `password.decathlon.com`
+- `pro.decathlon.com`
+- `reviews.decathlon.com`
+- `roomf.decathlon.com`
+- `search.decathlon.com`
+- `url7551.decathlon.com`
+
+### Removed on decathlon.com
 - `click.bimi.decathlon.com`
 - `cloud.bimi.decathlon.com`
 - `cominterne.decathlon.com`
 - `email.mddr.decathlon.com`
-- `feedback.decathlon.com`
 - `free.decathlon.com`
-- `infopro.decathlon.com`
 - `ld.decathlon.com`
-- `myfcs.decathlon.com`
-- `partner.decathlon.com`
+- `openvoice.decathlon.com`
 - `r.otp1.decathlon.com`
 - `r.otp2.decathlon.com`
+- `rental.decathlon.com`
 - `share.decathlon.com`
-
-### Removed on decathlon.com
-- `cx.event.decathlon.com`
-- `elearning.decathlon.com`
-- `icheck.decathlon.com`
-- `newspro.decathlon.com`
-- `roomf.decathlon.com`
-- `search.decathlon.com`
-- `share-cor.decathlon.com`
-- `tracking.decathlon.com`
-- `url7551.decathlon.com`
+- `support.decathlon.com`
+- `t.design.decathlon.com`
 
 ### New on doctolib.com
+- `0--fourth-dimensionally-foros-0004july02tyd2009.cms-staging.doctolib.com`
+- `0-0-0-0-0-0-0-0-000-n17-9-april-94novell-94-94.cms-staging.doctolib.com`
+- `admin-dev.doctolib.com`
+- `agenda-interf.doctolib.com`
+- `agenda.doctolib.com`
+- `auth-interf.doctolib.com`
+- `auth.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-0-0-000-87-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-0-0-000-n17ng4000-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-0-000-87textw83000-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-0-000-n17-org-94-94-94-pav.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-000-1976-666-86-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n11-94-94-945.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n17-2d74-94-94-book-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n17-ng9-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n17000-085-b8b-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n176c-lync-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n179-pr-94000-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-babel-94-1-mmipv8-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-000-80-cms-book000-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-000-80-cmso000-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-000-n11-94evelynn-94000-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-000-n17-n10000-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-000-n17v5-95-000-78-org-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-10-production-wc-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-86-w12008-83-facebook-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-86000-94-940-000-87-prn.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-86000-94-940-000-87n14.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-86000-94-940-000-87s0000.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-86000-94-940-000-n17.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-90-0-0-0-000-87-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-90-0-000-n17-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-90-0-000-n17-chat-94-94.cms-staging.doctolib.com`
+- `b0b-fr0--fourth-dimensionally-foros-0178july.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-0-0-0-0-000-n17-s0-94-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-0-0-0-000-n175-pr000-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-0-0-000-1976-666-86-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-0-0-w103-94-94-book-94-w96.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-0-0-w103-94-94-book-94n1706.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-0-0-w103-94-94-book-94staging0.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-0-000-87-95-000-78000-94-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-0-4-n175-pr000-94-94-95-000-78.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-0-imap5d-98-1-ing4-94-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-0-imap5d000-98-1-i-94-book-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-0-mining000-93-000-74-94-94-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-000-80-cms-1-mmipv8-94-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-000-80-cmstext-1-mmipv8-94-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-000-87-94-94production134-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-000-87-95-000-78-94-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-000-n17-tur-94-94-1-game-text5.cms-staging.doctolib.com`
+
+### Removed on doctolib.com
 - `0--fourth-dimensionally-foros-0000001-n30.cms-staging.doctolib.com`
+- `0--fourth-dimensionally-foros-0009-ids.cms-staging.doctolib.com`
 - `0--fourth-dimensionally-foros-0178000-n30-6.cms-staging.doctolib.com`
 - `agenda-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-0-0-0-000-90-b1b000-94-94-94.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-0-0-w103-94ng4-94-94.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-0-0-w98000-94-94-94.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-0-000-77-b1b-94-94-book-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n11-94-94-942d74.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n11-94-94-94991.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-0-000-n11-94-94-94ng9.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-0-000-n17-9-april-94-94-94.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-0-000-n17-n10000-94-94000-94.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-0-000-n17-org-94-94-1-mmipv8.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n17-sp-94novell-94-94.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-0-w103000-95-000-78-94000-94.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-0-w98000-94-949-pr-1-mmipv8.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-000-197-1-gamen173-94-94.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-000-84-imap3d-94-94-book-94.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-000-86000-94-94-1-game-text5.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-000-87-94-94-chat-95-000-78.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-000-n17-org-94-94-1-mmipv8.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-w103-94-8-production000-94.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-w103-94-w12w91000-94.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-0-w103000-94-94000-86-facebook.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-0-w98000-94-94-1-game-text5.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-000-0-0-000-80-cms-94-94-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-000-86000-94-940-000-87-mining.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-221mining117-94-94.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-000-86000-94-946-production-wc.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-87000-94-94mining4.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-87000-94000-95-000-78-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-87textproduction133-94-94.cms-staging.doctolib.com`
+- `b0b-fr-0-0-0-0-0-0-0-000-90-adatactibnc3-94-94.cms-staging.doctolib.com`
 - `b0b-fr-0-0-0-0-0-0-0-000-90-b1b-n1706-1-mmipv8-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-0-000-87-1-mmipv8-94-94.cms-staging.doctolib.com`
 - `b0b-fr0-0-0-0-0-0-0-0-0-000-n17-ng9-94-94000-94.cms-staging.doctolib.com`
 - `b0b-fr0-0-0-0-0-0-0-0-0-000-n17-tur-94ng4-94-94.cms-staging.doctolib.com`
 - `b0b-fr0-0-0-0-0-0-0-0-0-000-n17inte-94000-94-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-0-0-imap5d-94000-94-94.cms-staging.doctolib.com`
 - `b0b-fr0-0-0-0-0-0-0-0-0-w103-94evelynn-94-book-94.cms-staging.doctolib.com`
 - `b0b-fr0-0-0-0-0-0-0-0-0-w98-1-game-text5-94000-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-000-80-cms-94-94v5-95-000-78.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-000-86-1-game-text5ng4-94-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-000-n17-sp-94-94-book-94.cms-staging.doctolib.com`
 - `b0b-fr0-0-0-0-0-0-0-0-000-n17-sp000-94-94-94.cms-staging.doctolib.com`
 - `b0b-fr0-0-0-0-0-0-0-0-000-n175-pr-94-94-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-w98-94evelynn-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-00-production-12-201-94-94.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-000-085-b15b-94-94-1-gamen173.cms-staging.doctolib.com`
 - `b0b-fr0-0-0-0-0-0-0-000-86000-94-1-mmipv8-94.cms-staging.doctolib.com`
 - `b0b-fr0-0-0-0-0-0-0-000-87-94-94-3-085-b1b-text10.cms-staging.doctolib.com`
 - `b0b-fr0-0-0-0-0-0-0-000-87000-94-94n176.cms-staging.doctolib.com`
+- `b0b-fr0-0-0-0-0-0-0-000-90-8symyqtb7kmw6ws-94-94.cms-staging.doctolib.com`
 - `b0b-fr0-0-0-0-0-0-0-000-90-b1b-94-940-000-n17logs.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-000-90-b1b-94-94logs.cms-staging.doctolib.com`
 - `helpdesk.doctolib.com`
-- `m-staging.doctolib.com`
 - `rs-static-events.doctolib.com`
-- `sync-gateway-dev.doctolib.com`
-- `sync-gateway-staging.doctolib.com`
-- `test-failures-staging.doctolib.com`
-- `wildcard.cms-staging.doctolib.com`
-
-### Removed on doctolib.com
-- `0--fourth-dimensionally-foros-0001-idsmining121.cms-staging.doctolib.com`
-- `0--fourth-dimensionally-foros-0001july-0-2-n170-w96.cms-staging.doctolib.com`
-- `0--fourth-dimensionally-foros-0009-idsproduction10.cms-staging.doctolib.com`
-- `0--fourth-dimensionally-foros-0178000-n10.cms-staging.doctolib.com`
-- `adp-dev-aws-fr-par-1.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-0-0-000-n17-org-94-94-94-pav.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-0-0-000-n17-org-94-94-94999.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n11-94-94-9484.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n17-2d74-94-94-book-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n17-94-94-1-mmipv8.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n17-ng9-94-94-api6-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n17-tur-94-94-api6-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-0-000-n17atlas-94-94-tur-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-0-7-n177-86-imap3d-94-94-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-000-80-cms-book000-94-94-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-000-n11-94-94-1-mmipv8.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-000-n17-n10000-94-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-000-n17-tur-94-94-book-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-000-n175-prnotes-94-94-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-mining000-94-1-mmipv8-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-w103-94-94-n1706-1-gamen173.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-w103-94-94-text10.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-0-w103-94-web2-000-82-news-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-000-0-000-n17-ng9-94-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-000-10-production-wcz-94-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-000-86000-94-940-000-87-78m.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-000-86000-94-940-000-87-94000.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-000-90-0-000-87-94-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-000-90-0-000-n17imap0d-94-94.cms-staging.doctolib.com`
-- `b0b-fr-0-0-0-0-0-0-0-000-90-4-085-b6b-94-94.cms-staging.doctolib.com`
-- `b0b-fr-1.cms-staging.doctolib.com`
-- `b0b-fr0--fourth-dimensionally-foros-0178000-n30.cms-staging.doctolib.com`
-- `b0b-fr0--fourth-dimensionally-foros-0190-ids.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-0-0-0-0-w103-1-mmipv8-94-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-0-0-000-n17-n22logs-94-94-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-0-0-w103-94-94-book-94-n17v5.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-0-0-w103-94-94-book-9418.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-0-0-w98000-94novell-94-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-0-000-87-89-facebookng4-94-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-0-000-n17-68cas000-94-94-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-0-000-n17-tur000-94-ng9-94-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-0-000-n7-94000-94-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-0-imap5d000-98-1-i-94-book-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-000-n17-tur-94-94-tur-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-0-000-n17-tur-94-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-000-5tyd2009-94-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-000-75-imap3d000-94-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-000-77-b1b-94-94.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-000-77-b1b-94-94textw87.cms-staging.doctolib.com`
-- `b0b-fr0-0-0-0-0-0-0-000-90-0-000-n17-web-94-94.cms-staging.doctolib.com`
 
 ### New on fivetran.com
-- `gcp.polaris.fivetran.com`
-- `ldp.orchestrator.fivetran.com`
+- `events.qe.fivetran.com`
+- `qe.fivetran.com`
+- `webhooks.qe.fivetran.com`
+
+### Removed on fivetran.com
 - `temporal-codec.fivetran.com`
 - `transformations.qe.fivetran.com`
 
-### Removed on fivetran.com
-- `aws.polaris.fivetran.com`
-- `partners.fivetran.com`
-- `services.fivetran.com`
-
 ### New on glean.com
+- `cedar-be.glean.com`
+- `drips-be.glean.com`
+- `ebay-be.glean.com`
+- `gxs-be.glean.com`
+- `human-be.glean.com`
+- `lead-be.glean.com`
+- `login.glean.com`
+- `p66-be.glean.com`
+- `seviora.glean.com`
+- `trust.glean.com`
+
+### Removed on glean.com
 - `alloy-be.glean.com`
 - `clari-be.glean.com`
 - `clear-be.glean.com`
@@ -543,62 +571,107 @@ Targets: 23
 - `revio-be.glean.com`
 - `status.glean.com`
 
-### Removed on glean.com
-- `airbnb.glean.com`
-- `lg2-be.glean.com`
-- `optus-be.glean.com`
-- `wyze-be.glean.com`
-
 ### New on ibotta.com
-- `api.gary.ibotta.com`
-- `email.ibotta.com`
-- `go.ibotta.com`
-- `home.dev.ibotta.com`
-- `s.ibotta.com`
-- `solstice.ibotta.com`
-- `support.ibotta.com`
-- `www.ibotta.com`
-
-### Removed on ibotta.com
 - `300661.ibotta.com`
-- `cs-k8sweb.ibotta.com`
-- `dashboard.ibotta.com`
 - `dyn-seg.ibotta.com`
+- `help.ibotta.com`
 - `ipn.ibotta.com`
 - `legal.ibotta.com`
+- `link.dev.ibotta.com`
+- `link.ibotta.com`
+- `looker.ibotta.com`
+- `media.ibotta.com`
 - `o.ibotta.com`
 - `pay.ibotta.com`
 - `register.ibotta.com`
+- `static.ibotta.com`
 - `trust.ibotta.com`
 
+### Removed on ibotta.com
+- `api.gary.ibotta.com`
+- `community.ibotta.com`
+- `ipn-auth.ibotta.com`
+
 ### New on ifood.com.br
+- `12.ifood.com.br`
+- `4242.ifood.com.br`
+- `akamai5.ifood.com.br`
+- `allin7.ifood.com.br`
+- `baco.ifood.com.br`
+- `baiduu.ifood.com.br`
+- `boxa.ifood.com.br`
+- `bqvndd9.ifood.com.br`
+- `bupaqe.ifood.com.br`
+- `cf1g.ifood.com.br`
+- `class.ifood.com.br`
+- `collect.ifood.com.br`
+- `comunee.ifood.com.br`
+- `configm.ifood.com.br`
+- `connect.ifood.com.br`
+- `core.ifood.com.br`
+- `corp.ifood.com.br`
+- `feeds.ifood.com.br`
+- `forums.ifood.com.br`
+- `grc2go.ifood.com.br`
+- `httpe.ifood.com.br`
+- `iimahd.ifood.com.br`
+- `jarvis.ifood.com.br`
+- `labs.ifood.com.br`
+- `local9.ifood.com.br`
+- `maven.ifood.com.br`
+- `menu.ifood.com.br`
+- `moony.ifood.com.br`
+- `mvn.ifood.com.br`
+- `myhome.ifood.com.br`
+- `naoca.ifood.com.br`
+- `nn.ifood.com.br`
+- `order.ifood.com.br`
+- `pabx.ifood.com.br`
+- `people.ifood.com.br`
+- `portal.ifood.com.br`
+- `portsl.ifood.com.br`
+- `ppls.ifood.com.br`
+- `prod.ifood.com.br`
+- `pub.ifood.com.br`
+- `qrcode.ifood.com.br`
+- `resume.ifood.com.br`
+- `rfleet.ifood.com.br`
+- `shop.ifood.com.br`
+- `sira.ifood.com.br`
+- `sites.ifood.com.br`
+- `ssl.ifood.com.br`
+- `static.ifood.com.br`
+- `uni.ifood.com.br`
+- `user.ifood.com.br`
+
+### Removed on ifood.com.br
 - `42.ifood.com.br`
 - `achapaa.ifood.com.br`
 - `acp.ifood.com.br`
 - `ad.ifood.com.br`
+- `appq.ifood.com.br`
 - `arabiag.ifood.com.br`
-- `baidu.ifood.com.br`
 - `bebeluo.ifood.com.br`
 - `bfci.ifood.com.br`
 - `blogsg.ifood.com.br`
 - `bobs.ifood.com.br`
-- `cdn.ifood.com.br`
-- `cdng.ifood.com.br`
 - `clik.ifood.com.br`
 - `club.ifood.com.br`
-- `content.ifood.com.br`
+- `config.ifood.com.br`
+- `cp.ifood.com.br`
 - `cristal.ifood.com.br`
+- `cs.ifood.com.br`
 - `cse.ifood.com.br`
 - `cse5.ifood.com.br`
-- `de.ifood.com.br`
+- `dc42.ifood.com.br`
 - `dev42.ifood.com.br`
+- `didio.ifood.com.br`
 - `disrupt.ifood.com.br`
+- `dominos.ifood.com.br`
 - `dowload.ifood.com.br`
-- `duoo.ifood.com.br`
+- `dowlood.ifood.com.br`
 - `elbwww.ifood.com.br`
 - `entrega.ifood.com.br`
-- `es.ifood.com.br`
-- `eu.ifood.com.br`
 - `ewww.ifood.com.br`
 - `ff.ifood.com.br`
 - `filesk.ifood.com.br`
@@ -608,139 +681,162 @@ Targets: 23
 - `foruma.ifood.com.br`
 - `forums9.ifood.com.br`
 - `galetus.ifood.com.br`
+- `global.ifood.com.br`
 - `h2.ifood.com.br`
-- `h6.ifood.com.br`
 - `hh.ifood.com.br`
 - `icemela.ifood.com.br`
 - `iimahds.ifood.com.br`
 - `imagesa.ifood.com.br`
-- `k2.ifood.com.br`
 - `k5.ifood.com.br`
+- `local.ifood.com.br`
+- `naocag.ifood.com.br`
 - `newg.ifood.com.br`
 - `pim.ifood.com.br`
-- `posy.ifood.com.br`
+- `popi.ifood.com.br`
 - `rascal.ifood.com.br`
-- `sira42.ifood.com.br`
-- `sitese.ifood.com.br`
-
-### Removed on ifood.com.br
-- `0.ifood.com.br`
-- `2.ifood.com.br`
-- `a.ifood.com.br`
-- `akamai.ifood.com.br`
-- `allin.ifood.com.br`
-- `baco.ifood.com.br`
-- `bip.ifood.com.br`
-- `bis7.ifood.com.br`
-- `blogs.ifood.com.br`
-- `box.ifood.com.br`
-- `boxa.ifood.com.br`
-- `braz.ifood.com.br`
-- `bupaqe.ifood.com.br`
-- `collect.ifood.com.br`
-- `com.ifood.com.br`
-- `compute.ifood.com.br`
-- `corp.ifood.com.br`
-- `demo.ifood.com.br`
-- `dev42u.ifood.com.br`
-- `didioi.ifood.com.br`
-- `en.ifood.com.br`
-- `f.ifood.com.br`
-- `files.ifood.com.br`
-- `gendai.ifood.com.br`
-- `groups.ifood.com.br`
-- `httpe.ifood.com.br`
-- `hubc.ifood.com.br`
-- `jarvis.ifood.com.br`
-- `labs.ifood.com.br`
-- `local9.ifood.com.br`
-- `mamma.ifood.com.br`
-- `maven.ifood.com.br`
-- `mpke.ifood.com.br`
-- `naoca.ifood.com.br`
-- `ngw.ifood.com.br`
-- `nn.ifood.com.br`
-- `portal.ifood.com.br`
-- `pos.ifood.com.br`
-- `pup.ifood.com.br`
-- `qrcode.ifood.com.br`
-- `r.ifood.com.br`
-- `resume.ifood.com.br`
-- `s3.ifood.com.br`
-- `shop.ifood.com.br`
-- `sira.ifood.com.br`
-- `static.ifood.com.br`
-- `um.ifood.com.br`
-- `up.ifood.com.br`
-- `usersk.ifood.com.br`
-- `w42.ifood.com.br`
+- `seguro.ifood.com.br`
 
 ### New on indeed.com
-- `ampxy.indeed.com`
-- `c76.s3.indeed.com`
-- `co.indeed.com`
-- `india.indeed.com`
-- `points.indeed.com`
-- `resume.indeed.com`
+- `accounts.indeed.com`
+- `adcentral.indeed.com`
+- `alma.indeed.com`
+- `analytics.indeed.com`
+- `billing.indeed.com`
+- `c50.s3.indeed.com`
+- `ca-jm.indeed.com`
+- `dd.indeed.com`
+- `dk.conv.indeed.com`
+- `edge.indeed.com`
+- `id.indeed.com`
+- `it.indeed.com`
+- `kimoyo.indeed.com`
+- `mx.conv.indeed.com`
+- `myoffice.indeed.com`
+- `nl.conv.indeed.com`
+- `ph.indeed.com`
+- `pt.conv.indeed.com`
+- `qr.indeed.com`
+- `solo-cpq.indeed.com`
+- `support.indeed.com`
 
 ### Removed on indeed.com
-- `campus.indeed.com`
-- `cmsapi.indeed.com`
-- `co.conv.indeed.com`
-- `compare.indeed.com`
-- `content.indeed.com`
-- `dk.indeed.com`
-- `encserv.indeed.com`
-- `go.indeed.com`
-- `gotajob.indeed.com`
-- `it.conv.indeed.com`
-- `jobfair.indeed.com`
-- `legal.indeed.com`
-- `match.indeed.com`
-- `om.indeed.com`
-- `rooms.indeed.com`
-- `sms.indeed.com`
-
-### New on intercom.com
-- `meet.intercom.com`
-- `mi.intercom.com`
-- `out.intercom.com`
-- `pioneer.intercom.com`
-- `preferences.intercom.com`
-- `rsvp.pioneer.intercom.com`
-- `sales.intercom.com`
-- `services.intercom.com`
-- `staging.intercom.com`
-- `status.intercom.com`
-- `surge.intercom.com`
-- `vercel.intercom.com`
-- `watch.intercom.com`
-- `women.intercom.com`
-- `www.intercom.com`
+- `ampxy.indeed.com`
+- `apis.indeed.com`
+- `apply.indeed.com`
+- `ar.conv.indeed.com`
+- `at.indeed.com`
+- `au.indeed.com`
+- `b.indeed.com`
+- `be.conv.indeed.com`
+- `be.indeed.com`
+- `beseen.indeed.com`
+- `blog.au.indeed.com`
+- `br.conv.indeed.com`
+- `bugs.indeed.com`
+- `c76.s3.indeed.com`
+- `ca.conv.indeed.com`
+- `ca.indeed.com`
+- `central.indeed.com`
+- `ch.indeed.com`
+- `check.indeed.com`
+- `clear.indeed.com`
+- `cn.indeed.com`
+- `co.indeed.com`
+- `conv.indeed.com`
+- `cz.indeed.com`
+- `engage.indeed.com`
+- `events.indeed.com`
+- `evolve.indeed.com`
+- `fr.indeed.com`
+- `hk.indeed.com`
+- `ie.indeed.com`
+- `india.indeed.com`
+- `itad.indeed.com`
+- `jp.indeed.com`
+- `js.indeed.com`
+- `kw.indeed.com`
+- `link.indeed.com`
+- `ma.indeed.com`
+- `mgs-qa.indeed.com`
+- `nl.indeed.com`
+- `offers.indeed.com`
+- `pay.indeed.com`
+- `points.indeed.com`
+- `press.indeed.com`
+- `prime.indeed.com`
+- `pt.indeed.com`
+- `pxl.indeed.com`
+- `refer.indeed.com`
+- `resume.indeed.com`
+- `ru.indeed.com`
+- `secure.indeed.com`
 
 ### Removed on intercom.com
-- `help.legal.corp.intercom.com`
-- `transformation.intercom.com`
+- `meet.intercom.com`
 
-### New on klaviyo.com
-- `experiences.klaviyo.com`
-- `marketplace.klaviyo.com`
+### Removed on klaviyo.com
 - `reviews-app.klaviyo.com`
 - `reviews-new.klaviyo.com`
 
-### Removed on klaviyo.com
-- `mcp.klaviyo.com`
-- `stag.klaviyo.com`
-
 ### New on okx.com
-- `staticaws.okx.com`
-
-### Removed on okx.com
-- `mysignicat.okx.com`
-- `mywspripap.okx.com`
 - `xlayerrpc.okx.com`
 
+### Removed on okx.com
+- `tvpap.okx.com`
+
 ### New on shopify.com
+- `169.shopify.com`
+- `180.shopify.com`
+- `194.shopify.com`
+- `2.shopify.com`
+- `2017.shopify.com`
+- `80.shopify.com`
+- `adws.shopify.com`
+- `afs.shopify.com`
+- `alis9.shopify.com`
+- `ams2.shopify.com`
+- `anand.shopify.com`
+- `ani.shopify.com`
+- `api.shopify.com`
+- `app.shopify.com`
+- `apps.shopify.com`
+- `arb.shopify.com`
+- `asc.shopify.com`
+- `bcs.shopify.com`
+- `bds.shopify.com`
+- `blog.shopify.com`
+- `br.shopify.com`
+- `bubba.shopify.com`
+- `burst.shopify.com`
+- `cbf37.shopify.com`
+- `cdn.shopify.com`
+- `cdn2.shopify.com`
+- `chat.shopify.com`
+- `cla.shopify.com`
+- `core.shopify.com`
+- `cs.shopify.com`
+- `cs5.shopify.com`
+- `csd.shopify.com`
+- `csp.shopify.com`
+- `ctrl.shopify.com`
+- `czat3.shopify.com`
+- `dac.shopify.com`
+- `dapup.shopify.com`
+- `data.shopify.com`
+- `david.shopify.com`
+- `dc2.shopify.com`
+- `dc4.shopify.com`
+- `dev.shopify.com`
+- `devs.shopify.com`
+- `dg.shopify.com`
+- `di.shopify.com`
+- `divay.shopify.com`
+- `dk.shopify.com`
+- `dns22.shopify.com`
+- `dns6.shopify.com`
+- `docs.shopify.com`
+
+### Removed on shopify.com
 - `061.shopify.com`
 - `2017q.shopify.com`
 - `ab.shopify.com`
@@ -792,58 +888,7 @@ Targets: 23
 - `eagle.shopify.com`
 - `ecampus.shopify.com`
 
-### Removed on shopify.com
-- `157.shopify.com`
-- `53.shopify.com`
-- `8591w.shopify.com`
-- `alpine.shopify.com`
-- `amcs.shopify.com`
-- `amos.shopify.com`
-- `aol.shopify.com`
-- `audio.shopify.com`
-- `avon.shopify.com`
-- `b23.shopify.com`
-- `barton7.shopify.com`
-- `basij.shopify.com`
-- `bert.shopify.com`
-- `bk2.shopify.com`
-- `blaze.shopify.com`
-- `blog1.shopify.com`
-- `bomgar.shopify.com`
-- `booki.shopify.com`
-- `bouncer.shopify.com`
-- `bpa.shopify.com`
-- `bruno.shopify.com`
-- `c2.shopify.com`
-- `careers.shopify.com`
-- `casas.shopify.com`
-- `cc.shopify.com`
-- `cdm.shopify.com`
-- `chrome.shopify.com`
-- `ciao.shopify.com`
-- `claire.shopify.com`
-- `clara.shopify.com`
-- `claudea.shopify.com`
-- `cms.shopify.com`
-- `college.shopify.com`
-- `compras.shopify.com`
-- `cosmicg.shopify.com`
-- `cougarm.shopify.com`
-- `crl.shopify.com`
-- `crl2.shopify.com`
-- `cstest7.shopify.com`
-- `d11.shopify.com`
-- `d3.shopify.com`
-- `d4.shopify.com`
-- `dc4.shopify.com`
-- `dcode.shopify.com`
-- `ddl.shopify.com`
-- `demo19.shopify.com`
-- `desa5.shopify.com`
-- `desk.shopify.com`
-- `dev47.shopify.com`
-- `devops7.shopify.com`
-
-### New on superdrug.com
+### Removed on superdrug.com
+- `clickom.superdrug.com`
 - `media-s1.superdrug.com`
 

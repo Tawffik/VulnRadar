@@ -1,4 +1,12 @@
-airbnb.glean.com
-lg2-be.glean.com
-optus-be.glean.com
-wyze-be.glean.com
+alloy-be.glean.com
+clari-be.glean.com
+clear-be.glean.com
+cta-be.glean.com
+ddn-be.glean.com
+depop-be.glean.com
+ggb-be.glean.com
+klsip-be.glean.com
+ltk.glean.com
+mlp.glean.com
+revio-be.glean.com
+status.glean.com

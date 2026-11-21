@@ -1,26 +1,21 @@
 {
   "target": "klaviyo.com",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 50,
-  "new_count": 4,
+  "discovered": 200,
+  "live": 48,
+  "new_count": 0,
   "removed_count": 2,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-20T23:18:03.393032+00:00",
-  "new": [
-    "experiences.klaviyo.com",
-    "marketplace.klaviyo.com",
+  "ts": "2026-11-21T13:34:47.701655+00:00",
+  "new": [],
+  "removed": [
     "reviews-app.klaviyo.com",
     "reviews-new.klaviyo.com"
-  ],
-  "removed": [
-    "mcp.klaviyo.com",
-    "stag.klaviyo.com"
   ],
   "baseline_updated": true
 }

@@ -1,2 +1,1 @@
-help.legal.corp.intercom.com
-transformation.intercom.com
+meet.intercom.com

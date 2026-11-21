@@ -2,36 +2,19 @@
   "target": "intercom.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 62,
-  "new_count": 15,
-  "removed_count": 2,
+  "live": 61,
+  "new_count": 0,
+  "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-20T23:17:31.027415+00:00",
-  "new": [
-    "meet.intercom.com",
-    "mi.intercom.com",
-    "out.intercom.com",
-    "pioneer.intercom.com",
-    "preferences.intercom.com",
-    "rsvp.pioneer.intercom.com",
-    "sales.intercom.com",
-    "services.intercom.com",
-    "staging.intercom.com",
-    "status.intercom.com",
-    "surge.intercom.com",
-    "vercel.intercom.com",
-    "watch.intercom.com",
-    "women.intercom.com",
-    "www.intercom.com"
-  ],
+  "ts": "2026-11-21T13:34:08.364863+00:00",
+  "new": [],
   "removed": [
-    "help.legal.corp.intercom.com",
-    "transformation.intercom.com"
+    "meet.intercom.com"
   ],
   "baseline_updated": true
 }

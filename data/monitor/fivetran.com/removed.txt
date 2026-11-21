@@ -1,3 +1,2 @@
-aws.polaris.fivetran.com
-partners.fivetran.com
-services.fivetran.com
+temporal-codec.fivetran.com
+transformations.qe.fivetran.com

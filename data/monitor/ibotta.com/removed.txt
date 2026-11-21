@@ -1,10 +1,3 @@
-300661.ibotta.com
-cs-k8sweb.ibotta.com
-dashboard.ibotta.com
-dyn-seg.ibotta.com
-ipn.ibotta.com
-legal.ibotta.com
-o.ibotta.com
-pay.ibotta.com
-register.ibotta.com
-trust.ibotta.com
+api.gary.ibotta.com
+community.ibotta.com
+ipn-auth.ibotta.com

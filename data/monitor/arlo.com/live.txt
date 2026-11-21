@@ -7,6 +7,7 @@ apiqa.arlo.com
 arlo.com
 arlocs.ar.arlo.com
 arlocs.arlo.com
+au.arlo.com
 beta.arlo.com
 blog.arlo.com
 click.e.arlo.com
@@ -44,6 +45,7 @@ qa.arlo.com
 remote.arlo.com
 revoke-qa.arlo.com
 revoke.arlo.com
+shop-us.arlo.com
 status.arlo.com
 support.arlo.com
 survey.arlo.com
@@ -53,4 +55,3 @@ updates.arlo.com
 view.e.arlo.com
 webrds.arlo.com
 www.arlo.com
-www.us.arlo.com

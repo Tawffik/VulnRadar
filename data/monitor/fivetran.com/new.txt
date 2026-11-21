@@ -1,4 +1,3 @@
-gcp.polaris.fivetran.com
-ldp.orchestrator.fivetran.com
-temporal-codec.fivetran.com
-transformations.qe.fivetran.com
+events.qe.fivetran.com
+qe.fivetran.com
+webhooks.qe.fivetran.com

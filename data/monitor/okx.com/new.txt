@@ -1,1 +1,1 @@
-staticaws.okx.com
+xlayerrpc.okx.com
