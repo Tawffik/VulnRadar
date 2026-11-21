@@ -6,6 +6,8 @@
 
 **Live outputs:** [hunter queue](output/hunter_queue.md) · [subdomain monitor](output/monitor_summary.md) · [reachability diagnostics](output/diagnostics.md)
 
+**Cross-project plan:** [Agentic-Bug-Hunter — Master Plan](https://github.com/Tawffik/Agentic-Bug-Hunter/blob/main/docs/MASTER_PLAN.md)
+
 
 CVE Intelligence + Target Correlation, not a CVE scanner.
 
