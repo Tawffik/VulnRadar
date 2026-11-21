@@ -35,6 +35,8 @@
 
 - **EPSS enrichment** — target-matched CVEs get EPSS score + percentile in `hunter_queue.md`;
   bounded to 50 lookups/run and fail-open if FIRST.org is unavailable. Tests: `pipeline/tests/test_epss.py`.
+- **Public PoC enrichment** — target-matched CVEs get a PoC-in-GitHub count + top repo links;
+  bounded and fail-open. Tests: `pipeline/tests/test_poc_github.py`.
 
 ## Deferred, in priority order
 

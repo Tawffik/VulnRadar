@@ -91,6 +91,7 @@ def render(new_entries: list, updated_entries: list, targets_loaded: int) -> str
             f"**Matched target(s):** {targets_str}",
             f"**Known ransomware use:** {e['ransomware_use']}",
             f"**EPSS:** {e['epss']:.3f} ({e['epss_percentile']:.1%} percentile)" if e.get("epss") is not None else "**EPSS:** unavailable",
+            f"**Public PoCs:** {e['poc_count']} — {', '.join(e.get('poc_repos', [])[:3])}" if e.get("poc_count") else "**Public PoCs:** none found",
             f"**Version check:** {version_labels.get(version_verdict, version_verdict)}",
             f"**Nuclei verification:** {nuclei_str}",
             f"**Date added to KEV:** {e['date_added']}",

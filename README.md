@@ -137,7 +137,7 @@ python3 -m pytest pipeline/tests -q        # full suite (CI runs this)
 python3 pipeline/tests/test_vulnradar.py   # or any single file standalone
 ```
 
-**145 tests.** `test_cve_org.py` runs against a fixture captured from
+**147 tests.** `test_cve_org.py` runs against a fixture captured from
 a LIVE fetch of the real MITRE feed during development. `test_nvd.py`
 and `test_github_advisories.py` run against fixtures built from each
 service's documented schema (not live-verified — see the honesty note
