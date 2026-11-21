@@ -9,12 +9,18 @@ technologies:
   product: PriceSpider
 - vendor: Shopify
   product: Shopify
-- vendor: Swiper
-  product: Swiper
+- vendor: sfdcedge
+  product: sfdcedge
 - vendor: Amazon ELB
   product: Amazon ELB
 - vendor: awselb
   product: awselb
   version: '2.0'
-- vendor: Amazon ALB
-  product: Amazon ALB
+- vendor: Google Cloud
+  product: Google Cloud
+- vendor: Google Cloud CDN
+  product: Google Cloud CDN
+- vendor: Google Cloud Trace
+  product: Google Cloud Trace
+- vendor: Google
+  product: Google

@@ -15,5 +15,21 @@ technologies:
   product: OneTrust
 - vendor: React
   product: React
+- vendor: SheerID
+  product: SheerID
 - vendor: reCAPTCHA
   product: reCAPTCHA
+- vendor: Apache
+  product: HTTP Server
+- vendor: Envoy
+  product: Envoy
+- vendor: PayPal
+  product: PayPal
+- vendor: Google Cloud
+  product: Google Cloud
+- vendor: Google Cloud Storage
+  product: Google Cloud Storage
+- vendor: UploadServer
+  product: UploadServer
+- vendor: istio-envoy
+  product: istio-envoy

@@ -187,6 +187,7 @@
   "stages": {
     "matching": "SUCCESS",
     "epss": "SUCCESS",
+    "poc_github": "SUCCESS",
     "version_check": "SUCCESS",
     "nuclei_verification": "SUCCESS",
     "exposure_scan": "SUCCESS",
