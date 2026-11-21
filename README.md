@@ -1,5 +1,12 @@
 # VulnRadar
 
+[![VulnRadar Tests](https://github.com/Tawffik/VulnRadar/actions/workflows/vulnradar-tests.yml/badge.svg)](https://github.com/Tawffik/VulnRadar/actions/workflows/vulnradar-tests.yml)
+[![VulnRadar Hunt](https://github.com/Tawffik/VulnRadar/actions/workflows/vulnradar-hunt.yml/badge.svg)](https://github.com/Tawffik/VulnRadar/actions/workflows/vulnradar-hunt.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+**Live outputs:** [hunter queue](output/hunter_queue.md) · [subdomain monitor](output/monitor_summary.md) · [reachability diagnostics](output/diagnostics.md)
+
+
 CVE Intelligence + Target Correlation, not a CVE scanner.
 
 VulnRadar tracks **five CVE sources together**, merged by priority
