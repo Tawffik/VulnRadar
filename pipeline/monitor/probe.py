@@ -154,7 +154,14 @@ def probe_hosts(hosts: Iterable[str], timeout: int = DEFAULT_TIMEOUT) -> Tuple[L
         live, err = probe_hosts_httpx(hosts, timeout=timeout)
         meta["method"] = "httpx"
         meta["error"] = err
+        if err is None and live:
+            return sorted(set(live)), meta
         if err is None:
+            # httpx returned an empty successful batch. Some hosts are
+            # HTTP-only (or reject the HTTPS handshake); retry the stdlib
+            # path before declaring the whole target empty.
+            live, _dead = probe_hosts_stdlib(hosts, timeout=timeout)
+            meta["method"] = "httpx+stdlib_fallback"
             return sorted(set(live)), meta
         # fall through on error
 

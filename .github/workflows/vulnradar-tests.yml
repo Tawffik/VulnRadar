@@ -1,6 +1,7 @@
 name: VulnRadar Tests
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
@@ -28,6 +29,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
       - name: Install deps
         run: pip install --quiet pytest pyyaml packaging
       - name: Run test suite

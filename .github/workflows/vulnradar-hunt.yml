@@ -59,8 +59,8 @@ jobs:
     # push to targets/**, pipeline/**, scripts/**, or the workflow itself
     # to trigger normally.
     if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
-    runs-on: sengi-standard-2-ubuntu-2404
-    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -74,6 +74,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
 
       - name: Install dependencies
         run: pip install --quiet pyyaml packaging

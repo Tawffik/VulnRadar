@@ -54,3 +54,18 @@ def test_write_summary(tmp_path):
     text = p.read_text()
     assert "x.com" in text
     assert "a.x.com" in text
+
+
+def test_probe_falls_back_when_httpx_returns_empty(monkeypatch):
+    from pipeline.monitor import probe
+
+    monkeypatch.setattr(probe, "is_httpx_available", lambda: True)
+    monkeypatch.setattr(probe, "probe_hosts_httpx", lambda hosts, timeout=8: ([], None))
+    monkeypatch.setattr(
+        probe,
+        "probe_hosts_stdlib",
+        lambda hosts, timeout=8: (["http-only.example.com"], ["dead.example.com"]),
+    )
+    live, meta = probe.probe_hosts(["http-only.example.com", "dead.example.com"])
+    assert live == ["http-only.example.com"]
+    assert "stdlib_fallback" in meta["method"]
