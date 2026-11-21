@@ -1,11 +1,6 @@
-csr.decathlon.com
-cx.event.decathlon.com
-elearning.decathlon.com
-newspro.decathlon.com
-onefront.decathlon.com
-password.decathlon.com
-pro.decathlon.com
-reviews.decathlon.com
-roomf.decathlon.com
-search.decathlon.com
-url7551.decathlon.com
+analytics.decathlon.com
+cloud.bimi.decathlon.com
+free.decathlon.com
+icheck.decathlon.com
+oco.decathlon.com
+share.decathlon.com

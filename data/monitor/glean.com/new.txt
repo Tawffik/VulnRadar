@@ -1,10 +1,7 @@
-cedar-be.glean.com
-drips-be.glean.com
-ebay-be.glean.com
-gxs-be.glean.com
-human-be.glean.com
-lead-be.glean.com
-login.glean.com
-p66-be.glean.com
-seviora.glean.com
-trust.glean.com
+aida-be.glean.com
+cribl-be.glean.com
+edc-be.glean.com
+jff-be.glean.com
+next.glean.com
+oida-be.glean.com
+qolo-be.glean.com

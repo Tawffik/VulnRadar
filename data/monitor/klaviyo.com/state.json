@@ -2,20 +2,24 @@
   "target": "klaviyo.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 48,
+  "live": 42,
   "new_count": 0,
-  "removed_count": 2,
+  "removed_count": 6,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-21T13:34:47.701655+00:00",
+  "ts": "2026-11-21T22:26:28.749373+00:00",
   "new": [],
   "removed": [
-    "reviews-app.klaviyo.com",
-    "reviews-new.klaviyo.com"
+    "experiences.klaviyo.com",
+    "resources.klaviyo.com",
+    "status.klaviyo.com",
+    "trust.klaviyo.com",
+    "vcf.eu.klaviyo.com",
+    "verticals.klaviyo.com"
   ],
   "baseline_updated": true
 }

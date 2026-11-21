@@ -1,1 +1,5 @@
-xlayerrpc.okx.com
+appwspripap.okx.com
+appwsweb3pri.okx.com
+mysignicat.okx.com
+mywsweb3pri.okx.com
+xlayertestws.okx.com

@@ -1,1 +1,5 @@
-meet.intercom.com
+services.intercom.com
+staging.intercom.com
+status.intercom.com
+surge.intercom.com
+women.intercom.com

@@ -1,3 +1,2 @@
-events.qe.fivetran.com
-qe.fivetran.com
-webhooks.qe.fivetran.com
+entry.staging-demo.fivetran.com
+transformations.qe.fivetran.com
