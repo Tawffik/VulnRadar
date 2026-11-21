@@ -1,8 +1,8 @@
 # VulnRadar Hunter Queue
 
-Generated: 2026-11-21T02:39:52+00:00
+Generated: 2026-11-21T13:58:52+00:00
 Targets loaded: 24
-New KEV entries this run: 4
+New KEV entries this run: 3
 Updated KEV entries this run (ransomware flag changed): 0
 Entries below (target-matched or known-ransomware): 0
 
@@ -54,7 +54,7 @@ Plain GET requests to well-known paths — no injection, no scan_allowed needed.
 
 ### klaviyo.com
 
-**Source maps found:** 2 — https://transcend-cdn.com/cm/f3c1005b-8270-469c-85a4-81fe6c9b70e7/airgap.js?cacheBust=1795228748172.map, https://www.google.com/recaptcha/api.js?render=6Lc-vxErAAAAAKq79hQ2CEfaUCBld0hVMtRboXtB&amp;hl=en-US.map
+**Source maps found:** 2 — https://transcend-cdn.com/cm/f3c1005b-8270-469c-85a4-81fe6c9b70e7/airgap.js?cacheBust=1795269265864.map, https://www.google.com/recaptcha/api.js?render=6Lc-vxErAAAAAKq79hQ2CEfaUCBld0hVMtRboXtB&amp;hl=en-US.map
 
 
 
@@ -104,5 +104,5 @@ Plain GET requests to well-known paths — no injection, no scan_allowed needed.
 | Superdrug.com | SUCCESS |
 
 **Counts:**
-- new_cves: 4
+- new_cves: 3
 - updated_cves: 0
