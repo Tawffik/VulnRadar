@@ -186,6 +186,7 @@
   ],
   "stages": {
     "matching": "SUCCESS",
+    "epss": "SUCCESS",
     "version_check": "SUCCESS",
     "nuclei_verification": "SUCCESS",
     "exposure_scan": "SUCCESS",
@@ -193,10 +194,8 @@
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 128,
+    "new_cves": 0,
     "updated_cves": 0
   },
-  "warnings": [
-    "\u26a0\ufe0f 18180 minutes since the last successful cve_org fetch (threshold: 1500min) \u2014 some CVEs published in between may have been missed since delta.json is a snapshot, not a full log. See cve_org.py's module docstring."
-  ]
+  "warnings": []
 }

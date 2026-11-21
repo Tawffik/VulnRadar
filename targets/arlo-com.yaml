@@ -9,8 +9,12 @@ technologies:
   product: PriceSpider
 - vendor: Shopify
   product: Shopify
+- vendor: Swiper
+  product: Swiper
 - vendor: Amazon ELB
   product: Amazon ELB
 - vendor: awselb
   product: awselb
   version: '2.0'
+- vendor: Amazon ALB
+  product: Amazon ALB
