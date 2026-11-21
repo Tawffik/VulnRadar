@@ -31,6 +31,11 @@
 - 46 tests, including against real fixture data captured from live
   fetches of CISA KEV and the actual MITRE cvelistV5 feed (real schema, not invented)
 
+## Delivered after V1
+
+- **EPSS enrichment** — target-matched CVEs get EPSS score + percentile in `hunter_queue.md`;
+  bounded to 50 lookups/run and fail-open if FIRST.org is unavailable. Tests: `pipeline/tests/test_epss.py`.
+
 ## Deferred, in priority order
 
 ### Priority 1 — makes existing matches trustworthy, not just present

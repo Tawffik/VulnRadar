@@ -39,7 +39,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from pipeline.collectors import cisa_kev, cve_org, github_advisories, nvd, nuclei_templates
-from pipeline.intelligence import state_diff, state_store, technology_matcher, version_check
+from pipeline.intelligence import epss, state_diff, state_store, technology_matcher, version_check
 from pipeline.intelligence.run_status import RunSummary, CollectorResult, TargetResult, RUN_FAILED
 from pipeline.verify import nuclei_runner
 from pipeline.recon import exposure_scan
@@ -251,6 +251,15 @@ def main():
     except Exception as e:
         summary.set_stage("matching", "FAILED")
         summary.warn(f"target matching failed unexpectedly, entries left unmatched: {type(e).__name__}: {e}")
+
+    try:
+        new_entries, n_new_epss = epss.enrich_entries(new_entries)
+        updated_entries, n_upd_epss = epss.enrich_entries(updated_entries)
+        print(f"ℹ️ EPSS: {n_new_epss + n_upd_epss} target-matched CVE(s) enriched")
+        summary.set_stage("epss", "SUCCESS")
+    except Exception as e:
+        summary.set_stage("epss", "UNAVAILABLE")
+        summary.warn(f"EPSS enrichment failed unexpectedly: {type(e).__name__}: {e}")
 
     try:
         new_entries = version_check.annotate_entries(new_entries, targets)
