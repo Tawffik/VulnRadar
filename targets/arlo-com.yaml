@@ -3,14 +3,14 @@ scan_allowed: false
 discover_subdomains: true
 max_subdomains: 25
 technologies:
+- vendor: sfdcedge
+  product: sfdcedge
 - vendor: Klaviyo
   product: Klaviyo
 - vendor: PriceSpider
   product: PriceSpider
 - vendor: Shopify
   product: Shopify
-- vendor: sfdcedge
-  product: sfdcedge
 - vendor: Amazon ELB
   product: Amazon ELB
 - vendor: awselb
