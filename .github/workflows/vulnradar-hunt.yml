@@ -96,12 +96,12 @@ jobs:
           nuclei -update-templates -silent 2>/dev/null || echo "⚠️ nuclei template update failed (or nuclei itself is unavailable), continuing with whatever is cached"
 
       - name: Refresh target fingerprints (httpx tech-detect)
-        # Always runs: httpx against a handful of targets is fast (a few
-        # seconds each) and idempotent, so there's no real cost to doing
-        # it every 15 minutes too — simpler and more correct than trying
-        # to throttle by run number (GitHub Actions expressions have no
-        # modulo operator).
-        run: python3 scripts/refresh_target_fingerprints.py || echo "⚠️ fingerprint refresh failed, continuing with existing targets/*.yaml"
+        # Optional enrichment, never a blocker: a slow/unreachable target must
+        # not consume the whole hunt job. 5-minute cap + timeout guard; if it
+        # is cut off, the hunt still runs with the existing targets/*.yaml.
+        continue-on-error: true
+        timeout-minutes: 5
+        run: timeout 240 python3 scripts/refresh_target_fingerprints.py || echo "⚠️ fingerprint refresh timed out/failed, continuing with existing targets/*.yaml"
 
       - name: Save ad-hoc target as a permanent file (if requested)
         if: github.event.inputs.save_as_permanent_target == 'true' && github.event.inputs.target_domain != ''
