@@ -37,6 +37,8 @@
   bounded to 50 lookups/run and fail-open if FIRST.org is unavailable. Tests: `pipeline/tests/test_epss.py`.
 - **Public PoC enrichment** — target-matched CVEs get a PoC-in-GitHub count + top repo links;
   bounded and fail-open. Tests: `pipeline/tests/test_poc_github.py`.
+- **Recon handoff importer** — `scripts/import_target_profile.py` converts a
+  BugBountyCI/Agentic `target_profile.json` into `targets/<slug>.yaml`.
 
 ## Deferred, in priority order
 

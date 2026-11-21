@@ -116,6 +116,15 @@ coverage, tighten the cron schedule in `.github/workflows/vulnradar-hunt.yml`
 back to a 15-minute cadence (the code supports it — only the gap-detection
 warning's expectation changes).
 
+## Importing a recon handoff
+
+A BugBountyCI/Agentic `target_profile.json` can be converted into a normal
+target file:
+
+```bash
+python3 scripts/import_target_profile.py --profile agent-handoff/<target>/target_profile.json
+```
+
 ## Running locally
 
 ```bash
