@@ -1,2 +1,2 @@
-au.arlo.com
-shop-us.arlo.com
+asia.arlo.com
+ca.arlo.com

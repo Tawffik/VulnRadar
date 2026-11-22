@@ -1,18 +1,16 @@
 arlo.com
 e.arlo.com
 ar.arlo.com
-br.arlo.com
-ca.arlo.com
+hk.arlo.com
 kb.arlo.com
 my.arlo.com
+nz.arlo.com
 qa.arlo.com
 tm.arlo.com
 us.arlo.com
-229.arlo.com
 acs.arlo.com
 ajs.arlo.com
 api.arlo.com
-crl.arlo.com
 ebs.arlo.com
 eks.arlo.com
 mac.arlo.com
@@ -25,7 +23,6 @@ acs2.arlo.com
 afcs.arlo.com
 ajs2.arlo.com
 apac.arlo.com
-asia.arlo.com
 beta.arlo.com
 blog.arlo.com
 dash.arlo.com
@@ -37,11 +34,9 @@ myqa.arlo.com
 nimp.arlo.com
 ping.arlo.com
 shop.arlo.com
-test.arlo.com
 aetst.arlo.com
 aeuat.arlo.com
 apiqa.arlo.com
-cloud.arlo.com
 ctxsf.arlo.com
 dev03.arlo.com
 eagle.arlo.com
@@ -70,6 +65,8 @@ aetuat.arlo.com
 apidev.arlo.com
 apiqa2.arlo.com
 arlocs.arlo.com
+cicdqe.arlo.com
+citrix.arlo.com
 deploy.arlo.com
 ebsdev.arlo.com
 ebsprd.arlo.com
@@ -78,9 +75,10 @@ ebsuat.arlo.com
 gw-oag.arlo.com
 hybrid.arlo.com
 macdev.arlo.com
+mcprod.arlo.com
 mcsdev.arlo.com
 mcsqa2.arlo.com
-mta6.e.arlo.com
+mta5.e.arlo.com
 mybeta.arlo.com
 mydev2.arlo.com
 mydev3.arlo.com
@@ -140,6 +138,7 @@ agiledev.arlo.com
 agileprd.arlo.com
 agileuat.arlo.com
 alfresco.arlo.com
+citrix1c.arlo.com
 coverity.arlo.com
 devtest1.arlo.com
 diagtool.arlo.com
@@ -149,8 +148,7 @@ internal.arlo.com
 investor.arlo.com
 macadmin.arlo.com
 myapi-qa.arlo.com
-mydev1ci.arlo.com
-mydev3as.arlo.com
+mydev1am.arlo.com
 oamoid01.arlo.com
 oamoid61.arlo.com
 oauthdev.arlo.com
@@ -163,6 +161,7 @@ shop-dev.arlo.com
 testdep1.arlo.com
 transfer.arlo.com
 ukshopqa.arlo.com
+updatesa.arlo.com
 www.acs2.arlo.com
 www.ajs2.arlo.com
 www.blog.arlo.com
@@ -178,12 +177,12 @@ ebsprd-dr.arlo.com
 elearning.arlo.com
 fportal81.arlo.com
 irobotapi.arlo.com
-mcstaging.arlo.com
 messaging.arlo.com
 my-canary.arlo.com
 myapi-dev.arlo.com
 myapi-qa2.arlo.com
 myapi-qa3.arlo.com
+myapi-web.arlo.com
 myapidev4.arlo.com
 mystaging.arlo.com
 oauth.dev.arlo.com
@@ -198,3 +197,4 @@ statusdev.arlo.com
 ukshop-qa.arlo.com
 webrds-02.arlo.com
 www.dev03.arlo.com
+www.stage.arlo.com

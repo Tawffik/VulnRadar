@@ -2,23 +2,22 @@
   "target": "superdrug.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 16,
-  "new_count": 1,
-  "removed_count": 3,
+  "live": 20,
+  "new_count": 4,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-21T22:29:04.354076+00:00",
+  "ts": "2026-11-22T13:29:34.511591+00:00",
   "new": [
-    "media-s1.superdrug.com"
-  ],
-  "removed": [
+    "clickom.superdrug.com",
     "media.superdrug.com",
     "videogp.superdrug.com",
     "www-s1.superdrug.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

@@ -2,20 +2,17 @@
   "target": "elementor.com",
   "status": "COMPLETE",
   "discovered": 201,
-  "live": 18,
-  "new_count": 1,
-  "removed_count": 11,
+  "live": 27,
+  "new_count": 9,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 201
   },
-  "ts": "2026-11-21T22:16:20.714781+00:00",
+  "ts": "2026-11-22T13:21:20.293646+00:00",
   "new": [
-    "library.elementor.com"
-  ],
-  "removed": [
     "console.elementor.com",
     "demo.elementor.com",
     "docs.elementor.com",
@@ -24,9 +21,8 @@
     "flexbox.elementor.com",
     "gtm.elementor.com",
     "pix.elementor.com",
-    "status.elementor.com",
-    "survey.elementor.com",
-    "wceu.elementor.com"
+    "status.elementor.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

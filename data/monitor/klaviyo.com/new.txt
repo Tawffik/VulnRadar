@@ -1,0 +1,6 @@
+experiences.klaviyo.com
+resources.klaviyo.com
+status.klaviyo.com
+trust.klaviyo.com
+vcf.eu.klaviyo.com
+verticals.klaviyo.com

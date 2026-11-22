@@ -1,33 +1,40 @@
 {
   "target": "intercom.com",
   "status": "COMPLETE",
-  "discovered": 99,
-  "live": 64,
-  "new_count": 8,
-  "removed_count": 5,
+  "discovered": 201,
+  "live": 52,
+  "new_count": 4,
+  "removed_count": 16,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 99
+    "input_count": 201
   },
-  "ts": "2026-11-21T22:25:49.308934+00:00",
+  "ts": "2026-11-22T13:27:09.012102+00:00",
   "new": [
-    "api-visitor-analytics.intercom.com",
-    "earlystageacademy.intercom.com",
-    "google-workspace.mcp.intercom.com",
-    "help.legal.corp.intercom.com",
-    "intercomrades.au.intercom.com",
-    "intercomrades.eu.intercom.com",
-    "partneracademy.intercom.com",
-    "register.events.intercom.com"
+    "meet.intercom.com",
+    "services.intercom.com",
+    "transformation.intercom.com",
+    "women.intercom.com"
   ],
   "removed": [
-    "services.intercom.com",
-    "staging.intercom.com",
-    "status.intercom.com",
-    "surge.intercom.com",
-    "women.intercom.com"
+    "api-visitor-analytics.intercom.com",
+    "demo.intercom.com",
+    "earlystageacademy.intercom.com",
+    "google-workspace.mcp.intercom.com",
+    "intercomrades.au.intercom.com",
+    "intercomrades.eu.intercom.com",
+    "mi.intercom.com",
+    "pioneer.intercom.com",
+    "preferences.intercom.com",
+    "privacy.intercom.com",
+    "sales.intercom.com",
+    "trust.intercom.com",
+    "vercel.intercom.com",
+    "vsaq.intercom.com",
+    "watch.intercom.com",
+    "www.intercom.com"
   ],
   "baseline_updated": true
 }

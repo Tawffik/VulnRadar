@@ -1,25 +1,18 @@
 {
   "target": "okx.com",
   "status": "COMPLETE",
-  "discovered": 98,
-  "live": 30,
-  "new_count": 5,
-  "removed_count": 19,
+  "discovered": 200,
+  "live": 43,
+  "new_count": 19,
+  "removed_count": 6,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 98
+    "input_count": 200
   },
-  "ts": "2026-11-21T22:27:25.824267+00:00",
+  "ts": "2026-11-22T13:28:21.806084+00:00",
   "new": [
-    "appwspripap.okx.com",
-    "appwsweb3pri.okx.com",
-    "mysignicat.okx.com",
-    "mywsweb3pri.okx.com",
-    "xlayertestws.okx.com"
-  ],
-  "removed": [
     "app.okx.com",
     "jpush.okx.com",
     "jpushws.okx.com",
@@ -28,8 +21,8 @@
     "okbws.okx.com",
     "okx.com",
     "payauth.okx.com",
-    "staticaws.okx.com",
     "tr.okx.com",
+    "tvpap.okx.com",
     "wallet.okx.com",
     "web3.okx.com",
     "web3link.okx.com",
@@ -39,6 +32,14 @@
     "wsweb.okx.com",
     "www.okx.com",
     "xlayerws.okx.com"
+  ],
+  "removed": [
+    "appwspripap.okx.com",
+    "appwsweb3pri.okx.com",
+    "mysignicat.okx.com",
+    "mywsweb3pri.okx.com",
+    "xlayerrpc.okx.com",
+    "xlayertestws.okx.com"
   ],
   "baseline_updated": true
 }
