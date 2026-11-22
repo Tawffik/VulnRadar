@@ -2,17 +2,23 @@
   "target": "atlassian.com",
   "status": "COMPLETE",
   "discovered": 201,
-  "live": 57,
-  "new_count": 8,
-  "removed_count": 7,
+  "live": 53,
+  "new_count": 4,
+  "removed_count": 8,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 201
   },
-  "ts": "2026-11-22T13:17:15.660132+00:00",
+  "ts": "2026-11-22T22:23:10.909018+00:00",
   "new": [
+    "connect.atlassian.com",
+    "es.atlassian.com",
+    "fortified-alerts.services.atlassian.com",
+    "jcs-chat-widget.atlassian.com"
+  ],
+  "removed": [
     "analytics.status.atlassian.com",
     "bitbucket-trello-integration.dev.services.atlassian.com",
     "cnstate-v7.packages.atlassian.com",
@@ -21,15 +27,6 @@
     "devs.services.packages.atlassian.com",
     "helper-bot.dev.services.atlassian.com",
     "my.atlassian.com"
-  ],
-  "removed": [
-    "bifrost-gateway.dev.services.atlassian.com",
-    "bitbucketq.status.atlassian.com",
-    "ppc.atlassian.com",
-    "start.atlassian.com",
-    "status.atlassian.com",
-    "www.jira-core.status.atlassian.com",
-    "www.opsgenie.status.atlassian.com"
   ],
   "baseline_updated": true
 }

@@ -3,6 +3,7 @@ beta.repo.expressvpn.com
 billing-portal.expressvpn.com
 cdn.portal.expressvpn.com
 checkout.expressvpn.com
+desktop.updates.expressvpn.com
 expressvpn.com
 go.expressvpn.com
 integration.expressvpn.com

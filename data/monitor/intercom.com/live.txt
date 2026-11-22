@@ -10,6 +10,7 @@ blog.intercom.com
 community.intercom.com
 composer.intercom.com
 credentials.intercom.com
+cx.intercom.com
 demos.intercom.com
 developerblog.intercom.com
 developers.intercom.com
@@ -29,6 +30,8 @@ hackathon.corp.intercom.com
 help.legal.corp.intercom.com
 hq.intercom.com
 intercom.com
+intercomrades.au.intercom.com
+intercomrades.eu.intercom.com
 intercomrades.intercom.com
 legal.corp.intercom.com
 link.hq.intercom.com
@@ -39,14 +42,12 @@ mcp.eu.intercom.com
 mcp.intercom.com
 meet.au.intercom.com
 meet.eu.intercom.com
-meet.intercom.com
 news.eu.intercom.com
-out.intercom.com
+news.intercom.com
 partneracademy.intercom.com
 register.events.intercom.com
-rsvp.pioneer.intercom.com
 services.api.intercom.com
-services.intercom.com
 staging.mcp.intercom.com
-transformation.intercom.com
+trust.intercom.com
+watch.intercom.com
 women.intercom.com

@@ -1,28 +1,43 @@
 {
   "target": "elementor.com",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 27,
-  "new_count": 9,
-  "removed_count": 0,
+  "discovered": 51,
+  "live": 24,
+  "new_count": 10,
+  "removed_count": 13,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 51
   },
-  "ts": "2026-11-22T13:21:20.293646+00:00",
+  "ts": "2026-11-22T22:27:18.093611+00:00",
   "new": [
-    "console.elementor.com",
-    "demo.elementor.com",
-    "docs.elementor.com",
-    "elementor.com",
-    "events.elementor.com",
-    "flexbox.elementor.com",
-    "gtm.elementor.com",
-    "pix.elementor.com",
-    "status.elementor.com"
+    "ai-assets.elementor.com",
+    "clicks-mail.elementor.com",
+    "composer.elementor.com",
+    "dev-experts.elementor.com",
+    "developers.elementor.com",
+    "editor-static-bucket.elementor.com",
+    "traefik.prod.ai.elementor.com",
+    "traefik.prod.apps.elementor.com",
+    "traefik.prod.cloud.elementor.com",
+    "traefik.prod.domains.elementor.com"
   ],
-  "removed": [],
+  "removed": [
+    "flexbox.elementor.com",
+    "go.elementor.com",
+    "gtm.elementor.com",
+    "he.elementor.com",
+    "library.elementor.com",
+    "mail.elementor.com",
+    "my.elementor.com",
+    "pix.elementor.com",
+    "status.elementor.com",
+    "thumbs.elementor.com",
+    "tuts.elementor.com",
+    "ux.elementor.com",
+    "www.elementor.com"
+  ],
   "baseline_updated": true
 }

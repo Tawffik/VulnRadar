@@ -1,19 +1,18 @@
 {
   "target": "aiven.io",
   "status": "COMPLETE",
-  "discovered": 1,
-  "live": 1,
-  "new_count": 0,
-  "removed_count": 42,
-  "discover_error": "subfinder timed out on aiven.io",
+  "discovered": 143,
+  "live": 43,
+  "new_count": 42,
+  "removed_count": 0,
+  "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 1
+    "input_count": 143
   },
-  "ts": "2026-11-22T13:14:26.561455+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-22T22:22:46.921344+00:00",
+  "new": [
     "ai.aiven.io",
     "aiven-management-api.ai.aiven.io",
     "api.aiven.io",
@@ -57,5 +56,6 @@
     "web-library.aiven.io",
     "www.aiven.io"
   ],
+  "removed": [],
   "baseline_updated": true
 }

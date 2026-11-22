@@ -1,2 +1,9 @@
-mobile.classdojo.com
-tutor3.classdojo.com
+components.classdojo.com
+dojotutor3.classdojo.com
+dojovideos.classdojo.com
+engineering.classdojo.com
+experiences.classdojo.com
+external2.classdojo.com
+home-static.classdojo.com
+ideas-video.classdojo.com
+parent.classdojo.com

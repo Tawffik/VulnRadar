@@ -3,7 +3,7 @@
   "status": "COMPLETE",
   "discovered": 136,
   "live": 39,
-  "new_count": 20,
+  "new_count": 0,
   "removed_count": 0,
   "discover_error": null,
   "probe": {
@@ -11,29 +11,8 @@
     "error": null,
     "input_count": 136
   },
-  "ts": "2026-11-22T13:23:35.676680+00:00",
-  "new": [
-    "amplitude.gearset.com",
-    "api.gearset.com",
-    "app.gearset.com",
-    "assets.gearset.com",
-    "ca.app.gearset.com",
-    "embed.gearset.com",
-    "hipaa.app.gearset.com",
-    "hipaa.staging.gearset.com",
-    "staging-api.gearset.com",
-    "staging-embed.gearset.com",
-    "staging-fastspring.gearset.com",
-    "staging-integration-testing-subscriptions.gearset.com",
-    "staging-trust.gearset.com",
-    "staging-webhooks.gearset.com",
-    "staging-website-api.gearset.com",
-    "staging.gearset.com",
-    "subscriptions.gearset.com",
-    "us.staging.gearset.com",
-    "webhooks.gearset.com",
-    "website-api.gearset.com"
-  ],
+  "ts": "2026-11-22T22:29:09.626938+00:00",
+  "new": [],
   "removed": [],
   "baseline_updated": true
 }
