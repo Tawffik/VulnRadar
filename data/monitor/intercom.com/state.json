@@ -1,31 +1,50 @@
 {
   "target": "intercom.com",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 53,
-  "new_count": 6,
-  "removed_count": 5,
+  "discovered": 200,
+  "live": 57,
+  "new_count": 17,
+  "removed_count": 13,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-22T22:32:41.454800+00:00",
+  "ts": "2026-11-23T16:04:00.160787+00:00",
   "new": [
-    "cx.intercom.com",
-    "intercomrades.au.intercom.com",
-    "intercomrades.eu.intercom.com",
-    "news.intercom.com",
-    "trust.intercom.com",
-    "watch.intercom.com"
+    "cf.intercom.com",
+    "demo.intercom.com",
+    "mi.intercom.com",
+    "out.intercom.com",
+    "pages.intercom.com",
+    "pioneer.intercom.com",
+    "preferences.intercom.com",
+    "privacy.intercom.com",
+    "rsvp.pioneer.intercom.com",
+    "sales.intercom.com",
+    "services.intercom.com",
+    "status.intercom.com",
+    "surge.intercom.com",
+    "transformation.intercom.com",
+    "vercel.intercom.com",
+    "vsaq.intercom.com",
+    "www.intercom.com"
   ],
   "removed": [
-    "meet.intercom.com",
-    "out.intercom.com",
-    "rsvp.pioneer.intercom.com",
-    "services.intercom.com",
-    "transformation.intercom.com"
+    "app.au.intercom.com",
+    "app.intercom.com",
+    "cx.intercom.com",
+    "frame.au.intercom.com",
+    "frame.eu.intercom.com",
+    "frame.intercom.com",
+    "intercomrades.au.intercom.com",
+    "intercomrades.eu.intercom.com",
+    "meet.au.intercom.com",
+    "meet.eu.intercom.com",
+    "news.eu.intercom.com",
+    "news.intercom.com",
+    "register.events.intercom.com"
   ],
   "baseline_updated": true
 }

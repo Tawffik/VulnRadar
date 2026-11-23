@@ -1,18 +1,39 @@
 {
   "target": "datadome.co",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 41,
-  "new_count": 25,
-  "removed_count": 16,
+  "discovered": 200,
+  "live": 37,
+  "new_count": 19,
+  "removed_count": 23,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-22T22:25:10.305618+00:00",
+  "ts": "2026-11-23T15:54:28.104808+00:00",
   "new": [
+    "api-akamai.datadome.co",
+    "apivarnish.datadome.co",
+    "bo.datadome.co",
+    "dd.staging.datadome.co",
+    "flink.datadome.co",
+    "go.datadome.co",
+    "img.mailing.datadome.co",
+    "offsite26.datadome.co",
+    "preprod-js.datadome.co",
+    "prometheus.datadome.co",
+    "r.mailing.datadome.co",
+    "r.newsletter.datadome.co",
+    "static.datadome.co",
+    "status.datadome.co",
+    "support.datadome.co",
+    "test-fpjs.datadome.co",
+    "trust.datadome.co",
+    "upflow-email.datadome.co",
+    "www.datadome.co"
+  ],
+  "removed": [
     "api-alb-ap-east-1.datadome.co",
     "api-alb-eu-west-1.datadome.co",
     "api-alb-eu-west-2.datadome.co",
@@ -28,7 +49,6 @@
     "api-eu-central-1.datadome.co",
     "api-eu-france-1.datadome.co",
     "api-fastly.datadome.co",
-    "api-sfcc.datadome.co",
     "api-us-east-2.datadome.co",
     "api-us-texas-1.datadome.co",
     "api-us-west-1.datadome.co",
@@ -36,26 +56,7 @@
     "es-datalake-eu2.datadome.co",
     "geoprox.datadome.co",
     "haproxy1.datadome.co",
-    "preprod-api-app.datadome.co",
-    "staff.datadome.co"
-  ],
-  "removed": [
-    "bo.datadome.co",
-    "dd.staging.datadome.co",
-    "flink.datadome.co",
-    "go.datadome.co",
-    "img.mailing.datadome.co",
-    "js.datadome.co",
-    "js.staging.datadome.co",
-    "offsite26.datadome.co",
-    "preprod-js.datadome.co",
-    "prometheus.datadome.co",
-    "r.mailing.datadome.co",
-    "status.datadome.co",
-    "support.datadome.co",
-    "test-fpjs.datadome.co",
-    "trust.datadome.co",
-    "www.datadome.co"
+    "preprod-api-app.datadome.co"
   ],
   "baseline_updated": true
 }

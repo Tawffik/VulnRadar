@@ -1,20 +1,20 @@
 {
   "target": "expressvpn.com",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 23,
-  "new_count": 1,
-  "removed_count": 0,
+  "discovered": 200,
+  "live": 22,
+  "new_count": 0,
+  "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-22T22:27:57.102146+00:00",
-  "new": [
+  "ts": "2026-11-23T15:58:05.498076+00:00",
+  "new": [],
+  "removed": [
     "desktop.updates.expressvpn.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

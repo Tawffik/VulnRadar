@@ -1,20 +1,39 @@
 {
   "target": "superdrug.com",
   "status": "COMPLETE",
-  "discovered": 200,
-  "live": 21,
-  "new_count": 1,
-  "removed_count": 0,
+  "discovered": 1,
+  "live": 1,
+  "new_count": 0,
+  "removed_count": 20,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 200
+    "input_count": 1
   },
-  "ts": "2026-11-22T22:36:46.770202+00:00",
-  "new": [
-    "pharmacy.superdrug.com"
+  "ts": "2026-11-23T16:07:05.225276+00:00",
+  "new": [],
+  "removed": [
+    "api-s1.superdrug.com",
+    "api.superdrug.com",
+    "app.superdrug.com",
+    "appsd.superdrug.com",
+    "campaign.superdrug.com",
+    "ccs.superdrug.com",
+    "clickom.superdrug.com",
+    "consent.superdrug.com",
+    "e.superdrug.com",
+    "hb.superdrug.com",
+    "m.email.superdrug.com",
+    "m.superdrug.com",
+    "media-s1.superdrug.com",
+    "media.superdrug.com",
+    "mta-sts.superdrug.com",
+    "pharmacy.superdrug.com",
+    "t.email.superdrug.com",
+    "videogp.superdrug.com",
+    "www-s1.superdrug.com",
+    "www.superdrug.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

@@ -1,24 +1,24 @@
 {
   "target": "okx.com",
   "status": "COMPLETE",
-  "discovered": 201,
-  "live": 48,
-  "new_count": 5,
-  "removed_count": 0,
+  "discovered": 200,
+  "live": 43,
+  "new_count": 0,
+  "removed_count": 5,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 201
+    "input_count": 200
   },
-  "ts": "2026-11-22T22:34:22.088436+00:00",
-  "new": [
+  "ts": "2026-11-23T16:05:31.840676+00:00",
+  "new": [],
+  "removed": [
     "appwspripap.okx.com",
     "mysignicat.okx.com",
     "mywspripap.okx.com",
     "securemail.okx.com",
-    "xlayerrpc.okx.com"
+    "static.okx.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

@@ -1,8 +1,8 @@
-analytics.status.atlassian.com
-bitbucket-trello-integration.dev.services.atlassian.com
-cnstate-v7.packages.atlassian.com
-dac-static.atlassian.com
-dev5-og-apps-rest-api.dev.services.atlassian.com
-devs.services.packages.atlassian.com
-helper-bot.dev.services.atlassian.com
-my.atlassian.com
+atl-onetrust-wrapper.atlassian.com
+cloudtoken-update.atlassian.com
+connect.atlassian.com
+docker-blobs.artifacts.atlassian.com
+fortified-alerts.services.atlassian.com
+jcs-chat-widget.atlassian.com
+radiowalker.blogs.atlassian.com
+rebelutionary.blogs.atlassian.com

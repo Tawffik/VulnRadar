@@ -2,7 +2,6 @@ about-staging.doctolib.com
 about.doctolib.com
 careers-staging.doctolib.com
 careers.doctolib.com
-clicks.doctolib.com
 cms-staging.doctolib.com
 cms.doctolib.com
 community.doctolib.com
@@ -31,14 +30,6 @@ partnerportal.doctolib.com
 partnerprogram.doctolib.com
 pro-app.doctolib.com
 pro.doctolib.com
-rs-static-apigw-tools-staging.doctolib.com
-rs-static-apigw-tools.doctolib.com
-rs-static-apigw.doctolib.com
-rs-static-events-staging.doctolib.com
-rs-static-events.doctolib.com
-rs-static-media.doctolib.com
-rs-static-staging.doctolib.com
-rs-static.doctolib.com
 siilo-api-dev.doctolib.com
 siilo-api.doctolib.com
 status.doctolib.com

@@ -1,0 +1,3 @@
+reviews-app.klaviyo.com
+reviews-new.klaviyo.com
+workato-api.klaviyo.com
