@@ -1,42 +1,62 @@
 {
-  "CVE-2026-109613": {
-    "date_added": "2026-10-12T22:22:00.386Z",
+  "CVE-2026-103784": {
+    "date_added": "2026-11-23T16:40:00.234Z",
     "ransomware_use": "Unknown"
   },
-  "CVE-2026-109614": {
-    "date_added": "2026-10-12T22:22:01.110Z",
+  "CVE-2026-103791": {
+    "date_added": "2026-11-23T16:03:28.159Z",
     "ransomware_use": "Unknown"
   },
-  "CVE-2026-109616": {
-    "date_added": "2026-10-12T22:22:02.395Z",
+  "CVE-2026-122247": {
+    "date_added": "2026-11-20T16:43:37.760Z",
     "ransomware_use": "Unknown"
   },
-  "CVE-2026-109617": {
-    "date_added": "2026-10-12T22:22:03.078Z",
+  "CVE-2026-133632": {
+    "date_added": "2026-11-23T15:33:56.348Z",
     "ransomware_use": "Unknown"
   },
-  "CVE-2026-109622": {
-    "date_added": "2026-10-12T22:22:04.355Z",
+  "CVE-2026-133694": {
+    "date_added": "2026-11-20T20:15:15.495Z",
     "ransomware_use": "Unknown"
   },
-  "CVE-2026-109624": {
-    "date_added": "2026-10-12T22:22:05.731Z",
+  "CVE-2026-133835": {
+    "date_added": "2026-11-20T21:15:11.321Z",
     "ransomware_use": "Unknown"
   },
-  "CVE-2026-109627": {
-    "date_added": "2026-10-12T22:22:07.643Z",
+  "CVE-2026-133873": {
+    "date_added": "2026-11-20T16:16:57.681Z",
     "ransomware_use": "Unknown"
   },
-  "CVE-2026-109629": {
-    "date_added": "2026-10-12T22:22:09.019Z",
+  "CVE-2026-134311": {
+    "date_added": "2026-11-21T16:34:58.209Z",
     "ransomware_use": "Unknown"
   },
-  "CVE-2026-109630": {
-    "date_added": "2026-10-12T22:22:09.679Z",
+  "CVE-2026-134315": {
+    "date_added": "2026-11-21T16:34:53.737Z",
     "ransomware_use": "Unknown"
   },
-  "CVE-2026-109631": {
-    "date_added": "2026-10-12T22:22:10.282Z",
+  "CVE-2026-134321": {
+    "date_added": "2026-11-21T16:34:48.347Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-16132": {
+    "date_added": "2026-11-20T22:40:52.958Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-45354": {
+    "date_added": "2026-11-20T17:20:53.299Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-49259": {
+    "date_added": "2026-11-20T18:33:08.335Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-55216": {
+    "date_added": "2026-11-20T17:49:13.589Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-62318": {
+    "date_added": "2026-11-20T17:27:58.220Z",
     "ransomware_use": "Unknown"
   }
 }

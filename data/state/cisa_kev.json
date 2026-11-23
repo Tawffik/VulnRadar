@@ -17,7 +17,7 @@
   },
   "CVE-2024-10441": {
     "date_added": "2026-11-18",
-    "ransomware_use": "Unknown"
+    "ransomware_use": "Known"
   },
   "CVE-2026-40217": {
     "date_added": "2026-11-18",
