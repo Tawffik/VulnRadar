@@ -1,27 +1,46 @@
 # VulnRadar Hunter Queue
 
-Generated: 2026-11-23T16:54:26+00:00
+Generated: 2026-11-24T16:46:47+00:00
 Targets loaded: 24
-New KEV entries this run: 36
-Updated KEV entries this run (ransomware flag changed): 1
-Entries below (target-matched or known-ransomware): 1
+New KEV entries this run: 169
+Updated KEV entries this run (ransomware flag changed): 2
+Entries below (target-matched or known-ransomware): 2
 
 > A CVE affecting a matched technology is a candidate needing manual version verification, not a confirmed vulnerability. This project does not run exploitation — see 'Next Safe Action' on each entry.
 
-## 1. CVE-2024-10441 — UPDATED — now flagged for known ransomware use
+## 1. CVE-2018-8581 — UPDATED — now flagged for known ransomware use
 
-**Vendor / Product:** Synology / DiskStation Manager (DSM)
-**Name:** Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability
+**Vendor / Product:** Microsoft / Exchange Server
+**Name:** Microsoft Exchange Server Privilege Escalation Vulnerability
 **Matched target(s):** (no configured target matched — reference only)
 **Known ransomware use:** Known
 **EPSS:** unavailable
 **Public PoCs:** none found
 **Version check:** unknown — no fingerprinted version or no NVD version-range data
 **Nuclei verification:** (not run — nuclei unavailable or target not opted into scanning)
-**Date added to KEV:** 2026-11-18
-**CISA required action:** Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+**Date added to KEV:** 2022-03-03
+**CISA required action:** Apply updates per vendor instructions.
 
-**Description:** Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.
+**Description:** A privilege escalation vulnerability exists in Microsoft Exchange Server. An attacker who successfully exploited this vulnerability could attempt to impersonate any other user of the Exchange server.
+
+**Next Safe Action:** Verify the exact deployed version on the matched target(s) falls within the affected range before treating this as a real finding. Reproduce only within authorized scope.
+
+---
+
+## 2. CVE-2021-22893 — UPDATED — now flagged for known ransomware use
+
+**Vendor / Product:** Ivanti / Pulse Connect Secure
+**Name:** Ivanti Pulse Connect Secure Use-After-Free Vulnerability
+**Matched target(s):** (no configured target matched — reference only)
+**Known ransomware use:** Known
+**EPSS:** unavailable
+**Public PoCs:** none found
+**Version check:** unknown — no fingerprinted version or no NVD version-range data
+**Nuclei verification:** (not run — nuclei unavailable or target not opted into scanning)
+**Date added to KEV:** 2021-11-03
+**CISA required action:** Apply updates per vendor instructions.
+
+**Description:** Ivanti Pulse Connect Secure contains a use-after-free vulnerability that allow a remote, unauthenticated attacker to execute code via license services.
 
 **Next Safe Action:** Verify the exact deployed version on the matched target(s) falls within the affected range before treating this as a real finding. Reproduce only within authorized scope.
 
@@ -39,7 +58,7 @@ Plain GET requests to well-known paths — no injection, no scan_allowed needed.
 
 ### asana.com
 
-**Source maps found:** 18 — https://www.google.com/recaptcha/enterprise.js?render=6Lf1FtQZAAAAAKGsW3JoCdtQfzfCb2umWbEoyOjE.map, https://asana.com/_next/static/chunks/polyfills-42372ed130431b0a.js?dpl=3730b23f82c18173d839238475eb3bdbd302b449b340c95b17f0da39625431a1366230306238366239656161323032653830386531633763.map, https://asana.com/_next/static/chunks/99283-197d890b88e8395a.js?dpl=3730b23f82c18173d839238475eb3bdbd302b449b340c95b17f0da39625431a1366230306238366239656161323032653830386531633763.map, https://asana.com/_next/static/chunks/59643-baacc11ca780467e.js?dpl=3730b23f82c18173d839238475eb3bdbd302b449b340c95b17f0da39625431a1366230306238366239656161323032653830386531633763.map, https://asana.com/_next/static/chunks/34013-23a783415d5a4b58.js?dpl=3730b23f82c18173d839238475eb3bdbd302b449b340c95b17f0da39625431a1366230306238366239656161323032653830386531633763.map
+**Source maps found:** 18 — https://www.google.com/recaptcha/enterprise.js?render=6Lf1FtQZAAAAAKGsW3JoCdtQfzfCb2umWbEoyOjE.map, https://asana.com/_next/static/chunks/polyfills-42372ed130431b0a.js?dpl=92ce93bade11aaa76d4a20b76655398d79905491b173db9f5b024f48e3f92e1a366230343734613230343365386464363532343336613866.map, https://asana.com/_next/static/chunks/54858-ea606363a9c7a5ab.js?dpl=92ce93bade11aaa76d4a20b76655398d79905491b173db9f5b024f48e3f92e1a366230343734613230343365386464363532343336613866.map, https://asana.com/_next/static/chunks/90495-8bfac6c8eb0c8795.js?dpl=92ce93bade11aaa76d4a20b76655398d79905491b173db9f5b024f48e3f92e1a366230343734613230343365386464363532343336613866.map, https://asana.com/_next/static/chunks/59643-baacc11ca780467e.js?dpl=92ce93bade11aaa76d4a20b76655398d79905491b173db9f5b024f48e3f92e1a366230343734613230343365386464363532343336613866.map
 
 ### cloudinary.com
 
@@ -51,15 +70,15 @@ Plain GET requests to well-known paths — no injection, no scan_allowed needed.
 
 ### expressvpn.com
 
-**Source maps found:** 2 — https://expressvpn.com/wp-ws-cache/themes/expressvpn/assets/js/general.js?ver=1795438758.map, https://expressvpn.com/wp-ws-cache/themes/expressvpn/assets/js/swiperJs.js?ver=1795438764.map
+**Source maps found:** 2 — https://expressvpn.com/wp-ws-cache/themes/expressvpn/assets/js/general.js?ver=1795535197.map, https://expressvpn.com/wp-ws-cache/themes/expressvpn/assets/js/swiperJs.js?ver=1795535204.map
 
 ### fivetran.com
 
-**Source maps found:** 2 — https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6130fa1501794ed4d11867ba.map, https://fivetran-com.s3.amazonaws.com/js/scripts.js?58.map
+**Source maps found:** 2 — https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6130fa1501794ed4d11867ba.map, https://fivetran-com.s3.amazonaws.com/js/scripts.js?59.map
 
 ### gearset.com
 
-**Source maps found:** 5 — https://cmp.osano.com/6okapU34JmZx4cWG/4693432c-ab0c-40c3-a4a1-99cc77801085/osano.js.map, https://gearset.com/assets/index-CD8xx4zG.js.map, https://www.google.com/recaptcha/api.js?render=6LdgPY4oAAAAAPSJC_kJKTNKk3BKUCF8qmpeAYaI.map, https://gearset.com/assets/polyfills-legacy-BsMNi2G7.js.map, https://gearset.com/assets/index-legacy-lTvvNIde.js.map
+**Source maps found:** 5 — https://cmp.osano.com/6okapU34JmZx4cWG/4693432c-ab0c-40c3-a4a1-99cc77801085/osano.js.map, https://gearset.com/assets/index-w8EzgZ0k.js.map, https://www.google.com/recaptcha/api.js?render=6LdgPY4oAAAAAPSJC_kJKTNKk3BKUCF8qmpeAYaI.map, https://gearset.com/assets/polyfills-legacy-BsMNi2G7.js.map, https://gearset.com/assets/index-legacy-Cf_F8r72.js.map
 
 ### glean.com
 
@@ -71,7 +90,7 @@ Plain GET requests to well-known paths — no injection, no scan_allowed needed.
 
 ### klaviyo.com
 
-**Source maps found:** 2 — https://transcend-cdn.com/cm/f3c1005b-8270-469c-85a4-81fe6c9b70e7/airgap.js?cacheBust=1795452839967.map, https://www.google.com/recaptcha/api.js?render=6Lc-vxErAAAAAKq79hQ2CEfaUCBld0hVMtRboXtB&amp;hl=en-US.map
+**Source maps found:** 2 — https://transcend-cdn.com/cm/f3c1005b-8270-469c-85a4-81fe6c9b70e7/airgap.js?cacheBust=1795538514393.map, https://www.google.com/recaptcha/api.js?render=6Lc-vxErAAAAAKq79hQ2CEfaUCBld0hVMtRboXtB&amp;hl=en-US.map
 
 
 
@@ -121,8 +140,5 @@ Plain GET requests to well-known paths — no injection, no scan_allowed needed.
 | Superdrug.com | SUCCESS |
 
 **Counts:**
-- new_cves: 36
-- updated_cves: 1
-
-**Warnings:**
-- ⚠️ 1619 minutes since the last successful cve_org fetch (threshold: 1500min) — some CVEs published in between may have been missed since delta.json is a snapshot, not a full log. See cve_org.py's module docstring.
+- new_cves: 169
+- updated_cves: 2
