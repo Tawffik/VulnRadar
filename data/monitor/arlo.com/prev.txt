@@ -17,6 +17,7 @@ eks.arlo.com
 feedback.arlo.com
 image.e.arlo.com
 investor.arlo.com
+jp.arlo.com
 kb.arlo.com
 log-dev.arlo.com
 mcs.arlo.com
@@ -24,10 +25,10 @@ mcsdev.arlo.com
 mcsqa.arlo.com
 my-canary.arlo.com
 my.arlo.com
-myapi-web.arlo.com
 myapi.arlo.com
 mybeta.arlo.com
 nimp.arlo.com
+nz.arlo.com
 oauth.arlo.com
 oauthdev.arlo.com
 oauthqa.arlo.com
@@ -50,8 +51,8 @@ support.arlo.com
 survey.arlo.com
 tableau.arlo.com
 tm.arlo.com
+tridion.arlo.com
 updates.arlo.com
 view.e.arlo.com
 webrds.arlo.com
-ww3.arlo.com
 www.arlo.com

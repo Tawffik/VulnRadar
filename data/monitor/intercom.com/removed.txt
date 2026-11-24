@@ -1,3 +1,10 @@
-cf.intercom.com
-pages.intercom.com
-women.intercom.com
+api-visitor-analytics.intercom.com
+earlystageacademy.intercom.com
+google-workspace.mcp.intercom.com
+help.legal.corp.intercom.com
+intercomrades.au.intercom.com
+intercomrades.eu.intercom.com
+register.events.intercom.com
+staging.google-workspace.mcp.intercom.com
+transformation.intercom.com
+transformation2025.intercom.com

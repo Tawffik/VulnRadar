@@ -1,18 +1,41 @@
 {
   "target": "elementor.com",
   "status": "COMPLETE",
-  "discovered": 200,
-  "live": 28,
-  "new_count": 0,
-  "removed_count": 0,
+  "discovered": 139,
+  "live": 43,
+  "new_count": 18,
+  "removed_count": 3,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 200
+    "input_count": 139
   },
-  "ts": "2026-11-24T03:24:13.688029+00:00",
-  "new": [],
-  "removed": [],
+  "ts": "2026-11-24T15:48:25.169938+00:00",
+  "new": [
+    "ai-assets.elementor.com",
+    "clicks-mail.elementor.com",
+    "composer.elementor.com",
+    "dev-experts.elementor.com",
+    "developers.elementor.com",
+    "editor-static-bucket.elementor.com",
+    "hellotheme.elementor.com",
+    "internal.new-prod.elementor.com",
+    "migrations.elementor.com",
+    "playground.elementor.com",
+    "prompts.elementor.com",
+    "showoff.elementor.com",
+    "traefik.prod.ai.elementor.com",
+    "traefik.prod.apps.elementor.com",
+    "traefik.prod.cloud.elementor.com",
+    "traefik.prod.domains.elementor.com",
+    "traefik.prod.platform.elementor.com",
+    "translate.elementor.com"
+  ],
+  "removed": [
+    "he.elementor.com",
+    "my.elementor.com",
+    "tuts.elementor.com"
+  ],
   "baseline_updated": true
 }

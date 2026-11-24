@@ -1,8 +1,6 @@
-appwspripap.okx.com
-appwsweb3pri.okx.com
-eeatravelrule.okx.com
-mysignicat.okx.com
-mywspripap.okx.com
-mywsweb3pri.okx.com
-static.okx.com
-ustravelrule.okx.com
+wswebpap.okx.com
+www.okx.com
+xlayerrpc.okx.com
+xlayertestrpc.okx.com
+xlayertestws.okx.com
+xlayerws.okx.com

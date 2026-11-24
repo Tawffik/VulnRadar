@@ -1,6 +1,10 @@
-assets.glean.com
-id-be.glean.com
-lead-be.glean.com
-ouryahoo.glean.com
-partners.glean.com
-spare-be.glean.com
+atomico.glean.com
+clr-be.glean.com
+ionis-be.glean.com
+jff-be.glean.com
+lg2-be.glean.com
+metis-be.glean.com
+nca-be.glean.com
+oura-be.glean.com
+seviora.glean.com
+wwt-be.glean.com

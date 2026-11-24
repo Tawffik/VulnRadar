@@ -1,4 +1,8 @@
-1011vc-be.glean.com
-cvent-be.glean.com
-drips-be.glean.com
-king-be.glean.com
+assets.glean.com
+gxs-be.glean.com
+id-be.glean.com
+lead-be.glean.com
+ouryahoo.glean.com
+partners.glean.com
+spare-be.glean.com
+vtex-be.glean.com

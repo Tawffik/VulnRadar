@@ -1,5 +1,0 @@
-cs-k8sweb.ibotta.com
-dashboard.ibotta.com
-ipn-auth.ibotta.com
-register.ibotta.com
-solstice.ibotta.com

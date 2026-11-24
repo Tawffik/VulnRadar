@@ -1,5 +1,0 @@
-tvpap.okx.com
-wswebpap.okx.com
-www.okx.com
-xlayerrpc.okx.com
-xlayerws.okx.com
