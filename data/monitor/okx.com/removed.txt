@@ -1,5 +1,5 @@
-appwspripap.okx.com
-mysignicat.okx.com
-mywspripap.okx.com
-securemail.okx.com
-static.okx.com
+tvpap.okx.com
+wswebpap.okx.com
+www.okx.com
+xlayerrpc.okx.com
+xlayerws.okx.com

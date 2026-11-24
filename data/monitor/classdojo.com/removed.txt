@@ -1,3 +1,13 @@
-dojotutor3.classdojo.com
-parent.classdojo.com
-student.classdojo.com
+components.classdojo.com
+dojotutor2.classdojo.com
+dojovideos.classdojo.com
+engineering.classdojo.com
+experiences.classdojo.com
+home-static.classdojo.com
+ideas-video.classdojo.com
+lite.classdojo.com
+status.classdojo.com
+studentpwa.classdojo.com
+tutor-help.classdojo.com
+tutor2.classdojo.com
+tutor3.classdojo.com

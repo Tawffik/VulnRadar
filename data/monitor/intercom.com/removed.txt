@@ -1,13 +1,3 @@
-app.au.intercom.com
-app.intercom.com
-cx.intercom.com
-frame.au.intercom.com
-frame.eu.intercom.com
-frame.intercom.com
-intercomrades.au.intercom.com
-intercomrades.eu.intercom.com
-meet.au.intercom.com
-meet.eu.intercom.com
-news.eu.intercom.com
-news.intercom.com
-register.events.intercom.com
+cf.intercom.com
+pages.intercom.com
+women.intercom.com

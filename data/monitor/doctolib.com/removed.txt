@@ -1,9 +1,0 @@
-clicks.doctolib.com
-rs-static-apigw-tools-staging.doctolib.com
-rs-static-apigw-tools.doctolib.com
-rs-static-apigw.doctolib.com
-rs-static-events-staging.doctolib.com
-rs-static-events.doctolib.com
-rs-static-media.doctolib.com
-rs-static-staging.doctolib.com
-rs-static.doctolib.com

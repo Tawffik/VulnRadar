@@ -1,50 +1,40 @@
 {
   "target": "intercom.com",
   "status": "COMPLETE",
-  "discovered": 200,
-  "live": 57,
+  "discovered": 99,
+  "live": 71,
   "new_count": 17,
-  "removed_count": 13,
+  "removed_count": 3,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 200
+    "input_count": 99
   },
-  "ts": "2026-11-23T16:04:00.160787+00:00",
+  "ts": "2026-11-24T03:30:26.024177+00:00",
   "new": [
-    "cf.intercom.com",
-    "demo.intercom.com",
-    "mi.intercom.com",
-    "out.intercom.com",
-    "pages.intercom.com",
-    "pioneer.intercom.com",
-    "preferences.intercom.com",
-    "privacy.intercom.com",
-    "rsvp.pioneer.intercom.com",
-    "sales.intercom.com",
-    "services.intercom.com",
-    "status.intercom.com",
-    "surge.intercom.com",
-    "transformation.intercom.com",
-    "vercel.intercom.com",
-    "vsaq.intercom.com",
-    "www.intercom.com"
-  ],
-  "removed": [
+    "api-visitor-analytics.intercom.com",
     "app.au.intercom.com",
     "app.intercom.com",
-    "cx.intercom.com",
+    "earlystageacademy.intercom.com",
     "frame.au.intercom.com",
     "frame.eu.intercom.com",
     "frame.intercom.com",
+    "google-workspace.mcp.intercom.com",
     "intercomrades.au.intercom.com",
     "intercomrades.eu.intercom.com",
     "meet.au.intercom.com",
     "meet.eu.intercom.com",
+    "meet.intercom.com",
     "news.eu.intercom.com",
-    "news.intercom.com",
-    "register.events.intercom.com"
+    "register.events.intercom.com",
+    "staging.google-workspace.mcp.intercom.com",
+    "transformation2025.intercom.com"
+  ],
+  "removed": [
+    "cf.intercom.com",
+    "pages.intercom.com",
+    "women.intercom.com"
   ],
   "baseline_updated": true
 }

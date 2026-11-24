@@ -1,20 +1,18 @@
 {
   "target": "gearset.com",
   "status": "COMPLETE",
-  "discovered": 133,
+  "discovered": 136,
   "live": 40,
-  "new_count": 1,
+  "new_count": 0,
   "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 133
+    "input_count": 136
   },
-  "ts": "2026-11-23T15:59:36.950607+00:00",
-  "new": [
-    "socclicks.gearset.com"
-  ],
+  "ts": "2026-11-24T03:26:52.343464+00:00",
+  "new": [],
   "removed": [],
   "baseline_updated": true
 }

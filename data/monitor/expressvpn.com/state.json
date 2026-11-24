@@ -4,17 +4,15 @@
   "discovered": 200,
   "live": 22,
   "new_count": 0,
-  "removed_count": 1,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-23T15:58:05.498076+00:00",
+  "ts": "2026-11-24T03:25:16.604562+00:00",
   "new": [],
-  "removed": [
-    "desktop.updates.expressvpn.com"
-  ],
+  "removed": [],
   "baseline_updated": true
 }
