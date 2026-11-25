@@ -1,8 +1,8 @@
 # VulnRadar Hunter Queue
 
-Generated: 2026-11-25T16:31:52+00:00
+Generated: 2026-11-25T23:02:11+00:00
 Targets loaded: 24
-New KEV entries this run: 112
+New KEV entries this run: 33
 Updated KEV entries this run (ransomware flag changed): 0
 Entries below (target-matched or known-ransomware): 0
 
@@ -22,7 +22,7 @@ Plain GET requests to well-known paths — no injection, no scan_allowed needed.
 
 ### asana.com
 
-**Source maps found:** 18 — https://www.google.com/recaptcha/enterprise.js?render=6Lf1FtQZAAAAAKGsW3JoCdtQfzfCb2umWbEoyOjE.map, https://asana.com/_next/static/chunks/polyfills-42372ed130431b0a.js?dpl=8640cb2c5c7955e379877e0274caa86d7d51e25639fc5dd6354c0173a6743f44366230356334313561663539626632313161303062383535.map, https://asana.com/_next/static/chunks/54858-ea606363a9c7a5ab.js?dpl=8640cb2c5c7955e379877e0274caa86d7d51e25639fc5dd6354c0173a6743f44366230356334313561663539626632313161303062383535.map, https://asana.com/_next/static/chunks/90495-009db6aaea28802a.js?dpl=8640cb2c5c7955e379877e0274caa86d7d51e25639fc5dd6354c0173a6743f44366230356334313561663539626632313161303062383535.map, https://asana.com/_next/static/chunks/59643-baacc11ca780467e.js?dpl=8640cb2c5c7955e379877e0274caa86d7d51e25639fc5dd6354c0173a6743f44366230356334313561663539626632313161303062383535.map
+**Source maps found:** 18 — https://www.google.com/recaptcha/enterprise.js?render=6Lf1FtQZAAAAAKGsW3JoCdtQfzfCb2umWbEoyOjE.map, https://asana.com/_next/static/chunks/polyfills-42372ed130431b0a.js?dpl=48e45be14fd4655bb275ba95f87669abb08ebff99dab8358f35eb85060306e91366230373136303832633934613635356166393066343839.map, https://asana.com/_next/static/chunks/54858-ea606363a9c7a5ab.js?dpl=48e45be14fd4655bb275ba95f87669abb08ebff99dab8358f35eb85060306e91366230373136303832633934613635356166393066343839.map, https://asana.com/_next/static/chunks/90495-8bfac6c8eb0c8795.js?dpl=48e45be14fd4655bb275ba95f87669abb08ebff99dab8358f35eb85060306e91366230373136303832633934613635356166393066343839.map, https://asana.com/_next/static/chunks/59643-baacc11ca780467e.js?dpl=48e45be14fd4655bb275ba95f87669abb08ebff99dab8358f35eb85060306e91366230373136303832633934613635356166393066343839.map
 
 ### cloudinary.com
 
@@ -54,7 +54,7 @@ Plain GET requests to well-known paths — no injection, no scan_allowed needed.
 
 ### klaviyo.com
 
-**Source maps found:** 2 — https://transcend-cdn.com/cm/f3c1005b-8270-469c-85a4-81fe6c9b70e7/airgap.js?cacheBust=1795624253208.map, https://www.google.com/recaptcha/api.js?render=6Lc-vxErAAAAAKq79hQ2CEfaUCBld0hVMtRboXtB&amp;hl=en-US.map
+**Source maps found:** 2 — https://transcend-cdn.com/cm/f3c1005b-8270-469c-85a4-81fe6c9b70e7/airgap.js?cacheBust=1795647592447.map, https://www.google.com/recaptcha/api.js?render=6Lc-vxErAAAAAKq79hQ2CEfaUCBld0hVMtRboXtB&amp;hl=en-US.map
 
 
 
@@ -67,8 +67,9 @@ Plain GET requests to well-known paths — no injection, no scan_allowed needed.
 | cisa_kev | SUCCESS |
 | cve_org | SUCCESS |
 | github_advisories | SUCCESS |
-| nvd | SUCCESS |
+| nvd | EMPTY |
 | nuclei_templates | SUCCESS |
+| cvenotify | EMPTY |
 | matching | SUCCESS |
 | epss | SUCCESS |
 | poc_github | SUCCESS |
@@ -104,5 +105,5 @@ Plain GET requests to well-known paths — no injection, no scan_allowed needed.
 | Superdrug.com | SUCCESS |
 
 **Counts:**
-- new_cves: 112
+- new_cves: 33
 - updated_cves: 0

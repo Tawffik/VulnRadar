@@ -5,14 +5,14 @@
     {
       "name": "cisa_kev",
       "status": "SUCCESS",
-      "count": 1796,
+      "count": 1805,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "cve_org",
       "status": "SUCCESS",
-      "count": 147,
+      "count": 18,
       "error": null,
       "previous_state_used": false
     },
@@ -25,15 +25,22 @@
     },
     {
       "name": "nvd",
-      "status": "SUCCESS",
-      "count": 368,
+      "status": "EMPTY",
+      "count": 0,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "nuclei_templates",
       "status": "SUCCESS",
-      "count": 17,
+      "count": 18,
+      "error": null,
+      "previous_state_used": false
+    },
+    {
+      "name": "cvenotify",
+      "status": "EMPTY",
+      "count": 0,
       "error": null,
       "previous_state_used": false
     }
@@ -195,7 +202,7 @@
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 112,
+    "new_cves": 33,
     "updated_cves": 0
   },
   "warnings": []
