@@ -1,4 +1,1 @@
-ipn-auth.ibotta.com
-register.ibotta.com
-solstice.ibotta.com
-sst.data.ibotta.com
+api.gary.ibotta.com

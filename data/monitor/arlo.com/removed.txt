@@ -1,2 +1,3 @@
-myapi-web.arlo.com
-ww3.arlo.com
+jp.arlo.com
+nz.arlo.com
+tridion.arlo.com

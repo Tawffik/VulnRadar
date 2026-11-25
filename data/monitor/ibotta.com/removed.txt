@@ -1,0 +1,10 @@
+300661.ibotta.com
+blog.dev.ibotta.com
+dyn-seg.ibotta.com
+email.ibotta.com
+go.ibotta.com
+help.ibotta.com
+home.ibotta.com
+legal.ibotta.com
+link.ibotta.com
+sst.data.ibotta.com

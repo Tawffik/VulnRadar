@@ -2,24 +2,21 @@
   "target": "arlo.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 58,
-  "new_count": 3,
-  "removed_count": 2,
+  "live": 55,
+  "new_count": 0,
+  "removed_count": 3,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-24T15:42:10.852676+00:00",
-  "new": [
+  "ts": "2026-11-25T01:21:04.048603+00:00",
+  "new": [],
+  "removed": [
     "jp.arlo.com",
     "nz.arlo.com",
     "tridion.arlo.com"
-  ],
-  "removed": [
-    "myapi-web.arlo.com",
-    "ww3.arlo.com"
   ],
   "baseline_updated": true
 }

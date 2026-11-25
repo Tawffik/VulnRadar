@@ -2,26 +2,23 @@
   "target": "atlassian.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 112,
-  "new_count": 5,
-  "removed_count": 2,
+  "live": 107,
+  "new_count": 0,
+  "removed_count": 5,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-24T15:43:49.283151+00:00",
-  "new": [
+  "ts": "2026-11-25T01:23:22.618728+00:00",
+  "new": [],
+  "removed": [
     "advocate-central.atlassian.com",
     "analytics.status.atlassian.com",
     "bitbucket.status.atlassian.com",
     "developer.status.atlassian.com",
     "downloads-origin.atlassian.com"
-  ],
-  "removed": [
-    "detect.atlassian.com",
-    "go2.atlassian.com"
   ],
   "baseline_updated": true
 }

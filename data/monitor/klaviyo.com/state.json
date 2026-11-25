@@ -1,18 +1,29 @@
 {
   "target": "klaviyo.com",
   "status": "COMPLETE",
-  "discovered": 76,
-  "live": 52,
-  "new_count": 21,
-  "removed_count": 17,
+  "discovered": 200,
+  "live": 37,
+  "new_count": 9,
+  "removed_count": 24,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 76
+    "input_count": 200
   },
-  "ts": "2026-11-24T15:54:06.597621+00:00",
+  "ts": "2026-11-25T01:41:09.586292+00:00",
   "new": [
+    "get.klaviyo.com",
+    "gslink.klaviyo.com",
+    "investors.klaviyo.com",
+    "khub.klaviyo.com",
+    "marketing.klaviyo.com",
+    "privacy.klaviyo.com",
+    "resources.klaviyo.com",
+    "twotruths.klaviyo.com",
+    "vcf.klaviyo.com"
+  ],
+  "removed": [
     "ai-leaderboard.klaviyo.com",
     "amplify-dashboard.amplify-platform.klaviyo.com",
     "amplify-sales-apim-dev.klaviyo.com",
@@ -33,26 +44,10 @@
     "local-dev.documentation.klaviyo.com",
     "onsite-origin.eu.klaviyo.com",
     "partneracademy.klaviyo.com",
-    "static.academy.klaviyo.com"
-  ],
-  "removed": [
-    "get.klaviyo.com",
-    "gslink.klaviyo.com",
-    "investors.klaviyo.com",
-    "khub.klaviyo.com",
-    "learn.klaviyo.com",
-    "marketing.klaviyo.com",
-    "marketplace.klaviyo.com",
-    "privacy.klaviyo.com",
-    "resources.klaviyo.com",
-    "reviews.klaviyo.com",
-    "shop.klaviyo.com",
-    "sms.klaviyo.com",
-    "static-app.klaviyo.com",
-    "trust.klaviyo.com",
-    "twotruths.klaviyo.com",
-    "vcf.klaviyo.com",
-    "verticals.klaviyo.com"
+    "static.academy.klaviyo.com",
+    "static.klaviyo.com",
+    "status.klaviyo.com",
+    "vcf.eu.klaviyo.com"
   ],
   "baseline_updated": true
 }

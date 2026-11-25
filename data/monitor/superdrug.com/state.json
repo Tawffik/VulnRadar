@@ -1,29 +1,36 @@
 {
   "target": "superdrug.com",
   "status": "COMPLETE",
-  "discovered": 84,
-  "live": 44,
-  "new_count": 24,
-  "removed_count": 1,
+  "discovered": 200,
+  "live": 12,
+  "new_count": 1,
+  "removed_count": 33,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 84
+    "input_count": 200
   },
-  "ts": "2026-11-24T15:57:09.437422+00:00",
+  "ts": "2026-11-25T01:44:21.974201+00:00",
   "new": [
+    "clickom.superdrug.com"
+  ],
+  "removed": [
     "app.pharmacy.superdrug.com",
     "appt-uat.healthclinics.superdrug.com",
     "appt.healthclinics.superdrug.com",
     "community.superdrug.com",
+    "e.superdrug.com",
     "ecom-data.superdrug.com",
     "gp11022025-api.superdrug.com",
     "gp11022025.superdrug.com",
+    "hb.superdrug.com",
     "healthclinics.superdrug.com",
     "help.onlinedoctor.superdrug.com",
     "img.superdrug.com",
     "innovation.superdrug.com",
+    "m.email.superdrug.com",
+    "media.superdrug.com",
     "mta-sts.booking.healthclinics.superdrug.com",
     "mta-sts.dev-marketplace.superdrug.com",
     "mta-sts.email.superdrug.com",
@@ -32,14 +39,16 @@
     "mta-sts.n3.superdrug.com",
     "mta-sts.onlinedoctor.superdrug.com",
     "mta-sts.orders.superdrug.com",
+    "mta-sts.superdrug.com",
     "onlinedoctor.superdrug.com",
     "onlinepharmacy.superdrug.com",
+    "pharmacy.superdrug.com",
     "res.email.superdrug.com",
     "smpartnersd.superdrug.com",
-    "videogp-api.superdrug.com"
-  ],
-  "removed": [
-    "clickom.superdrug.com"
+    "t.email.superdrug.com",
+    "videogp-api.superdrug.com",
+    "videogp.superdrug.com",
+    "www.superdrug.com"
   ],
   "baseline_updated": true
 }

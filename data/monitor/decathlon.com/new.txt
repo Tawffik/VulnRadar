@@ -1,5 +1,12 @@
-analytics.decathlon.com
-img.otp2.decathlon.com
-partner.decathlon.com
-support.decathlon.com
-t.design.decathlon.com
+dnet.decathlon.com
+elearning.decathlon.com
+event.decathlon.com
+icheck.decathlon.com
+image.bimi.decathlon.com
+incentives.decathlon.com
+ld.decathlon.com
+myfcs.decathlon.com
+openvoice.decathlon.com
+pro.decathlon.com
+share.decathlon.com
+url7551.decathlon.com

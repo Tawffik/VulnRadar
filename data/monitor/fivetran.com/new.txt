@@ -1,16 +1,1 @@
-aws.polaris.fivetran.com
-gcp.eu.webhooks.fivetran.com
-gcp.us.webhooks.fivetran.com
-mdscon.fivetran.com
-mpages.fivetran.com
-orchestrator.qe.fivetran.com
-partners.fivetran.com
-pbf-demo.fivetran.com
-qe.fivetran.com
-resources.fivetran.com
-staging.fivetran.com
-staging.webhooks.fivetran.com
-status.fivetran.com
-transformations.qe.fivetran.com
-trust.fivetran.com
-www.fivetran.com
+orchestrator.fivetran.com
