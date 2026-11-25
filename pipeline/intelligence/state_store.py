@@ -21,7 +21,7 @@ that source itself contributed nothing new.
 import json
 import os
 
-SOURCES = ("cisa_kev", "cve_org", "github_advisories", "nvd", "nuclei_templates")
+SOURCES = ("cisa_kev", "cve_org", "github_advisories", "nvd", "nuclei_templates", "cvenotify")
 
 
 def _path_for(state_dir: str, source: str) -> str:
@@ -66,6 +66,8 @@ def update_states(state_dir: str, collector_results: list) -> dict:
     for r in collector_results:
         if r.name not in SOURCES:
             continue
+        if not getattr(r, "ran", True):
+            continue  # source did not run this run: its state file stays untouched
         if r.is_ok():
             written[r.name] = save_source_state(state_dir, r.name, r.entries)
     return written

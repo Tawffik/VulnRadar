@@ -2,7 +2,7 @@
 """
 pipeline/run_hunt.py
 
-Orchestrates one full VulnRadar run using FIVE sources together:
+Orchestrates one full VulnRadar run using SIX sources together:
   - cisa_kev: confirmed real-world exploitation (authoritative, but slow —
     CISA only adds a CVE after confirming active exploitation)
   - cve_org: the official CVE.org record feed, updated ~every 7 minutes —
@@ -11,11 +11,13 @@ Orchestrates one full VulnRadar run using FIVE sources together:
     etc.) neither of the above cover well
   - nvd: structured CPE version-range data, feeding the future Version
     Intelligence roadmap item (captured now, not yet used for matching)
+  - cvenotify (OPT-IN, off by default): community speed signal from the
+    cveNotify Telegram channel's public web preview (no account, read-only)
   - nuclei_templates: a NEW public Nuclei detection template for a CVE
     is a strong "a working PoC/detection already exists" signal, often
     appearing within hours of disclosure
 
-  fetch all five -> merge (ascending priority: nuclei_templates < cve_org
+  fetch all six -> merge (ascending priority: cvenotify < nuclei_templates < cve_org
   < github_advisories < nvd < cisa_kev, every source tagged even when
   another wins) -> diff against last state -> match against
   targets/*.yaml -> render output/hunter_queue.md -> save new state
@@ -38,7 +40,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from pipeline.collectors import cisa_kev, cve_org, github_advisories, nvd, nuclei_templates
+from pipeline.collectors import cisa_kev, cve_org, cvenotify, github_advisories, nvd, nuclei_templates
 from pipeline.intelligence import epss, poc_github, state_diff, state_store, technology_matcher, version_check
 from pipeline.intelligence.run_status import RunSummary, CollectorResult, TargetResult, RUN_FAILED
 from pipeline.verify import nuclei_runner
@@ -51,8 +53,10 @@ def merge_sources(*entry_lists: list) -> list:
     """Combines any number of collectors into one list, deduped by CVE
     ID. entry_lists must be given in ASCENDING priority order — later
     lists win on conflict. Current priority (lowest to highest):
-        nuclei_templates < cve_org < github_advisories < nvd < cisa_kev
-    nuclei_templates is lowest priority because its vendor/product is a
+        cvenotify < nuclei_templates < cve_org < github_advisories < nvd < cisa_kev
+    cvenotify is lowest priority because it carries no structured
+    vendor/product data at all (community alert text only); next is
+    nuclei_templates, because its vendor/product is a
     tag-based heuristic guess, not structured data like the other four
     (see nuclei_templates.py's own docstring) — it should never
     override a more reliable source's vendor/product when both report
@@ -114,6 +118,10 @@ def main():
     ap.add_argument("--skip-github-advisories", action="store_true")
     ap.add_argument("--skip-nvd", action="store_true")
     ap.add_argument("--skip-nuclei-templates", action="store_true")
+    ap.add_argument("--enable-cvenotify", action="store_true",
+                     help="opt-IN: fetch the cveNotify public preview this run. OFF by default - "
+                          "enabling it in the scheduled daily workflow is a separate owner "
+                          "decision (recurring third-party fetch: terms/rate/cadence unverified)")
     ap.add_argument("--targets-dir", default=os.path.join(repo_root, "targets"))
     ap.add_argument("--state-file", default=os.path.join(repo_root, "data", "state", "kev_state.json"))
     ap.add_argument("--cve-org-fetch-log", default=os.path.join(repo_root, "data", "state", "cve_org_last_fetch.txt"))
@@ -173,6 +181,7 @@ def main():
             with open(args.cve_org_fetch_log, "w") as f:
                 f.write(org_fetch_time or "")
     org_result = CollectorResult("cve_org", org_entries, org_error)
+    org_result.ran = not (args.skip_cve_org)
 
     gh_entries, gh_error = [], None
     if not args.skip_github_advisories:
@@ -182,6 +191,7 @@ def main():
         else:
             print(f"ℹ️ {len(gh_entries)} entries from GitHub Security Advisories (dependency/library CVEs)")
     gh_result = CollectorResult("github_advisories", gh_entries, gh_error)
+    gh_result.ran = not (args.skip_github_advisories)
 
     nvd_entries, nvd_error = [], None
     if not args.skip_nvd:
@@ -191,6 +201,7 @@ def main():
         else:
             print(f"ℹ️ {len(nvd_entries)} entries from NVD (structured CPE/version data)")
     nvd_result = CollectorResult("nvd", nvd_entries, nvd_error)
+    nvd_result.ran = not (args.skip_nvd)
 
     nuclei_entries, nuclei_error = [], None
     if not args.skip_nuclei_templates:
@@ -200,8 +211,19 @@ def main():
         else:
             print(f"ℹ️ {len(nuclei_entries)} entries from new Nuclei CVE templates (PoC/detection-availability signal)")
     nuclei_result = CollectorResult("nuclei_templates", nuclei_entries, nuclei_error)
+    nuclei_result.ran = not (args.skip_nuclei_templates)
 
-    collector_results = [kev_result, org_result, gh_result, nvd_result, nuclei_result]
+    cn_entries, cn_error = [], None
+    if args.enable_cvenotify:
+        cn_entries, cn_error = cvenotify.fetch_normalized()
+        if cn_error:
+            print(f"⚠️ cveNotify fetch failed (continuing without it): {cn_error}")
+        else:
+            print(f"ℹ️ {len(cn_entries)} entries from cveNotify public preview (community speed signal)")
+    cn_result = CollectorResult("cvenotify", cn_entries, cn_error)
+    cn_result.ran = not (not args.enable_cvenotify)
+
+    collector_results = [kev_result, org_result, gh_result, nvd_result, nuclei_result, cn_result]
     for r in collector_results:
         summary.add_collector(r)
 
@@ -218,7 +240,7 @@ def main():
         # Scenario G: nothing usable at all, and no prior history to fall
         # back on either. Do NOT claim "no vulnerabilities found" and do
         # NOT touch state/output - preserve whatever was there before.
-        print("❌ all 5 sources failed and no previous state exists — no usable intelligence this run")
+        print("❌ all sources failed and no previous state exists — no usable intelligence this run")
         summary.set_stage("matching", "SKIPPED")
         summary.set_stage("reporting", "SKIPPED")
         print(summary.render_markdown())
@@ -227,7 +249,7 @@ def main():
         sys.exit(summary.exit_code())
 
     # Ascending priority order — see merge_sources()'s own docstring for why.
-    entries = merge_sources(nuclei_entries, org_entries, gh_entries, nvd_entries, kev_entries)
+    entries = merge_sources(cn_entries, nuclei_entries, org_entries, gh_entries, nvd_entries, kev_entries)
     print(f"ℹ️ {len(entries)} unique CVEs after merging all sources that succeeded this run")
 
     previous_state = state_store.load_merged_state(state_dir)

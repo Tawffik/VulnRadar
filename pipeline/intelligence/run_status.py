@@ -64,6 +64,10 @@ class CollectorResult:
         self.name = name
         self.entries = entries or []
         self.error = error
+        # False when the source did not run at all this run (skip flag /
+        # opt-in source left disabled): an EMPTY-looking result that must
+        # NOT advance state (it proves nothing about the source).
+        self.ran = True
         self.status = classify_error(error, len(self.entries))
         # True when this source failed and we fell back to its last
         # known-good per-source state file instead of losing that
