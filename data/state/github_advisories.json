@@ -1,5 +1,37 @@
 {
-  "CVE-2026-63492": {
+  "CVE-2026-64670": {
+    "date_added": "2026-11-25T15:26:23Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-64855": {
+    "date_added": "2026-11-24T22:41:44Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-59191": {
+    "date_added": "2026-11-24T22:39:23Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-59831": {
+    "date_added": "2026-11-24T22:26:25Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-59818": {
+    "date_added": "2026-11-24T21:09:38Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-59726": {
+    "date_added": "2026-11-24T21:01:10Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-63305": {
+    "date_added": "2026-11-24T20:53:28Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-59192": {
+    "date_added": "2026-11-24T17:42:51Z",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-63304": {
     "date_added": "2026-11-23T22:06:28Z",
     "ransomware_use": "Unknown"
   },
@@ -361,42 +393,6 @@
   },
   "CVE-2026-129230": {
     "date_added": "2026-11-19T23:49:16Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-129231": {
-    "date_added": "2026-11-19T23:48:39Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-129232": {
-    "date_added": "2026-11-19T23:48:18Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-129233": {
-    "date_added": "2026-11-19T23:47:58Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-129234": {
-    "date_added": "2026-11-19T23:46:54Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-129304": {
-    "date_added": "2026-11-19T22:50:33Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-129303": {
-    "date_added": "2026-11-19T22:50:13Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-129302": {
-    "date_added": "2026-11-19T22:49:33Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-130007": {
-    "date_added": "2026-11-19T22:48:33Z",
-    "ransomware_use": "Unknown"
-  },
-  "CVE-2026-83816": {
-    "date_added": "2026-11-19T22:48:14Z",
     "ransomware_use": "Unknown"
   }
 }

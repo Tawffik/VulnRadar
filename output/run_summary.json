@@ -5,35 +5,35 @@
     {
       "name": "cisa_kev",
       "status": "SUCCESS",
-      "count": 1792,
+      "count": 1796,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "cve_org",
       "status": "SUCCESS",
-      "count": 256,
+      "count": 147,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "github_advisories",
       "status": "SUCCESS",
-      "count": 121,
+      "count": 122,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "nvd",
       "status": "SUCCESS",
-      "count": 223,
+      "count": 368,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "nuclei_templates",
       "status": "SUCCESS",
-      "count": 14,
+      "count": 17,
       "error": null,
       "previous_state_used": false
     }
@@ -195,8 +195,8 @@
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 169,
-    "updated_cves": 2
+    "new_cves": 112,
+    "updated_cves": 0
   },
   "warnings": []
 }
