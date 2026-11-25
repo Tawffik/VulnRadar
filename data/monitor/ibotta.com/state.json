@@ -2,21 +2,17 @@
   "target": "ibotta.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 37,
-  "new_count": 1,
-  "removed_count": 10,
+  "live": 45,
+  "new_count": 9,
+  "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-25T01:36:32.406482+00:00",
+  "ts": "2026-11-25T15:38:21.097420+00:00",
   "new": [
-    "api.gary.ibotta.com"
-  ],
-  "removed": [
-    "300661.ibotta.com",
     "blog.dev.ibotta.com",
     "dyn-seg.ibotta.com",
     "email.ibotta.com",
@@ -26,6 +22,9 @@
     "legal.ibotta.com",
     "link.ibotta.com",
     "sst.data.ibotta.com"
+  ],
+  "removed": [
+    "ipn-auth.ibotta.com"
   ],
   "baseline_updated": true
 }

@@ -2,29 +2,33 @@
   "target": "datadome.co",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 37,
-  "new_count": 3,
-  "removed_count": 7,
+  "live": 45,
+  "new_count": 11,
+  "removed_count": 3,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-25T01:26:34.671975+00:00",
+  "ts": "2026-11-25T15:31:40.439134+00:00",
   "new": [
+    "api-app.prod.datadome.co",
+    "api-cdn.datadome.co",
+    "api-edgio.datadome.co",
+    "api-me-west-1.datadome.co",
+    "api-us-utah-1.datadome.co",
+    "api-us-west-1.datadome.co",
+    "api-us-west-2.datadome.co",
+    "apivarnish.datadome.co",
+    "auth0.tooling.datadome.co",
+    "js.staging.datadome.co",
+    "test.datadome.co"
+  ],
+  "removed": [
     "api-sa-east-1.datadome.co",
     "haproxy1.datadome.co",
     "index-holder.datadome.co"
-  ],
-  "removed": [
-    "api-lambda.datadome.co",
-    "api-me-west-1.datadome.co",
-    "api-us-east-1.datadome.co",
-    "api-us-iowa-1.datadome.co",
-    "api-us-west-1.datadome.co",
-    "api-us-west-2.datadome.co",
-    "auth0.tooling.datadome.co"
   ],
   "baseline_updated": true
 }

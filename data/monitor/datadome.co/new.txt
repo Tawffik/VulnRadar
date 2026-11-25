@@ -1,3 +1,11 @@
-api-sa-east-1.datadome.co
-haproxy1.datadome.co
-index-holder.datadome.co
+api-app.prod.datadome.co
+api-cdn.datadome.co
+api-edgio.datadome.co
+api-me-west-1.datadome.co
+api-us-utah-1.datadome.co
+api-us-west-1.datadome.co
+api-us-west-2.datadome.co
+apivarnish.datadome.co
+auth0.tooling.datadome.co
+js.staging.datadome.co
+test.datadome.co

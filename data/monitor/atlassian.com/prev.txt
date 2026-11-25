@@ -55,6 +55,7 @@ fi.atlassian.com
 fr.atlassian.com
 france.blogs.atlassian.com
 gotest.atlassian.com
+gsnlink.atlassian.com
 hello.atlassian.com
 hu.atlassian.com
 image.e.atlassian.com
@@ -69,6 +70,7 @@ ko.atlassian.com
 korea.blogs.atlassian.com
 links.em.aug.atlassian.com
 links.eml.atlassian.com
+marketplace-cdn.atlassian.com
 maven.artifacts.atlassian.com
 maven.atlassian.com
 misc.artifacts.atlassian.com

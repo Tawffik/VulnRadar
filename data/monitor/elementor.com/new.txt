@@ -1,1 +1,13 @@
-tuts.elementor.com
+assets.elementor.com
+demo.elementor.com
+edu.elementor.com
+elementor.com
+experts.elementor.com
+gtm.elementor.com
+he.elementor.com
+mail.elementor.com
+my.elementor.com
+pix.elementor.com
+status.elementor.com
+thumbs.elementor.com
+ux.elementor.com

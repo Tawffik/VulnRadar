@@ -2,21 +2,20 @@
   "target": "arlo.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 55,
-  "new_count": 0,
-  "removed_count": 3,
+  "live": 57,
+  "new_count": 2,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-25T01:21:04.048603+00:00",
-  "new": [],
-  "removed": [
-    "jp.arlo.com",
-    "nz.arlo.com",
-    "tridion.arlo.com"
+  "ts": "2026-11-25T15:27:36.424518+00:00",
+  "new": [
+    "hk.arlo.com",
+    "redirect.arlo.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

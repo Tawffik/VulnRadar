@@ -1,1 +1,9 @@
-tvpap.okx.com
+appwspripap.okx.com
+eea.okx.com
+jpush.okx.com
+jpushws.okx.com
+link.okx.com
+mysignicat.okx.com
+okctools.okx.com
+pay.okx.com
+staticaws.okx.com

@@ -116,7 +116,6 @@ consolek.azure.aiven.io
 pitch.internal.aiven.io
 www.developers.aiven.io
 careers-staging.aiven.io
-n-lrutay76v1.ai.aiven.io
 n-n4idnip21b.ai.aiven.io
 partner-support.aiven.io
 www.console.aws.aiven.io
