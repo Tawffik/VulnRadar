@@ -1,11 +1,2 @@
-learn.klaviyo.com
-marketplace.klaviyo.com
-reviews.klaviyo.com
-shop.klaviyo.com
-sms.klaviyo.com
-static-app.klaviyo.com
-static.klaviyo.com
-status.klaviyo.com
-trust.klaviyo.com
-vcf.eu.klaviyo.com
-verticals.klaviyo.com
+reviews-app.klaviyo.com
+reviews-new.klaviyo.com

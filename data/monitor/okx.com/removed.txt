@@ -1,15 +1,1 @@
-file.okx.com
-money.okx.com
-my.okx.com
-okbws.okx.com
-static.okx.com
-tvpap.okx.com
-us.okx.com
-wspap.okx.com
-wspripap.okx.com
-wssfp.okx.com
-wsuspap.okx.com
-wsweb3eea.okx.com
-wsweb3us.okx.com
-www.okx.com
-xlayerws.okx.com
+staticaws.okx.com

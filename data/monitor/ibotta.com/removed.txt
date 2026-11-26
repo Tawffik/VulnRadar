@@ -1,1 +1,11 @@
-ipn-auth.ibotta.com
+api.gary.ibotta.com
+go.ibotta.com
+ipn.ibotta.com
+link.dev.ibotta.com
+link.ibotta.com
+looker.ibotta.com
+media.ibotta.com
+pay.ibotta.com
+register.ibotta.com
+s.ibotta.com
+static.ibotta.com

@@ -3,7 +3,6 @@ aiven-management-api.ai.aiven.io
 aiven.io
 api.aiven.io
 aquarium-library.aiven.io
-aquarium.aiven.io
 atlas-staging.internal.aiven.io
 atlas.internal.aiven.io
 careers-staging.aiven.io

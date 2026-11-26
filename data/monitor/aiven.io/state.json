@@ -1,18 +1,20 @@
 {
   "target": "aiven.io",
   "status": "COMPLETE",
-  "discovered": 143,
-  "live": 43,
+  "discovered": 144,
+  "live": 42,
   "new_count": 0,
-  "removed_count": 0,
+  "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 143
+    "input_count": 144
   },
-  "ts": "2026-11-25T15:26:24.161427+00:00",
+  "ts": "2026-11-26T00:54:32.814798+00:00",
   "new": [],
-  "removed": [],
+  "removed": [
+    "aquarium.aiven.io"
+  ],
   "baseline_updated": true
 }

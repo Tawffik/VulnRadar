@@ -4,18 +4,21 @@
   "discovered": 200,
   "live": 109,
   "new_count": 2,
-  "removed_count": 0,
+  "removed_count": 2,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-25T15:29:24.374542+00:00",
+  "ts": "2026-11-26T00:57:16.153735+00:00",
   "new": [
+    "accesss.status.atlassian.com",
+    "advocate-central.atlassian.com"
+  ],
+  "removed": [
     "gsnlink.atlassian.com",
     "marketplace-cdn.atlassian.com"
   ],
-  "removed": [],
   "baseline_updated": true
 }

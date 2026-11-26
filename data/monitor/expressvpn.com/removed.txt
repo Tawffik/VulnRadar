@@ -1,1 +1,1 @@
-desktop.updates.expressvpn.com
+staging.teams.expressvpn.com

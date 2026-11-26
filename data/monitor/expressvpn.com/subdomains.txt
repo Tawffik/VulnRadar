@@ -50,7 +50,6 @@ dyna.expressvpn.com
 info.expressvpn.com
 news.expressvpn.com
 repo.expressvpn.com
-smon.expressvpn.com
 sync.expressvpn.com
 wwwk.expressvpn.com
 apisc.expressvpn.com
@@ -118,7 +117,6 @@ www.apis.expressvpn.com
 www.auth.expressvpn.com
 www.blog.expressvpn.com
 www.repo.expressvpn.com
-www.smon.expressvpn.com
 apischi-6.expressvpn.com
 apischi-7.expressvpn.com
 apischi-8.expressvpn.com
@@ -178,8 +176,6 @@ o4697i.e.news.expressvpn.com
 o4698c.e.info.expressvpn.com
 outboundemail.expressvpn.com
 releasemaster.expressvpn.com
-staging.teams.expressvpn.com
-test.checkout.expressvpn.com
 www.beta.repo.expressvpn.com
 www.origin-wp.expressvpn.com
 www.speedtest.expressvpn.com
@@ -198,3 +194,8 @@ www.apis-chi-7.expressvpn.com
 www.apis-chi-8.expressvpn.com
 www.apis.recov.expressvpn.com
 www.enterprise.expressvpn.com
+billing-portalo.expressvpn.com
+desktop.updates.expressvpn.com
+frontendm.recov.expressvpn.com
+public.payments.expressvpn.com
+www.billing.api.expressvpn.com

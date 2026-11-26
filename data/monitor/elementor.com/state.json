@@ -3,7 +3,7 @@
   "status": "COMPLETE",
   "discovered": 200,
   "live": 28,
-  "new_count": 13,
+  "new_count": 0,
   "removed_count": 0,
   "discover_error": null,
   "probe": {
@@ -11,22 +11,8 @@
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-25T15:34:22.432176+00:00",
-  "new": [
-    "assets.elementor.com",
-    "demo.elementor.com",
-    "edu.elementor.com",
-    "elementor.com",
-    "experts.elementor.com",
-    "gtm.elementor.com",
-    "he.elementor.com",
-    "mail.elementor.com",
-    "my.elementor.com",
-    "pix.elementor.com",
-    "status.elementor.com",
-    "thumbs.elementor.com",
-    "ux.elementor.com"
-  ],
+  "ts": "2026-11-26T01:03:04.515188+00:00",
+  "new": [],
   "removed": [],
   "baseline_updated": true
 }
