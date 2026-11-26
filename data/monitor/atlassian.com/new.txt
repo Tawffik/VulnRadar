@@ -1,2 +1,4 @@
-accesss.status.atlassian.com
-advocate-central.atlassian.com
+analytics.status.atlassian.com
+bitbucket.status.atlassian.com
+developer.status.atlassian.com
+downloads-origin.atlassian.com

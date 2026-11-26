@@ -1,2 +1,3 @@
-news.intercom.com
-staging.intercom.com
+cx.intercom.com
+partneracademy.intercom.com
+women.intercom.com

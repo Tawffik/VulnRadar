@@ -4,17 +4,15 @@
   "discovered": 144,
   "live": 42,
   "new_count": 0,
-  "removed_count": 1,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 144
   },
-  "ts": "2026-11-26T00:54:32.814798+00:00",
+  "ts": "2026-11-26T14:56:50.820039+00:00",
   "new": [],
-  "removed": [
-    "aquarium.aiven.io"
-  ],
+  "removed": [],
   "baseline_updated": true
 }

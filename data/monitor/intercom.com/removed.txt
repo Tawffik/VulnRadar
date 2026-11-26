@@ -1,3 +1,8 @@
-meet.intercom.com
-rsvp.pioneer.intercom.com
-women.intercom.com
+news.intercom.com
+services.intercom.com
+staging.intercom.com
+staging.mcp.intercom.com
+surge.intercom.com
+trust.intercom.com
+vercel.intercom.com
+vsaq.intercom.com

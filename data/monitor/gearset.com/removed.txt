@@ -1,0 +1,17 @@
+academy.gearset.com
+amplitude.gearset.com
+app.gearset.com
+assets.gearset.com
+eu.staging.gearset.com
+feedback.gearset.com
+gearset.com
+hipaa.app.gearset.com
+hipaa.staging.gearset.com
+onboarding.gearset.com
+salesloft.gearset.com
+socclicks.gearset.com
+staging-api.gearset.com
+staging-webhooks.gearset.com
+staging.gearset.com
+trust.gearset.com
+webhooks.gearset.com

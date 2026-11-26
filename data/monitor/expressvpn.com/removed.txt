@@ -1,1 +1,12 @@
-staging.teams.expressvpn.com
+beta.repo.expressvpn.com
+cdn.portal.expressvpn.com
+desktop.updates.expressvpn.com
+landing-pages.expressvpn.com
+link.clicks.expressvpn.com
+portal.expressvpn.com
+rc.portal.expressvpn.com
+staging.portal.expressvpn.com
+store.expressvpn.com
+support.expressvpn.com
+teams.expressvpn.com
+www.expressvpn.com

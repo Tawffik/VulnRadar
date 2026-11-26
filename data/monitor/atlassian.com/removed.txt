@@ -1,2 +1,2 @@
-gsnlink.atlassian.com
-marketplace-cdn.atlassian.com
+accesss.status.atlassian.com
+eventlinks.atlassian.com
