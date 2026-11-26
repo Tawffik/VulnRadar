@@ -132,6 +132,11 @@ jobs:
             # target already lives in targets/ and is loaded normally.
             ARGS=(--adhoc-target "$ADHOC_TARGET" --adhoc-tech "$ADHOC_TECH")
           fi
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            # Owner-approved 2026-11-26 (decision 6): cveNotify collector active
+            # in the daily scheduled run. Manual dispatch stays opt-in.
+            ARGS+=(--enable-cvenotify)
+          fi
           bash scripts/run_hunt.sh "${ARGS[@]}"
           code=$?
           echo "exit_code=$code" >> "$GITHUB_OUTPUT"
