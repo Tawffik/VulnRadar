@@ -18,25 +18,3 @@ technologies:
   product: Google Cloud Trace
 - vendor: Google
   product: Google
-- vendor: Bootstrap
-  product: Bootstrap
-- vendor: Elementor
-  product: Elementor
-  version: 4.4.1
-- vendor: MySQL
-  product: MySQL
-- vendor: PHP
-  product: PHP
-- vendor: Popper
-  product: Popper
-- vendor: Slick
-  product: Slick
-- vendor: WP Engine
-  product: WP Engine
-- vendor: WordPress
-  product: WordPress
-- vendor: Yoast SEO
-  product: Yoast SEO
-  version: '28.9'
-- vendor: jQuery
-  product: jQuery

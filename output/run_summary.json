@@ -12,7 +12,7 @@
     {
       "name": "cve_org",
       "status": "SUCCESS",
-      "count": 1,
+      "count": 117,
       "error": null,
       "previous_state_used": false
     },
@@ -202,7 +202,7 @@
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 3,
+    "new_cves": 4,
     "updated_cves": 1
   },
   "warnings": []
