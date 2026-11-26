@@ -1,14 +1,31 @@
 # VulnRadar Hunter Queue
 
-Generated: 2026-11-25T23:02:11+00:00
+Generated: 2026-11-26T16:05:24+00:00
 Targets loaded: 24
-New KEV entries this run: 33
-Updated KEV entries this run (ransomware flag changed): 0
-Entries below (target-matched or known-ransomware): 0
+New KEV entries this run: 3
+Updated KEV entries this run (ransomware flag changed): 1
+Entries below (target-matched or known-ransomware): 1
 
 > A CVE affecting a matched technology is a candidate needing manual version verification, not a confirmed vulnerability. This project does not run exploitation — see 'Next Safe Action' on each entry.
 
-No target-relevant or high-priority KEV entries this run.
+## 1. CVE-2026-59310 — UPDATED — now flagged for known ransomware use
+
+**Vendor / Product:** Broadcom / VMware vCenter
+**Name:** Broadcom VMware vCenter Path Traversal Vulnerability
+**Matched target(s):** (no configured target matched — reference only)
+**Known ransomware use:** Known
+**EPSS:** unavailable
+**Public PoCs:** none found
+**Version check:** unknown — no fingerprinted version or no NVD version-range data
+**Nuclei verification:** (not run — nuclei unavailable or target not opted into scanning)
+**Date added to KEV:** 2026-08-18
+**CISA required action:** Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+
+**Description:** Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.
+
+**Next Safe Action:** Verify the exact deployed version on the matched target(s) falls within the affected range before treating this as a real finding. Reproduce only within authorized scope.
+
+---
 
 ---
 
@@ -42,7 +59,7 @@ Plain GET requests to well-known paths — no injection, no scan_allowed needed.
 
 ### gearset.com
 
-**Source maps found:** 5 — https://cmp.osano.com/6okapU34JmZx4cWG/4693432c-ab0c-40c3-a4a1-99cc77801085/osano.js.map, https://gearset.com/assets/index-w8EzgZ0k.js.map, https://www.google.com/recaptcha/api.js?render=6LdgPY4oAAAAAPSJC_kJKTNKk3BKUCF8qmpeAYaI.map, https://gearset.com/assets/polyfills-legacy-BsMNi2G7.js.map, https://gearset.com/assets/index-legacy-Cf_F8r72.js.map
+**Source maps found:** 5 — https://cmp.osano.com/6okapU34JmZx4cWG/4693432c-ab0c-40c3-a4a1-99cc77801085/osano.js.map, https://gearset.com/assets/index-C4W6cXLc.js.map, https://www.google.com/recaptcha/api.js?render=6LdgPY4oAAAAAPSJC_kJKTNKk3BKUCF8qmpeAYaI.map, https://gearset.com/assets/polyfills-legacy-BsMNi2G7.js.map, https://gearset.com/assets/index-legacy-mxf1adxv.js.map
 
 ### glean.com
 
@@ -54,7 +71,7 @@ Plain GET requests to well-known paths — no injection, no scan_allowed needed.
 
 ### klaviyo.com
 
-**Source maps found:** 2 — https://transcend-cdn.com/cm/f3c1005b-8270-469c-85a4-81fe6c9b70e7/airgap.js?cacheBust=1795647592447.map, https://www.google.com/recaptcha/api.js?render=6Lc-vxErAAAAAKq79hQ2CEfaUCBld0hVMtRboXtB&amp;hl=en-US.map
+**Source maps found:** 2 — https://transcend-cdn.com/cm/f3c1005b-8270-469c-85a4-81fe6c9b70e7/airgap.js?cacheBust=1795709034584.map, https://www.google.com/recaptcha/api.js?render=6Lc-vxErAAAAAKq79hQ2CEfaUCBld0hVMtRboXtB&amp;hl=en-US.map
 
 
 
@@ -105,5 +122,5 @@ Plain GET requests to well-known paths — no injection, no scan_allowed needed.
 | Superdrug.com | SUCCESS |
 
 **Counts:**
-- new_cves: 33
-- updated_cves: 0
+- new_cves: 3
+- updated_cves: 1
