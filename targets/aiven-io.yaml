@@ -23,3 +23,13 @@ technologies:
   product: nginx
 - vendor: AmazonS3
   product: AmazonS3
+- vendor: Python
+  product: Python
+- vendor: Uvicorn
+  product: Uvicorn
+- vendor: Vercel
+  product: Vercel
+- vendor: Google Cloud Trace
+  product: Google Cloud Trace
+- vendor: Google
+  product: Google

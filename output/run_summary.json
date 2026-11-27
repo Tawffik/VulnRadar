@@ -12,7 +12,7 @@
     {
       "name": "cve_org",
       "status": "SUCCESS",
-      "count": 117,
+      "count": 6,
       "error": null,
       "previous_state_used": false
     },
@@ -33,14 +33,14 @@
     {
       "name": "nuclei_templates",
       "status": "SUCCESS",
-      "count": 13,
+      "count": 14,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "cvenotify",
-      "status": "EMPTY",
-      "count": 0,
+      "status": "SUCCESS",
+      "count": 19,
       "error": null,
       "previous_state_used": false
     }
@@ -198,12 +198,14 @@
     "version_check": "SUCCESS",
     "nuclei_verification": "SUCCESS",
     "exposure_scan": "SUCCESS",
-    "reporting": "SUCCESS",
+    "reporting": "FAILED",
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 4,
+    "new_cves": 37,
     "updated_cves": 1
   },
-  "warnings": []
+  "warnings": [
+    "report generation failed unexpectedly: KeyError: 'ransomware_use'"
+  ]
 }

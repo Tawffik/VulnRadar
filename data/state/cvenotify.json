@@ -1,0 +1,78 @@
+{
+  "CVE-2026-119452": {
+    "date_added": "2026-11-27T15:22:01+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-132165": {
+    "date_added": "2026-11-27T15:22:02+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-136716": {
+    "date_added": "2026-11-27T15:22:08+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2017-20291": {
+    "date_added": "2026-11-27T15:22:09+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-133720": {
+    "date_added": "2026-11-27T15:22:09+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-134963": {
+    "date_added": "2026-11-27T15:22:09+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-135948": {
+    "date_added": "2026-11-27T15:22:10+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-137909": {
+    "date_added": "2026-11-27T15:22:16+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-134983": {
+    "date_added": "2026-11-27T15:22:17+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-135032": {
+    "date_added": "2026-11-27T15:22:19+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-110739": {
+    "date_added": "2026-11-27T15:22:19+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-124825": {
+    "date_added": "2026-11-27T15:22:20+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-4641": {
+    "date_added": "2026-11-27T15:22:53+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-4642": {
+    "date_added": "2026-11-27T15:22:54+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-80505": {
+    "date_added": "2026-11-27T15:22:54+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-80506": {
+    "date_added": "2026-11-27T15:22:54+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-80507": {
+    "date_added": "2026-11-27T15:22:55+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-80508": {
+    "date_added": "2026-11-27T15:23:01+00:00",
+    "ransomware_use": "Unknown"
+  },
+  "CVE-2026-85252": {
+    "date_added": "2026-11-27T15:23:02+00:00",
+    "ransomware_use": "Unknown"
+  }
+}
