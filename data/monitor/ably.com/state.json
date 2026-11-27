@@ -1,18 +1,38 @@
 {
   "target": "ably.com",
   "status": "COMPLETE",
-  "discovered": 200,
-  "live": 20,
+  "discovered": 1,
+  "live": 1,
   "new_count": 0,
-  "removed_count": 0,
-  "discover_error": null,
+  "removed_count": 19,
+  "discover_error": "subfinder timed out on ably.com",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 200
+    "input_count": 1
   },
-  "ts": "2026-11-26T14:56:15.545122+00:00",
+  "ts": "2026-11-27T00:58:46.403820+00:00",
   "new": [],
-  "removed": [],
+  "removed": [
+    "brand.ably.com",
+    "cdn.ably.com",
+    "demo.ably.com",
+    "docs.ably.com",
+    "email.ably.com",
+    "faqs.ably.com",
+    "files.ably.com",
+    "ghost.ably.com",
+    "go.ably.com",
+    "jobs.ably.com",
+    "jsbin.ably.com",
+    "pages.ably.com",
+    "quotes.ably.com",
+    "render.ably.com",
+    "schemas.ably.com",
+    "sdk.ably.com",
+    "status.ably.com",
+    "support.ably.com",
+    "www.ably.com"
+  ],
   "baseline_updated": true
 }

@@ -1,10 +1,1 @@
-api.dtb.decathlon.com
-free.decathlon.com
-gex.decathlon.com
-ld.decathlon.com
-newspro.decathlon.com
-r.otp1.decathlon.com
-tracking.decathlon.com
-vision.decathlon.com
-wts.decathlon.com
-www.dtb.decathlon.com
+decathlon.com

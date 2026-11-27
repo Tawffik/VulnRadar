@@ -1,5 +1,1 @@
-azure.polaris.staging.fivetran.com
-eng-planning-staging.fivetran.com
-staging.events.agent.fivetran.com
-staging.orchestrator.fivetran.com
-temporal-codec.staging.fivetran.com
+fivetran.com

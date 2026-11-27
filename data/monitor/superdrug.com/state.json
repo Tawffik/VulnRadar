@@ -4,33 +4,15 @@
   "discovered": 1,
   "live": 1,
   "new_count": 0,
-  "removed_count": 17,
+  "removed_count": 0,
   "discover_error": "subfinder timed out on superdrug.com",
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 1
   },
-  "ts": "2026-11-26T15:17:24.313915+00:00",
+  "ts": "2026-11-27T01:32:05.670858+00:00",
   "new": [],
-  "removed": [
-    "api-s1.superdrug.com",
-    "api.superdrug.com",
-    "app.superdrug.com",
-    "appsd.superdrug.com",
-    "campaign.superdrug.com",
-    "ccs.superdrug.com",
-    "consent.superdrug.com",
-    "e.superdrug.com",
-    "hb.superdrug.com",
-    "m.email.superdrug.com",
-    "m.superdrug.com",
-    "media.superdrug.com",
-    "mta-sts.superdrug.com",
-    "t.email.superdrug.com",
-    "videogp.superdrug.com",
-    "www-s1.superdrug.com",
-    "www.superdrug.com"
-  ],
+  "removed": [],
   "baseline_updated": true
 }

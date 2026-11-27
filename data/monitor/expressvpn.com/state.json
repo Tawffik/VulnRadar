@@ -1,31 +1,28 @@
 {
   "target": "expressvpn.com",
   "status": "COMPLETE",
-  "discovered": 200,
-  "live": 10,
+  "discovered": 1,
+  "live": 1,
   "new_count": 0,
-  "removed_count": 12,
-  "discover_error": null,
+  "removed_count": 9,
+  "discover_error": "subfinder timed out on expressvpn.com",
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 200
+    "input_count": 1
   },
-  "ts": "2026-11-26T15:05:34.720279+00:00",
+  "ts": "2026-11-27T01:15:25.932441+00:00",
   "new": [],
   "removed": [
-    "beta.repo.expressvpn.com",
-    "cdn.portal.expressvpn.com",
-    "desktop.updates.expressvpn.com",
-    "landing-pages.expressvpn.com",
-    "link.clicks.expressvpn.com",
-    "portal.expressvpn.com",
-    "rc.portal.expressvpn.com",
-    "staging.portal.expressvpn.com",
-    "store.expressvpn.com",
-    "support.expressvpn.com",
-    "teams.expressvpn.com",
-    "www.expressvpn.com"
+    "auth.expressvpn.com",
+    "billing-portal.expressvpn.com",
+    "checkout.expressvpn.com",
+    "go.expressvpn.com",
+    "integration.expressvpn.com",
+    "link.mail.expressvpn.com",
+    "repo.expressvpn.com",
+    "speedtest.expressvpn.com",
+    "updates.expressvpn.com"
   ],
   "baseline_updated": true
 }

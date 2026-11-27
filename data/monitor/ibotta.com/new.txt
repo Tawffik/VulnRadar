@@ -1,5 +1,0 @@
-link.ibotta.com
-looker.ibotta.com
-media.ibotta.com
-s.ibotta.com
-static.ibotta.com
