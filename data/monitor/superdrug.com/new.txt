@@ -1,1 +1,3 @@
-clickom.superdrug.com
+hb.superdrug.com
+m.superdrug.com
+media.superdrug.com

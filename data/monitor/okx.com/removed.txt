@@ -1,10 +1,1 @@
-my.okx.com
-mysignicat.okx.com
-mywspri.okx.com
-mywspripap.okx.com
-payauth.okx.com
-static.okx.com
-tr.okx.com
-tvpap.okx.com
-wsdex.okx.com
-xlayerrpc.okx.com
+staticaws.okx.com

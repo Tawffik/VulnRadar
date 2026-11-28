@@ -1,7 +1,7 @@
 {
   "target": "aiven.io",
   "status": "COMPLETE",
-  "discovered": 143,
+  "discovered": 67,
   "live": 43,
   "new_count": 0,
   "removed_count": 0,
@@ -9,9 +9,9 @@
   "probe": {
     "method": "httpx",
     "error": null,
-    "input_count": 143
+    "input_count": 67
   },
-  "ts": "2026-11-28T00:26:29.193332+00:00",
+  "ts": "2026-11-28T14:01:51.217549+00:00",
   "new": [],
   "removed": [],
   "baseline_updated": true

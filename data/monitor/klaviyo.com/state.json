@@ -2,18 +2,17 @@
   "target": "klaviyo.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 34,
-  "new_count": 0,
-  "removed_count": 14,
+  "live": 48,
+  "new_count": 14,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-28T00:45:09.343361+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-28T14:15:53.885112+00:00",
+  "new": [
     "khub.klaviyo.com",
     "klaviyo.com",
     "learn.klaviyo.com",
@@ -29,5 +28,6 @@
     "vcf.eu.klaviyo.com",
     "verticals.klaviyo.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

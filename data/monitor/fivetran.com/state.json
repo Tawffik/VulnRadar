@@ -2,23 +2,21 @@
   "target": "fivetran.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 37,
-  "new_count": 2,
-  "removed_count": 30,
+  "live": 70,
+  "new_count": 35,
+  "removed_count": 2,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-28T00:36:37.771950+00:00",
+  "ts": "2026-11-28T14:09:56.124473+00:00",
   "new": [
-    "partners.fivetran.com",
-    "temporal-codec.fivetran.com"
-  ],
-  "removed": [
     "api-staging.fivetran.com",
     "assets.fivetran.com",
+    "aws.polaris.fivetran.com",
+    "azure.polaris.fivetran.com",
     "benchmark.gateway.fivetran.com",
     "beta-api.fivetran.com",
     "beta.fivetran.com",
@@ -32,21 +30,28 @@
     "fivetran.com",
     "gateway.fivetran.com",
     "gcp.eu.webhooks.fivetran.com",
+    "gcp.polaris.fivetran.com",
     "go.fivetran.com",
     "hdt.gateway.fivetran.com",
     "hitl.fivetran.com",
     "learn.fivetran.com",
     "legal.fivetran.com",
     "mdscon.fivetran.com",
+    "orchestrator.fivetran.com",
+    "orchestrator.qe.fivetran.com",
     "pbf-demo.fivetran.com",
-    "qe.fivetran.com",
     "resources.fivetran.com",
     "services.api.fivetran.com",
     "staging.fivetran.com",
     "support.fivetran.com",
     "trust.fivetran.com",
     "url5660.fivetran.com",
-    "videos.cms.fivetran.com"
+    "videos.cms.fivetran.com",
+    "webhooks.qe.fivetran.com"
+  ],
+  "removed": [
+    "partners.fivetran.com",
+    "prototypes.fivetran.com"
   ],
   "baseline_updated": true
 }

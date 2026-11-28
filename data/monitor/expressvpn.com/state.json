@@ -2,18 +2,17 @@
   "target": "expressvpn.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 9,
-  "new_count": 0,
-  "removed_count": 13,
+  "live": 22,
+  "new_count": 13,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-28T00:35:10.503730+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-28T14:09:16.351441+00:00",
+  "new": [
     "auth.expressvpn.com",
     "beta.repo.expressvpn.com",
     "billing-portal.expressvpn.com",
@@ -28,5 +27,6 @@
     "support.expressvpn.com",
     "www.expressvpn.com"
   ],
+  "removed": [],
   "baseline_updated": true
 }

@@ -1,0 +1,8 @@
+chainrpc.okx.com
+my.okx.com
+mywspri.okx.com
+payauth.okx.com
+static.okx.com
+tr.okx.com
+wsdex.okx.com
+xlayerrpc.okx.com

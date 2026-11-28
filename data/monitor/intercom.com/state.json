@@ -2,22 +2,21 @@
   "target": "intercom.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 56,
-  "new_count": 2,
-  "removed_count": 1,
+  "live": 59,
+  "new_count": 3,
+  "removed_count": 0,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-28T00:44:19.141832+00:00",
+  "ts": "2026-11-28T14:14:54.906459+00:00",
   "new": [
-    "hackathon.corp.intercom.com",
-    "partneracademy.intercom.com"
+    "news.intercom.com",
+    "services.api.intercom.com",
+    "transformation.intercom.com"
   ],
-  "removed": [
-    "services.api.intercom.com"
-  ],
+  "removed": [],
   "baseline_updated": true
 }

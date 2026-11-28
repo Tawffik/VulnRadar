@@ -1,2 +1,3 @@
-hackathon.corp.intercom.com
-partneracademy.intercom.com
+news.intercom.com
+services.api.intercom.com
+transformation.intercom.com

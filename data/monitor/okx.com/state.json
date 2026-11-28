@@ -2,28 +2,28 @@
   "target": "okx.com",
   "status": "COMPLETE",
   "discovered": 200,
-  "live": 35,
-  "new_count": 0,
-  "removed_count": 10,
+  "live": 42,
+  "new_count": 8,
+  "removed_count": 1,
   "discover_error": null,
   "probe": {
     "method": "httpx",
     "error": null,
     "input_count": 200
   },
-  "ts": "2026-11-28T00:46:42.365804+00:00",
-  "new": [],
-  "removed": [
+  "ts": "2026-11-28T14:16:47.203280+00:00",
+  "new": [
+    "chainrpc.okx.com",
     "my.okx.com",
-    "mysignicat.okx.com",
     "mywspri.okx.com",
-    "mywspripap.okx.com",
     "payauth.okx.com",
     "static.okx.com",
     "tr.okx.com",
-    "tvpap.okx.com",
     "wsdex.okx.com",
     "xlayerrpc.okx.com"
+  ],
+  "removed": [
+    "staticaws.okx.com"
   ],
   "baseline_updated": true
 }
