@@ -26,6 +26,7 @@ frame.eu.intercom.com
 frame.intercom.com
 gmail.mcp.intercom.com
 go.intercom.com
+hackathon.corp.intercom.com
 hq.intercom.com
 intercom.com
 intercomrades.intercom.com
@@ -38,12 +39,12 @@ meet.eu.intercom.com
 mi.intercom.com
 news.eu.intercom.com
 out.intercom.com
+partneracademy.intercom.com
 pioneer.intercom.com
 preferences.intercom.com
 privacy.intercom.com
 rsvp.pioneer.intercom.com
 sales.intercom.com
-services.api.intercom.com
 services.intercom.com
 staging.mcp.intercom.com
 status.intercom.com
