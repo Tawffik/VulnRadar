@@ -5,14 +5,14 @@
     {
       "name": "cisa_kev",
       "status": "SUCCESS",
-      "count": 1805,
+      "count": 1808,
       "error": null,
       "previous_state_used": false
     },
     {
       "name": "cve_org",
       "status": "SUCCESS",
-      "count": 6,
+      "count": 1,
       "error": null,
       "previous_state_used": false
     },
@@ -40,7 +40,7 @@
     {
       "name": "cvenotify",
       "status": "SUCCESS",
-      "count": 19,
+      "count": 20,
       "error": null,
       "previous_state_used": false
     }
@@ -202,8 +202,8 @@
     "notifications": "SUCCESS"
   },
   "counts": {
-    "new_cves": 37,
-    "updated_cves": 1
+    "new_cves": 23,
+    "updated_cves": 0
   },
   "warnings": [
     "report generation failed unexpectedly: KeyError: 'ransomware_use'"

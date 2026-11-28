@@ -14,19 +14,3 @@ technologies:
   product: Ruby
 - vendor: Ruby on Rails
   product: Ruby on Rails
-- vendor: AmazonS3
-  product: AmazonS3
-- vendor: HubSpot
-  product: HubSpot
-- vendor: HubSpot CMS Hub
-  product: HubSpot CMS Hub
-- vendor: Vercel
-  product: Vercel
-- vendor: Atlassian Statuspage
-  product: Atlassian Statuspage
-- vendor: jQuery
-  product: jQuery
-- vendor: reCAPTCHA
-  product: reCAPTCHA
-- vendor: AtlassianEdge
-  product: AtlassianEdge
